@@ -185,15 +185,15 @@ uploadArchives {
                         name project.archivesBaseName
                         packaging "jar"
                         description "Space Pack Extended"
-                        url "https://github.com/BrainStone/brainstone"
+                        // url "https://github.com/BrainStone/brainstone"
                         issueManagement {
                             system "github"
-                            url "https://github.com/BrainStone/brainstone/issues"
+                            // url "https://github.com/BrainStone/brainstone/issues"
                         }
                         licenses {
                             license {
                                 name "License"
-                                url "https://raw.githubusercontent.com/BrainStone/brainstone/master/LICENSE"
+                                // url "https://raw.githubusercontent.com/BrainStone/brainstone/master/LICENSE"
                                 distribution "repo"
                             }
                         }
@@ -206,13 +206,13 @@ uploadArchives {
                                     role "developer"
                                 }
                             }
-                            developer {
-                                id "brainstone"
-                                name "The_BrainStone"
-                                roles {
-                                    role "developer"
-                                }
-                            }
+                            //developer {
+                            //    id "brainstone"
+                            //    name "The_BrainStone"
+                            //    roles {
+                            //        role "developer"
+                            //    }
+                            //}
                         }
                     }
                 }
@@ -225,7 +225,7 @@ curseforge {
     apiKey = project.hasProperty("curseForgeApiKey")? project.curseForgeApiKey : "empty"
     
     project {
-        id = "250836"
+        id = "???"
         changelog = file("CHANGELOG.md")
         changelogType = "markdown"
         releaseType = getVersionType()
