@@ -1,0 +1,7 @@
+{
+    "parent": "block/pane_side_alt",
+    "textures": {
+        "edge": "spaceextended:blocks/vitallium_glass_pane_top",
+        "pane": "spaceextended:blocks/vitallium_glass"
+    }
+}

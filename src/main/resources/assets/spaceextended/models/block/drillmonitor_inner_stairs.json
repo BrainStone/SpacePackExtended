@@ -1,0 +1,44 @@
+{
+"__comment": "Designed by Norzeteus with BDcraft Cubik PRO 0.93 Beta - http://bdcraft.net",
+"textures": {
+    "particle": "spaceextended:blocks/stairs/birch-inner-stairs-front",
+    "birch-inner-stairs-top": "spaceextended:blocks/stairs/birch-inner-stairs-top",
+    "texture": "spaceextended:blocks/stairs/birch-inner-stairs-front",
+    "birch-inner-stairs-back": "spaceextended:blocks/stairs/birch-inner-stairs-back"
+},
+"elements": [ 
+{
+    "from": [ 0, 0, 0 ],
+    "to": [ 16, 1, 16 ],
+    "faces": {
+        "down":  { "uv": [ 15.9375, 15.9375, 0, 0 ], "texture": "#birch-inner-stairs-top" },
+        "up":    { "uv": [ 0, 0, 15.9375, 15.9375 ], "texture": "#birch-inner-stairs-top" },
+        "north": { "uv": [ 0, 15, 15.9375, 15.9375 ], "texture": "#texture" },
+        "south": { "uv": [ 0, 15, 15.9375, 15.9375 ], "texture": "#texture" },
+        "west":  { "uv": [ 0, 15, 15.9375, 15.9375 ], "texture": "#texture" },
+        "east":  { "uv": [ 0, 15, 15.9375, 15.9375 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 3, 1, 6.5 ],
+    "to": [ 13, 11, 11.5 ],
+    "faces": {
+        "up":    { "uv": [ 3, 6.375, 12.9375, 11.3125 ], "texture": "#birch-inner-stairs-top" },
+        "north": { "uv": [ 3, 5, 12.9375, 14.9375 ], "texture": "#texture" },
+        "south": { "uv": [ 3, 5, 12.9375, 14.9375 ], "texture": "#birch-inner-stairs-back" },
+        "west":  { "uv": [ 3.125, 5.125, 8.0625, 15.0625 ], "texture": "#birch-inner-stairs-back" },
+        "east":  { "uv": [ 3.125, 5.125, 8.0625, 15.0625 ], "texture": "#birch-inner-stairs-back" }
+    }
+},
+{
+    "from": [ 3, 1, 3.5 ],
+    "to": [ 13, 3.875, 6.5 ],
+    "faces": {
+        "up":    { "uv": [ 3, 3.375, 12.9375, 6.3125 ], "texture": "#birch-inner-stairs-top" },
+        "north": { "uv": [ 3, 11.75, 12.9375, 14.9375 ], "texture": "#texture" },
+        "west":  { "uv": [ 8.375, 11.75, 11.3125, 14.9375 ], "texture": "#birch-inner-stairs-back" },
+        "east":  { "uv": [ 4.625, 11.75, 7.5625, 14.9375 ], "texture": "#birch-inner-stairs-back" }
+    }
+}
+]
+}

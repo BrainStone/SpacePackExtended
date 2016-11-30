@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "spaceextended:analyser", "y": 90 },
+        "facing=south": { "model": "spaceextended:analyser" , "y": 270},
+        "facing=west":  { "model": "spaceextended:analyser" },
+        "facing=east":  { "model": "spaceextended:analyser" , "y": 180}
+    }
+}

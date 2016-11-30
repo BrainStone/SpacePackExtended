@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "spaceextended:solar_panel", "y": 90 },
+        "facing=south": { "model": "spaceextended:solar_panel" , "y": 270},
+        "facing=west":  { "model": "spaceextended:solar_panel" },
+        "facing=east":  { "model": "spaceextended:solar_panel" , "y": 180}
+    }
+}

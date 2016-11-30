@@ -1,0 +1,66 @@
+{
+"__comment": "Designed by Norzeteus with BDcraft Cubik PRO 0.95 Beta - http://bdcraft.net",
+"textures": {
+    "particle": "spaceextended:blocks/stairs/dark-oak-upper-stairs",
+    "2": "spaceextended:blocks/stairs/2",
+    "texture": "spaceextended:blocks/stairs/dark-oak-upper-stairs"
+},
+"elements": [ 
+{
+    "from": [ 14.5, 4.25, 0 ],
+    "to": [ 16, 14.25, 1.875 ],
+    "faces": {
+        "down":  { "uv": [ 8.6865, 6.0615, 7.251, 4.251 ], "texture": "#2" },
+        "up":    { "uv": [ 7.251, 5.001, 8.6865, 6.8115 ], "texture": "#2" },
+        "north": { "uv": [ 14.376, 1.751, 15.8115, 11.6865 ], "texture": "#texture" },
+        "south": { "uv": [ 14.376, 1.751, 15.8115, 11.6865 ], "texture": "#texture" },
+        "west":  { "uv": [ 14.126, 1.751, 15.9365, 11.6865 ], "texture": "#texture" },
+        "east":  { "uv": [ 14.126, 1.751, 15.9365, 11.6865 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 14.5, 4.25, 14.125 ],
+    "to": [ 16, 14.25, 16 ],
+    "faces": {
+        "down":  { "uv": [ 8.6865, 12.5615, 7.251, 10.751 ], "texture": "#2" },
+        "up":    { "uv": [ 7.251, 10.501, 8.6865, 12.3115 ], "texture": "#2" },
+        "north": { "uv": [ 14.376, 1.751, 15.8115, 11.6865 ], "texture": "#texture" },
+        "south": { "uv": [ 14.376, 1.751, 15.8115, 11.6865 ], "texture": "#texture" },
+        "west":  { "uv": [ 0.001, 1.751, 1.8115, 11.6865 ], "texture": "#texture" },
+        "east":  { "uv": [ 14.126, 1.751, 15.9365, 11.6865 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 14.75, 13.25, 1.875 ],
+    "to": [ 15.75, 14, 14.125 ],
+    "faces": {
+        "down":  { "uv": [ 14.752, 1.877, 15.748, 14.123 ], "texture": "#2" },
+        "up":    { "uv": [ 14.752, 1.877, 15.748, 14.123 ], "texture": "#2" },
+        "north": { "uv": [ 14.752, 2.002, 15.748, 2.748 ], "texture": "#texture" },
+        "south": { "uv": [ 14.752, 2.002, 15.748, 2.748 ], "texture": "#texture" },
+        "west":  { "uv": [ 1.877, 2.002, 14.123, 2.748 ], "texture": "#texture" },
+        "east":  { "uv": [ 1.877, 2.002, 14.123, 2.748 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 14.75, 4.375, 1.875 ],
+    "to": [ 15.75, 5.125, 14.125 ],
+    "faces": {
+        "down":  { "uv": [ 14.752, 1.877, 15.748, 14.123 ], "texture": "#2" },
+        "up":    { "uv": [ 14.752, 1.877, 15.748, 14.123 ], "texture": "#2" },
+        "north": { "uv": [ 14.752, 10.877, 15.748, 11.623 ], "texture": "#texture" },
+        "south": { "uv": [ 14.752, 10.877, 15.748, 11.623 ], "texture": "#texture" },
+        "west":  { "uv": [ 1.877, 10.627, 14.123, 11.373 ], "texture": "#texture" },
+        "east":  { "uv": [ 1.877, 10.627, 14.123, 11.373 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 15.25, 5.125, 1.875 ],
+    "to": [ 15.3125, 13.25, 14.125 ],
+    "faces": {
+        "west":  { "uv": [ 1.877, 2.752, 14.123, 10.873 ], "texture": "#texture" },
+        "east":  { "uv": [ 1.877, 2.752, 14.123, 10.873 ], "texture": "#texture" }
+    }
+}
+]
+}

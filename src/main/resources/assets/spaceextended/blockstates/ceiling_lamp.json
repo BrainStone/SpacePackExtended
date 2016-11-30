@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "spaceextended:ceiling_lamp" },
+        "facing=south": { "model": "spaceextended:ceiling_lamp", "y": 180 },
+        "facing=west":  { "model": "spaceextended:ceiling_lamp", "y": 270 },
+        "facing=east":  { "model": "spaceextended:ceiling_lamp", "y": 90 }
+    }
+}

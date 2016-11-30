@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y":  { "model": "spaceextended:block_space_quartz" },
+        "axis=z":   { "model": "spaceextended:block_space_quartz", "x": 90 },
+        "axis=x":   { "model": "spaceextended:block_space_quartz", "x": 90, "y": 90 }
+    }
+}
+

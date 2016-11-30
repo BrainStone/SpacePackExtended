@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "spaceextended:blocks/klingopar_top",
+        "side": "spaceextended:blocks/klingopar"
+    }
+}

@@ -1,0 +1,46 @@
+{
+"__comment": "Designed by Norzeteus with BDcraft Cubik PRO 0.95 Beta - http://bdcraft.net",
+"textures": {
+    "particle": "spaceextended:blocks/stairs/110",
+    "155": "spaceextended:blocks/random/155",
+    "texture": "spaceextended:blocks/stairs/110"
+},
+"elements": [ 
+{
+    "from": [ 12, 2.25, 12 ],
+    "to": [ 16, 14.125, 16 ],
+    "faces": {
+        "down":  { "uv": [ 12.001, 11.251, 15.999, 15.249 ], "texture": "#155" },
+        "up":    { "uv": [ 12.001, 11.251, 15.999, 15.249 ], "texture": "#155" },
+        "north": { "uv": [ 12.001, 1.876, 15.999, 13.749 ], "texture": "#texture" },
+        "south": { "uv": [ 12.001, 1.876, 15.999, 13.749 ], "texture": "#texture" },
+        "west":  { "uv": [ 12.001, 1.876, 15.999, 13.749 ], "texture": "#texture" },
+        "east":  { "uv": [ 12.001, 1.876, 15.999, 13.749 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 15.5, 4, 16 ],
+    "to": [ 16, 12, 17.5 ],
+    "faces": {
+        "down":  { "uv": [ 0.751, 7.126, 1.249, 8.624 ], "texture": "#texture" },
+        "up":    { "uv": [ 0.626, 6.626, 1.124, 8.124 ], "texture": "#texture" },
+        "north": { "uv": [ 0.001, 4.001, 0.499, 11.999 ], "texture": "#texture" },
+        "south": { "uv": [ 0.001, 3.876, 0.499, 11.874 ], "texture": "#texture" },
+        "west":  { "uv": [ 0.126, 4.001, 1.624, 11.999 ], "texture": "#texture" },
+        "east":  { "uv": [ 0.126, 4.001, 1.624, 11.999 ], "texture": "#texture" }
+    }
+},
+{
+    "from": [ 16, 4, 15.5 ],
+    "to": [ 17.5, 12, 16 ],
+    "faces": {
+        "down":  { "uv": [ 1.624, 7.749, 0.126, 7.251 ], "texture": "#texture" },
+        "up":    { "uv": [ 0.001, 7.626, 1.499, 8.124 ], "texture": "#texture" },
+        "north": { "uv": [ 0.126, 4.001, 1.624, 11.999 ], "texture": "#texture" },
+        "south": { "uv": [ 0.126, 4.001, 1.624, 11.999 ], "texture": "#texture" },
+        "west":  { "uv": [ 0.001, 4.001, 0.499, 11.999 ], "texture": "#texture" },
+        "east":  { "uv": [ 0.001, 4.001, 0.499, 11.999 ], "texture": "#texture" }
+    }
+}
+]
+}

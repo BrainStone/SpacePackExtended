@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "spaceextended:blocks/planks_vitalliumstairs",
+        "top": "spaceextended:blocks/planks_vitalliumstairs",
+        "side": "spaceextended:blocks/planks_vitalliumstairs"
+    }
+}

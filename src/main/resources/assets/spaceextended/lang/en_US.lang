@@ -1,0 +1,145 @@
+/*Blocks*/
+tile.vitallium.name=§5Vitallium§r
+tile.vitalliumOre.name=§5Vitallium Ore§r
+tile.metalframeblock.name=§5Metal Frame Block§r
+tile.klingonium.name=§5Klingonium§r
+tile.klingoniumOre.name=§5Klingonium Ore§r
+tile.constructor1.name=§5Constructor1§r
+tile.constructor2.name=§5Constructor2§r
+tile.constructor3.name=§5Constructor3§r
+tile.constructor4.name=§5Constructor4§r
+tile.constructor5.name=§5Constructor5§r
+tile.strontenium.name=§5Strontenium§r
+tile.strontenium0.name=§5Strontenium Bottom§r
+tile.strontenium1.name=§5Strontenium Middle§r
+tile.strontenium2.name=§5Strontenium Top§r
+tile.stronteniumOre.name=§5Strontenium Ore§r
+tile.klingonium0.name=§5Klingonium0§r
+tile.klingonium1.name=§5Klingonium1§r
+tile.klingonium2.name=§5Klingonium2§r
+tile.klingonium3.name=§5Klingonium3§r
+tile.klingonium_wall0.name=§5Klingonium Wall LL§r
+tile.klingonium_wall1.name=§5Klingonium Wall LM§r
+tile.klingonium_wall2.name=§5Klingonium Wall LR§r
+tile.klingonium_wall3.name=§5Klingonium Wall M§r
+tile.klingonium_wall5.name=§5Klingonium Wall MR§r
+tile.klingonium_wall4.name=§5Klingonium Wall ML§r
+tile.klingonium_wall6.name=§5Klingonium Wall UL§r
+tile.klingonium_wall7.name=§5Klingonium Wall UM§r
+tile.klingonium_wall8.name=§5Klingonium Wall UR§r
+tile.klingonium_screw.name=§5Klingonium Screw§r
+tile.perolit.name=§5Perolit§r
+tile.perolitOre.name=§5Perolit Ore§r
+tile.klingonit.name=§5Klingonit§r
+tile.pipes_connector.name=§5Pipes Connector§r
+tile.klingodur.name=§5Klingodur§r
+tile.strontenita.name=§5Strontenit A§r
+tile.strontenitb.name=§5Strontenit B§r
+tile.strontenitc.name=§5Strontenit C§r
+tile.strontenitd.name=§5Strontenit D§r
+tile.strontenal.name=§5Strontenal §r
+tile.oxygen.name=§5Oxygen Block§r
+tile.perola.name=§5Perol A§r
+tile.perolb.name=§5Perol B§r
+tile.perolc.name=§5Perol C§r
+tile.perold.name=§5Perol D§r
+tile.table.name=§5Table§r
+tile.strontenal.name=§5Strontenal§r
+tile.strontopal.name=§5Strontopal§r
+tile.strontopala.name=§5Strontopal A§r
+tile.strontopalb.name=§5Strontopal B§r
+tile.lux.name=§5Blue Lamp§r
+tile.ceiling_lamp.name=§5Ceiling Lamp§r
+tile.speedway.name=§5Speedway§r
+tile.klingopar.name=§5Klingopar§r
+tile.microscope.name=§5Microscope/Periscope§r
+tile.tresor.name=§5Save§r
+tile.strontecore.name=§5Strontecore§r
+tile.cyberit_Ore.name=§5Cyberit Ore§r
+tile.vitallium_glass.name=§5Vitallium Glass§r
+tile.vitallium_glass_pane.name=§5Vitallium Glass Pane§r
+tile.cyberit.name=§5Cyberit§r
+tile.cyberit_fire.name=§5Cyberit Fire§r
+tile.analyser.name=§5Analyser§r
+tile.virtual_screen.name=§5Virtual Screen§r
+tile.ferrolit.name=§5Ferrolit§r
+tile.strontenium_glass.name=§5Strontenium Glass§r
+tile.strontenium_glass_pane.name=§5Strontenium Glass Pane§r
+tile.block_space_quartz.name=§5Space Quartz§r
+tile.block_space_quartza.name=§5Space Quartz A§r
+tile.block_space_quartz_mfblock.name=§5Space Quartz MFBlock§r
+tile.space_quartz_ore.name=§5Space Quartz Ore§r
+tile.solar_panel.name=§5Solar panel§r
+tile.satellite_antenna.name=§5Satellite Antenna§r
+tile.light_box.name=§5Limiting Light§r
+tile.quartz_window.name=§5Quartz Window§r
+tile.quartz_window_pane.name=§5Quartz Window Pane§r
+tile.block_engine.name=§5Rocket Engine§r
+tile.block_cyberol.name=§5Cyberol§r
+
+
+
+
+/*Stairs*/
+tile.chairmonitorstairs.name=§5Chair/Monitor§r
+tile.drillmonitor.name=§5Drill/Monitor§r
+tile.pcdeskammo.name=§5Pcdesk/Ammo§r
+tile.vitalliumstairs.name=§5Vitalliumstairs§r
+tile.metalframestairs.name=§5Metal Frame Stairs§r
+tile.lamp_stairs.name=§5Lamp§r
+tile.strontenium_stairs.name=§5Strontenium Stairs§r
+tile.strontenium_stairs1.name=§5Strontenium Stairs Straight/Top§r
+tile.metal1_stairs.name=§5Metal1 Stairs§r
+tile.officechair_stairs.name=§5Office Chair/Panel§r
+tile.klingonium_stairs.name=§5Klingonium Stairs§r
+tile.klingonium_pipes_stairs.name=§5Klingonium Construct/Console§r
+tile.roof_stairs.name=§5Roof§r
+tile.consoles_stairs.name=§5Consoles NSWE/Panel Cross§r
+tile.pipes_stairs.name=§5Pipes§r
+tile.pipesa_stairs.name=§5Pipes A§r
+tile.pipesc_stairs.name=§5Pipes C§r
+tile.pipesb_stairs.name=§5Pipes B§r
+tile.spaceship_control.name=§5Spaceship Control§r
+tile.spaceman_seat.name=§5Spaceman Seat/Construct§r
+tile.laboratory_bench.name=§5Laboratory Bench/Shelf§r
+tile.ferrolit.name=§5Ferrolit§r
+tile.block_space_quartzb.name=§5Space Quartz B§r
+tile.block_space_quartzc.name=§5Space Quartz C§r
+tile.block_space_quartzd.name=§5Space Quartz D§r
+tile.block_space_quartzt.name=§5Space Quartz T§r
+tile.space_quartz_stair.name=§5Space Quartz Stair§r
+tile.space_quartz_metalframe.name=§5Space Quartz Stair MF§r
+
+
+/*Items*/
+item.vitalliumIngot.name=§5Vitallium Ingot§r
+item.klingoniumShard.name=§5Klingonium Shard§r
+item.stronteniumIngot.name=§5Strontenium Ingot§r
+item.perolit_sphere.name=§5Perolit Sphere§r
+item.kit1.name=§5Kit1§r
+item.kit2.name=§5Kit2§r
+item.kit3.name=§5Kit3§r
+item.kit4.name=§5Kit4§r
+item.kit5.name=§5Kit5§r
+item.grenade.name=§5Grenade§r
+item.reserves.name=§5Reserves Backpack§r
+item.cyberit_gem.name=§5Cyberit Gem§r
+item.cyberit_beetle.name=§5Cyberit Beetle§r
+item.ferropal.name=§5Ferropal§r
+item.quartz_component.name=§5Quartz Component§r
+
+item.vitallium_helmet.name=§5Vitallium Helmet§r
+item.vitallium_chestplate.name=§5Vitallium Chestplate§r
+item.vitallium_leggings.name=§5Vitallium Leggings§r
+item.vitallium_boots.name=§5Vitallium Boots§r
+item.flamethrower.name=§5Flamethrower§r
+
+entity.spaceextended.Beetle.name=§5Scorpiolyth§r
+
+
+itemGroup.spacetab=§5Space Tab§r
+itemGroup.stairstab=§5Modified Stairs§r
+itemGroup.armortab=§5Armor Tab§r
+
+
+

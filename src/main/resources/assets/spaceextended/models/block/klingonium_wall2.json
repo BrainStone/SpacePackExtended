@@ -1,0 +1,55 @@
+{
+"__comment": "Designed by Norzeteus with BDcraft Cubik PRO 0.96 Beta - http://bdcraft.net",
+
+"textures": {
+    "particle": "spaceextended:blocks/klingonium_top",
+    "texture": "spaceextended:blocks/klingonium_wall0",
+    "klingonium_wall2": "spaceextended:blocks/klingonium_wall2"
+},
+"elements": [ 
+{
+    "from": [ 0, 0, 0 ],
+    "to": [ 16, 16, 16 ],
+    "faces": {
+        "down":  { "uv": [ 16, 16, 0, 0 ], "texture": "#particle" },
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#particle" },
+        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#klingonium_wall2" },
+        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#klingonium_wall2" },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+    }
+}
+],
+	"display": {
+    "thirdperson_righthand": {
+        "rotation": [ 75, 45, 0 ],
+        "translation": [ 0, 2.5, 0 ],
+        "scale": [ 0.375, 0.375, 0.375 ]
+    },
+    "thirdperson_lefthand": {
+        "rotation": [ 75, -146, 0 ],
+        "translation": [ 0, 2.5, 0 ],
+        "scale": [ 0.37, 0.37, 0.37 ]
+    },
+    "firstperson_righthand": {
+        "rotation": [ 0, 45, 0 ],
+        "translation": [ 0, 0, 0 ],
+        "scale": [ 0.4, 0.4, 0.4 ]
+    },
+    "firstperson_lefthand": {
+        "rotation": [ 0, 225, 0 ],
+        "translation": [ 0, 0, 0 ],
+        "scale": [ 0.4, 0.4, 0.4 ]
+    },
+    "gui": {
+        "rotation": [ 30, 130, 0 ],
+        "translation": [ 0, 0, 0 ],
+        "scale": [ 0.62, 0.62, 0.62 ]
+	},
+    "ground": {
+        "rotation": [ 0, 0, 0 ],
+        "translation": [ 0, 3, 0 ],
+        "scale": [ 0.25, 0.25, 0.25 ]
+    }
+}
+}

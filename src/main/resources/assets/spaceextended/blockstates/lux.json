@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "spaceextended:lux" },
+        "facing=south": { "model": "spaceextended:lux", "y": 180 },
+        "facing=west":  { "model": "spaceextended:lux", "y": 270 },
+        "facing=east":  { "model": "spaceextended:lux", "y": 90 }
+    }
+}

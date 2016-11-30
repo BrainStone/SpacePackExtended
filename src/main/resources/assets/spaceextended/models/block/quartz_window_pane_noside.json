@@ -1,0 +1,6 @@
+{
+    "parent": "block/pane_noside",
+    "textures": {
+        "pane": "spaceextended:blocks/quartz_window"
+    }
+}

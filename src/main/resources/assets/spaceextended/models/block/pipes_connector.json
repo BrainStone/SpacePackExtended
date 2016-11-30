@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "spaceextended:blocks/pipes_connector_top",
+        "side": "spaceextended:blocks/pipes_connector"
+    }
+}

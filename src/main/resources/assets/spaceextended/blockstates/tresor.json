@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "spaceextended:tresor" },
+        "facing=south": { "model": "spaceextended:tresor", "y": 180 },
+        "facing=west":  { "model": "spaceextended:tresor", "y": 270 },
+        "facing=east":  { "model": "spaceextended:tresor", "y": 90 }
+    }
+}
