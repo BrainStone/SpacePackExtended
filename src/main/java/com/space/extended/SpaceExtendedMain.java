@@ -2,8 +2,6 @@ package com.space.extended;
 
 import com.space.extended.basicblocks.BasicBlocks;
 import com.space.extended.basicstairs.BasicStairs;
-
-import com.space.extended.entity.render.RenderBeetle;
 import com.space.extended.items.BasicItems;
 import com.space.extended.mob.EntityBeetle;
 import com.space.extended.mob.EntityMobBeetle;
@@ -12,14 +10,8 @@ import com.space.extended.spaceTab.SpaceTab;
 import com.space.extended.tileentity.TileEntityTresor;
 import com.space.extended.world.BasicWorldgenerater;
 
-import net.minecraft.client.renderer.entity.Render;
-import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraftforge.common.BiomeManager;
-import net.minecraftforge.common.BiomeManager.BiomeEntry;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.client.registry.IRenderFactory;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -69,7 +61,6 @@ public class SpaceExtendedMain {
 
 		PROXY.registerRenderer();
 
-		
 		entity = new SpaceextendedEntity();
 
 		EntityBeetle.createEntity(EntityMobBeetle.class, "Beetle");

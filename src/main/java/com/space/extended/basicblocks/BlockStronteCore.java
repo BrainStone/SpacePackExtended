@@ -5,19 +5,11 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
 public class BlockStronteCore extends Block {
-
 	public BlockStronteCore() {
-
 		super(Material.IRON);
 		setHardness(2F);
 		setResistance(5F);
 		setHarvestLevel("axe", 2);
-
+		setSoundType(SoundType.METAL);
 	}
-
-	private void setStepSound(SoundType metal) {
-		setStepSound(SoundType.METAL);
-
-	}
-
 }

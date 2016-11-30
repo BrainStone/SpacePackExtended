@@ -9,29 +9,21 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
 public class BlockRoof_Stairs extends BlockStairs {
-
 	public BlockRoof_Stairs() {
 		super(Blocks.IRON_BLOCK.getStateFromMeta(0));
 		setHardness(2F);
 		setResistance(5F);
-		this.setLightOpacity(1);
+		setLightOpacity(1);
 		setHarvestLevel("axe", 1);
-
+		setSoundType(SoundType.METAL);
 	}
 
-	private void setStepSound(SoundType metal) {
-		setStepSound(SoundType.METAL);
-
-	}
-
-	public boolean isOpaqueCube() {
-		return false;
-	}
-
+	@Override
 	public boolean isFullCube(IBlockState state) {
 		return false;
 	}
 
+	@Override
 	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
 		return state.isOpaqueCube();
 	}

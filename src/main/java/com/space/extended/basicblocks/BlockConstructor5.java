@@ -16,29 +16,21 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockConstructor5 extends Block {
-
 	public BlockConstructor5() {
-
 		super(Material.IRON);
 		setHardness(2F);
 		setResistance(5F);
 		setHarvestLevel("pickaxe", 2);
 		setLightLevel(0.6F);
+		setSoundType(SoundType.METAL);
 	}
 
-	private void setStepSound(SoundType metal) {
-		setStepSound(SoundType.METAL);
-
-	}
-
-	public boolean isOpaqueCube() {
-		return false;
-	}
-
+	@Override
 	public boolean isFullCube(IBlockState state) {
 		return true;
 	}
 
+	@Override
 	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
 		return false;
 	}
@@ -46,20 +38,17 @@ public class BlockConstructor5 extends Block {
 	@Override
 	public int getExpDrop(IBlockState state, IBlockAccess world, BlockPos pos, int fortune) {
 		Random rand = world instanceof World ? ((World) world).rand : new Random();
-		return MathHelper.getRandomIntegerInRange(rand, 1, 3);
 
+		return MathHelper.getInt(rand, 1, 3);
 	}
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-
 		return BasicItems.kit5;
 	}
 
 	@Override
 	public int quantityDropped(Random random) {
-
 		return 1;
 	}
-
 }

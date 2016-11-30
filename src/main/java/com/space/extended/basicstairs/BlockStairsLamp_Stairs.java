@@ -11,30 +11,21 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockStairsLamp_Stairs extends BlockStairs {
-
 	public BlockStairsLamp_Stairs() {
-
 		super(Blocks.IRON_BLOCK.getStateFromMeta(0));
 		setHardness(2F);
 		setResistance(5F);
 		setHarvestLevel("axe", 2);
 		setLightLevel(1.0F);
-
+		setSoundType(SoundType.METAL);
 	}
 
-	private void setStepSound(SoundType metal) {
-		setStepSound(SoundType.METAL);
-
-	}
-
-	public boolean isOpaqueCube() {
-		return false;
-	}
-
+	@Override
 	public boolean isFullCube(IBlockState state) {
 		return false;
 	}
 
+	@Override
 	@SideOnly(Side.CLIENT)
 	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
 		return false;

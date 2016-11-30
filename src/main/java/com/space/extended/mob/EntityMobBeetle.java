@@ -25,58 +25,59 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class EntityMobBeetle extends EntityMob {
 
 	public EntityMobBeetle(World world) {
 		super(world);
-		this.setSize(1.4F, 0.9F);
+		setSize(1.4F, 0.9F);
 
-		this.isImmuneToFire = true;
-		this.tasks.addTask(1, new EntityAISwimming(this));
-		this.tasks.addTask(2, new EntityAILeapAtTarget(this, 0.4F));
-		this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityPlayer.class, true));
-		this.tasks.addTask(4, new EntityAIWander(this, 0.6D));
-		this.tasks.addTask(5, new EntityAIWatchClosest(this, EntityPlayer.class, 8.0F));
-		this.tasks.addTask(6, new EntityAILookIdle(this));
-		this.targetTasks.addTask(7, new EntityAIHurtByTarget(this, false));
-		this.tasks.addTask(8, new EntityAIAttackMelee(this, 1.0D, false));
-		this.targetTasks.addTask(9, new EntityAINearestAttackableTarget(this, EntityGuardian.class, true));
-		this.targetTasks.addTask(10, new EntityAINearestAttackableTarget(this, EntityZombie.class, true));
-		this.targetTasks.addTask(11, new EntityAINearestAttackableTarget(this, EntitySpider.class, true));
-		this.targetTasks.addTask(12, new EntityAINearestAttackableTarget(this, EntitySkeleton.class, true));
+		isImmuneToFire = true;
+		tasks.addTask(1, new EntityAISwimming(this));
+		tasks.addTask(2, new EntityAILeapAtTarget(this, 0.4F));
+		targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityPlayer.class, true));
+		tasks.addTask(4, new EntityAIWander(this, 0.6D));
+		tasks.addTask(5, new EntityAIWatchClosest(this, EntityPlayer.class, 8.0F));
+		tasks.addTask(6, new EntityAILookIdle(this));
+		targetTasks.addTask(7, new EntityAIHurtByTarget(this, false));
+		tasks.addTask(8, new EntityAIAttackMelee(this, 1.0D, false));
+		targetTasks.addTask(9, new EntityAINearestAttackableTarget(this, EntityGuardian.class, true));
+		targetTasks.addTask(10, new EntityAINearestAttackableTarget(this, EntityZombie.class, true));
+		targetTasks.addTask(11, new EntityAINearestAttackableTarget(this, EntitySpider.class, true));
+		targetTasks.addTask(12, new EntityAINearestAttackableTarget(this, EntitySkeleton.class, true));
 
 	}
 
+	@Override
 	protected int getExperiencePoints(EntityPlayer player) {
-		return 2 + this.worldObj.rand.nextInt(3);
+		return 2 + worldObj.rand.nextInt(3);
 	}
 
+	@Override
 	protected void applyEntityAttributes() {
 		super.applyEntityAttributes();
-		this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(40.0D);
-		this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.5f);
-		this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(6.0D);
-		this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(16.0D);
+		getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(40.0D);
+		getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.5f);
+		getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(6.0D);
+		getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(16.0D);
 	}
 
+	@Override
 	protected SoundEvent getDeathSound() {
 		return SpaceextendedSoundEvents.ENTITY_MOBBEETLE_DEATH;
 
 	}
+
+	@Override
 	protected SoundEvent getAmbientSound() {
 		return SpaceextendedSoundEvents.ENTITY_MOBBEETLE_AMBIENT;
 
 	}
-	
-	
-	
-	 protected void playStepSound(BlockPos pos, Block blockIn)
-	    {
-	        this.playSound(SoundEvents.ENTITY_SPIDER_STEP, 0.15F, 1.0F);
-	    }
+
+	@Override
+	protected void playStepSound(BlockPos pos, Block blockIn) {
+		playSound(SoundEvents.ENTITY_SPIDER_STEP, 0.15F, 1.0F);
+	}
 
 	@Override
 	protected Item getDropItem() {

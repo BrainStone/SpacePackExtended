@@ -3,7 +3,6 @@ package com.space.extended.items;
 import com.space.extended.SpaceExtendedMain;
 import com.space.extended.gui.InventoryReserves;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

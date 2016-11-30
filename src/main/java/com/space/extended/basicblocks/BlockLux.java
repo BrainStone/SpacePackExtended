@@ -19,16 +19,16 @@ public class BlockLux extends Block {
 	public BlockLux() {
 
 		super(Material.GLASS);
-		this.setHardness(2F);
-		this.setResistance(5F);
+		setHardness(2F);
+		setResistance(5F);
 		this.setHarvestLevel("axe", 2);
-		this.setLightLevel(1F);
-		this.setLightOpacity(130);
-		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+		setLightLevel(1F);
+		setLightOpacity(130);
+		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 
 	public IBlockState getStateForEntityRender(IBlockState state) {
-		return this.getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
+		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
 	}
 
 	@Override
@@ -38,12 +38,12 @@ public class BlockLux extends Block {
 		if (enumFacing.getAxis() == EnumFacing.Axis.Y) {
 			enumFacing = EnumFacing.NORTH;
 		}
-		return this.getDefaultState().withProperty(FACING, enumFacing);
+		return getDefaultState().withProperty(FACING, enumFacing);
 	}
 
 	@Override
 	public int getMetaFromState(IBlockState state) {
-		return ((EnumFacing) state.getValue(FACING)).getIndex();
+		return state.getValue(FACING).getIndex();
 	}
 
 	@Override
@@ -54,17 +54,19 @@ public class BlockLux extends Block {
 	@Override
 	public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ,
 			int meta, EntityLivingBase placer) {
-		return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
+		return getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
 	}
 
 	public boolean isOpaqueCube() {
 		return false;
 	}
 
+	@Override
 	public boolean isFullCube(IBlockState state) {
 		return false;
 	}
 
+	@Override
 	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
 		return false;
 	}

@@ -16,8 +16,8 @@ public class GuiTresor extends GuiContainer {
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
 		mc.renderEngine.bindTexture(BACKGROUND);
-		int k = (this.width - this.xSize) / 2;
-		int l = (this.height - this.ySize) / 2;
+		int k = (width - xSize) / 2;
+		int l = (height - ySize) / 2;
 		drawTexturedModalRect(k, l, 0, 0, xSize, ySize);
 
 	}

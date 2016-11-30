@@ -2,16 +2,10 @@ package com.space.extended.mob;
 
 import com.space.extended.SpaceExtendedMain;
 
-
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.init.Biomes;
 import net.minecraftforge.common.DungeonHooks;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-
-
-
 
 public class EntityBeetle {
 
@@ -27,11 +21,3 @@ public class EntityBeetle {
 	}
 
 }
-
-		
-	
-		
-		
-	
-
-

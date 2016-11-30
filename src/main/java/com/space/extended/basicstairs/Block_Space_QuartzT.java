@@ -10,36 +10,24 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class Block_Space_QuartzT extends BlockStairs{
-
+public class Block_Space_QuartzT extends BlockStairs {
 	protected Block_Space_QuartzT() {
-		
-			super(Blocks.STONE_STAIRS.getStateFromMeta(0));
-			setHardness(2F);
-			setResistance(2F);
-			setHarvestLevel("axe", 1);
-			this.setLightOpacity(1);
-		}
-
-		private void setStepSound(SoundType stone) {
-			setStepSound(SoundType.STONE);
-
-		}
-
-		public boolean isOpaqueCube() {
-			return false;
-		}
-
-		public boolean isFullCube(IBlockState state) {
-			return false;
-		}
-
-		@SideOnly(Side.CLIENT)
-		public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
-			return false;
-		}
+		super(Blocks.STONE_STAIRS.getStateFromMeta(0));
+		setHardness(2F);
+		setResistance(2F);
+		setHarvestLevel("axe", 1);
+		setLightOpacity(1);
+		setSoundType(SoundType.STONE);
 	}
-	
-	
 
+	@Override
+	public boolean isFullCube(IBlockState state) {
+		return false;
+	}
 
+	@Override
+	@SideOnly(Side.CLIENT)
+	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
+		return false;
+	}
+}

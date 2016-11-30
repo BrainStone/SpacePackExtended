@@ -1,12 +1,10 @@
 package com.space.extended.tileentity;
 
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.InventoryBasic;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraftforge.common.util.Constants;
 
 public class TileEntityTresor<OpenInventory> extends TileEntity {
 
@@ -44,7 +42,7 @@ public class TileEntityTresor<OpenInventory> extends TileEntity {
 		for (int i = 0; i < list.tagCount(); i++) {
 			NBTTagCompound tag = list.getCompoundTagAt(i);
 			byte b = tag.getByte("Slot");
-			if (b >= 0 && b < inventory.getSizeInventory()) {
+			if ((b >= 0) && (b < inventory.getSizeInventory())) {
 				inventory.setInventorySlotContents(b, ItemStack.loadItemStackFromNBT(tag));
 			}
 		}

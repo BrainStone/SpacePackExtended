@@ -15,37 +15,29 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockPerolitOre extends Block {
-
 	public BlockPerolitOre() {
 		super(Material.IRON);
-		this.setHardness(2F);
-		this.setResistance(5F);
+		setHardness(2F);
+		setResistance(5F);
 		this.setHarvestLevel("pickaxe", 2);
-		this.setLightLevel(0.6F);
-	}
-
-	private void setStepSound(SoundType metal) {
-		this.setStepSound(SoundType.METAL);
-
+		setLightLevel(0.6F);
+		setSoundType(SoundType.METAL);
 	}
 
 	@Override
 	public int getExpDrop(IBlockState state, IBlockAccess world, BlockPos pos, int fortune) {
 		Random rand = world instanceof World ? ((World) world).rand : new Random();
-		return MathHelper.getRandomIntegerInRange(rand, 2, 4);
 
+		return MathHelper.getInt(rand, 2, 4);
 	}
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-
 		return this == BasicBlocks.perolitOre ? BasicItems.perolit_sphere : (Item.getItemFromBlock(this));
 	}
 
 	@Override
 	public int quantityDropped(Random random) {
-
 		return this == BasicBlocks.perolitOre ? 2 + random.nextInt(3) : 1;
 	}
-
 }

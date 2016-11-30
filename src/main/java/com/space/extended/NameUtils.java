@@ -10,9 +10,8 @@ public class NameUtils {
 			((Block) obj).setRegistryName(name).setUnlocalizedName(name);
 		} else if (obj instanceof Item) {
 			((Item) obj).setRegistryName(name).setUnlocalizedName(name);
-		} else {
+		} else
 			throw new IllegalArgumentException();
-		}
 
 	}
 

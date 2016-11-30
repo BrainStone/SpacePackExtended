@@ -13,25 +13,24 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockLight_Box extends Block{
-	
-	
+public class BlockLight_Box extends Block {
+
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
 	public BlockLight_Box() {
 
 		super(Material.IRON);
-		this.blockSoundType = SoundType.METAL;
-		this.setHardness(2F);
-		this.setResistance(5F);
+		blockSoundType = SoundType.METAL;
+		setHardness(2F);
+		setResistance(5F);
 		this.setHarvestLevel("axe", 2);
-		this.setLightLevel(0.8f);
-		this.setLightOpacity(1);
-		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+		setLightLevel(0.8f);
+		setLightOpacity(1);
+		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 
 	public IBlockState getStateForEntityRender(IBlockState state) {
-		return this.getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
+		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
 	}
 
 	@Override
@@ -41,12 +40,12 @@ public class BlockLight_Box extends Block{
 		if (enumFacing.getAxis() == EnumFacing.Axis.Y) {
 			enumFacing = EnumFacing.NORTH;
 		}
-		return this.getDefaultState().withProperty(FACING, enumFacing);
+		return getDefaultState().withProperty(FACING, enumFacing);
 	}
 
 	@Override
 	public int getMetaFromState(IBlockState state) {
-		return ((EnumFacing) state.getValue(FACING)).getIndex();
+		return state.getValue(FACING).getIndex();
 	}
 
 	@Override
@@ -57,17 +56,19 @@ public class BlockLight_Box extends Block{
 	@Override
 	public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ,
 			int meta, EntityLivingBase placer) {
-		return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
+		return getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
 	}
 
 	public boolean isOpaqueCube() {
 		return false;
 	}
 
+	@Override
 	public boolean isFullCube(IBlockState state) {
 		return false;
 	}
 
+	@Override
 	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
 		return false;
 	}

@@ -4,12 +4,8 @@ import com.space.extended.basicblocks.BasicBlocks;
 import com.space.extended.basicstairs.BasicStairs;
 import com.space.extended.items.BasicItems;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockRedstoneTorch;
-import net.minecraft.block.BlockStairs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -58,14 +54,14 @@ public class BasicCrafting {
 		// 11 Lamp
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.lamp_stairs, 3), new Object[] { " R ", "EEE", " R ", 'E',
 				new ItemStack(BasicItems.kit5), 'R', new ItemStack(Items.REDSTONE) });
-		//  12 Strontenium
+		// 12 Strontenium
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenium, 4),
 				new Object[] { "SSS", "SSS", "SSS", 'S', new ItemStack(BasicItems.stronteniumIngot) });
 
 		// 13 Strontenium0Block
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenium0, 4), new Object[] { " S ", "SAS", " S ",
 				'A', new ItemStack(BasicItems.kit1), 'S', new ItemStack(BasicItems.stronteniumIngot) });
-		//  14 Strontenium1Block
+		// 14 Strontenium1Block
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenium1, 4), new Object[] { " S ", "SBS", " S ",
 				'B', new ItemStack(BasicItems.kit2), 'S', new ItemStack(BasicItems.stronteniumIngot) });
 		// 15 Strontenium2Block
@@ -257,86 +253,87 @@ public class BasicCrafting {
 		// 71 Strontenium_Glass_Pane
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenium_glass_pane, 16),
 				new Object[] { "   ", "VVV", "VVV", 'V', new ItemStack(BasicBlocks.strontenium_glass) });
-		// 72 Consoles_Stairs 
+		// 72 Consoles_Stairs
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.consoles_stairs, 5), new Object[] { "CCC", "   ", "EEE",
-						'C', new ItemStack(BasicItems.kit2), 'E', new ItemStack(BasicItems.kit4) });
+				'C', new ItemStack(BasicItems.kit2), 'E', new ItemStack(BasicItems.kit4) });
 		// 73 SpaceMan_Seat
-		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.spaceman_seat, 5), new Object[] { "C C", " S ", "E E",
-				'C', new ItemStack(BasicItems.kit1), 'E', new ItemStack(BasicItems.kit4), 'S', new ItemStack(BasicItems.stronteniumIngot) });
+		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.spaceman_seat, 5),
+				new Object[] { "C C", " S ", "E E", 'C', new ItemStack(BasicItems.kit1), 'E',
+						new ItemStack(BasicItems.kit4), 'S', new ItemStack(BasicItems.stronteniumIngot) });
 		// 74 KlingoPar
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingopar, 3), new Object[] { " X ", " S ", " S ", 
-				'X', new ItemStack(BasicItems.klingoniumShard), 'S', new ItemStack(BasicItems.stronteniumIngot) });
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingopar, 3), new Object[] { " X ", " S ", " S ", 'X',
+				new ItemStack(BasicItems.klingoniumShard), 'S', new ItemStack(BasicItems.stronteniumIngot) });
 		// 75 Tresor
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.tresor, 1), new Object[] { " X ", "PSP", "PSP", 'P',
-				new ItemStack(Items.IRON_INGOT), 'S', new ItemStack(BasicItems.stronteniumIngot),'X', new ItemStack(BasicItems.vitalliumIngot) });
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.tresor, 1),
+				new Object[] { " X ", "PSP", "PSP", 'P', new ItemStack(Items.IRON_INGOT), 'S',
+						new ItemStack(BasicItems.stronteniumIngot), 'X', new ItemStack(BasicItems.vitalliumIngot) });
 		// 76 StrontenitA
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenita, 6), new Object[] { " X ", "S S", "S S", 
-				'X', new ItemStack(BasicBlocks.stronteniumOre), 'S', new ItemStack(BasicItems.stronteniumIngot) });
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenita, 6), new Object[] { " X ", "S S", "S S", 'X',
+				new ItemStack(BasicBlocks.stronteniumOre), 'S', new ItemStack(BasicItems.stronteniumIngot) });
 		// 77 StrontenitB
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenitb, 6), new Object[] { "XX ", "SS ", "SS ", 
-				'X', new ItemStack(BasicBlocks.stronteniumOre), 'S', new ItemStack(BasicItems.stronteniumIngot) });
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenitb, 6), new Object[] { "XX ", "SS ", "SS ", 'X',
+				new ItemStack(BasicBlocks.stronteniumOre), 'S', new ItemStack(BasicItems.stronteniumIngot) });
 		// 78 StrontenitC
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenitc, 6), new Object[] { "XXX", "S  ", "XXX", 
-				'X', new ItemStack(BasicBlocks.stronteniumOre), 'S', new ItemStack(BasicItems.stronteniumIngot) });
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenitc, 6), new Object[] { "XXX", "S  ", "XXX", 'X',
+				new ItemStack(BasicBlocks.stronteniumOre), 'S', new ItemStack(BasicItems.stronteniumIngot) });
 		// 79 StrontenitD
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenitd, 6), new Object[] { "XXX", " XS", "XXX", 
-				'X', new ItemStack(BasicBlocks.stronteniumOre), 'S', new ItemStack(BasicItems.stronteniumIngot) });
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenitd, 6), new Object[] { "XXX", " XS", "XXX", 'X',
+				new ItemStack(BasicBlocks.stronteniumOre), 'S', new ItemStack(BasicItems.stronteniumIngot) });
 		// 80 Spaceship_Control
-		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.spaceship_control, 5), new Object[] { "C C", " S ", "E E",
-				'C', new ItemStack(BasicStairs.spaceman_seat), 'E', new ItemStack(BasicItems.kit5), 'S', new ItemStack(BasicItems.stronteniumIngot) });
+		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.spaceship_control, 5),
+				new Object[] { "C C", " S ", "E E", 'C', new ItemStack(BasicStairs.spaceman_seat), 'E',
+						new ItemStack(BasicItems.kit5), 'S', new ItemStack(BasicItems.stronteniumIngot) });
 		// 81 Block_Space_Quartz
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.block_space_quartz, 6),
-						new Object[] { "X X", " X ", "X X", 'X', new ItemStack(BasicItems.quartz_component) });
+				new Object[] { "X X", " X ", "X X", 'X', new ItemStack(BasicItems.quartz_component) });
 		// 82 Block_Space_Quartz_A
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.block_space_quartza, 6),
-								new Object[] { "X X", "   ", "X X", 'X', new ItemStack(BasicItems.quartz_component) });
+				new Object[] { "X X", "   ", "X X", 'X', new ItemStack(BasicItems.quartz_component) });
 		// 83 Block_Space_Quartz_MFblock
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.block_space_quartz_mfblock, 8),
-								new Object[] { "XX ", "XX ", "XX ", 'X', new ItemStack(BasicItems.quartz_component) });
+				new Object[] { "XX ", "XX ", "XX ", 'X', new ItemStack(BasicItems.quartz_component) });
 		// 84 Block_Space_Quartz_MetalFrame
-		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.space_quartz_metalframe, 8),
-						new Object[] { "  S", " SQ", "SQQ", 'S', new ItemStack(BasicItems.quartz_component),
-								'Q', new ItemStack(BasicItems.cyberit_gem)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.space_quartz_metalframe, 8), new Object[] { "  S", " SQ",
+				"SQQ", 'S', new ItemStack(BasicItems.quartz_component), 'Q', new ItemStack(BasicItems.cyberit_gem) });
 		// 85 Block_Space_Quartz_B
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.block_space_quartzb, 6),
-										new Object[] { "XXX", "   ", "XXX", 'X', new ItemStack(BasicItems.quartz_component) });
+				new Object[] { "XXX", "   ", "XXX", 'X', new ItemStack(BasicItems.quartz_component) });
 		// 86 Block_Space_Quartz_C
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.block_space_quartzc, 6),
-										new Object[] { "   ", " XX", " X ", 'X', new ItemStack(BasicItems.quartz_component) });		
+				new Object[] { "   ", " XX", " X ", 'X', new ItemStack(BasicItems.quartz_component) });
 		// 87 Block_Space_Quartz_D
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.block_space_quartzd, 6),
-										new Object[] { "X X", "X X", "X X", 'X', new ItemStack(BasicItems.quartz_component) });			
+				new Object[] { "X X", "X X", "X X", 'X', new ItemStack(BasicItems.quartz_component) });
 		// 88 Block_Space_Quartz_T
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.block_space_quartzt, 6),
-										new Object[] { "   ", " X ", "XXX", 'X', new ItemStack(BasicItems.quartz_component) });		
+				new Object[] { "   ", " X ", "XXX", 'X', new ItemStack(BasicItems.quartz_component) });
 		// 89 Block_Space_Quartz_Stair
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.space_quartz_stair, 8),
-									new Object[] { "  X", " XX", "XXX", 'X', new ItemStack(BasicItems.quartz_component) });			
+				new Object[] { "  X", " XX", "XXX", 'X', new ItemStack(BasicItems.quartz_component) });
 		// 90 BlockSolar_Panel
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.solar_panel, 6),
-										new Object[] { "  X", " XG", "XGG", 'X', new ItemStack(BasicItems.quartz_component),
-											'G', new ItemStack(BasicBlocks.vitallium_glass)});		
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.solar_panel, 6), new Object[] { "  X", " XG", "XGG", 'X',
+				new ItemStack(BasicItems.quartz_component), 'G', new ItemStack(BasicBlocks.vitallium_glass) });
 		// 91 BlockSatellite_Antenna
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.satellite_antenna, 8),
-										new Object[] { " X ", "X X", " X ", 'X', new ItemStack(BasicItems.quartz_component) });		
+				new Object[] { " X ", "X X", " X ", 'X', new ItemStack(BasicItems.quartz_component) });
 		// 92 BlockLight_Box(Limiting Light)
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.light_box, 8),
-												new Object[] { "   ", " X ", "X X", 'X', new ItemStack(BasicItems.quartz_component) });	
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.light_box, 8),
+				new Object[] { "   ", " X ", "X X", 'X', new ItemStack(BasicItems.quartz_component) });
 		// 93 Quartz_Window
-		GameRegistry.addShapelessRecipe(new ItemStack(BasicBlocks.quartz_window, 5), Blocks.GLASS,BasicItems.quartz_component);
+		GameRegistry.addShapelessRecipe(new ItemStack(BasicBlocks.quartz_window, 5), Blocks.GLASS,
+				BasicItems.quartz_component);
 
 		// 94 Quartz_Window_Pane
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.quartz_window_pane, 16),
-						             new Object[] { "   ", "VVV", "VVV", 'V', new ItemStack(BasicBlocks.quartz_window) });		
+				new Object[] { "   ", "VVV", "VVV", 'V', new ItemStack(BasicBlocks.quartz_window) });
 		// 95 Block_Engine
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.block_engine, 1),
-			                    new Object[] { "AAA", "B B", "C C", 'A', new ItemStack(BasicItems.quartz_component), 'B',
-								new ItemStack(BasicItems.kit3), 'C', new ItemStack(Blocks.REDSTONE_TORCH) });		
+				new Object[] { "AAA", "B B", "C C", 'A', new ItemStack(BasicItems.quartz_component), 'B',
+						new ItemStack(BasicItems.kit3), 'C', new ItemStack(Blocks.REDSTONE_TORCH) });
 		// 96 Block_Cyberol
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.block_cyberol, 5),
-				new Object[] { "A A", " A ", "A A", 'A', new ItemStack(BasicItems.cyberit_gem)});
-				
-		
+				new Object[] { "A A", " A ", "A A", 'A', new ItemStack(BasicItems.cyberit_gem) });
+
 	}
 
 }

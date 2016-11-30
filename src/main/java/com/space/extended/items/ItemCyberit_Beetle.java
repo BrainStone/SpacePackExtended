@@ -2,21 +2,16 @@ package com.space.extended.items;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.stats.AchievementList;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.EnumActionResult;
-import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
 public class ItemCyberit_Beetle extends ItemFood {
 
 	public ItemCyberit_Beetle() {
 		super(2, 5.5F, false);
-		this.setAlwaysEdible();
+		setAlwaysEdible();
 
 	}
 

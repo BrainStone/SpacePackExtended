@@ -14,8 +14,8 @@ public class SpaceextendedEntity {
 
 	public void register() {
 
-		EntityRegistry.registerModEntity(null, EntityGrenade.class, "grenade", grenade, SpaceExtendedMain.INSTANCE, 64, 1,
-				true);
+		EntityRegistry.registerModEntity(null, EntityGrenade.class, "grenade", grenade, SpaceExtendedMain.INSTANCE, 64,
+				1, true);
 	}
 
 }

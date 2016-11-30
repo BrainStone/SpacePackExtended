@@ -16,15 +16,14 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
-
 import net.minecraft.world.World;
 
 public class ItemFlameThrower extends Item {
 
 	public ItemFlameThrower() {
 
-		this.setMaxStackSize(1);
-		this.setMaxDamage(4000);
+		setMaxStackSize(1);
+		setMaxDamage(4000);
 
 	}
 
@@ -37,16 +36,16 @@ public class ItemFlameThrower extends Item {
 		double z = lookVector.zCoord / 10;
 		Random random = new Random();
 		for (int i = 0; i < 100; i++) {
-			double xCoord = playerIn.posX + x * i + random.nextDouble();
-			double yCoord = playerIn.posY + y * i + random.nextDouble();
-			double zCoord = playerIn.posZ + z * i + random.nextDouble();
+			double xCoord = playerIn.posX + (x * i) + random.nextDouble();
+			double yCoord = playerIn.posY + (y * i) + random.nextDouble();
+			double zCoord = playerIn.posZ + (z * i) + random.nextDouble();
 
 			if (worldIn.isRemote) {
 				worldIn.spawnParticle(EnumParticleTypes.FIREWORKS_SPARK, xCoord, yCoord, zCoord, x * 10, y * 10,
 						z * 10);
 			} else {
 				if (worldIn.isBlockFullCube(new BlockPos(xCoord, yCoord, zCoord))
-						&& worldIn.getBlockState(new BlockPos(xCoord, yCoord + 1, zCoord)).getBlock() == Blocks.AIR) {
+						&& (worldIn.getBlockState(new BlockPos(xCoord, yCoord + 1, zCoord)).getBlock() == Blocks.AIR)) {
 					worldIn.setBlockState(new BlockPos(xCoord, yCoord + 1, zCoord + 1), Blocks.FIRE.getDefaultState());
 				}
 
@@ -61,20 +60,21 @@ public class ItemFlameThrower extends Item {
 			}
 		}
 		for (int i = 0; i < 100; i++) {
-			worldIn.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, playerIn.posX + x * i + random.nextDouble(),
-					playerIn.posY + y * i + random.nextDouble(), playerIn.posZ + z * i + random.nextDouble(), x * 10,
-					y * 10, z * 10);
+			worldIn.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, playerIn.posX + (x * i) + random.nextDouble(),
+					playerIn.posY + (y * i) + random.nextDouble(), playerIn.posZ + (z * i) + random.nextDouble(),
+					x * 10, y * 10, z * 10);
 		}
 
 		worldIn.playSound((EntityPlayer) null, playerIn.posX, playerIn.posY, playerIn.posZ,
 				SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.NEUTRAL, 0.1F,
-				0.3F / (itemRand.nextFloat() * 0.3F + 0.6F));
+				0.3F / ((itemRand.nextFloat() * 0.3F) + 0.6F));
 
 		return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemStackIn);
 	}
 
+	@Override
 	public int getItemEnchantability() {
 		return 1;
 	}
-	
+
 }

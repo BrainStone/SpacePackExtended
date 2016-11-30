@@ -1,9 +1,8 @@
 package com.space.extended.items;
 
-import com.space.extended.SpaceExtendedMain;
 import com.space.extended.NameUtils;
+import com.space.extended.SpaceExtendedMain;
 
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -30,7 +29,6 @@ public class BasicItems {
 	public static Item cyberit_gem;
 	public static Item cyberit_beetle;
 	public static Item quartz_component;
-	
 
 	public static Item vitallium_helmet;
 	public static Item vitallium_chestplate;
@@ -74,10 +72,6 @@ public class BasicItems {
 		NameUtils.setNames(cyberit_beetle, "cyberit_beetle");
 		quartz_component = new ItemQuartz_Component().setCreativeTab(SpaceExtendedMain.tab2);
 		NameUtils.setNames(quartz_component, "quartz_component");
-		
-		
-		
-		
 
 		grenade = new ItemGrenade().setCreativeTab(SpaceExtendedMain.tab2);
 		NameUtils.setNames(grenade, "grenade");
@@ -115,7 +109,7 @@ public class BasicItems {
 		registerItem(vitallium_leggings);
 		registerItem(vitallium_boots);
 		registerItem(quartz_component);
-		
+
 	}
 
 	private void registerItem(Item item) {

@@ -11,32 +11,34 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockStrontenium_Glass extends BlockBreakable {
-	 
 
-		public BlockStrontenium_Glass(Material materialIn, boolean ignoreSimilarityIn) {
+	public BlockStrontenium_Glass(Material materialIn, boolean ignoreSimilarityIn) {
 
-			super(materialIn, ignoreSimilarityIn);
-			this.blockSoundType = SoundType.GLASS;
-			setHardness(0.3F);
-			setResistance(1.5F);
-		}
-
-		public int quantityDropped(Random random) {
-			return 0;
-		}
-
-		@SideOnly(Side.CLIENT)
-		public BlockRenderLayer getBlockLayer() {
-			return BlockRenderLayer.TRANSLUCENT;
-		}
-
-		public boolean isFullCube(IBlockState state) {
-			return true;
-		}
-
-		protected boolean canSilkHarvest() {
-			return true;
-		}
-
+		super(materialIn, ignoreSimilarityIn);
+		blockSoundType = SoundType.GLASS;
+		setHardness(0.3F);
+		setResistance(1.5F);
 	}
 
+	@Override
+	public int quantityDropped(Random random) {
+		return 0;
+	}
+
+	@Override
+	@SideOnly(Side.CLIENT)
+	public BlockRenderLayer getBlockLayer() {
+		return BlockRenderLayer.TRANSLUCENT;
+	}
+
+	@Override
+	public boolean isFullCube(IBlockState state) {
+		return true;
+	}
+
+	@Override
+	protected boolean canSilkHarvest() {
+		return true;
+	}
+
+}

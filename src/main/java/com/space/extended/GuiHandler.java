@@ -8,8 +8,6 @@ import com.space.extended.gui.InventoryReserves;
 import com.space.extended.tileentity.TileEntityTresor;
 
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.inventory.Container;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.IGuiHandler;

@@ -14,9 +14,10 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class Block_Space_Quartz extends Block{
-	
-	public static final PropertyEnum<EnumFacing.Axis> AXIS = PropertyEnum.<EnumFacing.Axis>create("axis", EnumFacing.Axis.class);
+public class Block_Space_Quartz extends Block {
+
+	public static final PropertyEnum<EnumFacing.Axis> AXIS = PropertyEnum.<EnumFacing.Axis>create("axis",
+			EnumFacing.Axis.class);
 
 	public Block_Space_Quartz() {
 		super(Material.ROCK);
@@ -24,103 +25,93 @@ public class Block_Space_Quartz extends Block{
 		setResistance(5F);
 		setHarvestLevel("pickaxe", 2);
 	}
-    @Override
-    public boolean rotateBlock(net.minecraft.world.World world, BlockPos pos, EnumFacing axis)
-    {
-        net.minecraft.block.state.IBlockState state = world.getBlockState(pos);
-        for (net.minecraft.block.properties.IProperty<?> prop : state.getProperties().keySet())
-        {
-            if (prop.getName().equals("axis"))
-            {
-                world.setBlockState(pos, state.cycleProperty(prop));
-                return true;
-            }
-        }
-        return false;
-    }
 
-    /*
-     * Returns the blockstate with the given rotation from the passed blockstate. If inapplicable, returns the passed
-     * blockstate.
-     */
-    public IBlockState withRotation(IBlockState state, Rotation rot)
-    {
-        switch (rot)
-        {
-            case COUNTERCLOCKWISE_90:
-            case CLOCKWISE_90:
+	@Override
+	public boolean rotateBlock(net.minecraft.world.World world, BlockPos pos, EnumFacing axis) {
+		net.minecraft.block.state.IBlockState state = world.getBlockState(pos);
+		for (net.minecraft.block.properties.IProperty<?> prop : state.getProperties().keySet()) {
+			if (prop.getName().equals("axis")) {
+				world.setBlockState(pos, state.cycleProperty(prop));
+				return true;
+			}
+		}
+		return false;
+	}
 
-                switch ((EnumFacing.Axis)state.getValue(AXIS))
-                {
-                    case X:
-                        return state.withProperty(AXIS, EnumFacing.Axis.Z);
-                    case Z:
-                        return state.withProperty(AXIS, EnumFacing.Axis.X);
-                    default:
-                        return state;
-                }
+	/*
+	 * Returns the blockstate with the given rotation from the passed
+	 * blockstate. If inapplicable, returns the passed blockstate.
+	 */
+	@Override
+	public IBlockState withRotation(IBlockState state, Rotation rot) {
+		switch (rot) {
+		case COUNTERCLOCKWISE_90:
+		case CLOCKWISE_90:
 
-            default:
-                return state;
-        }
-    }
+			switch (state.getValue(AXIS)) {
+			case X:
+				return state.withProperty(AXIS, EnumFacing.Axis.Z);
+			case Z:
+				return state.withProperty(AXIS, EnumFacing.Axis.X);
+			default:
+				return state;
+			}
 
-    /*
-     * Convert the given metadata into a BlockState for this Block
-     */
-    public IBlockState getStateFromMeta(int meta)
-    {
-        EnumFacing.Axis enumfacing$axis = EnumFacing.Axis.Y;
-        int i = meta & 12;
+		default:
+			return state;
+		}
+	}
 
-        if (i == 4)
-        {
-            enumfacing$axis = EnumFacing.Axis.X;
-        }
-        else if (i == 8)
-        {
-            enumfacing$axis = EnumFacing.Axis.Z;
-        }
+	/*
+	 * Convert the given metadata into a BlockState for this Block
+	 */
+	@Override
+	public IBlockState getStateFromMeta(int meta) {
+		EnumFacing.Axis enumfacing$axis = EnumFacing.Axis.Y;
+		int i = meta & 12;
 
-        return this.getDefaultState().withProperty(AXIS, enumfacing$axis);
-    }
+		if (i == 4) {
+			enumfacing$axis = EnumFacing.Axis.X;
+		} else if (i == 8) {
+			enumfacing$axis = EnumFacing.Axis.Z;
+		}
 
-    /*
-     * Convert the BlockState into the correct metadata value
-     */
-    public int getMetaFromState(IBlockState state)
-    {
-        int i = 0;
-        EnumFacing.Axis enumfacing$axis = (EnumFacing.Axis)state.getValue(AXIS);
+		return getDefaultState().withProperty(AXIS, enumfacing$axis);
+	}
 
-        if (enumfacing$axis == EnumFacing.Axis.X)
-        {
-            i |= 4;
-        }
-        else if (enumfacing$axis == EnumFacing.Axis.Z)
-        {
-            i |= 8;
-        }
+	/*
+	 * Convert the BlockState into the correct metadata value
+	 */
+	@Override
+	public int getMetaFromState(IBlockState state) {
+		int i = 0;
+		EnumFacing.Axis enumfacing$axis = state.getValue(AXIS);
 
-        return i;
-    }
+		if (enumfacing$axis == EnumFacing.Axis.X) {
+			i |= 4;
+		} else if (enumfacing$axis == EnumFacing.Axis.Z) {
+			i |= 8;
+		}
 
-    protected BlockStateContainer createBlockState()
-    {
-        return new BlockStateContainer(this, new IProperty[] {AXIS});
-    }
+		return i;
+	}
 
-    protected ItemStack createStackedBlock(IBlockState state)
-    {
-        return new ItemStack(Item.getItemFromBlock(this));
-    }
+	@Override
+	protected BlockStateContainer createBlockState() {
+		return new BlockStateContainer(this, new IProperty[] { AXIS });
+	}
 
-    /*
-     * Called by ItemBlocks just before a block is actually set in the world, to allow for adjustments to the
-     * IBlockstate
-     */
-    public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
-    {
-        return super.onBlockPlaced(worldIn, pos, facing, hitX, hitY, hitZ, meta, placer).withProperty(AXIS, facing.getAxis());
-    }
+	protected ItemStack createStackedBlock(IBlockState state) {
+		return new ItemStack(Item.getItemFromBlock(this));
+	}
+
+	/*
+	 * Called by ItemBlocks just before a block is actually set in the world, to
+	 * allow for adjustments to the IBlockstate
+	 */
+	public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ,
+			int meta, EntityLivingBase placer) {
+		return super.onBlockPlaced(worldIn, pos, facing, hitX, hitY, hitZ, meta, placer).withProperty(AXIS,
+				facing.getAxis());
+	}
 }

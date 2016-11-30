@@ -1,7 +1,7 @@
 package com.space.extended.basicblocks;
 
-import com.space.extended.SpaceExtendedMain;
 import com.space.extended.NameUtils;
+import com.space.extended.SpaceExtendedMain;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -82,7 +82,6 @@ public class BasicBlocks {
 	public static Block quartz_window_pane;
 	public static Block block_engine;
 	public static Block block_cyberol;
-	
 
 	public BasicBlocks() {
 		init();
@@ -231,93 +230,89 @@ public class BasicBlocks {
 		NameUtils.setNames(light_box, "light_box");
 		quartz_window = new BlockQuartz_Window(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(quartz_window, "quartz_window");
-		quartz_window_pane = new BlockQuartz_Window_Pane(Material.GLASS, false)
-				.setCreativeTab(SpaceExtendedMain.tab);
+		quartz_window_pane = new BlockQuartz_Window_Pane(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(quartz_window_pane, "quartz_window_pane");
 		block_engine = new Block_Engine().setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(block_engine, "block_engine");
 		block_cyberol = new Block_Cyberol().setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(block_cyberol, "block_cyberol");
-		
-		
-		
-		
+
 	}
 
 	private void register() {
-		this.registerBlock(vitallium);
-		this.registerBlock(vitalliumOre);
-		this.registerBlock(metalframeblock);
-		this.registerBlock(klingonium);
-		this.registerBlock(klingodur);
-		this.registerBlock(klingonit);
-		this.registerBlock(klingonium0);
-		this.registerBlock(klingonium1);
-		this.registerBlock(klingonium2);
-		this.registerBlock(klingonium3);
-		this.registerBlock(klingoniumOre);
-		this.registerBlock(constructor1);
-		this.registerBlock(constructor2);
-		this.registerBlock(constructor3);
-		this.registerBlock(constructor4);
-		this.registerBlock(constructor5);
-		this.registerBlock(strontenium);
-		this.registerBlock(strontenium0);
-		this.registerBlock(strontenium1);
-		this.registerBlock(strontenium2);
-		this.registerBlock(stronteniumOre);
-		this.registerBlock(klingonium_wall0);
-		this.registerBlock(klingonium_wall1);
-		this.registerBlock(klingonium_wall2);
-		this.registerBlock(klingonium_wall3);
-		this.registerBlock(klingonium_wall4);
-		this.registerBlock(klingonium_wall5);
-		this.registerBlock(klingonium_wall6);
-		this.registerBlock(klingonium_wall7);
-		this.registerBlock(klingonium_wall8);
-		this.registerBlock(klingonium_screw);
-		this.registerBlock(perolit);
-		this.registerBlock(perolitOre);
-		this.registerBlock(pipes_connector);
-		this.registerBlock(strontenita);
-		this.registerBlock(strontenitb);
-		this.registerBlock(strontenitc);
-		this.registerBlock(strontenitd);
-		this.registerBlock(strontenal);
-		this.registerBlock(oxygen);
-		this.registerBlock(perola);
-		this.registerBlock(perolb);
-		this.registerBlock(perolc);
-		this.registerBlock(perold);
-		this.registerBlock(table);
-		this.registerBlock(strontopal);
-		this.registerBlock(strontopala);
-		this.registerBlock(strontopalb);
-		this.registerBlock(lux);
-		this.registerBlock(ceiling_lamp);
-		this.registerBlock(speedway);
-		this.registerBlock(klingopar);
-		this.registerBlock(tresor);
-		this.registerBlock(strontecore);
-		this.registerBlock(cyberit_Ore);
-		this.registerBlock(vitallium_glass);
-		this.registerBlock(vitallium_glass_pane);
-		this.registerBlock(strontenium_glass);
-		this.registerBlock(strontenium_glass_pane);
-		this.registerBlock(analyser);
-		this.registerBlock(virtual_screen);
-		this.registerBlock(block_space_quartz);
-		this.registerBlock(block_space_quartza);
-		this.registerBlock(block_space_quartz_mfblock);
-		this.registerBlock(space_quartz_ore);
-		this.registerBlock(solar_panel);
-		this.registerBlock(satellite_antenna);
-		this.registerBlock(light_box);
-		this.registerBlock(quartz_window);
-		this.registerBlock(quartz_window_pane);		
-		this.registerBlock(block_engine);
-		this.registerBlock(block_cyberol);
-		
+		registerBlock(vitallium);
+		registerBlock(vitalliumOre);
+		registerBlock(metalframeblock);
+		registerBlock(klingonium);
+		registerBlock(klingodur);
+		registerBlock(klingonit);
+		registerBlock(klingonium0);
+		registerBlock(klingonium1);
+		registerBlock(klingonium2);
+		registerBlock(klingonium3);
+		registerBlock(klingoniumOre);
+		registerBlock(constructor1);
+		registerBlock(constructor2);
+		registerBlock(constructor3);
+		registerBlock(constructor4);
+		registerBlock(constructor5);
+		registerBlock(strontenium);
+		registerBlock(strontenium0);
+		registerBlock(strontenium1);
+		registerBlock(strontenium2);
+		registerBlock(stronteniumOre);
+		registerBlock(klingonium_wall0);
+		registerBlock(klingonium_wall1);
+		registerBlock(klingonium_wall2);
+		registerBlock(klingonium_wall3);
+		registerBlock(klingonium_wall4);
+		registerBlock(klingonium_wall5);
+		registerBlock(klingonium_wall6);
+		registerBlock(klingonium_wall7);
+		registerBlock(klingonium_wall8);
+		registerBlock(klingonium_screw);
+		registerBlock(perolit);
+		registerBlock(perolitOre);
+		registerBlock(pipes_connector);
+		registerBlock(strontenita);
+		registerBlock(strontenitb);
+		registerBlock(strontenitc);
+		registerBlock(strontenitd);
+		registerBlock(strontenal);
+		registerBlock(oxygen);
+		registerBlock(perola);
+		registerBlock(perolb);
+		registerBlock(perolc);
+		registerBlock(perold);
+		registerBlock(table);
+		registerBlock(strontopal);
+		registerBlock(strontopala);
+		registerBlock(strontopalb);
+		registerBlock(lux);
+		registerBlock(ceiling_lamp);
+		registerBlock(speedway);
+		registerBlock(klingopar);
+		registerBlock(tresor);
+		registerBlock(strontecore);
+		registerBlock(cyberit_Ore);
+		registerBlock(vitallium_glass);
+		registerBlock(vitallium_glass_pane);
+		registerBlock(strontenium_glass);
+		registerBlock(strontenium_glass_pane);
+		registerBlock(analyser);
+		registerBlock(virtual_screen);
+		registerBlock(block_space_quartz);
+		registerBlock(block_space_quartza);
+		registerBlock(block_space_quartz_mfblock);
+		registerBlock(space_quartz_ore);
+		registerBlock(solar_panel);
+		registerBlock(satellite_antenna);
+		registerBlock(light_box);
+		registerBlock(quartz_window);
+		registerBlock(quartz_window_pane);
+		registerBlock(block_engine);
+		registerBlock(block_cyberol);
+
 	}
 
 	private void registerBlock(Block block) {

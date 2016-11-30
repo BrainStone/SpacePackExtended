@@ -9,29 +9,21 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
 public class BlockStrontopal extends Block {
-
 	public BlockStrontopal() {
-
 		super(Material.WOOD);
 		setHardness(2F);
 		setResistance(1F);
 		setHarvestLevel("axe", 2);
-		this.setLightOpacity(1);
+		setLightOpacity(1);
+		setSoundType(SoundType.WOOD);
 	}
 
-	private void setStepSound(SoundType metal) {
-		setStepSound(SoundType.WOOD);
-
-	}
-
-	public boolean isOpaqueCube() {
-		return false;
-	}
-
+	@Override
 	public boolean isFullCube(IBlockState state) {
 		return true;
 	}
 
+	@Override
 	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
 		return false;
 	}

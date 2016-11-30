@@ -1,10 +1,8 @@
 package com.space.extended.basicblocks;
 
-import com.space.extended.GuiHandler;
 import com.space.extended.SpaceExtendedMain;
 import com.space.extended.tileentity.TileEntityTresor;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -14,7 +12,6 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
-import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -23,7 +20,6 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockTresor extends BlockContainer {
@@ -33,14 +29,14 @@ public class BlockTresor extends BlockContainer {
 	public BlockTresor() {
 
 		super(Material.ANVIL);
-		this.setHardness(2F);
-		this.setResistance(5F);
+		setHardness(2F);
+		setResistance(5F);
 		this.setHarvestLevel("axe", 2);
-		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 
 	public IBlockState getStateForEntityRender(IBlockState state) {
-		return this.getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
+		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
 	}
 
 	@Override
@@ -65,12 +61,12 @@ public class BlockTresor extends BlockContainer {
 		if (enumFacing.getAxis() == EnumFacing.Axis.Y) {
 			enumFacing = EnumFacing.NORTH;
 		}
-		return this.getDefaultState().withProperty(FACING, enumFacing);
+		return getDefaultState().withProperty(FACING, enumFacing);
 	}
 
 	@Override
 	public int getMetaFromState(IBlockState state) {
-		return ((EnumFacing) state.getValue(FACING)).getIndex();
+		return state.getValue(FACING).getIndex();
 	}
 
 	@Override
@@ -81,7 +77,7 @@ public class BlockTresor extends BlockContainer {
 	@Override
 	public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ,
 			int meta, EntityLivingBase placer) {
-		return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
+		return getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
 	}
 
 	@Override

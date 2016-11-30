@@ -14,7 +14,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockQuartz_Window_Pane extends BlockPane {
-	
+
 	private boolean ignoreSimilarity = true;
 
 	public BlockQuartz_Window_Pane(Material materialIn, boolean canDrop) {
@@ -22,9 +22,10 @@ public class BlockQuartz_Window_Pane extends BlockPane {
 		super(materialIn, canDrop);
 		setHardness(0.3F);
 		setResistance(1.5F);
-		this.blockSoundType = SoundType.GLASS;
+		blockSoundType = SoundType.GLASS;
 	}
 
+	@Override
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getBlockLayer() {
 		return BlockRenderLayer.TRANSLUCENT;
@@ -37,20 +38,19 @@ public class BlockQuartz_Window_Pane extends BlockPane {
 		IBlockState iblockstate = blockAccess.getBlockState(pos.offset(side));
 		Block block = iblockstate.getBlock();
 
-		if (this == Blocks.GLASS || this == Blocks.GLASS_PANE) {
-			if (blockState != iblockstate) {
+		if ((this == Blocks.GLASS) || (this == Blocks.GLASS_PANE)) {
+			if (blockState != iblockstate)
 				return true;
-			}
 
-			if (block == this) {
+			if (block == this)
 				return false;
-			}
 		}
 
-		return !this.ignoreSimilarity && block == this ? false
+		return !ignoreSimilarity && (block == this) ? false
 				: super.shouldSideBeRendered(blockState, blockAccess, pos, side);
 	}
 
+	@Override
 	protected boolean canSilkHarvest() {
 		return true;
 	}

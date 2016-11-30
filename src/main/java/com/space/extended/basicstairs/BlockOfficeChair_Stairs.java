@@ -11,30 +11,21 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockOfficeChair_Stairs extends BlockStairs {
-
 	public BlockOfficeChair_Stairs() {
-
 		super(Blocks.BIRCH_STAIRS.getStateFromMeta(0));
 		setHardness(2F);
 		setResistance(5F);
-		this.setLightOpacity(1);
+		setLightOpacity(1);
 		setHarvestLevel("axe", 1);
-
+		setSoundType(SoundType.WOOD);
 	}
 
-	private void setStepSound(SoundType wood) {
-		setStepSound(SoundType.WOOD);
-
-	}
-
-	public boolean isOpaqueCube() {
-		return false;
-	}
-
+	@Override
 	public boolean isFullCube(IBlockState state) {
 		return true;
 	}
 
+	@Override
 	@SideOnly(Side.CLIENT)
 	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
 		return false;

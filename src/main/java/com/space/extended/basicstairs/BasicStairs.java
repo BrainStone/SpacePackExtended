@@ -1,9 +1,8 @@
 package com.space.extended.basicstairs;
 
-import com.space.extended.SpaceExtendedMain;
 import com.space.extended.NameUtils;
+import com.space.extended.SpaceExtendedMain;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -34,11 +33,10 @@ public class BasicStairs {
 	public static BlockStairs microscope;
 	public static BlockStairs block_space_quartzb;
 	public static BlockStairs block_space_quartzt;
-	public static BlockStairs block_space_quartzd; 
+	public static BlockStairs block_space_quartzd;
 	public static BlockStairs block_space_quartzc;
 	public static BlockStairs space_quartz_stair;
 	public static BlockStairs space_quartz_metalframe;
-	
 
 	public BasicStairs() {
 		init();
@@ -101,42 +99,42 @@ public class BasicStairs {
 		NameUtils.setNames(block_space_quartzc, "block_space_quartzc");
 		space_quartz_stair = (BlockStairs) new Block_Space_Quartz_Stair().setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(space_quartz_stair, "space_quartz_stair");
-		space_quartz_metalframe = (BlockStairs) new Block_Space_Quartz_MetalFrame().setCreativeTab(SpaceExtendedMain.tab);
+		space_quartz_metalframe = (BlockStairs) new Block_Space_Quartz_MetalFrame()
+				.setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(space_quartz_metalframe, "space_quartz_metalframe");
-		
 
 	}
 
 	private void register() {
-		this.registerBlockStairs(chairmonitorstairs);
-		this.registerBlockStairs(drillmonitor);
-		this.registerBlockStairs(pcdeskammo);
-		this.registerBlockStairs(vitalliumstairs);
-		this.registerBlockStairs(metalframestairs);
-		this.registerBlockStairs(lamp_stairs);
-		this.registerBlockStairs(strontenium_stairs);
-		this.registerBlockStairs(strontenium_stairs1);
-		this.registerBlockStairs(metal1_stairs);
-		this.registerBlockStairs(officechair_stairs);
-		this.registerBlockStairs(klingonium_stairs);
-		this.registerBlockStairs(roof_stairs);
-		this.registerBlockStairs(klingonium_pipes_stairs);
-		this.registerBlockStairs(consoles_stairs);
-		this.registerBlockStairs(pipes_stairs);
-		this.registerBlockStairs(pipesa_stairs);
-		this.registerBlockStairs(pipesc_stairs);
-		this.registerBlockStairs(pipesb_stairs);
-		this.registerBlockStairs(spaceship_control);
-		this.registerBlockStairs(spaceman_seat);
-		this.registerBlockStairs(laboratory_bench);
-		this.registerBlockStairs(microscope);
-		this.registerBlockStairs(block_space_quartzb);
-		this.registerBlockStairs(block_space_quartzt);
-		this.registerBlockStairs(block_space_quartzd);
-		this.registerBlockStairs(block_space_quartzc);
-		this.registerBlockStairs(space_quartz_stair);
-		this.registerBlockStairs(space_quartz_metalframe);
-		
+		registerBlockStairs(chairmonitorstairs);
+		registerBlockStairs(drillmonitor);
+		registerBlockStairs(pcdeskammo);
+		registerBlockStairs(vitalliumstairs);
+		registerBlockStairs(metalframestairs);
+		registerBlockStairs(lamp_stairs);
+		registerBlockStairs(strontenium_stairs);
+		registerBlockStairs(strontenium_stairs1);
+		registerBlockStairs(metal1_stairs);
+		registerBlockStairs(officechair_stairs);
+		registerBlockStairs(klingonium_stairs);
+		registerBlockStairs(roof_stairs);
+		registerBlockStairs(klingonium_pipes_stairs);
+		registerBlockStairs(consoles_stairs);
+		registerBlockStairs(pipes_stairs);
+		registerBlockStairs(pipesa_stairs);
+		registerBlockStairs(pipesc_stairs);
+		registerBlockStairs(pipesb_stairs);
+		registerBlockStairs(spaceship_control);
+		registerBlockStairs(spaceman_seat);
+		registerBlockStairs(laboratory_bench);
+		registerBlockStairs(microscope);
+		registerBlockStairs(block_space_quartzb);
+		registerBlockStairs(block_space_quartzt);
+		registerBlockStairs(block_space_quartzd);
+		registerBlockStairs(block_space_quartzc);
+		registerBlockStairs(space_quartz_stair);
+		registerBlockStairs(space_quartz_metalframe);
+
 	}
 
 	private void registerBlockStairs(BlockStairs blockstairs) {

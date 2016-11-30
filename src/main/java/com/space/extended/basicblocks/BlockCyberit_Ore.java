@@ -15,39 +15,29 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockCyberit_Ore extends Block {
-
 	public BlockCyberit_Ore() {
-
 		super(Material.IRON);
 		setHardness(3F);
 		setResistance(5F);
 		setHarvestLevel("pickaxe", 3);
 		setLightLevel(0.7F);
-
-	}
-
-	private void setStepSound(SoundType metal) {
-		setStepSound(SoundType.METAL);
-
+		setSoundType(SoundType.METAL);
 	}
 
 	@Override
 	public int getExpDrop(IBlockState state, IBlockAccess world, BlockPos pos, int fortune) {
 		Random rand = world instanceof World ? ((World) world).rand : new Random();
-		return MathHelper.getRandomIntegerInRange(rand, 1, 3);
 
+		return MathHelper.getInt(rand, 1, 3);
 	}
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-
 		return this == BasicBlocks.cyberit_Ore ? BasicItems.cyberit_gem : (Item.getItemFromBlock(this));
 	}
 
 	@Override
 	public int quantityDropped(Random random) {
-
 		return this == BasicBlocks.cyberit_Ore ? 1 + random.nextInt(1) : 1;
 	}
-
 }

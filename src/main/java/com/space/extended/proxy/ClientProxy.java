@@ -18,12 +18,10 @@ import net.minecraft.client.renderer.entity.RenderSnowball;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
-import net.minecraftforge.fml.common.SidedProxy;
-
-
 
 public class ClientProxy extends CommonProxy {
 
+	@Override
 	public void registerModels() {
 
 		// Blocks
@@ -99,7 +97,6 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.quartz_window_pane, 0);
 		registerModel(BasicBlocks.block_engine, 0);
 		registerModel(BasicBlocks.block_cyberol, 0);
-		
 
 		// Items
 		registerModel(BasicItems.vitalliumIngot, 0);
@@ -115,8 +112,6 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicItems.cyberit_gem, 0);
 		registerModel(BasicItems.cyberit_beetle, 0);
 		registerModel(BasicItems.quartz_component, 0);
-		
-		
 
 		registerModel(BasicItems.grenade, 0);
 		registerModel(BasicItems.flamethrower, 0);
@@ -155,15 +150,10 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicStairs.block_space_quartzc, 0);
 		registerModel(BasicStairs.space_quartz_stair, 0);
 		registerModel(BasicStairs.space_quartz_metalframe, 0);
-		
-		
-		
-	}
-	
-	
-	
-	
 
+	}
+
+	@Override
 	public void registerRenderer() {
 
 		RenderingRegistry.registerEntityRenderingHandler(EntityGrenade.class, new IRenderFactory() {
@@ -174,8 +164,7 @@ public class ClientProxy extends CommonProxy {
 
 			}
 		});
-		
-				
+
 		RenderingRegistry.registerEntityRenderingHandler(EntityMobBeetle.class, new IRenderFactory<EntityMobBeetle>() {
 			@Override
 			public Render<? super EntityMobBeetle> createRenderFor(RenderManager manager) {
@@ -184,8 +173,6 @@ public class ClientProxy extends CommonProxy {
 			}
 		});
 	}
-
-	
 
 	private void registerModel(Object obj, int meta) {
 
@@ -196,9 +183,8 @@ public class ClientProxy extends CommonProxy {
 			item = Item.getItemFromBlock((Block) obj);
 		} else if (obj instanceof BlockStairs) {
 			item = Item.getItemFromBlock((BlockStairs) obj);
-		} else {
+		} else
 			throw new IllegalArgumentException();
-		}
 
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, meta, new ModelResourceLocation(
 				SpaceExtendedMain.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
