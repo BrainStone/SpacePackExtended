@@ -43,7 +43,7 @@ public class TileEntityTresor<OpenInventory> extends TileEntity {
 			NBTTagCompound tag = list.getCompoundTagAt(i);
 			byte b = tag.getByte("Slot");
 			if ((b >= 0) && (b < inventory.getSizeInventory())) {
-				inventory.setInventorySlotContents(b, ItemStack.loadItemStackFromNBT(tag));
+				inventory.setInventorySlotContents(b, new ItemStack(tag));
 			}
 		}
 	}

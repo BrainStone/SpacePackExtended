@@ -27,7 +27,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class EntityMobBeetle extends EntityMob {
-
 	public EntityMobBeetle(World world) {
 		super(world);
 		setSize(1.4F, 0.9F);
@@ -35,22 +34,22 @@ public class EntityMobBeetle extends EntityMob {
 		isImmuneToFire = true;
 		tasks.addTask(1, new EntityAISwimming(this));
 		tasks.addTask(2, new EntityAILeapAtTarget(this, 0.4F));
-		targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityPlayer.class, true));
+		targetTasks.addTask(3, new EntityAINearestAttackableTarget<>(this, EntityPlayer.class, true));
 		tasks.addTask(4, new EntityAIWander(this, 0.6D));
 		tasks.addTask(5, new EntityAIWatchClosest(this, EntityPlayer.class, 8.0F));
 		tasks.addTask(6, new EntityAILookIdle(this));
 		targetTasks.addTask(7, new EntityAIHurtByTarget(this, false));
 		tasks.addTask(8, new EntityAIAttackMelee(this, 1.0D, false));
-		targetTasks.addTask(9, new EntityAINearestAttackableTarget(this, EntityGuardian.class, true));
-		targetTasks.addTask(10, new EntityAINearestAttackableTarget(this, EntityZombie.class, true));
-		targetTasks.addTask(11, new EntityAINearestAttackableTarget(this, EntitySpider.class, true));
-		targetTasks.addTask(12, new EntityAINearestAttackableTarget(this, EntitySkeleton.class, true));
+		targetTasks.addTask(9, new EntityAINearestAttackableTarget<>(this, EntityGuardian.class, true));
+		targetTasks.addTask(10, new EntityAINearestAttackableTarget<>(this, EntityZombie.class, true));
+		targetTasks.addTask(11, new EntityAINearestAttackableTarget<>(this, EntitySpider.class, true));
+		targetTasks.addTask(12, new EntityAINearestAttackableTarget<>(this, EntitySkeleton.class, true));
 
 	}
 
 	@Override
 	protected int getExperiencePoints(EntityPlayer player) {
-		return 2 + worldObj.rand.nextInt(3);
+		return 2 + world.rand.nextInt(3);
 	}
 
 	@Override
@@ -84,5 +83,4 @@ public class EntityMobBeetle extends EntityMob {
 		return new ItemStack(BasicItems.cyberit_beetle).getItem();
 
 	}
-
 }

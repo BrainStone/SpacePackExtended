@@ -19,22 +19,20 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
 public class ItemFlameThrower extends Item {
-
 	public ItemFlameThrower() {
-
 		setMaxStackSize(1);
 		setMaxDamage(4000);
-
 	}
 
 	@Override
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn,
-			EnumHand hand) {
+	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
+		ItemStack itemstack = playerIn.getHeldItem(handIn);
 		Vec3d lookVector = playerIn.getLookVec();
 		double x = lookVector.xCoord / 10;
 		double y = lookVector.yCoord / 10;
 		double z = lookVector.zCoord / 10;
 		Random random = new Random();
+
 		for (int i = 0; i < 100; i++) {
 			double xCoord = playerIn.posX + (x * i) + random.nextDouble();
 			double yCoord = playerIn.posY + (y * i) + random.nextDouble();
@@ -55,10 +53,12 @@ public class ItemFlameThrower extends Item {
 						EntityLivingBase entity = (EntityLivingBase) obj;
 						entity.setFire(7);
 					}
-					itemStackIn.damageItem(2, playerIn);
+
+					itemstack.damageItem(2, playerIn);
 				}
 			}
 		}
+
 		for (int i = 0; i < 100; i++) {
 			worldIn.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, playerIn.posX + (x * i) + random.nextDouble(),
 					playerIn.posY + (y * i) + random.nextDouble(), playerIn.posZ + (z * i) + random.nextDouble(),
@@ -69,12 +69,11 @@ public class ItemFlameThrower extends Item {
 				SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.NEUTRAL, 0.1F,
 				0.3F / ((itemRand.nextFloat() * 0.3F) + 0.6F));
 
-		return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemStackIn);
+		return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
 	}
 
 	@Override
 	public int getItemEnchantability() {
 		return 1;
 	}
-
 }

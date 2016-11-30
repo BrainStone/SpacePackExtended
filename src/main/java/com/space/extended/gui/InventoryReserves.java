@@ -70,7 +70,7 @@ public class InventoryReserves extends InventoryBasic {
 		for (int i = 0; i < list.tagCount(); i++) {
 			NBTTagCompound slotTag = list.getCompoundTagAt(i);
 			int index = slotTag.getInteger("slotIndex");
-			ItemStack stack = ItemStack.loadItemStackFromNBT(slotTag);
+			ItemStack stack = new ItemStack(slotTag);
 			setInventorySlotContents(index, stack);
 		}
 	}

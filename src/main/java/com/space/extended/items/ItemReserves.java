@@ -11,11 +11,6 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
 public class ItemReserves extends Item {
-
-	public ItemReserves() {
-		super();
-	}
-
 	@Override
 	public void onCreated(ItemStack stack, World worldIn, EntityPlayer playerIn) {
 		super.onCreated(stack, worldIn, playerIn);
@@ -23,13 +18,11 @@ public class ItemReserves extends Item {
 	}
 
 	@Override
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn,
-			EnumHand hand) {
+	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
 		if (!worldIn.isRemote) {
 			playerIn.openGui(SpaceExtendedMain.INSTANCE, SpaceExtendedMain.RESERVESGUIID, worldIn, 0, 0, 0);
-
 		}
 
-		return super.onItemRightClick(itemStackIn, worldIn, playerIn, hand);
+		return super.onItemRightClick(worldIn, playerIn, handIn);
 	}
 }
