@@ -1,9 +1,9 @@
 /*Blocks*/
 tile.vitallium.name=§5Vitallium§r
-tile.vitalliumOre.name=§5Vitallium Ore§r
+tile.vitallium_ore.name=§5Vitallium Ore§r
 tile.metalframeblock.name=§5Metal Frame Block§r
 tile.klingonium.name=§5Klingonium§r
-tile.klingoniumOre.name=§5Klingonium Ore§r
+tile.klingonium_ore.name=§5Klingonium Ore§r
 tile.constructor1.name=§5Constructor1§r
 tile.constructor2.name=§5Constructor2§r
 tile.constructor3.name=§5Constructor3§r
@@ -13,7 +13,7 @@ tile.strontenium.name=§5Strontenium§r
 tile.strontenium0.name=§5Strontenium Bottom§r
 tile.strontenium1.name=§5Strontenium Middle§r
 tile.strontenium2.name=§5Strontenium Top§r
-tile.stronteniumOre.name=§5Strontenium Ore§r
+tile.strontenium_ore.name=§5Strontenium Ore§r
 tile.klingonium0.name=§5Klingonium0§r
 tile.klingonium1.name=§5Klingonium1§r
 tile.klingonium2.name=§5Klingonium2§r
@@ -29,7 +29,7 @@ tile.klingonium_wall7.name=§5Klingonium Wall UM§r
 tile.klingonium_wall8.name=§5Klingonium Wall UR§r
 tile.klingonium_screw.name=§5Klingonium Screw§r
 tile.perolit.name=§5Perolit§r
-tile.perolitOre.name=§5Perolit Ore§r
+tile.perolit_ore.name=§5Perolit Ore§r
 tile.klingonit.name=§5Klingonit§r
 tile.pipes_connector.name=§5Pipes Connector§r
 tile.klingodur.name=§5Klingodur§r
@@ -55,7 +55,7 @@ tile.klingopar.name=§5Klingopar§r
 tile.microscope.name=§5Microscope/Periscope§r
 tile.tresor.name=§5Save§r
 tile.strontecore.name=§5Strontecore§r
-tile.cyberit_Ore.name=§5Cyberit Ore§r
+tile.cyberit_ore.name=§5Cyberit Ore§r
 tile.vitallium_glass.name=§5Vitallium Glass§r
 tile.vitallium_glass_pane.name=§5Vitallium Glass Pane§r
 tile.cyberit.name=§5Cyberit§r
@@ -112,9 +112,9 @@ tile.space_quartz_metalframe.name=§5Space Quartz Stair MF§r
 
 
 /*Items*/
-item.vitalliumIngot.name=§5Vitallium Ingot§r
-item.klingoniumShard.name=§5Klingonium Shard§r
-item.stronteniumIngot.name=§5Strontenium Ingot§r
+item.vitallium_ingot.name=§5Vitallium Ingot§r
+item.klingonium_shard.name=§5Klingonium Shard§r
+item.strontenium_ingot.name=§5Strontenium Ingot§r
 item.perolit_sphere.name=§5Perolit Sphere§r
 item.kit1.name=§5Kit1§r
 item.kit2.name=§5Kit2§r
@@ -134,12 +134,9 @@ item.vitallium_leggings.name=§5Vitallium Leggings§r
 item.vitallium_boots.name=§5Vitallium Boots§r
 item.flamethrower.name=§5Flamethrower§r
 
-entity.spaceextended.Beetle.name=§5Scorpiolyth§r
+entity.beetle.name=§5Scorpiolyth§r
 
 
 itemGroup.spacetab=§5Space Tab§r
 itemGroup.stairstab=§5Modified Stairs§r
 itemGroup.armortab=§5Armor Tab§r
-
-
-

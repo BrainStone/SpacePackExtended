@@ -33,11 +33,11 @@ public class BlockKlingoniumOre extends Block {
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return this == BasicBlocks.klingoniumOre ? BasicItems.klingoniumShard : (Item.getItemFromBlock(this));
+		return this == BasicBlocks.klingonium_ore ? BasicItems.klingonium_shard : (Item.getItemFromBlock(this));
 	}
 
 	@Override
 	public int quantityDropped(Random random) {
-		return this == BasicBlocks.klingoniumOre ? 2 + random.nextInt(2) : 1;
+		return this == BasicBlocks.klingonium_ore ? 2 + random.nextInt(2) : 1;
 	}
 }

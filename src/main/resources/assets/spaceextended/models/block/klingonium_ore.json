@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "spaceextended:blocks/klingoniumOre"
+        "all": "spaceextended:blocks/klingonium_ore"
     }
 }

@@ -62,7 +62,7 @@ public class SpaceExtendedMain {
 
 		entity = new SpaceextendedEntity();
 
-		EntityBeetle.createEntity(EntityMobBeetle.class, "Beetle");
+		EntityBeetle.createEntity(EntityMobBeetle.class, "beetle");
 	}
 
 	@EventHandler

@@ -13,7 +13,7 @@ public class BasicSmelting {
 	}
 
 	private void register() {
-		GameRegistry.addSmelting(BasicBlocks.vitalliumOre, new ItemStack(BasicItems.vitalliumIngot, 1), 1.0F);
-		GameRegistry.addSmelting(BasicBlocks.stronteniumOre, new ItemStack(BasicItems.stronteniumIngot, 1), 1.0F);
+		GameRegistry.addSmelting(BasicBlocks.vitallium_ore, new ItemStack(BasicItems.vitallium_ingot, 1), 1.0F);
+		GameRegistry.addSmelting(BasicBlocks.strontenium_ore, new ItemStack(BasicItems.strontenium_ingot, 1), 1.0F);
 	}
 }

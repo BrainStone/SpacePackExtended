@@ -1,8 +1,8 @@
 {
 "__comment": "Designed by Norzeteus with BDcraft Cubik PRO 0.96 Beta - http://bdcraft.net",
 "textures": {
-    "particle": "spaceextended:blocks/Kit2",
-    "texture": "spaceextended:blocks/Kit2"
+    "particle": "spaceextended:blocks/kit2",
+    "texture": "spaceextended:blocks/kit2"
 },
 "elements": [ 
 {

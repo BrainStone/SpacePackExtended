@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "spaceextended:blocks/vitalliumOre"
+        "all": "spaceextended:blocks/vitallium_ore"
     }
 }

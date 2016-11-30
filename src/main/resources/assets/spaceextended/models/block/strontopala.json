@@ -1,7 +1,7 @@
 {
     "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
     "textures": {
-        "particle": "spaceextended:/blocks/strontopal",
+        "particle": "spaceextended:blocks/strontopal",
         "0": "spaceextended:blocks/strontopal",
         "1": "spaceextended:blocks/strontopala",
         "2": "spaceextended:blocks/strontenium3f",

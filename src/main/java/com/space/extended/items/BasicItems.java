@@ -14,9 +14,9 @@ public class BasicItems {
 
 	public static ArmorMaterial vitalliumarmor;
 
-	public static Item vitalliumIngot;
-	public static Item klingoniumShard;
-	public static Item stronteniumIngot;
+	public static Item vitallium_ingot;
+	public static Item klingonium_shard;
+	public static Item strontenium_ingot;
 	public static Item perolit_sphere;
 	public static Item kit1;
 	public static Item kit2;
@@ -46,12 +46,12 @@ public class BasicItems {
 		vitalliumarmor = EnumHelper.addArmorMaterial("vitalliumarmor", "", 40, new int[] { 5, 8, 10, 5 }, 50,
 				SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3);
 
-		vitalliumIngot = new ItemVitalliumIngot().setCreativeTab(SpaceExtendedMain.tab2);
-		NameUtils.setNames(vitalliumIngot, "vitalliumIngot");
-		klingoniumShard = new ItemKlingoniumShard().setCreativeTab(SpaceExtendedMain.tab2);
-		NameUtils.setNames(klingoniumShard, "klingoniumShard");
-		stronteniumIngot = new ItemStronteniumIngot().setCreativeTab(SpaceExtendedMain.tab2);
-		NameUtils.setNames(stronteniumIngot, "stronteniumIngot");
+		vitallium_ingot = new ItemVitalliumIngot().setCreativeTab(SpaceExtendedMain.tab2);
+		NameUtils.setNames(vitallium_ingot, "vitallium_ingot");
+		klingonium_shard = new ItemKlingoniumShard().setCreativeTab(SpaceExtendedMain.tab2);
+		NameUtils.setNames(klingonium_shard, "klingonium_shard");
+		strontenium_ingot = new ItemStronteniumIngot().setCreativeTab(SpaceExtendedMain.tab2);
+		NameUtils.setNames(strontenium_ingot, "strontenium_ingot");
 		perolit_sphere = new ItemPerolit_Sphere().setCreativeTab(SpaceExtendedMain.tab2);
 		NameUtils.setNames(perolit_sphere, "perolit_sphere");
 		kit1 = new ItemKit1().setCreativeTab(SpaceExtendedMain.tab2);
@@ -90,9 +90,9 @@ public class BasicItems {
 	}
 
 	public void register() {
-		registerItem(vitalliumIngot);
-		registerItem(klingoniumShard);
-		registerItem(stronteniumIngot);
+		registerItem(vitallium_ingot);
+		registerItem(klingonium_shard);
+		registerItem(strontenium_ingot);
 		registerItem(perolit_sphere);
 		registerItem(cyberit_gem);
 		registerItem(cyberit_beetle);

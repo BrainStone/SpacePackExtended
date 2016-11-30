@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class BasicBlocks {
 
 	public static Block vitallium;
-	public static Block vitalliumOre;
+	public static Block vitallium_ore;
 	public static Block perolit;
 	public static Block perolitOre;
 	public static Block metalframeblock;
@@ -33,7 +33,7 @@ public class BasicBlocks {
 	public static Block klingonium_wall0;
 	public static Block klingonium_wall1;
 	public static Block klingonium_wall2;
-	public static Block klingoniumOre;
+	public static Block klingonium_ore;
 	public static Block constructor1;
 	public static Block constructor2;
 	public static Block constructor3;
@@ -45,7 +45,7 @@ public class BasicBlocks {
 	public static Block strontenium0;
 	public static Block strontenium1;
 	public static Block strontenium2;
-	public static Block stronteniumOre;
+	public static Block strontenium_ore;
 	public static Block pipes_connector;
 	public static Block strontenita;
 	public static Block strontenitb;
@@ -92,8 +92,8 @@ public class BasicBlocks {
 	private void init() {
 		vitallium = new BlockVitallium().setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(vitallium, "vitallium");
-		vitalliumOre = new BlockVitalliumOre().setCreativeTab(SpaceExtendedMain.tab);
-		NameUtils.setNames(vitalliumOre, "vitalliumOre");
+		vitallium_ore = new BlockVitalliumOre().setCreativeTab(SpaceExtendedMain.tab);
+		NameUtils.setNames(vitallium_ore, "vitallium_ore");
 		metalframeblock = new BlockMetalFrame().setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(metalframeblock, "metalframeblock");
 		klingonium = new BlockKlingonium().setCreativeTab(SpaceExtendedMain.tab);
@@ -102,8 +102,8 @@ public class BasicBlocks {
 		NameUtils.setNames(klingodur, "klingodur");
 		klingonit = new BlockKlingonit().setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(klingonit, "klingonit");
-		klingoniumOre = new BlockKlingoniumOre().setCreativeTab(SpaceExtendedMain.tab);
-		NameUtils.setNames(klingoniumOre, "klingoniumOre");
+		klingonium_ore = new BlockKlingoniumOre().setCreativeTab(SpaceExtendedMain.tab);
+		NameUtils.setNames(klingonium_ore, "klingonium_ore");
 		constructor1 = new BlockConstructor1().setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(constructor1, "constructor1");
 		constructor2 = new BlockConstructor2().setCreativeTab(SpaceExtendedMain.tab);
@@ -122,8 +122,8 @@ public class BasicBlocks {
 		NameUtils.setNames(strontenium1, "strontenium1");
 		strontenium2 = new BlockStrontenium2().setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(strontenium2, "strontenium2");
-		stronteniumOre = new BlockStronteniumOre().setCreativeTab(SpaceExtendedMain.tab);
-		NameUtils.setNames(stronteniumOre, "stronteniumOre");
+		strontenium_ore = new BlockStronteniumOre().setCreativeTab(SpaceExtendedMain.tab);
+		NameUtils.setNames(strontenium_ore, "strontenium_ore");
 		klingonium0 = new BlockKlingonium0().setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(klingonium0, "klingonium0");
 		klingonium1 = new BlockKlingonium1().setCreativeTab(SpaceExtendedMain.tab);
@@ -155,7 +155,7 @@ public class BasicBlocks {
 		perolit = new BlockPerolit().setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(perolit, "perolit");
 		perolitOre = new BlockPerolitOre().setCreativeTab(SpaceExtendedMain.tab);
-		NameUtils.setNames(perolitOre, "perolitOre");
+		NameUtils.setNames(perolitOre, "perolit_ore");
 		pipes_connector = new BlockPipes_Connector().setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(pipes_connector, "pipes_connector");
 		strontenita = new BlockStrontenitA().setCreativeTab(SpaceExtendedMain.tab);
@@ -204,7 +204,7 @@ public class BasicBlocks {
 				.setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(strontenium_glass_pane, "strontenium_glass_pane");
 		cyberit_Ore = new BlockCyberit_Ore().setCreativeTab(SpaceExtendedMain.tab);
-		NameUtils.setNames(cyberit_Ore, "cyberit_Ore");
+		NameUtils.setNames(cyberit_Ore, "cyberit_ore");
 		analyser = new BlockAnalyser().setCreativeTab(SpaceExtendedMain.tab);
 		NameUtils.setNames(analyser, "analyser");
 		vitallium_glass = new BlockVitallium_Glass(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.tab);
@@ -241,7 +241,7 @@ public class BasicBlocks {
 
 	private void register() {
 		registerBlock(vitallium);
-		registerBlock(vitalliumOre);
+		registerBlock(vitallium_ore);
 		registerBlock(metalframeblock);
 		registerBlock(klingonium);
 		registerBlock(klingodur);
@@ -250,7 +250,7 @@ public class BasicBlocks {
 		registerBlock(klingonium1);
 		registerBlock(klingonium2);
 		registerBlock(klingonium3);
-		registerBlock(klingoniumOre);
+		registerBlock(klingonium_ore);
 		registerBlock(constructor1);
 		registerBlock(constructor2);
 		registerBlock(constructor3);
@@ -260,7 +260,7 @@ public class BasicBlocks {
 		registerBlock(strontenium0);
 		registerBlock(strontenium1);
 		registerBlock(strontenium2);
-		registerBlock(stronteniumOre);
+		registerBlock(strontenium_ore);
 		registerBlock(klingonium_wall0);
 		registerBlock(klingonium_wall1);
 		registerBlock(klingonium_wall2);

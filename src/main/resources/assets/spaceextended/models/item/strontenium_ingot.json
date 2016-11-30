@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "spaceextended:items/vitalliumIngot"
+        "layer0": "spaceextended:items/strontenium_ingot"
     }
 }

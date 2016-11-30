@@ -1,7 +1,7 @@
 {
     "variants": {
         "normal": 
-            { "model": "spaceextended:cyberit_Ore" }
+            { "model": "spaceextended:cyberit_ore" }
             
             }
 }

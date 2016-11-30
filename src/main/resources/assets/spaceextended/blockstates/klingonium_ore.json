@@ -1,7 +1,7 @@
 {
     "variants": {
         "normal": 
-            { "model": "spaceextended:vitalliumOre" }
+            { "model": "spaceextended:klingonium_ore" }
             
             }
 }
