@@ -156,9 +156,9 @@ public class ClientProxy extends CommonProxy {
 	@Override
 	public void registerRenderer() {
 
-		RenderingRegistry.registerEntityRenderingHandler(EntityGrenade.class, new IRenderFactory() {
+		RenderingRegistry.registerEntityRenderingHandler(EntityGrenade.class, new IRenderFactory<EntityGrenade>() {
 			@Override
-			public Render createRenderFor(RenderManager manager) {
+			public Render<EntityGrenade> createRenderFor(RenderManager manager) {
 				return new RenderSnowball<EntityGrenade>(manager, BasicItems.grenade,
 						Minecraft.getMinecraft().getRenderItem());
 

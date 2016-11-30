@@ -24,9 +24,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = SpaceExtendedMain.MODID, version = SpaceExtendedMain.VERSION)
 public class SpaceExtendedMain {
-
 	public static final String MODID = "spaceextended";
-	public static final String VERSION = "MCvers.1.10  beta 0.1";
+	public static final String VERSION = "${version}";
 	public static final String Name = "SpaceExtended";
 
 	public static final int RESERVESGUIID = 1;
@@ -64,7 +63,6 @@ public class SpaceExtendedMain {
 		entity = new SpaceextendedEntity();
 
 		EntityBeetle.createEntity(EntityMobBeetle.class, "Beetle");
-
 	}
 
 	@EventHandler
@@ -83,7 +81,6 @@ public class SpaceExtendedMain {
 		MinecraftForge.EVENT_BUS.register(new Events());
 
 		GameRegistry.registerFuelHandler(new SpaceextendedFuelHandler());
-
 	}
 
 	@EventHandler
@@ -91,7 +88,5 @@ public class SpaceExtendedMain {
 		PROXY.postInit();
 
 		PROXY.registerModels();
-
 	}
-
 }

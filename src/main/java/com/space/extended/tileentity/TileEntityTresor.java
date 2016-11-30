@@ -6,7 +6,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 
-public class TileEntityTresor<OpenInventory> extends TileEntity {
+public class TileEntityTresor extends TileEntity {
 
 	public InventoryBasic inventory;
 
@@ -37,7 +37,7 @@ public class TileEntityTresor<OpenInventory> extends TileEntity {
 		super.readFromNBT(compound);
 
 		NBTTagList list = compound.getTagList("ItemStacks", 10);
-		this.inventory = new InventoryBasic("InventoryTresor", false, 25);
+		inventory = new InventoryBasic("InventoryTresor", false, 25);
 
 		for (int i = 0; i < list.tagCount(); i++) {
 			NBTTagCompound tag = list.getCompoundTagAt(i);

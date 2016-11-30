@@ -25,9 +25,6 @@ public class ModelBeetle extends ModelBase {
 	ModelRenderer RearEnd1;
 	ModelRenderer Neck2;
 	ModelRenderer Body1;
-	private double posX;
-	private double posY;
-	private double posZ;
 
 	public ModelBeetle() {
 		textureWidth = 128;
