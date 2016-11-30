@@ -199,20 +199,20 @@ uploadArchives {
                         }
                         developers {
                             developer {
-                                id "brainstone"
-                                name "The_BrainStone"
+                                id "norzeteus"
+                                name "Norzeteus"
                                 roles {
                                     role "owner"
                                     role "developer"
                                 }
                             }
-                            //developer {
-                            //    id "brainstone"
-                            //    name "The_BrainStone"
-                            //    roles {
-                            //        role "developer"
-                            //    }
-                            //}
+                            developer {
+                                id "brainstone"
+                                name "The_BrainStone"
+                                roles {
+                                    role "developer"
+                                }
+                            }
                         }
                     }
                 }
