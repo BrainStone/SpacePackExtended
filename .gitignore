@@ -1,0 +1,79 @@
+#################
+## Gradle
+#################
+
+/build/
+/dist/
+/nbproject/
+build.xml
+manifest.mf
+/bin/
+.project
+log.txt
+.settings/org.eclipse.jdt.core.prefs
+**/bin
+**/build
+.gradle
+**/.project
+**/.classpath
+**/.factorypath
+**/.settings
+**/.apt_generated
+gradle-app.setting
+
+#################
+## Eclipse
+#################
+
+*.pydevproject
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+/eclipse/
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+#################
+## Idea
+#################
+
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+#################
+## Windows
+#################
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+#################
+## Dev Env
+#################
+
+run
+

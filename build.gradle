@@ -1,0 +1,247 @@
+import io.franzbecker.gradle.lombok.task.DelombokTask
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven {
+            name = "forge"
+            url = "http://files.minecraftforge.net/maven"
+        }
+        maven {
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.13.0'
+    }
+}
+
+plugins {
+    id "com.matthewprenger.cursegradle" version "1.0.8"
+    id "io.franzbecker.gradle-lombok" version "1.8"
+}
+apply plugin: 'com.github.ben-manes.versions'
+apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+def getVersionType() {
+    def lower_version = version.toLowerCase();
+    
+    if (lower_version.contains("beta") || lower_version.contains("rc"))
+        return "beta";
+    else if (lower_version.contains("alpha"))
+        return "alpha";
+    else
+        return "release";
+}
+def getVersionName() {
+    try {
+        def tmp = "${minecraft_version}-" + ("git describe --tags --dirty=-SNAPSHOT".execute().text.trim().substring(1).replaceFirst("(\\d+)-g[0-9a-f]+", "dev\$1"));
+        
+        if (mod_version_postfix.isEmpty())
+            return tmp;
+        else
+            return tmp.replaceFirst("(.+?-[^\\-]+)(-)?", "\$1-${mod_version_postfix}\$2");
+    } catch(Exception e) {
+        println e
+        return 'UNKNOWN-VERSION'
+    }
+}
+def signJar(archivePath) {
+    if (project.hasProperty('keyStoreAlias') && project.hasProperty('keyStore') && project.hasProperty('keyStorePass')) {
+        ant.signjar(
+            jar:                  archivePath,
+            alias:                project.keyStoreAlias,
+            keystore:             project.keyStore,
+            storepass:            project.keyStorePass,
+            preservelastmodified: true
+        )
+    } else {
+        println 'WARNING!!!\tCannot sign jar!'
+    }
+}
+
+def MainDirResources = fileTree(dir: file('.'), includes: ['README.md', 'LICENSE', 'CHANGELOG.md'])
+version = getVersionName()
+group = "com.space.extended" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "SpacePackExtended"
+
+allprojects {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+minecraft {
+    version = "${minecraft_version}-${forge_version}"
+    runDir = "run"
+    replace '${version}', project.version
+    mappings = "snapshot_20161130"
+    useDepAts = true
+}
+
+lombok {
+    version = "1.16.10"
+    sha256 = "7e9079406585c67fe25f607c34b17fbed48da0a9bceb15c09a558444cefcef0e"
+}
+
+task delombok(type: DelombokTask) {
+    args("src/main/java", "-d", "build/sources/delomboked/java")
+}
+
+sourceMainJava {
+    source = sourceSets.main.allSource
+}
+
+processResources {
+    // this will ensure that this task is redone when the versions change.
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+
+    // replace stuff in mcmod.info, nothing else
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+                
+        // replace version and mcversion
+        expand 'version':project.version, 'mcversion':project.minecraft.version
+    }
+        
+    // copy everything else, thats not the mcmod.info
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+    
+    from MainDirResources
+}
+
+task showVersion {
+    description "Displays the current version"
+    group "help"
+    
+    compileJava.dependsOn showVersion
+    deobfCompileDummyTask.dependsOn showVersion
+    extractMcpMappings.dependsOn showVersion
+  
+    doLast {
+        println version
+        
+        def versionFile = new File(buildDir, '.version');
+    
+        versionFile.getParentFile().mkdirs();
+        versionFile.text = version;
+    }
+    
+    outputs.upToDateWhen { false }
+}
+
+jar {
+    doLast {
+        if (!gradle.taskGraph.hasTask(reobfJar)) {
+            signJar(jar)
+        }
+    }
+}
+
+reobfJar {
+    doLast {
+        signJar(jar)
+    }
+}
+
+task deobfJar(type: Jar) {
+    from sourceSets.main.output
+    classifier = 'deobf'
+    
+    doLast {
+        signJar(deobfJar.archivePath)
+    }
+}
+
+sourceJar {
+    doLast {
+        signJar(sourceJar.archivePath)
+    }
+}
+
+artifacts {
+    archives jar
+    archives deobfJar
+    archives sourceJar
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            if (project.hasProperty("local_maven")) {
+                repository(url: "file://${local_maven}")
+                pom {
+                    groupId = project.group
+                    version = project.version
+                    artifactId = project.archivesBaseName
+                    project {
+                        name project.archivesBaseName
+                        packaging "jar"
+                        description "Space Pack Extended"
+                        url "https://github.com/BrainStone/brainstone"
+                        issueManagement {
+                            system "github"
+                            url "https://github.com/BrainStone/brainstone/issues"
+                        }
+                        licenses {
+                            license {
+                                name "License"
+                                url "https://raw.githubusercontent.com/BrainStone/brainstone/master/LICENSE"
+                                distribution "repo"
+                            }
+                        }
+                        developers {
+                            developer {
+                                id "brainstone"
+                                name "The_BrainStone"
+                                roles {
+                                    role "owner"
+                                    role "developer"
+                                }
+                            }
+                            developer {
+                                id "brainstone"
+                                name "The_BrainStone"
+                                roles {
+                                    role "developer"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+curseforge {
+    apiKey = project.hasProperty("curseForgeApiKey")? project.curseForgeApiKey : "empty"
+    
+    project {
+        id = "250836"
+        changelog = file("CHANGELOG.md")
+        changelogType = "markdown"
+        releaseType = getVersionType()
+        addGameVersion "${minecraft_version}"
+        addGameVersion "Java 8"
+        
+        mainArtifact(jar) {
+            displayName = jar.archiveName.replace(".jar", "")
+        }
+        addArtifact(deobfJar) {
+            displayName = deobfJar.archiveName.replace(".jar", "")
+            changelog = "*This is a file for mod developers. If you don't know what to do with it, don't use it!*"
+        }
+        addArtifact(sourceJar) {
+            displayName = sourceJar.archiveName.replace(".jar", "")
+            changelog = "*This is a file for mod developers. If you don't know what to do with it, don't use it!*"
+        }
+    }
+}
