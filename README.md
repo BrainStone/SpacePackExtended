@@ -1,9 +1,7 @@
-**TODO: Remove all BrainStoneMod references and andd appropriate links!**
+[Space Pack Extended](https://minecraft.curseforge.com/projects/space-extended-mod)
+===================================================================================
 
-[Spac Pack Extended](https://minecraft.curseforge.com/projects/space-extended-mod)
-============================================================================
-
-[![Curse Forge](http://cf.way2muchnoise.eu/short_250836_downloads.svg)](https://minecraft.curseforge.com/projects/space-extended-mod)
+[![Curse Forge](http://cf.way2muchnoise.eu/short_252607_downloads.svg)](https://minecraft.curseforge.com/projects/space-extended-mod)
 [![Build Status](https://gitlab.crazyblock-network.net/BrainStone/SpacePackExtended/badges/master/build.svg)](https://gitlab.crazyblock-network.net/BrainStone/SpacePackExtended/commits/master)
 
 Starts where all others end
