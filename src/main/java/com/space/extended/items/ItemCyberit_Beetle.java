@@ -8,7 +8,6 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 public class ItemCyberit_Beetle extends ItemFood {
-
 	public ItemCyberit_Beetle() {
 		super(2, 5.5F, false);
 		setAlwaysEdible();
@@ -18,15 +17,10 @@ public class ItemCyberit_Beetle extends ItemFood {
 	@Override
 	public void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player) {
 		if (!worldIn.isRemote) {
-
-			{
-
-				player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 400, 1));
-				player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 6000, 0));
-				player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 6000, 0));
-				player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 2400, 3));
-			}
-
+			player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 400, 1));
+			player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 6000, 0));
+			player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 6000, 0));
+			player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 2400, 3));
 		}
 	}
 }

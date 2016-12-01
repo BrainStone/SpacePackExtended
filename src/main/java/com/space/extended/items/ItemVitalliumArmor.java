@@ -11,10 +11,7 @@ public class ItemVitalliumArmor extends ItemArmor {
 
 	public ItemVitalliumArmor(ArmorMaterial materialIn, EntityEquipmentSlot equipmentSlotIn) {
 		super(materialIn, 0, equipmentSlotIn);
-		setCreativeTab(SpaceExtendedMain.tab2);
-	}
-
-	{
+		setCreativeTab(SpaceExtendedMain.armorTab);
 	}
 
 	@Override

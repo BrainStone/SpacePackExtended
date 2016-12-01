@@ -46,36 +46,36 @@ public class BasicItems {
 		vitalliumarmor = EnumHelper.addArmorMaterial("vitalliumarmor", "", 40, new int[] { 5, 8, 10, 5 }, 50,
 				SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3);
 
-		vitallium_ingot = new ItemVitalliumIngot().setCreativeTab(SpaceExtendedMain.tab2);
+		vitallium_ingot = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(vitallium_ingot, "vitallium_ingot");
-		klingonium_shard = new ItemKlingoniumShard().setCreativeTab(SpaceExtendedMain.tab2);
+		klingonium_shard = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(klingonium_shard, "klingonium_shard");
-		strontenium_ingot = new ItemStronteniumIngot().setCreativeTab(SpaceExtendedMain.tab2);
+		strontenium_ingot = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(strontenium_ingot, "strontenium_ingot");
-		perolit_sphere = new ItemPerolit_Sphere().setCreativeTab(SpaceExtendedMain.tab2);
+		perolit_sphere = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(perolit_sphere, "perolit_sphere");
-		kit1 = new ItemKit1().setCreativeTab(SpaceExtendedMain.tab2);
+		kit1 = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(kit1, "kit1");
-		kit2 = new ItemKit2().setCreativeTab(SpaceExtendedMain.tab2);
+		kit2 = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(kit2, "kit2");
-		kit3 = new ItemKit3().setCreativeTab(SpaceExtendedMain.tab2);
+		kit3 = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(kit3, "kit3");
-		kit4 = new ItemKit4().setCreativeTab(SpaceExtendedMain.tab2);
+		kit4 = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(kit4, "kit4");
-		kit5 = new ItemKit5().setCreativeTab(SpaceExtendedMain.tab2);
+		kit5 = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(kit5, "kit5");
-		reserves = new ItemReserves().setCreativeTab(SpaceExtendedMain.tab2);
+		reserves = new ItemReserves().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(reserves, "reserves");
-		cyberit_gem = new ItemCyberit_Gem().setCreativeTab(SpaceExtendedMain.tab2);
+		cyberit_gem = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(cyberit_gem, "cyberit_gem");
-		cyberit_beetle = new ItemCyberit_Beetle().setCreativeTab(SpaceExtendedMain.tab2);
+		cyberit_beetle = new ItemCyberit_Beetle().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(cyberit_beetle, "cyberit_beetle");
-		quartz_component = new ItemQuartz_Component().setCreativeTab(SpaceExtendedMain.tab2);
+		quartz_component = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(quartz_component, "quartz_component");
 
-		grenade = new ItemGrenade().setCreativeTab(SpaceExtendedMain.tab2);
+		grenade = new ItemGrenade().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(grenade, "grenade");
-		flamethrower = new ItemFlameThrower().setCreativeTab(SpaceExtendedMain.tab2);
+		flamethrower = new ItemFlameThrower().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(flamethrower, "flamethrower");
 
 		vitallium_helmet = new ItemVitalliumArmor(vitalliumarmor, EntityEquipmentSlot.HEAD);

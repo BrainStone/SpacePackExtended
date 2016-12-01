@@ -28,7 +28,8 @@ public class BasicWorldgenerater implements IWorldGenerator {
 	private void overworld(Random random, int x, int z, World world) {
 		GenerationUtil.generateOre(BasicBlocks.vitallium_ore.getDefaultState(), random, x, z, world, 8, 17, 64, 3, 5);
 		GenerationUtil.generateOre(BasicBlocks.klingonium_ore.getDefaultState(), random, x, z, world, 7, 30, 64, 3, 4);
-		GenerationUtil.generateOre(BasicBlocks.strontenium_ore.getDefaultState(), random, x, z, world, 12, 15, 64, 3, 6);
+		GenerationUtil.generateOre(BasicBlocks.strontenium_ore.getDefaultState(), random, x, z, world, 12, 15, 64, 3,
+				6);
 		GenerationUtil.generateOre(BasicBlocks.perolitOre.getDefaultState(), random, x, z, world, 9, 15, 60, 3, 5);
 		GenerationUtil.generateOre(BasicBlocks.cyberit_Ore.getDefaultState(), random, x, z, world, 7, 17, 67, 3, 5);
 		GenerationUtil.generateOre(BasicBlocks.space_quartz_ore.getDefaultState(), random, x, z, world, 9, 12, 55, 4,

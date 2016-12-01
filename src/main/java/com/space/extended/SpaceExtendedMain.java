@@ -37,9 +37,9 @@ public class SpaceExtendedMain {
 	@SidedProxy(serverSide = "com.space.extended.proxy.CommonProxy", clientSide = "com.space.extended.proxy.ClientProxy", modId = MODID)
 	public static CommonProxy PROXY = new CommonProxy();
 
-	public static CreativeTabs tab;
-	public static CreativeTabs tab1;
-	public static CreativeTabs tab2;
+	public static CreativeTabs spaceTab;
+	public static CreativeTabs stairsTab;
+	public static CreativeTabs armorTab;
 
 	private SpaceextendedEntity entity;
 
@@ -51,9 +51,9 @@ public class SpaceExtendedMain {
 	public void preInit(FMLPreInitializationEvent event) {
 		PROXY.preInit();
 
-		tab = new SpaceTab();
-		tab1 = new StairsTab();
-		tab2 = new ArmorTab();
+		spaceTab = new SpaceTab();
+		stairsTab = new StairsTab();
+		armorTab = new ArmorTab();
 		blocks = new BasicBlocks();
 		items = new BasicItems();
 		stairs = new BasicStairs();

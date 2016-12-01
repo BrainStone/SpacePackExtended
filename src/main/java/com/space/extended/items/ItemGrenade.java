@@ -14,11 +14,6 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
 
 public class ItemGrenade extends Item {
-
-	public ItemGrenade() {
-		super();
-	}
-
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
 		ItemStack itemstack = playerIn.getHeldItem(handIn);
