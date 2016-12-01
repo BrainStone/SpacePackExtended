@@ -1,18 +1,19 @@
 **TODO: Remove all BrainStoneMod references and andd appropriate links!**
 
-[Brain Stone Mod](https://minecraft.curseforge.com/projects/brain-stone-mod)
+[Spac Pack Extended](https://minecraft.curseforge.com/projects/space-extended-mod)
 ============================================================================
 
-[![Curse Forge](http://cf.way2muchnoise.eu/short_250836_downloads.svg)](https://minecraft.curseforge.com/projects/brain-stone-mod)
+[![Curse Forge](http://cf.way2muchnoise.eu/short_250836_downloads.svg)](https://minecraft.curseforge.com/projects/space-extended-mod)
 [![Build Status](https://gitlab.crazyblock-network.net/BrainStone/SpacePackExtended/badges/master/build.svg)](https://gitlab.crazyblock-network.net/BrainStone/SpacePackExtended/commits/master)
 
 Starts where all others end
 
-[Issue Reporting](https://github.com/BrainStone/brainstone/issues)
+[Issue Reporting](https://github.com/BrainStone/SpacePackExtended/issues)
 ------------------------------------------------------------------
 
 If you found a bug or even are experiencing a crash please report it so we can fix it. Please check at first if a bug report for the issue already [exits]
-(https://github.com/BrainStone/brainstone/issues). If not just create a [new issue](https://github.com/BrainStone/brainstone/issues/new) and fill out the form.
+(https://github.com/BrainStone/SpacePackExtended/issues). If not just create a [new issue](https://github.com/BrainStone/SpacePackExtended/issues/new) and fill
+out the form.
 
 Please include the following:
 
@@ -27,11 +28,11 @@ Please include the following:
  
 *(When creating a new issue please follow the template)*
 
-[Feature Requests](https://github.com/BrainStone/brainstone/issues)
+[Feature Requests](https://github.com/BrainStone/SpacePackExtended/issues)
 -------------------------------------------------------------------
 
-If you want a new feature added, go ahead an open a [new issue](https://github.com/BrainStone/brainstone/issues/new), remove the existing form and describe your
-feature the best you can. The more details you provide the easier it will be implementing it.  
+If you want a new feature added, go ahead an open a [new issue](https://github.com/BrainStone/SpacePackExtended/issues/new), remove the existing form and
+describe your feature the best you can. The more details you provide the easier it will be implementing it.  
 You can also talk to me on IRC on my channel #BrainStone on esper.net
 
 Developing with My Mod
