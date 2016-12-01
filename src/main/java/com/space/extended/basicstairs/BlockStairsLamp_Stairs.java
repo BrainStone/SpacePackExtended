@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockStairsLamp_Stairs extends BlockStairs {
 	public BlockStairsLamp_Stairs() {
-		super(Blocks.IRON_BLOCK.getStateFromMeta(0));
+		super(Blocks.IRON_BLOCK.getDefaultState());
 		setHardness(2F);
 		setResistance(5F);
 		setHarvestLevel("axe", 2);

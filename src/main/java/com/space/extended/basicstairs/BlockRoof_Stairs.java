@@ -10,7 +10,7 @@ import net.minecraft.world.IBlockAccess;
 
 public class BlockRoof_Stairs extends BlockStairs {
 	public BlockRoof_Stairs() {
-		super(Blocks.IRON_BLOCK.getStateFromMeta(0));
+		super(Blocks.IRON_BLOCK.getDefaultState());
 		setHardness(2F);
 		setResistance(5F);
 		setLightOpacity(1);

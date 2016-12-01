@@ -31,11 +31,11 @@ public class BasicStairs {
 	public static BlockStairs spaceman_seat;
 	public static BlockStairs laboratory_bench;
 	public static BlockStairs microscope;
+	public static BlockStairs space_quartz_stair;
 	public static BlockStairs block_space_quartzb;
 	public static BlockStairs block_space_quartzt;
 	public static BlockStairs block_space_quartzd;
 	public static BlockStairs block_space_quartzc;
-	public static BlockStairs space_quartz_stair;
 	public static BlockStairs space_quartz_metalframe;
 
 	public BasicStairs() {
@@ -59,7 +59,7 @@ public class BasicStairs {
 		NameUtils.setNames(lamp_stairs, "lamp_stairs");
 		strontenium_stairs = (BlockStairs) new BlockStrontenium_Stairs().setCreativeTab(SpaceExtendedMain.stairsTab);
 		NameUtils.setNames(strontenium_stairs, "strontenium_stairs");
-		strontenium_stairs1 = (BlockStairs) new BlockStrontenium_Stairs1().setCreativeTab(SpaceExtendedMain.stairsTab);
+		strontenium_stairs1 = (BlockStairs) new BlockStrontenium_Stairs().setCreativeTab(SpaceExtendedMain.stairsTab);
 		NameUtils.setNames(strontenium_stairs1, "strontenium_stairs1");
 		metal1_stairs = (BlockStairs) new BlockMetal1_Stairs().setCreativeTab(SpaceExtendedMain.stairsTab);
 		NameUtils.setNames(metal1_stairs, "metal1_stairs");
@@ -76,11 +76,11 @@ public class BasicStairs {
 		NameUtils.setNames(consoles_stairs, "consoles_stairs");
 		pipes_stairs = (BlockStairs) new BlockPipes_Stairs().setCreativeTab(SpaceExtendedMain.stairsTab);
 		NameUtils.setNames(pipes_stairs, "pipes_stairs");
-		pipesa_stairs = (BlockStairs) new BlockPipesA_Stairs().setCreativeTab(SpaceExtendedMain.stairsTab);
+		pipesa_stairs = (BlockStairs) new BlockPipes_Stairs().setCreativeTab(SpaceExtendedMain.stairsTab);
 		NameUtils.setNames(pipesa_stairs, "pipesa_stairs");
-		pipesc_stairs = (BlockStairs) new BlockPipesC_Stairs().setCreativeTab(SpaceExtendedMain.stairsTab);
+		pipesc_stairs = (BlockStairs) new BlockPipes_Stairs().setCreativeTab(SpaceExtendedMain.stairsTab);
 		NameUtils.setNames(pipesc_stairs, "pipesc_stairs");
-		pipesb_stairs = (BlockStairs) new BlockPipesB_Stairs().setCreativeTab(SpaceExtendedMain.stairsTab);
+		pipesb_stairs = (BlockStairs) new BlockPipes_Stairs().setCreativeTab(SpaceExtendedMain.stairsTab);
 		NameUtils.setNames(pipesb_stairs, "pipesb_stairs");
 		spaceship_control = (BlockStairs) new BlockSpaceship_Control().setCreativeTab(SpaceExtendedMain.stairsTab);
 		NameUtils.setNames(spaceship_control, "spaceship_control");
@@ -90,16 +90,16 @@ public class BasicStairs {
 		NameUtils.setNames(laboratory_bench, "laboratory_bench");
 		microscope = (BlockStairs) new BlockMicroscope().setCreativeTab(SpaceExtendedMain.stairsTab);
 		NameUtils.setNames(microscope, "microscope");
-		block_space_quartzb = (BlockStairs) new Block_Space_QuartzB().setCreativeTab(SpaceExtendedMain.stairsTab);
-		NameUtils.setNames(block_space_quartzb, "block_space_quartzb");
-		block_space_quartzt = (BlockStairs) new Block_Space_QuartzT().setCreativeTab(SpaceExtendedMain.stairsTab);
-		NameUtils.setNames(block_space_quartzt, "block_space_quartzt");
-		block_space_quartzd = (BlockStairs) new Block_Space_QuartzD().setCreativeTab(SpaceExtendedMain.stairsTab);
-		NameUtils.setNames(block_space_quartzd, "block_space_quartzd");
-		block_space_quartzc = (BlockStairs) new Block_Space_QuartzC().setCreativeTab(SpaceExtendedMain.stairsTab);
-		NameUtils.setNames(block_space_quartzc, "block_space_quartzc");
 		space_quartz_stair = (BlockStairs) new Block_Space_Quartz_Stair().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(space_quartz_stair, "space_quartz_stair");
+		block_space_quartzb = (BlockStairs) new Block_Space_Quartz_Stair().setCreativeTab(SpaceExtendedMain.stairsTab);
+		NameUtils.setNames(block_space_quartzb, "block_space_quartzb");
+		block_space_quartzt = (BlockStairs) new Block_Space_Quartz_Stair().setCreativeTab(SpaceExtendedMain.stairsTab);
+		NameUtils.setNames(block_space_quartzt, "block_space_quartzt");
+		block_space_quartzd = (BlockStairs) new Block_Space_Quartz_Stair().setCreativeTab(SpaceExtendedMain.stairsTab);
+		NameUtils.setNames(block_space_quartzd, "block_space_quartzd");
+		block_space_quartzc = (BlockStairs) new Block_Space_Quartz_Stair().setCreativeTab(SpaceExtendedMain.stairsTab);
+		NameUtils.setNames(block_space_quartzc, "block_space_quartzc");
 		space_quartz_metalframe = (BlockStairs) new Block_Space_Quartz_MetalFrame()
 				.setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(space_quartz_metalframe, "space_quartz_metalframe");

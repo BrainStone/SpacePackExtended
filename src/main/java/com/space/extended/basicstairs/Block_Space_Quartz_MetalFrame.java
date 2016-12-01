@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class Block_Space_Quartz_MetalFrame extends BlockStairs {
 	protected Block_Space_Quartz_MetalFrame() {
-		super(Blocks.IRON_BLOCK.getStateFromMeta(0));
+		super(Blocks.IRON_BLOCK.getDefaultState());
 		setHardness(2F);
 		setResistance(5F);
 		setLightOpacity(1);

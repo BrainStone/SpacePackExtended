@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockPipes_Stairs extends BlockStairs {
 	public BlockPipes_Stairs() {
-		super(Blocks.STONE_STAIRS.getStateFromMeta(0));
+		super(Blocks.STONE_STAIRS.getDefaultState());
 		setHardness(2F);
 		setResistance(2F);
 		setHarvestLevel("axe", 1);

@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockOfficeChair_Stairs extends BlockStairs {
 	public BlockOfficeChair_Stairs() {
-		super(Blocks.BIRCH_STAIRS.getStateFromMeta(0));
+		super(Blocks.BIRCH_STAIRS.getDefaultState());
 		setHardness(2F);
 		setResistance(5F);
 		setLightOpacity(1);

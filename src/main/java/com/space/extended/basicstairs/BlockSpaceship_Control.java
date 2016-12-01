@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockSpaceship_Control extends BlockStairs {
 	public BlockSpaceship_Control() {
-		super(Blocks.IRON_BLOCK.getStateFromMeta(0));
+		super(Blocks.IRON_BLOCK.getDefaultState());
 		setHardness(2F);
 		setResistance(2F);
 		setHarvestLevel("axe", 2);

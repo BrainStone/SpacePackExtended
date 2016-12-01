@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockLaboratory_Bench extends BlockStairs {
 	public BlockLaboratory_Bench() {
-		super(Blocks.OAK_STAIRS.getStateFromMeta(0));
+		super(Blocks.OAK_STAIRS.getDefaultState());
 		setHardness(2F);
 		setResistance(5F);
 		setHarvestLevel("axe", 1);

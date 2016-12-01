@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockMicroscope extends BlockStairs {
 	public BlockMicroscope() {
-		super(Blocks.IRON_ORE.getStateFromMeta(0));
+		super(Blocks.IRON_ORE.getDefaultState());
 		setHardness(2F);
 		setResistance(5F);
 		setHarvestLevel("axe", 1);

@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class Block_Space_Quartz_Stair extends BlockStairs {
 	protected Block_Space_Quartz_Stair() {
-		super(Blocks.STONE_STAIRS.getStateFromMeta(0));
+		super(Blocks.STONE_STAIRS.getDefaultState());
 		setHardness(2F);
 		setResistance(2F);
 		setHarvestLevel("axe", 1);

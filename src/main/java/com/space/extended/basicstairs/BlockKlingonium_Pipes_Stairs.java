@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockKlingonium_Pipes_Stairs extends BlockStairs {
 	public BlockKlingonium_Pipes_Stairs() {
-		super(Blocks.IRON_BLOCK.getStateFromMeta(0));
+		super(Blocks.IRON_BLOCK.getDefaultState());
 		setHardness(2F);
 		setResistance(5F);
 		setHarvestLevel("axe", 2);

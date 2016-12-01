@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockStairsChairMonitorStairs extends BlockStairs {
 	public BlockStairsChairMonitorStairs() {
-		super(Blocks.IRON_BLOCK.getStateFromMeta(0));
+		super(Blocks.IRON_BLOCK.getDefaultState());
 		setHardness(2F);
 		setResistance(5F);
 		setLightOpacity(1);
