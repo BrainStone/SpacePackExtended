@@ -8,8 +8,8 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class BlockPerolB extends Block {
-	public BlockPerolB() {
+public class BlockPerol extends Block {
+	public BlockPerol() {
 		super(Material.IRON);
 		setHardness(2F);
 		setResistance(5F);

@@ -4,8 +4,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
-public class BlockStrontenitA extends Block {
-	public BlockStrontenitA() {
+public class BlockStrontenit extends Block {
+	public BlockStrontenit() {
 		super(Material.IRON);
 		setHardness(2F);
 		setResistance(5F);

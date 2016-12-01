@@ -39,10 +39,6 @@ public class Block_Space_Quartz extends Block {
 		return false;
 	}
 
-	/*
-	 * Returns the blockstate with the given rotation from the passed
-	 * blockstate. If inapplicable, returns the passed blockstate.
-	 */
 	@Override
 	public IBlockState withRotation(IBlockState state, Rotation rot) {
 		switch (rot) {
@@ -63,9 +59,6 @@ public class Block_Space_Quartz extends Block {
 		}
 	}
 
-	/*
-	 * Convert the given metadata into a BlockState for this Block
-	 */
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		EnumFacing.Axis enumfacing$axis = EnumFacing.Axis.Y;
@@ -80,9 +73,6 @@ public class Block_Space_Quartz extends Block {
 		return getDefaultState().withProperty(AXIS, enumfacing$axis);
 	}
 
-	/*
-	 * Convert the BlockState into the correct metadata value
-	 */
 	@Override
 	public int getMetaFromState(IBlockState state) {
 		int i = 0;

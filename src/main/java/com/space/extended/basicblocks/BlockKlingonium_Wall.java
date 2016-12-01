@@ -4,12 +4,12 @@ import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
-public class BlockStrontenium1 extends Block {
-	public BlockStrontenium1() {
-		super(Material.ROCK);
+public class BlockKlingonium_Wall extends Block {
+	public BlockKlingonium_Wall() {
+		super(Material.IRON);
 		setHardness(2F);
 		setResistance(5F);
 		setHarvestLevel("pickaxe", 2);
-		setSoundType(SoundType.STONE);
+		setSoundType(SoundType.METAL);
 	}
 }

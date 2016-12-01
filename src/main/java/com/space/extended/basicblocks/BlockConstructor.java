@@ -15,8 +15,8 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockConstructor1 extends Block {
-	public BlockConstructor1() {
+public class BlockConstructor extends Block {
+	public BlockConstructor() {
 		super(Material.IRON);
 		setHardness(2F);
 		setResistance(5F);
