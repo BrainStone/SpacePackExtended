@@ -32,7 +32,7 @@ public class SpaceExtendedMain {
 	public static final int TRESORGUIID = 2;
 
 	@Instance(MODID)
-	public static SpaceExtendedMain INSTANCE = new SpaceExtendedMain();
+	public static SpaceExtendedMain INSTANCE;
 
 	@SidedProxy(serverSide = "com.space.extended.proxy.CommonProxy", clientSide = "com.space.extended.proxy.ClientProxy", modId = MODID)
 	public static CommonProxy PROXY = new CommonProxy();

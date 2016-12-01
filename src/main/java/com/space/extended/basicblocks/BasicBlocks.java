@@ -198,7 +198,8 @@ public class BasicBlocks {
 		NameUtils.setNames(tresor, "tresor");
 		strontecore = new BlockStronteCore().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontecore, "strontecore");
-		strontenium_glass = new BlockStrontenium_Glass(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		strontenium_glass = new BlockStrontenium_Glass(Material.GLASS, false)
+				.setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontenium_glass, "strontenium_glass");
 		strontenium_glass_pane = new BlockStrontenium_Glass_Pane(Material.GLASS, false)
 				.setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -230,7 +231,8 @@ public class BasicBlocks {
 		NameUtils.setNames(light_box, "light_box");
 		quartz_window = new BlockQuartz_Window(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(quartz_window, "quartz_window");
-		quartz_window_pane = new BlockQuartz_Window_Pane(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		quartz_window_pane = new BlockQuartz_Window_Pane(Material.GLASS, false)
+				.setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(quartz_window_pane, "quartz_window_pane");
 		block_engine = new Block_Engine().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(block_engine, "block_engine");

@@ -44,7 +44,8 @@ public class BasicStairs {
 	}
 
 	private void init() {
-		chairmonitorstairs = (BlockStairs) new BlockStairsChairMonitorStairs().setCreativeTab(SpaceExtendedMain.stairsTab);
+		chairmonitorstairs = (BlockStairs) new BlockStairsChairMonitorStairs()
+				.setCreativeTab(SpaceExtendedMain.stairsTab);
 		NameUtils.setNames(chairmonitorstairs, "chairmonitorstairs");
 		drillmonitor = (BlockStairs) new BlockStairsDrillMonitor().setCreativeTab(SpaceExtendedMain.stairsTab);
 		NameUtils.setNames(drillmonitor, "drillmonitor");
