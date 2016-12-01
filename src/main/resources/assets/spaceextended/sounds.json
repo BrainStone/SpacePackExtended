@@ -1,5 +1,16 @@
 {
-    "mobbeetle.death":{ "category":"master","sounds": [{"name": "spaceextended:mobbeetle/mobbeetle_death"}]},
-	"mobbeetle.say":{ "category":"master","sounds": [{"name": "spaceextended:mobbeetle/mobbeetle_say1"},
-	{"name": "spaceextended:mobbeetle/mobbeetle_say2"},{"name": "spaceextended:mobbeetle/mobbeetle_say3"}]}
+    "mobbeetle.death": {
+        "category": "master",
+        "sounds": [
+            "spaceextended:mobbeetle/mobbeetle_death"
+        ]
+    },
+    "mobbeetle.say": {
+        "category": "master",
+        "sounds": [
+            "spaceextended:mobbeetle/mobbeetle_say1",
+            "spaceextended:mobbeetle/mobbeetle_say2",
+            "spaceextended:mobbeetle/mobbeetle_say3"
+        ]
+    }
 }
