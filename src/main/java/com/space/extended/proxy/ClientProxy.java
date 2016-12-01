@@ -57,7 +57,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.klingonium_wall7, 0);
 		registerModel(BasicBlocks.klingonium_wall8, 0);
 		registerModel(BasicBlocks.perolit, 0);
-		registerModel(BasicBlocks.perolitOre, 0);
+		registerModel(BasicBlocks.perolit_ore, 0);
 		registerModel(BasicBlocks.pipes_connector, 0);
 		registerModel(BasicBlocks.strontenita, 0);
 		registerModel(BasicBlocks.strontenitb, 0);
