@@ -2,11 +2,13 @@ package com.space.extended;
 
 import com.space.extended.basicblocks.BasicBlocks;
 import com.space.extended.basicstairs.BasicStairs;
+import com.space.extended.creativetab.ArmorTab;
+import com.space.extended.creativetab.SpaceTab;
+import com.space.extended.creativetab.StairsTab;
 import com.space.extended.items.BasicItems;
 import com.space.extended.mob.EntityBeetle;
 import com.space.extended.mob.EntityMobBeetle;
 import com.space.extended.proxy.CommonProxy;
-import com.space.extended.spaceTab.SpaceTab;
 import com.space.extended.tileentity.TileEntityTresor;
 import com.space.extended.world.BasicWorldgenerater;
 
