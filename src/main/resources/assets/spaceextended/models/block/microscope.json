@@ -1,7 +1,7 @@
 {
     "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
     "textures": {
-        "particle": "spaceextended:blocks/microscope",
+        "particle": "blocks/spaceextended:blocks/microscope",
         "0": "spaceextended:blocks/microscope"
     },
     "elements": [
@@ -11,7 +11,7 @@
             "to": [ 11.0, 1.0, 11.0 ], 
             "shade": false,
             "faces": {
-                "north": { "texture": "#0", "uv": [ 12.0, 0.0, 13.0, 8.0 ] },
+                "north": { "texture": "#0", "uv": [ 12.0, 0.0, 13.0, 8.0 ], "rotation": 90 },
                 "east": { "texture": "#0", "uv": [ 0.0, 8.0, 6.0, 9.0 ] },
                 "south": { "texture": "#0", "uv": [ 12.0, 0.0, 13.0, 8.0 ], "rotation": 90 },
                 "west": { "texture": "#0", "uv": [ 0.0, 8.0, 6.0, 9.0 ] },
@@ -253,37 +253,5 @@
                 "down": { "texture": "#0", "uv": [ 5.0, 10.5, 5.5, 11.0 ] }
             }
         }
-    ],
-"display": {
-    "thirdperson_righthand": {
-        "rotation": [ 67, 88, -3 ],
-        "translation": [ -0.19, 3.97, 3.78 ],
-        "scale": [ 1, 1, 1 ]
-    },
-    "thirdperson_lefthand": {
-        "rotation": [ 67, -99, -3 ],
-        "translation": [ 0.57, 3.97, 3.78 ],
-        "scale": [ 1, 1, 1 ]
-    },
-    "fixed": {
-        "rotation": [ 0, 0, 0 ],
-        "translation": [ 0, 2.27, -2.83 ],
-        "scale": [ 1, 1, 1 ]
-    },
-    "firstperson_righthand": {
-        "rotation": [ 6, 91, 0 ],
-        "translation": [ -1.13, 4.72, 0 ],
-        "scale": [ 1, 1, 1 ]
-    },
-    "firstperson_lefthand": {
-        "rotation": [ 6, -96, 0 ],
-        "translation": [ -3.21, 4.72, 0 ],
-        "scale": [ 1, 1, 1 ]
-    },
-    "gui": {
-        "rotation": [ 30,125, 0 ],
-        "translation": [ -1, 3 , 0 ],
-        "scale": [ 1, 1, 1  ]
-    }
-}
+    ]
 }
