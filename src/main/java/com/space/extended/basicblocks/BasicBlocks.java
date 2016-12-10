@@ -82,6 +82,10 @@ public class BasicBlocks {
 	public static Block quartz_window_pane;
 	public static Block block_engine;
 	public static Block block_cyberol;
+	public static Block metal_lamp;
+	public static Block lit_metal_lamp;
+	
+	
 
 	public BasicBlocks() {
 		init();
@@ -238,7 +242,11 @@ public class BasicBlocks {
 		NameUtils.setNames(block_engine, "block_engine");
 		block_cyberol = new Block_Cyberol().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(block_cyberol, "block_cyberol");
-
+		metal_lamp = new Metal_Lamp(false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(metal_lamp, "metal_lamp");
+		lit_metal_lamp = new Metal_Lamp(true);
+		NameUtils.setNames(lit_metal_lamp, "lit_metal_lamp");
+		
 	}
 
 	private void register() {
@@ -314,7 +322,8 @@ public class BasicBlocks {
 		registerBlock(quartz_window_pane);
 		registerBlock(block_engine);
 		registerBlock(block_cyberol);
-
+		registerBlock(metal_lamp);
+		registerBlock(lit_metal_lamp);
 	}
 
 	private void registerBlock(Block block) {

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "normal": { "model": "spaceextended:unlit_metal_lamp" },
+		          { "model": "spaceextended:lit_metal_lamp" }
+				 
+    }
+}
