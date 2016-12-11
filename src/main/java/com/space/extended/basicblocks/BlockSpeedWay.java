@@ -23,7 +23,6 @@ public class BlockSpeedWay extends Block {
 	private AxisAlignedBB AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.875D, 1.0D);
 
 	public BlockSpeedWay() {
-
 		super(Material.ROCK);
 		setHardness(2F);
 		setResistance(5F);
@@ -31,12 +30,9 @@ public class BlockSpeedWay extends Block {
 		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 
-	public IBlockState getStateForEntityRender(IBlockState state) {
-		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
-	}
-
 	@Nullable
-	public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, World worldIn, BlockPos pos) {
+	@Override
+	public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
 		return AABB;
 	}
 
@@ -64,10 +60,6 @@ public class BlockSpeedWay extends Block {
 	public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY,
 			float hitZ, int meta, EntityLivingBase placer, EnumHand hand) {
 		return getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
-	}
-
-	public boolean isOpaqueCube() {
-		return false;
 	}
 
 	@Override
