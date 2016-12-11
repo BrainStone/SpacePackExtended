@@ -74,7 +74,7 @@ public class BlockSpeedWay extends Block {
 
 	@Override
 	public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn) {
-		entityIn.motionX *= 1.3D;
-		entityIn.motionZ *= 1.3D;
+		entityIn.motionX *= 1.1D;
+		entityIn.motionZ *= 1.1D;
 	}
 }
