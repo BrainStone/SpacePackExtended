@@ -1,7 +1,7 @@
 {
     "variants": {
-        "normal": 
-            { "model": "spaceextended:perold" }
-            
-            }
+        "normal": {
+            "model": "spaceextended:perold"
+        }
+    }
 }

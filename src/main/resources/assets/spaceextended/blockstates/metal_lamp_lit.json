@@ -1,6 +1,7 @@
 {
     "variants": {
-        "normal": { "model": "spaceextended:metal_lamp_lit" }
-				 
+        "normal": {
+            "model": "spaceextended:metal_lamp_lit"
+        }
     }
 }

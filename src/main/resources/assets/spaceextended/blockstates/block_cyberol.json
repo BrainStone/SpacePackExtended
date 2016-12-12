@@ -1,7 +1,7 @@
 {
     "variants": {
-        "normal": 
-            { "model": "spaceextended:block_cyberol" }
-            
-            }
+        "normal": {
+            "model": "spaceextended:block_cyberol"
+        }
+    }
 }

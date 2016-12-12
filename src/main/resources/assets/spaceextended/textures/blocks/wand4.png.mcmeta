@@ -1,13 +1,13 @@
 {
-  "animation": {
-    "frametime": 40,
-    "interpolate": true,
-    "frames": [
-      4,
-	  3,
-	  2,
-	  1,
-	  0
-    ]
-  }
+    "animation": {
+        "frametime": 40,
+        "interpolate": true,
+        "frames": [
+            4,
+            3,
+            2,
+            1,
+            0
+        ]
+    }
 }

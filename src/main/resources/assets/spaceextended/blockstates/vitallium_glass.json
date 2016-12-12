@@ -1,5 +1,7 @@
 {
     "variants": {
-        "normal": { "model": "spaceextended:vitallium_glass" }
+        "normal": {
+            "model": "spaceextended:vitallium_glass"
+        }
     }
 }

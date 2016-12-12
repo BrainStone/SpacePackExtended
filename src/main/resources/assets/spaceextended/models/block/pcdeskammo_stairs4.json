@@ -1,22 +1,78 @@
 {
-"__comment": "Designed by Norzeteus with BDcraft Cubik PRO 0.95 Beta - http://bdcraft.net",
-"textures": {
-    "particle": "spaceextended:blocks/random/154",
-    "texture": "spaceextended:blocks/random/154",
-    "155": "spaceextended:blocks/random/155"
-},
-"elements": [ 
-{
-    "from": [ 12, 2.125, 4 ],
-    "to": [ 16, 14.125, 12 ],
-    "faces": {
-        "down":  { "uv": [ 4, 12, 0, 4 ], "texture": "#155" },
-        "up":    { "uv": [ 12, 4, 16, 12 ], "texture": "#155" },
-        "north": { "uv": [ 0, 2.125, 4, 14.125 ], "texture": "#155" },
-        "south": { "uv": [ 12, 2.125, 16, 14.125 ], "texture": "#155" },
-        "west":  { "uv": [ 4, 1.875, 12, 14.125 ], "texture": "#texture" },
-        "east":  { "uv": [ 4, 2.125, 12, 14.125 ], "texture": "#155" }
-    }
-}
-]
+    "__comment": "Designed by Norzeteus with BDcraft Cubik PRO 0.95 Beta - http://bdcraft.net",
+    "textures": {
+        "particle": "spaceextended:blocks/random/154",
+        "texture": "spaceextended:blocks/random/154",
+        "155": "spaceextended:blocks/random/155"
+    },
+    "elements": [
+        {
+            "from": [
+                12,
+                2.125,
+                4
+            ],
+            "to": [
+                16,
+                14.125,
+                12
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        4,
+                        12,
+                        0,
+                        4
+                    ],
+                    "texture": "#155"
+                },
+                "up": {
+                    "uv": [
+                        12,
+                        4,
+                        16,
+                        12
+                    ],
+                    "texture": "#155"
+                },
+                "north": {
+                    "uv": [
+                        0,
+                        2.125,
+                        4,
+                        14.125
+                    ],
+                    "texture": "#155"
+                },
+                "south": {
+                    "uv": [
+                        12,
+                        2.125,
+                        16,
+                        14.125
+                    ],
+                    "texture": "#155"
+                },
+                "west": {
+                    "uv": [
+                        4,
+                        1.875,
+                        12,
+                        14.125
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        4,
+                        2.125,
+                        12,
+                        14.125
+                    ],
+                    "texture": "#155"
+                }
+            }
+        }
+    ]
 }

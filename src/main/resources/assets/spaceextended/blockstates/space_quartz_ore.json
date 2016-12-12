@@ -1,7 +1,7 @@
 {
     "variants": {
-        "normal": 
-            { "model": "spaceextended:space_quartz_ore" }
-            
-            }
+        "normal": {
+            "model": "spaceextended:space_quartz_ore"
+        }
+    }
 }

@@ -1,7 +1,7 @@
 {
     "variants": {
-        "normal": 
-            { "model": "spaceextended:kit4" }
-            
-            }
+        "normal": {
+            "model": "spaceextended:kit4"
+        }
+    }
 }

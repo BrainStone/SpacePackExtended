@@ -1,8 +1,16 @@
 {
     "variants": {
-        "axis=y":  { "model": "spaceextended:block_engine" },
-        "axis=z":   { "model": "spaceextended:block_engine", "x": 90 },
-        "axis=x":   { "model": "spaceextended:block_engine", "x": 90, "y": 90 }
+        "axis=y": {
+            "model": "spaceextended:block_engine"
+        },
+        "axis=z": {
+            "model": "spaceextended:block_engine",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "spaceextended:block_engine",
+            "x": 90,
+            "y": 90
+        }
     }
 }
-

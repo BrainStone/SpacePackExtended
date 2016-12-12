@@ -1,7 +1,7 @@
 {
     "variants": {
-        "normal": 
-            { "model": "spaceextended:reserves" }
-            
-            }
+        "normal": {
+            "model": "spaceextended:reserves"
+        }
+    }
 }

@@ -1,7 +1,7 @@
 {
     "variants": {
-        "normal": 
-            { "model": "spaceextended:strontenitb" }
-            
-            }
+        "normal": {
+            "model": "spaceextended:strontenitb"
+        }
+    }
 }

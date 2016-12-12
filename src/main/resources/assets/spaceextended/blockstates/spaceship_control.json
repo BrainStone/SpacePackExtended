@@ -1,44 +1,174 @@
 {
     "variants": {
-        "facing=east,half=bottom,shape=straight":  { "model": "spaceextended:spaceship_control" },
-        "facing=west,half=bottom,shape=straight":  { "model": "spaceextended:spaceship_control", "y": 180 },
-        "facing=south,half=bottom,shape=straight": { "model": "spaceextended:spaceship_control", "y": 90 },
-        "facing=north,half=bottom,shape=straight": { "model": "spaceextended:spaceship_control", "y": 270 },
-        "facing=east,half=bottom,shape=outer_right":  { "model": "spaceextended:spaceship_control_outer" },
-        "facing=west,half=bottom,shape=outer_right":  { "model": "spaceextended:spaceship_control_outer", "y": 180},
-        "facing=south,half=bottom,shape=outer_right": { "model": "spaceextended:spaceship_control_outer", "y": 90 },
-        "facing=north,half=bottom,shape=outer_right": { "model": "spaceextended:spaceship_control_outer", "y": 270 },
-        "facing=east,half=bottom,shape=outer_left":  { "model": "spaceextended:spaceship_control_outer_left", "y": 270 },
-        "facing=west,half=bottom,shape=outer_left":  { "model": "spaceextended:spaceship_control_outer_left", "y": 90 },
-        "facing=south,half=bottom,shape=outer_left": { "model": "spaceextended:spaceship_control_outer_left" },
-        "facing=north,half=bottom,shape=outer_left": { "model": "spaceextended:spaceship_control_outer_left", "y": 180 },
-        "facing=east,half=bottom,shape=inner_right":  { "model": "spaceextended:spaceship_control_inner" },
-        "facing=west,half=bottom,shape=inner_right":  { "model": "spaceextended:spaceship_control_inner", "y": 180 },
-        "facing=south,half=bottom,shape=inner_right": { "model": "spaceextended:spaceship_control_inner", "y": 90 },
-        "facing=north,half=bottom,shape=inner_right": { "model": "spaceextended:spaceship_control_inner", "y": 270 },
-        "facing=east,half=bottom,shape=inner_left":  { "model": "spaceextended:spaceship_control_inner_left", "y": 270},
-        "facing=west,half=bottom,shape=inner_left":  { "model": "spaceextended:spaceship_control_inner_left", "y": 90 },
-        "facing=south,half=bottom,shape=inner_left": { "model": "spaceextended:spaceship_control_inner_left" },
-        "facing=north,half=bottom,shape=inner_left": { "model": "spaceextended:spaceship_control_inner_left", "y": 180 },
-        "facing=east,half=top,shape=straight":  { "model": "spaceextended:spaceship_control2", "x": 180 },
-        "facing=west,half=top,shape=straight":  { "model": "spaceextended:spaceship_control3", "x": 180, "y": 180},
-        "facing=south,half=top,shape=straight": { "model": "spaceextended:spaceship_control4", "x": 180, "y": 90 },
-        "facing=north,half=top,shape=straight": { "model": "spaceextended:spaceship_control5", "x": 180, "y": 270 },
-        "facing=east,half=top,shape=outer_right":  { "model": "spaceextended:spaceship_control_outer1", "x": 180, "y": 90 },
-        "facing=west,half=top,shape=outer_right":  { "model": "spaceextended:spaceship_control_outer2", "x": 180, "y": 270 },
-        "facing=south,half=top,shape=outer_right": { "model": "spaceextended:spaceship_control_outer3", "x": 180, "y": 180 },
-        "facing=north,half=top,shape=outer_right": { "model": "spaceextended:spaceship_control_outer4", "x": 180 },
-        "facing=east,half=top,shape=outer_left":  { "model": "spaceextended:spaceship_control_outer5", "x": 180 },
-        "facing=west,half=top,shape=outer_left":  { "model": "spaceextended:spaceship_control_outer6", "x": 180, "y": 180 },
-        "facing=south,half=top,shape=outer_left": { "model": "spaceextended:spaceship_control_outer7", "x": 180, "y": 90},
-        "facing=north,half=top,shape=outer_left": { "model": "spaceextended:spaceship_control_outer8", "x": 180, "y": 270 },
-        "facing=east,half=top,shape=inner_right":  { "model": "spaceextended:lamp_inner_stairs", "x": 180, "y": 90 },
-        "facing=west,half=top,shape=inner_right":  { "model": "spaceextended:lamp_inner_stairs", "x": 180, "y": 270 },
-        "facing=south,half=top,shape=inner_right": { "model": "spaceextended:lamp_inner_stairs", "x": 180, "y": 180 },
-        "facing=north,half=top,shape=inner_right": { "model": "spaceextended:lamp_inner_stairs", "x": 180},
-        "facing=east,half=top,shape=inner_left":  { "model": "spaceextended:lamp_inner_stairs", "x": 180},
-        "facing=west,half=top,shape=inner_left":  { "model": "spaceextended:lamp_inner_stairs", "x": 180, "y": 180 },
-        "facing=south,half=top,shape=inner_left": { "model": "spaceextended:lamp_inner_stairs", "x": 180, "y": 90 },
-        "facing=north,half=top,shape=inner_left": { "model": "spaceextended:lamp_inner_stairs", "x": 180, "y": 270 }
+        "facing=east,half=bottom,shape=straight": {
+            "model": "spaceextended:spaceship_control"
+        },
+        "facing=west,half=bottom,shape=straight": {
+            "model": "spaceextended:spaceship_control",
+            "y": 180
+        },
+        "facing=south,half=bottom,shape=straight": {
+            "model": "spaceextended:spaceship_control",
+            "y": 90
+        },
+        "facing=north,half=bottom,shape=straight": {
+            "model": "spaceextended:spaceship_control",
+            "y": 270
+        },
+        "facing=east,half=bottom,shape=outer_right": {
+            "model": "spaceextended:spaceship_control_outer"
+        },
+        "facing=west,half=bottom,shape=outer_right": {
+            "model": "spaceextended:spaceship_control_outer",
+            "y": 180
+        },
+        "facing=south,half=bottom,shape=outer_right": {
+            "model": "spaceextended:spaceship_control_outer",
+            "y": 90
+        },
+        "facing=north,half=bottom,shape=outer_right": {
+            "model": "spaceextended:spaceship_control_outer",
+            "y": 270
+        },
+        "facing=east,half=bottom,shape=outer_left": {
+            "model": "spaceextended:spaceship_control_outer_left",
+            "y": 270
+        },
+        "facing=west,half=bottom,shape=outer_left": {
+            "model": "spaceextended:spaceship_control_outer_left",
+            "y": 90
+        },
+        "facing=south,half=bottom,shape=outer_left": {
+            "model": "spaceextended:spaceship_control_outer_left"
+        },
+        "facing=north,half=bottom,shape=outer_left": {
+            "model": "spaceextended:spaceship_control_outer_left",
+            "y": 180
+        },
+        "facing=east,half=bottom,shape=inner_right": {
+            "model": "spaceextended:spaceship_control_inner"
+        },
+        "facing=west,half=bottom,shape=inner_right": {
+            "model": "spaceextended:spaceship_control_inner",
+            "y": 180
+        },
+        "facing=south,half=bottom,shape=inner_right": {
+            "model": "spaceextended:spaceship_control_inner",
+            "y": 90
+        },
+        "facing=north,half=bottom,shape=inner_right": {
+            "model": "spaceextended:spaceship_control_inner",
+            "y": 270
+        },
+        "facing=east,half=bottom,shape=inner_left": {
+            "model": "spaceextended:spaceship_control_inner_left",
+            "y": 270
+        },
+        "facing=west,half=bottom,shape=inner_left": {
+            "model": "spaceextended:spaceship_control_inner_left",
+            "y": 90
+        },
+        "facing=south,half=bottom,shape=inner_left": {
+            "model": "spaceextended:spaceship_control_inner_left"
+        },
+        "facing=north,half=bottom,shape=inner_left": {
+            "model": "spaceextended:spaceship_control_inner_left",
+            "y": 180
+        },
+        "facing=east,half=top,shape=straight": {
+            "model": "spaceextended:spaceship_control2",
+            "x": 180
+        },
+        "facing=west,half=top,shape=straight": {
+            "model": "spaceextended:spaceship_control3",
+            "x": 180,
+            "y": 180
+        },
+        "facing=south,half=top,shape=straight": {
+            "model": "spaceextended:spaceship_control4",
+            "x": 180,
+            "y": 90
+        },
+        "facing=north,half=top,shape=straight": {
+            "model": "spaceextended:spaceship_control5",
+            "x": 180,
+            "y": 270
+        },
+        "facing=east,half=top,shape=outer_right": {
+            "model": "spaceextended:spaceship_control_outer1",
+            "x": 180,
+            "y": 90
+        },
+        "facing=west,half=top,shape=outer_right": {
+            "model": "spaceextended:spaceship_control_outer2",
+            "x": 180,
+            "y": 270
+        },
+        "facing=south,half=top,shape=outer_right": {
+            "model": "spaceextended:spaceship_control_outer3",
+            "x": 180,
+            "y": 180
+        },
+        "facing=north,half=top,shape=outer_right": {
+            "model": "spaceextended:spaceship_control_outer4",
+            "x": 180
+        },
+        "facing=east,half=top,shape=outer_left": {
+            "model": "spaceextended:spaceship_control_outer5",
+            "x": 180
+        },
+        "facing=west,half=top,shape=outer_left": {
+            "model": "spaceextended:spaceship_control_outer6",
+            "x": 180,
+            "y": 180
+        },
+        "facing=south,half=top,shape=outer_left": {
+            "model": "spaceextended:spaceship_control_outer7",
+            "x": 180,
+            "y": 90
+        },
+        "facing=north,half=top,shape=outer_left": {
+            "model": "spaceextended:spaceship_control_outer8",
+            "x": 180,
+            "y": 270
+        },
+        "facing=east,half=top,shape=inner_right": {
+            "model": "spaceextended:lamp_inner_stairs",
+            "x": 180,
+            "y": 90
+        },
+        "facing=west,half=top,shape=inner_right": {
+            "model": "spaceextended:lamp_inner_stairs",
+            "x": 180,
+            "y": 270
+        },
+        "facing=south,half=top,shape=inner_right": {
+            "model": "spaceextended:lamp_inner_stairs",
+            "x": 180,
+            "y": 180
+        },
+        "facing=north,half=top,shape=inner_right": {
+            "model": "spaceextended:lamp_inner_stairs",
+            "x": 180
+        },
+        "facing=east,half=top,shape=inner_left": {
+            "model": "spaceextended:lamp_inner_stairs",
+            "x": 180
+        },
+        "facing=west,half=top,shape=inner_left": {
+            "model": "spaceextended:lamp_inner_stairs",
+            "x": 180,
+            "y": 180
+        },
+        "facing=south,half=top,shape=inner_left": {
+            "model": "spaceextended:lamp_inner_stairs",
+            "x": 180,
+            "y": 90
+        },
+        "facing=north,half=top,shape=inner_left": {
+            "model": "spaceextended:lamp_inner_stairs",
+            "x": 180,
+            "y": 270
+        }
     }
 }

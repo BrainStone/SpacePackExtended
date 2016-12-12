@@ -1,7 +1,7 @@
 [
     {
         "modid": "spaceextended",
-        "name": "§5Space Pack Extended§r",
+        "name": "\u00a75Space Pack Extended\u00a7r",
         "description": "Space Pack Extended Mod by Norzeteus and The_BrainStone",
         "version": "${version}",
         "mcversion": "${mcversion}",
@@ -11,7 +11,11 @@
         ],
         "credits": "",
         "logoFile": "logo.png",
-        "screenshots": [],
-        "dependencies": []
+        "screenshots": [
+            
+        ],
+        "dependencies": [
+            
+        ]
     }
 ]

@@ -1,7 +1,7 @@
 {
     "variants": {
-        "normal": 
-            { "model": "spaceextended:klingonium_walllr" }
-            
-            }
+        "normal": {
+            "model": "spaceextended:klingonium_walllr"
+        }
+    }
 }

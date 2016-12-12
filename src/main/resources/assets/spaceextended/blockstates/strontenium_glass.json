@@ -1,5 +1,7 @@
 {
     "variants": {
-        "normal": { "model": "spaceextended:strontenium_glass" }
+        "normal": {
+            "model": "spaceextended:strontenium_glass"
+        }
     }
 }

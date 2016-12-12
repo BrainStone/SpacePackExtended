@@ -1,4 +1,3 @@
 {
-    "parent" : "spaceextended:block/spaceship_control"
-	}
- 
+    "parent": "spaceextended:block/spaceship_control"
+}

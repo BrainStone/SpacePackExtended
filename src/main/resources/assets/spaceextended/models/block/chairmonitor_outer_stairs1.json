@@ -1,21 +1,77 @@
 {
-"__comment": "Designed by Norzeteus with BDcraft Cubik PRO 0.95 Beta - http://bdcraft.net",
-"textures": {
-    "particle": "spaceextended:blocks/stairs/dark_oak_outer_stairs1",
-    "texture": "spaceextended:blocks/stairs/dark_oak_outer_stairs1"
-},
-"elements": [ 
-{
-    "from": [ 14, 3, 14 ],
-    "to": [ 16, 14, 16 ],
-    "faces": {
-        "down":  { "uv": [ 14.001, 13.001, 15.999, 14.999 ], "texture": "#texture" },
-        "up":    { "uv": [ 14.001, 13.001, 15.999, 14.999 ], "texture": "#texture" },
-        "north": { "uv": [ 14.001, 2.001, 15.999, 12.999 ], "texture": "#texture" },
-        "south": { "uv": [ 14.001, 2.001, 15.999, 12.999 ], "texture": "#texture" },
-        "west":  { "uv": [ 14.001, 2.001, 15.999, 12.999 ], "texture": "#texture" },
-        "east":  { "uv": [ 14.001, 2.001, 15.999, 12.999 ], "texture": "#texture" }
-    }
-}
-]
+    "__comment": "Designed by Norzeteus with BDcraft Cubik PRO 0.95 Beta - http://bdcraft.net",
+    "textures": {
+        "particle": "spaceextended:blocks/stairs/dark_oak_outer_stairs1",
+        "texture": "spaceextended:blocks/stairs/dark_oak_outer_stairs1"
+    },
+    "elements": [
+        {
+            "from": [
+                14,
+                3,
+                14
+            ],
+            "to": [
+                16,
+                14,
+                16
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        14.001,
+                        13.001,
+                        15.999,
+                        14.999
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        14.001,
+                        13.001,
+                        15.999,
+                        14.999
+                    ],
+                    "texture": "#texture"
+                },
+                "north": {
+                    "uv": [
+                        14.001,
+                        2.001,
+                        15.999,
+                        12.999
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        14.001,
+                        2.001,
+                        15.999,
+                        12.999
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        14.001,
+                        2.001,
+                        15.999,
+                        12.999
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        14.001,
+                        2.001,
+                        15.999,
+                        12.999
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        }
+    ]
 }

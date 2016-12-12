@@ -1,5 +1,7 @@
 import io.franzbecker.gradle.lombok.task.DelombokTask
 
+import groovy.json.*
+
 buildscript {
     repositories {
         mavenCentral()
@@ -66,6 +68,7 @@ def signJar(archivePath) {
 }
 
 def MainDirResources = fileTree(dir: file('.'), includes: ['README.md', 'LICENSE', 'CHANGELOG.md'])
+def jsonPatterns = ["mcmod.info", "**/*.json", "**/*.mcmeta", "**/*.cf", "**/*.ctx"]
 version = getVersionName()
 group = "com.space.extended" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "SpacePackExtended"
@@ -92,6 +95,16 @@ task delombok(type: DelombokTask) {
     args("src/main/java", "-d", "build/sources/delomboked/java")
 }
 
+task formatJson {
+    doLast {
+        sourceSets.main.resources.srcDirs.each {
+            dir -> fileTree(dir: dir, includes: jsonPatterns).each {
+                File file -> file.text = JsonOutput.prettyPrint(file.text) + "\n"
+            }
+        }
+    }
+}
+
 sourceMainJava {
     source = sourceSets.main.allSource
 }
@@ -115,6 +128,13 @@ processResources {
     }
     
     from MainDirResources
+    
+    // Minify json resources
+    doLast {
+        fileTree(dir: outputs.files.asPath, includes: jsonPatterns).each {
+            File file -> file.text = JsonOutput.toJson(new JsonSlurper().parse(file))
+        }
+    }
 }
 
 task showVersion {

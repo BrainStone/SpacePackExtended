@@ -1,7 +1,16 @@
 {
     "variants": {
-        "axis=y":  { "model": "spaceextended:perolit" },
-        "axis=z":   { "model": "spaceextended:perolit", "x": 90 },
-        "axis=x":   { "model": "spaceextended:perolit", "x": 90, "y": 90 }
+        "axis=y": {
+            "model": "spaceextended:perolit"
+        },
+        "axis=z": {
+            "model": "spaceextended:perolit",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "spaceextended:perolit",
+            "x": 90,
+            "y": 90
+        }
     }
 }

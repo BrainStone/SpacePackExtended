@@ -3,7 +3,7 @@
     "textures": {
         "bottom": "spaceextended:blocks/tresor_top",
         "side": "spaceextended:blocks/tresor_side",
-		"top": "spaceextended:blocks/tresor_top",
-		"front":"spaceextended:blocks/tresor_front"
+        "top": "spaceextended:blocks/tresor_top",
+        "front": "spaceextended:blocks/tresor_front"
     }
 }

@@ -1,7 +1,7 @@
 {
     "variants": {
-        "normal": 
-            { "model": "spaceextended:constructor5" }
-            
-            }
+        "normal": {
+            "model": "spaceextended:constructor5"
+        }
+    }
 }

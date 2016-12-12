@@ -1,7 +1,7 @@
 {
     "parent": "block/inner_stairs",
     "textures": {
-         "bottom": "spaceextended:blocks/klingonium_top",
+        "bottom": "spaceextended:blocks/klingonium_top",
         "top": "spaceextended:blocks/klingonium_top",
         "side": "spaceextended:blocks/klingonium_side"
     }

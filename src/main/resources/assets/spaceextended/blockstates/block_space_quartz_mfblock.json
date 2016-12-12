@@ -1,7 +1,7 @@
 {
     "variants": {
-        "normal": 
-            { "model": "spaceextended:block_space_quartz_mfblock" }
-            
-            }
+        "normal": {
+            "model": "spaceextended:block_space_quartz_mfblock"
+        }
+    }
 }

@@ -1,18 +1,33 @@
 {
- "animation": {
-    "frametime": 5,
-    "interpolate": true,
-    "frames": [
-	{index:0, time:150},
-      0,
-	{index:1, time:150},  
-      1,
-	{index:2, time:150},  
-      2,
-	{index:3, time:150},  
-	  3,
-	{index:4, time:150},  
-	  4	  
-	 ]
-  }
+    "animation": {
+        "frametime": 5,
+        "interpolate": true,
+        "frames": [
+            {
+                "index": 0,
+                "time": 150
+            },
+            0,
+            {
+                "index": 1,
+                "time": 150
+            },
+            1,
+            {
+                "index": 2,
+                "time": 150
+            },
+            2,
+            {
+                "index": 3,
+                "time": 150
+            },
+            3,
+            {
+                "index": 4,
+                "time": 150
+            },
+            4
+        ]
+    }
 }

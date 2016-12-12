@@ -1,7 +1,7 @@
 {
     "variants": {
-        "normal": 
-            { "model": "spaceextended:metalframeblock" }
-            
-            }
+        "normal": {
+            "model": "spaceextended:metalframeblock"
+        }
+    }
 }

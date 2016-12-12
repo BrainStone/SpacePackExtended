@@ -1,8 +1,19 @@
 {
     "variants": {
-        "facing=north": { "model": "spaceextended:satellite_antenna", "y": 90 },
-        "facing=south": { "model": "spaceextended:satellite_antenna" , "y": 270},
-        "facing=west":  { "model": "spaceextended:satellite_antenna" },
-        "facing=east":  { "model": "spaceextended:satellite_antenna" , "y": 180}
+        "facing=north": {
+            "model": "spaceextended:satellite_antenna",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "spaceextended:satellite_antenna",
+            "y": 270
+        },
+        "facing=west": {
+            "model": "spaceextended:satellite_antenna"
+        },
+        "facing=east": {
+            "model": "spaceextended:satellite_antenna",
+            "y": 180
+        }
     }
 }

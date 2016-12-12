@@ -1,7 +1,7 @@
 {
     "variants": {
-        "normal": 
-            { "model": "spaceextended:strontenium_ore" }
-            
-            }
+        "normal": {
+            "model": "spaceextended:strontenium_ore"
+        }
+    }
 }

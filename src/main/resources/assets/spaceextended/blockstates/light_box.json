@@ -1,8 +1,19 @@
 {
     "variants": {
-        "facing=north": { "model": "spaceextended:light_box", "y": 90 },
-        "facing=south": { "model": "spaceextended:light_box" , "y": 270},
-        "facing=west":  { "model": "spaceextended:light_box" },
-        "facing=east":  { "model": "spaceextended:light_box" , "y": 180}
+        "facing=north": {
+            "model": "spaceextended:light_box",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "spaceextended:light_box",
+            "y": 270
+        },
+        "facing=west": {
+            "model": "spaceextended:light_box"
+        },
+        "facing=east": {
+            "model": "spaceextended:light_box",
+            "y": 180
+        }
     }
 }

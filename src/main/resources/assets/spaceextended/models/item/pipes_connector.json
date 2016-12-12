@@ -1,4 +1,3 @@
 {
-    "parent" : "spaceextended:block/pipes_connector"
-	}
- 
+    "parent": "spaceextended:block/pipes_connector"
+}

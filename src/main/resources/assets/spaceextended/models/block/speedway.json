@@ -3,7 +3,7 @@
     "textures": {
         "bottom": "spaceextended:blocks/speedway_top",
         "side": "spaceextended:blocks/speedway_side",
-		"top": "spaceextended:blocks/speedway_top",
-		"front":"spaceextended:blocks/speedway_side"
+        "top": "spaceextended:blocks/speedway_top",
+        "front": "spaceextended:blocks/speedway_side"
     }
 }
