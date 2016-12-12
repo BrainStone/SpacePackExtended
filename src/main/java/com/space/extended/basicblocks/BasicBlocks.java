@@ -83,7 +83,7 @@ public class BasicBlocks {
 	public static Block block_engine;
 	public static Block block_cyberol;
 	public static Block metal_lamp;
-	public static Block lit_metal_lamp;
+	public static Block metal_lamp_lit;
 	
 	
 
@@ -242,10 +242,10 @@ public class BasicBlocks {
 		NameUtils.setNames(block_engine, "block_engine");
 		block_cyberol = new Block_Cyberol().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(block_cyberol, "block_cyberol");
-		metal_lamp = new Metal_Lamp(false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_lamp = new BlockMetalLamp(false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_lamp, "metal_lamp");
-		lit_metal_lamp = new Metal_Lamp(true);
-		NameUtils.setNames(lit_metal_lamp, "lit_metal_lamp");
+		metal_lamp_lit = new BlockMetalLamp(true);
+		NameUtils.setNames(metal_lamp_lit, "metal_lamp_lit");
 		
 	}
 
@@ -323,7 +323,7 @@ public class BasicBlocks {
 		registerBlock(block_engine);
 		registerBlock(block_cyberol);
 		registerBlock(metal_lamp);
-		registerBlock(lit_metal_lamp);
+		registerBlock(metal_lamp_lit);
 	}
 
 	private void registerBlock(Block block) {
