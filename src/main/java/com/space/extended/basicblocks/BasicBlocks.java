@@ -84,9 +84,14 @@ public class BasicBlocks {
 	public static Block block_cyberol;
 	public static Block metal_lamp;
 	public static Block metal_lamp_lit;
+	public static Block metal_frame_straight;
+	public static Block metal_frame_l;
+	public static Block metal_frame_t;
+	public static Block metal_frame_x;
+	public static Block metal_frame_post;
+	public static Block metal_frame_zero;
 	
 	
-
 	public BasicBlocks() {
 		init();
 		register();
@@ -246,6 +251,20 @@ public class BasicBlocks {
 		NameUtils.setNames(metal_lamp, "metal_lamp");
 		metal_lamp_lit = new BlockMetalLamp(true);
 		NameUtils.setNames(metal_lamp_lit, "metal_lamp_lit");
+		metal_frame_straight = new BlockMetal_Frame_Straight().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(metal_frame_straight, "metal_frame_straight");
+		metal_frame_l = new BlockMetal_Frame_L().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(metal_frame_l, "metal_frame_l");
+		metal_frame_t= new BlockMetal_Frame_T().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(metal_frame_t, "metal_frame_t");
+		metal_frame_x= new BlockMetal_Frame_X().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(metal_frame_x, "metal_frame_x");
+		metal_frame_post= new BlockMetal_Frame_Post().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(metal_frame_post, "metal_frame_post");
+		metal_frame_zero= new BlockMetal_Frame_Zero().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(metal_frame_zero, "metal_frame_zero");
+		
+		
 		
 	}
 
@@ -324,6 +343,13 @@ public class BasicBlocks {
 		registerBlock(block_cyberol);
 		registerBlock(metal_lamp);
 		registerBlock(metal_lamp_lit);
+		registerBlock(metal_frame_straight);
+		registerBlock(metal_frame_l);
+		registerBlock(metal_frame_t);
+		registerBlock(metal_frame_x);
+		registerBlock(metal_frame_post);
+		registerBlock(metal_frame_zero);
+		
 	}
 
 	private void registerBlock(Block block) {

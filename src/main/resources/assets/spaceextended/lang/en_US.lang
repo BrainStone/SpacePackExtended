@@ -77,7 +77,12 @@ tile.quartz_window_pane.name=§5Quartz Window Pane§r
 tile.block_engine.name=§5Rocket Engine§r
 tile.block_cyberol.name=§5Cyberol§r
 tile.metal_lamp.name=§5Metal Lamp§r
-
+tile.metal_frame_l.name=§5Metal Frame L§r
+tile.metal_frame_t.name=§5Metal Frame T§r
+tile.metal_frame_x.name=§5Metal Frame X§r
+tile.metal_frame_post.name=§5Metal Frame Post§r
+tile.metal_frame_straight.name=§5Metal Frame Straight§r
+tile.metal_frame_zero.name=§5Metal Frame Zero§r
 
 
 /*Stairs*/

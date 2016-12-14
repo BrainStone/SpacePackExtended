@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:metal_frame_l",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "spaceextended:metal_frame_l",
+            "y": 270
+        },
+        "facing=west": {
+            "model": "spaceextended:metal_frame_l"
+        },
+        "facing=east": {
+            "model": "spaceextended:metal_frame_l",
+            "y": 180
+        }
+    }
+}

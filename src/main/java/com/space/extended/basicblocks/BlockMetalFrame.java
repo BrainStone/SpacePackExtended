@@ -15,7 +15,7 @@ public class BlockMetalFrame extends Block {
 		setResistance(5F);
 		setLightOpacity(1);
 		setHarvestLevel("axe", 2);
-		setSoundType(SoundType.METAL);
+		setSoundType(SoundType.LADDER);
 	}
 
 	@Override

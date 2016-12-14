@@ -1,0 +1,165 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "textures": {
+        "particle": "spaceextended:blocks/stairs/post",
+        "0": "spaceextended:blocks/stairs/post"
+    },
+    "elements": [
+        {
+            "name": "post senkr nw",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 2.0, 16.0, 2.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 16.0, 2.0, 14.0, 0.0 ] }
+            }
+        },
+        {
+            "name": "post senkr no",
+            "from": [ 14.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 2.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 14.0, 0.0, 16.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 2.0, 2.0, 0.0, 0.0 ] }
+            }
+        },
+        {
+            "name": "post senkr so",
+            "from": [ 14.0, 0.0, 14.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 14.0, 14.0, 16.0, 16.0 ] },
+                "down": { "texture": "#0", "uv": [ 2.0, 16.0, 0.0, 14.0 ] }
+            }
+        },
+        {
+            "name": "post senkr sw",
+            "from": [ 0.0, 0.0, 14.0 ], 
+            "to": [ 2.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 14.0, 2.0, 16.0 ] },
+                "down": { "texture": "#0", "uv": [ 16.0, 16.0, 14.0, 14.0 ] }
+            }
+        }
+    ],
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [
+                89,
+                -105,
+                6
+            ],
+            "translation": [
+                1.32,
+                0.76,
+                -0.94
+            ],
+            "scale": [
+                0.4,
+                0.4,
+                0.4
+            ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [
+                89,
+                72,
+                6
+            ],
+            "translation": [
+                1.32,
+                0.76,
+                -0.94
+            ],
+            "scale": [
+                0.4,
+                0.4,
+                0.4
+            ]
+        },
+        "firstperson_righthand": {
+            "rotation": [
+                10,
+                48,
+                -3
+            ],
+            "translation": [
+                -1.89,
+                0,
+                0
+            ],
+            "scale": [
+                0.38,
+                0.38,
+                0.38
+            ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [
+                10,
+                48,
+                -3
+            ],
+            "translation": [
+                -1.89,
+                0,
+                0
+            ],
+            "scale": [
+                0.38,
+                0.38,
+                0.38
+            ]
+        },
+        "gui": {
+            "rotation": [
+                30,
+                125,
+                0
+            ],
+            "translation": [
+                0.5,
+                0,
+                0
+            ],
+            "scale": [
+                0.625,
+                0.625,
+                0.625
+            ]
+        },
+        "ground": {
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "translation": [
+                0,
+                3,
+                0
+            ],
+            "scale": [
+                0.25,
+                0.25,
+                0.25
+            ]
+        }
+    }
+}

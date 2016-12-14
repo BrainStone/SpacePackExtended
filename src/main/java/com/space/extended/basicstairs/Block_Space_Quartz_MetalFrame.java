@@ -17,7 +17,7 @@ public class Block_Space_Quartz_MetalFrame extends BlockStairs {
 		setResistance(5F);
 		setLightOpacity(1);
 		setHarvestLevel("axe", 1);
-		setSoundType(SoundType.METAL);
+		setSoundType(SoundType.LADDER);
 	}
 
 	@Override

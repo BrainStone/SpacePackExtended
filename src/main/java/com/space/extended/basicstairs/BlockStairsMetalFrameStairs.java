@@ -17,7 +17,7 @@ public class BlockStairsMetalFrameStairs extends BlockStairs {
 		setResistance(5F);
 		setLightOpacity(1);
 		setHarvestLevel("axe", 1);
-		setSoundType(SoundType.METAL);
+		setSoundType(SoundType.LADDER);
 	}
 
 	@Override

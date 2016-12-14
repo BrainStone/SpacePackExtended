@@ -333,6 +333,29 @@ public class BasicCrafting {
 		// 96 Block_Cyberol
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.block_cyberol, 5),
 				new Object[] { "A A", " A ", "A A", 'A', new ItemStack(BasicItems.cyberit_gem) });
+		// 97 Metal_Frame_L
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_frame_l, 5),
+				new Object[] { " F ", " FF", "   ", 'F', new ItemStack(BasicItems.vitallium_ingot) });
+		// 98 Metal_Frame_Post
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_frame_post, 5),
+				new Object[] { "F F", "   ", "F F", 'F', new ItemStack(BasicItems.vitallium_ingot) });
+		// 99 Metal_Frame_Straight
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_frame_straight, 5),
+				new Object[] { "F F", "F F", "F F", 'F', new ItemStack(BasicItems.vitallium_ingot) });
+		// 100 Metal_Frame_T
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_frame_t, 5),
+				new Object[] { "FFF", " F ", " F ", 'F', new ItemStack(BasicItems.vitallium_ingot) });
+		// 101 Metal_Frame_X
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_frame_x, 5),
+				new Object[] { "   ", "FFF", "   ", 'F', new ItemStack(BasicItems.vitallium_ingot) });
+		// 102 Metal_Frame_Zero
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_frame_zero, 5),
+				new Object[] { " F ", " F ", " F ", 'F', new ItemStack(BasicItems.vitallium_ingot) });
+		
+		
+		
+		
+		
 
 	}
 

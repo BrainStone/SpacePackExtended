@@ -216,6 +216,12 @@
                 0.38
             ]
         },
+        "fixed": {
+        "rotation": [ 0, -90, 0 ],
+        "translation": [ 0, 0.56, -7.94 ],
+        "scale": [ 1, 0.88, 1 ]
+        },
+        
         "gui": {
             "rotation": [
                 30,
