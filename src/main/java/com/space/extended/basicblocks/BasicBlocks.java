@@ -92,6 +92,11 @@ public class BasicBlocks {
 	public static Block metal_frame_zero;
 	public static Block metal_ladder;
 	
+	public static Block half_vitallium_slab;
+	public static Block double_vitallium_slab;
+	
+	
+	
 	public BasicBlocks() {
 		init();
 		register();
@@ -266,6 +271,14 @@ public class BasicBlocks {
 		metal_ladder= new BlockMetal_Ladder().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_ladder, "metal_ladder");
 		
+		half_vitallium_slab= new BlockHalf_Vitallium_Slab().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(half_vitallium_slab, "half_vitallium_slab");
+		double_vitallium_slab= new BlockDouble_Vitallium_Slab().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(double_vitallium_slab, "double_vitallium_slab");
+		
+		
+		
+		
 		
 	}
 
@@ -352,8 +365,8 @@ public class BasicBlocks {
 		registerBlock(metal_frame_zero);
 		registerBlock(metal_ladder);
 		
-		
-		
+		registerBlock(half_vitallium_slab);
+		registerBlock(double_vitallium_slab);
 	}
 
 	private void registerBlock(Block block) {

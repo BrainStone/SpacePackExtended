@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "variant=false": { "model": "spaceextended:vitallium" },
+        "variant=true":    { "model": "spaceextended:vitallium" }
+    }
+}
