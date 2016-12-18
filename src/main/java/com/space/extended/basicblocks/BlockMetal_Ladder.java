@@ -20,129 +20,127 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockMetal_Ladder extends Block{
-	
+public class BlockMetal_Ladder extends Block {
+
 	public static final PropertyDirection FACING = BlockHorizontal.FACING;
-    protected static final AxisAlignedBB LADDER_EAST_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.1875D, 1.0D, 1.0D);
-    protected static final AxisAlignedBB LADDER_WEST_AABB = new AxisAlignedBB(0.8125D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-    protected static final AxisAlignedBB LADDER_SOUTH_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 0.1875D);
-    protected static final AxisAlignedBB LADDER_NORTH_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.8125D, 1.0D, 1.0D, 1.0D);
+	protected static final AxisAlignedBB LADDER_EAST_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.1875D, 1.0D, 1.0D);
+	protected static final AxisAlignedBB LADDER_WEST_AABB = new AxisAlignedBB(0.8125D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
+	protected static final AxisAlignedBB LADDER_SOUTH_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 0.1875D);
+	protected static final AxisAlignedBB LADDER_NORTH_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.8125D, 1.0D, 1.0D, 1.0D);
 
-    public BlockMetal_Ladder() {
-    	
-    	super(Material.IRON);
-        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
-        this.setSoundType(SoundType.LADDER);
-    }
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
-    {
-        switch ((EnumFacing)state.getValue(FACING))
-        {
-            case NORTH:
-                return LADDER_NORTH_AABB;
-            case SOUTH:
-                return LADDER_SOUTH_AABB;
-            case WEST:
-                return LADDER_WEST_AABB;
-            case EAST:
-            default:
-                return LADDER_EAST_AABB;
-        }
-    }
-    public boolean isOpaqueCube(IBlockState state)
-    {
-        return false;
-    }
+	public BlockMetal_Ladder() {
 
-    public boolean isFullCube(IBlockState state)
-    {
-        return false;
-    }
+		super(Material.IRON);
+		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+		setSoundType(SoundType.LADDER);
+	}
 
-    public boolean canPlaceBlockAt(World worldIn, BlockPos pos)
-    {
-        return worldIn.getBlockState(pos.west()).isSideSolid(worldIn, pos.west(), EnumFacing.EAST) ||
-               worldIn.getBlockState(pos.east()).isSideSolid(worldIn, pos.east(), EnumFacing.WEST) ||
-               worldIn.getBlockState(pos.north()).isSideSolid(worldIn, pos.north(), EnumFacing.SOUTH) ||
-               worldIn.getBlockState(pos.south()).isSideSolid(worldIn, pos.south(), EnumFacing.NORTH);
-    }
-    
-    protected boolean canBlockStay(World worldIn, BlockPos pos, EnumFacing facing)
-    {
-        return worldIn.getBlockState(pos.offset(facing.getOpposite())).isSideSolid(worldIn, pos.offset(facing.getOpposite()), facing);
-    }
-    
-    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
-    {
-        if (facing.getAxis().isHorizontal() && this.canBlockStay(worldIn, pos, facing))
-        {
-            return this.getDefaultState().withProperty(FACING, facing);
-        }
-        else
-        {
-            for (EnumFacing enumfacing : EnumFacing.Plane.HORIZONTAL)
-            {
-                if (this.canBlockStay(worldIn, pos, enumfacing))
-                {
-                    return this.getDefaultState().withProperty(FACING, enumfacing);
-                }
-            }
+	@Override
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+		switch (state.getValue(FACING)) {
+		case NORTH:
+			return LADDER_NORTH_AABB;
+		case SOUTH:
+			return LADDER_SOUTH_AABB;
+		case WEST:
+			return LADDER_WEST_AABB;
+		case EAST:
+		default:
+			return LADDER_EAST_AABB;
+		}
+	}
 
-            return this.getDefaultState();
-        }
-        
-    }
-    @SuppressWarnings("deprecation")
-	public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos)
-    {
-        EnumFacing enumfacing = (EnumFacing)state.getValue(FACING);
+	@Override
+	public boolean isOpaqueCube(IBlockState state) {
+		return false;
+	}
 
-        if (!this.canBlockStay(worldIn, pos, enumfacing))
-        {
-            this.dropBlockAsItem(worldIn, pos, state, 0);
-            worldIn.setBlockToAir(pos);
-        }
+	@Override
+	public boolean isFullCube(IBlockState state) {
+		return false;
+	}
 
-        super.neighborChanged(state, worldIn, pos, blockIn, fromPos);
-    }
-    
-    
-    public IBlockState getStateFromMeta(int meta)
-    {
-        EnumFacing enumfacing = EnumFacing.getFront(meta);
+	@Override
+	public boolean canPlaceBlockAt(World worldIn, BlockPos pos) {
+		return worldIn.getBlockState(pos.west()).isSideSolid(worldIn, pos.west(), EnumFacing.EAST)
+				|| worldIn.getBlockState(pos.east()).isSideSolid(worldIn, pos.east(), EnumFacing.WEST)
+				|| worldIn.getBlockState(pos.north()).isSideSolid(worldIn, pos.north(), EnumFacing.SOUTH)
+				|| worldIn.getBlockState(pos.south()).isSideSolid(worldIn, pos.south(), EnumFacing.NORTH);
+	}
 
-        if (enumfacing.getAxis() == EnumFacing.Axis.Y)
-        {
-            enumfacing = EnumFacing.NORTH;
-        }
+	protected boolean canBlockStay(World worldIn, BlockPos pos, EnumFacing facing) {
+		return worldIn.getBlockState(pos.offset(facing.getOpposite())).isSideSolid(worldIn,
+				pos.offset(facing.getOpposite()), facing);
+	}
 
-        return this.getDefaultState().withProperty(FACING, enumfacing);
-    }
+	@Override
+	public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY,
+			float hitZ, int meta, EntityLivingBase placer) {
+		if (facing.getAxis().isHorizontal() && canBlockStay(worldIn, pos, facing))
+			return getDefaultState().withProperty(FACING, facing);
+		else {
+			for (EnumFacing enumfacing : EnumFacing.Plane.HORIZONTAL) {
+				if (canBlockStay(worldIn, pos, enumfacing))
+					return getDefaultState().withProperty(FACING, enumfacing);
+			}
 
-    @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer()
-    {
-        return BlockRenderLayer.CUTOUT;
-    }
-    public int getMetaFromState(IBlockState state)
-    {
-        return ((EnumFacing)state.getValue(FACING)).getIndex();
-    }
-    public IBlockState withRotation(IBlockState state, Rotation rot)
-    {
-        return state.withProperty(FACING, rot.rotate((EnumFacing)state.getValue(FACING)));
-    }
-    
-    public IBlockState withMirror(IBlockState state, Mirror mirrorIn)
-    {
-        return state.withRotation(mirrorIn.toRotation((EnumFacing)state.getValue(FACING)));
-    }
+			return getDefaultState();
+		}
 
-    protected BlockStateContainer createBlockState()
-    {
-        return new BlockStateContainer(this, new IProperty[] {FACING});
-    }
+	}
 
-    @Override public boolean isLadder(IBlockState state, IBlockAccess world, BlockPos pos, EntityLivingBase entity) { return true; }
+	@Override
+	@SuppressWarnings("deprecation")
+	public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
+		EnumFacing enumfacing = state.getValue(FACING);
+
+		if (!canBlockStay(worldIn, pos, enumfacing)) {
+			dropBlockAsItem(worldIn, pos, state, 0);
+			worldIn.setBlockToAir(pos);
+		}
+
+		super.neighborChanged(state, worldIn, pos, blockIn, fromPos);
+	}
+
+	@Override
+	public IBlockState getStateFromMeta(int meta) {
+		EnumFacing enumfacing = EnumFacing.getFront(meta);
+
+		if (enumfacing.getAxis() == EnumFacing.Axis.Y) {
+			enumfacing = EnumFacing.NORTH;
+		}
+
+		return getDefaultState().withProperty(FACING, enumfacing);
+	}
+
+	@Override
+	@SideOnly(Side.CLIENT)
+	public BlockRenderLayer getBlockLayer() {
+		return BlockRenderLayer.CUTOUT;
+	}
+
+	@Override
+	public int getMetaFromState(IBlockState state) {
+		return state.getValue(FACING).getIndex();
+	}
+
+	@Override
+	public IBlockState withRotation(IBlockState state, Rotation rot) {
+		return state.withProperty(FACING, rot.rotate(state.getValue(FACING)));
+	}
+
+	@Override
+	public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
+		return state.withRotation(mirrorIn.toRotation(state.getValue(FACING)));
+	}
+
+	@Override
+	protected BlockStateContainer createBlockState() {
+		return new BlockStateContainer(this, new IProperty[] { FACING });
+	}
+
+	@Override
+	public boolean isLadder(IBlockState state, IBlockAccess world, BlockPos pos, EntityLivingBase entity) {
+		return true;
+	}
 }
-

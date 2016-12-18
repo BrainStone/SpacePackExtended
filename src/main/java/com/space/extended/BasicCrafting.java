@@ -354,10 +354,6 @@ public class BasicCrafting {
 		// 103 Metal_Ladder
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_ladder, 5),
 				new Object[] { "F F", "FFF", "F F", 'F', new ItemStack(BasicItems.vitallium_ingot) });
-		
-		
-		
-		
 
 	}
 

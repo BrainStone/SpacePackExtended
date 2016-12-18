@@ -2,10 +2,10 @@ package com.space.extended.basicblocks;
 
 import net.minecraft.item.ItemStack;
 
-public class BlockDouble_Vitallium_Slab extends BlockVitallium_Slab{
-	
+public class BlockDouble_Vitallium_Slab extends BlockVitallium_Slab {
+
 	public BlockDouble_Vitallium_Slab() {
-		
+
 		super();
 	}
 
@@ -18,8 +18,5 @@ public class BlockDouble_Vitallium_Slab extends BlockVitallium_Slab{
 	public Comparable<?> getTypeForItem(ItemStack stack) {
 		return null;
 	}
-
-
-	
 
 }

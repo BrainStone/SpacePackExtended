@@ -94,9 +94,7 @@ public class BasicBlocks {
 	public static Block metal_frame_vert;
 	public static Block half_vitallium_slab;
 	public static Block double_vitallium_slab;
-	
-	
-	
+
 	public BasicBlocks() {
 		init();
 		register();
@@ -260,28 +258,24 @@ public class BasicBlocks {
 		NameUtils.setNames(metal_frame_straight, "metal_frame_straight");
 		metal_frame_l = new BlockMetal_Frame_L().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_l, "metal_frame_l");
-		metal_frame_t= new BlockMetal_Frame_T().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_frame_t = new BlockMetal_Frame_T().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_t, "metal_frame_t");
-		metal_frame_x= new BlockMetal_Frame_X().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_frame_x = new BlockMetal_Frame_X().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_x, "metal_frame_x");
-		metal_frame_post= new BlockMetal_Frame_Post().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_frame_post = new BlockMetal_Frame_Post().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_post, "metal_frame_post");
-		metal_frame_zero= new BlockMetal_Frame_Zero().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_frame_zero = new BlockMetal_Frame_Zero().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_zero, "metal_frame_zero");
-		metal_frame_vert= new BlockMetal_Frame_Vert().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_frame_vert = new BlockMetal_Frame_Vert().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_vert, "metal_frame_vert");
-		metal_ladder= new BlockMetal_Ladder().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_ladder = new BlockMetal_Ladder().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_ladder, "metal_ladder");
-		
-		half_vitallium_slab= new BlockHalf_Vitallium_Slab().setCreativeTab(SpaceExtendedMain.spaceTab);
+
+		half_vitallium_slab = new BlockHalf_Vitallium_Slab().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(half_vitallium_slab, "half_vitallium_slab");
-		double_vitallium_slab= new BlockDouble_Vitallium_Slab().setCreativeTab(SpaceExtendedMain.spaceTab);
+		double_vitallium_slab = new BlockDouble_Vitallium_Slab().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(double_vitallium_slab, "double_vitallium_slab");
-		
-		
-		
-		
-		
+
 	}
 
 	private void register() {
@@ -367,7 +361,7 @@ public class BasicBlocks {
 		registerBlock(metal_frame_zero);
 		registerBlock(metal_frame_vert);
 		registerBlock(metal_ladder);
-		
+
 		registerBlock(half_vitallium_slab);
 		registerBlock(double_vitallium_slab);
 	}
