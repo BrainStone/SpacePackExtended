@@ -5,8 +5,10 @@ import com.space.extended.SpaceExtendedMain;
 import com.space.extended.basicblocks.BlockMetalFrameCatway.CatwayType;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockSlab;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemSlab;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class BasicBlocks {
@@ -93,8 +95,8 @@ public class BasicBlocks {
 	public static Block metal_frame_zero;
 	public static Block metal_ladder;
 	public static Block metal_frame_vert;
-	public static Block half_vitallium_slab;
-	public static Block double_vitallium_slab;
+	public static BlockSlab vitallium_slab_half;
+	public static BlockSlab vitallium_slab_double;
 
 	public BasicBlocks() {
 		init();
@@ -273,10 +275,10 @@ public class BasicBlocks {
 		metal_ladder = new BlockMetal_Ladder().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_ladder, "metal_ladder");
 
-		half_vitallium_slab = new BlockHalf_Vitallium_Slab().setCreativeTab(SpaceExtendedMain.spaceTab);
-		NameUtils.setNames(half_vitallium_slab, "half_vitallium_slab");
-		double_vitallium_slab = new BlockDouble_Vitallium_Slab().setCreativeTab(SpaceExtendedMain.spaceTab);
-		NameUtils.setNames(double_vitallium_slab, "double_vitallium_slab");
+		vitallium_slab_half = (BlockSlab) new BlockVitallium_Slab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(vitallium_slab_half, "vitallium_slab_half");
+		vitallium_slab_double = new BlockVitallium_Slab.Double();
+		NameUtils.setNames(vitallium_slab_double, "vitallium_slab_double");
 
 	}
 
@@ -364,8 +366,7 @@ public class BasicBlocks {
 		registerBlock(metal_frame_vert);
 		registerBlock(metal_ladder);
 
-		registerBlock(half_vitallium_slab);
-		registerBlock(double_vitallium_slab);
+		registerSlab(vitallium_slab_half, vitallium_slab_double);
 	}
 
 	private void registerBlock(Block block) {
@@ -375,4 +376,12 @@ public class BasicBlocks {
 		GameRegistry.register(itemblock);
 	}
 
+	private void registerSlab(BlockSlab halfSlab, BlockSlab doubleSlab) {
+		GameRegistry.register(halfSlab);
+		GameRegistry.register(doubleSlab);
+
+		ItemBlock itemblock = new ItemSlab(halfSlab, halfSlab, doubleSlab);
+		itemblock.setUnlocalizedName(halfSlab.getUnlocalizedName()).setRegistryName(halfSlab.getRegistryName());
+		GameRegistry.register(itemblock);
+	}
 }

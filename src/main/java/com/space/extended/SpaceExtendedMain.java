@@ -101,10 +101,14 @@ public class SpaceExtendedMain {
 		event.get().stream().forEach(mapping -> {
 			String newName = mapping.name.replaceAll("(ore|shard|ingot)", "_$1");
 
-			if (mapping.type == GameRegistry.Type.BLOCK) {
-				mapping.remap(Block.getBlockFromName(newName));
-			} else if (mapping.type == GameRegistry.Type.ITEM) {
-				mapping.remap(Item.getByNameOrId(newName));
+			try {
+				if (mapping.type == GameRegistry.Type.BLOCK) {
+					mapping.remap(Block.getBlockFromName(newName));
+				} else if (mapping.type == GameRegistry.Type.ITEM) {
+					mapping.remap(Item.getByNameOrId(newName));
+				}
+			} catch (NullPointerException e) {
+				// Ignore
 			}
 		});
 	}
