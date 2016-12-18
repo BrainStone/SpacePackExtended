@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 public class BlockMetal_Frame_Vert extends Block  {
 	
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-	protected static final AxisAlignedBB FRAME_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.1000D, 1.0D);
+	protected static final AxisAlignedBB FRAME_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
 	
 	public BlockMetal_Frame_Vert() {
 
