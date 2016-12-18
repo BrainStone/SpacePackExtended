@@ -84,6 +84,8 @@ tile.metal_frame_post.name=§5Metal Frame Post§r
 tile.metal_frame_straight.name=§5Metal Frame Straight§r
 tile.metal_frame_zero.name=§5Metal Frame Zero§r
 tile.metal_ladder.name=§5Metal Ladder§r
+tile.vitallium_slab_half.name=§5Vitallium Slab§r
+tile.metal_frame_vert.name=§5Metal Frame Vertical§r
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r
