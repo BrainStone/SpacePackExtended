@@ -1,3 +1,9 @@
+2.0.50-beta
+-----------
+
+* Added missing crafting recipe
+* Added missing localisations
+
 2.0.49-beta
 -----------
 
