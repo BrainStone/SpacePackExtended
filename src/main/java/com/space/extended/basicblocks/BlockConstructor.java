@@ -16,13 +16,17 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockConstructor extends Block {
-	public BlockConstructor() {
+	private final int kit;
+
+	public BlockConstructor(int kit) {
 		super(Material.IRON);
 		setHardness(2F);
 		setResistance(5F);
 		setHarvestLevel("pickaxe", 2);
 		setLightLevel(0.6F);
 		setSoundType(SoundType.METAL);
+
+		this.kit = kit;
 	}
 
 	@Override
@@ -44,7 +48,20 @@ public class BlockConstructor extends Block {
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return BasicItems.kit1;
+		switch (kit) {
+		case 1:
+			return BasicItems.kit1;
+		case 2:
+			return BasicItems.kit2;
+		case 3:
+			return BasicItems.kit3;
+		case 4:
+			return BasicItems.kit4;
+		case 5:
+			return BasicItems.kit5;
+		default:
+			return null;
+		}
 	}
 
 	@Override
