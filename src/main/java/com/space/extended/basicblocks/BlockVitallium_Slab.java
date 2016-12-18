@@ -32,7 +32,7 @@ public abstract class BlockVitallium_Slab extends BlockSlab {
 		return this.getUnlocalizedName();
 	}
 	
-	public Object getVariant(ItemStack stack){
+	public final Object getVariant(final ItemStack stack){
 		return false;
 	}
 	
@@ -78,7 +78,7 @@ public abstract class BlockVitallium_Slab extends BlockSlab {
 	@Override
 	protected BlockStateContainer createBlockState()
     {
-        return this.isDouble() ? new BlockStateContainer(this, new IProperty[] {VARIANT}): new BlockStateContainer(this, new IProperty[] {HALF, VARIANT});
+        return this.isDouble() ? new BlockStateContainer(this, new IProperty[] {VARIANT}): new BlockStateContainer(this, new IProperty[] { VARIANT,HALF});
     }
 	
 }
