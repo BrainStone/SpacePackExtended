@@ -1,5 +1,13 @@
+2.0.49-beta
+-----------
+
+* Added Metal Frame Series
+* Added Metal Ladder
+* Added Vitalium Half Slab
+* Fixed [#1](https://github.com/BrainStone/SpacePackExtended/issues/1)
+
 2.0.35-beta
-------------
+-----------
 
 * Added Metal Lamp
 * Fixed textures being too light
