@@ -1,8 +1,16 @@
 {
     "variants": {
-        "half=bottom,variant=true": { "model": "spaceextended:half_vitallium_slab" },
-		"half=top,variant=false": { "model": "spaceextended:upper_vitallium_slab" },
-		"half=bottom,variant=false": { "model": "spaceextended:half_vitallium_slab" },
-		"half=top,variant=true": { "model": "spaceextended:upper_vitallium_slab" }
+        "half=bottom,variant=true": {
+            "model": "spaceextended:half_vitallium_slab"
+        },
+        "half=top,variant=false": {
+            "model": "spaceextended:upper_vitallium_slab"
+        },
+        "half=bottom,variant=false": {
+            "model": "spaceextended:half_vitallium_slab"
+        },
+        "half=top,variant=true": {
+            "model": "spaceextended:upper_vitallium_slab"
+        }
     }
 }
