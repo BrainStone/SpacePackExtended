@@ -2,6 +2,7 @@ package com.space.extended.basicblocks;
 
 import com.space.extended.NameUtils;
 import com.space.extended.SpaceExtendedMain;
+import com.space.extended.basicblocks.BlockMetalFrameCatway.CatwayType;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -254,17 +255,18 @@ public class BasicBlocks {
 		NameUtils.setNames(metal_lamp, "metal_lamp");
 		metal_lamp_lit = new BlockMetalLamp(true);
 		NameUtils.setNames(metal_lamp_lit, "metal_lamp_lit");
-		metal_frame_straight = new BlockMetal_Frame_Straight().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_frame_straight = new BlockMetalFrameCatway(CatwayType.STRAIGHT)
+				.setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_straight, "metal_frame_straight");
-		metal_frame_l = new BlockMetal_Frame_L().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_frame_l = new BlockMetalFrameCatway(CatwayType.L).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_l, "metal_frame_l");
-		metal_frame_t = new BlockMetal_Frame_T().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_frame_t = new BlockMetalFrameCatway(CatwayType.T).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_t, "metal_frame_t");
-		metal_frame_x = new BlockMetal_Frame_X().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_frame_x = new BlockMetalFrameCatway(CatwayType.X).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_x, "metal_frame_x");
-		metal_frame_post = new BlockMetal_Frame_Post().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_frame_post = new BlockMetalFrameCatway(CatwayType.POST).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_post, "metal_frame_post");
-		metal_frame_zero = new BlockMetal_Frame_Zero().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_frame_zero = new BlockMetalFrameCatway(CatwayType.ZERO).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_zero, "metal_frame_zero");
 		metal_frame_vert = new BlockMetal_Frame_Vert().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_vert, "metal_frame_vert");
