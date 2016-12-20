@@ -13,10 +13,12 @@ import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
 import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
+import net.minecraft.entity.monster.EntityEvoker;
 import net.minecraft.entity.monster.EntityGuardian;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.monster.EntitySkeleton;
 import net.minecraft.entity.monster.EntitySpider;
+import net.minecraft.entity.monster.EntityVindicator;
 import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
@@ -44,6 +46,8 @@ public class EntityMobBeetle extends EntityMob {
 		targetTasks.addTask(10, new EntityAINearestAttackableTarget<>(this, EntityZombie.class, true));
 		targetTasks.addTask(11, new EntityAINearestAttackableTarget<>(this, EntitySpider.class, true));
 		targetTasks.addTask(12, new EntityAINearestAttackableTarget<>(this, EntitySkeleton.class, true));
+		targetTasks.addTask(13, new EntityAINearestAttackableTarget<>(this, EntityEvoker.class, true));
+		targetTasks.addTask(13, new EntityAINearestAttackableTarget<>(this, EntityVindicator.class, true));
 
 	}
 

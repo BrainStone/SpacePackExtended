@@ -14,10 +14,16 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class BasicBlocks {
 
 	public static Block vitallium;
+	public static BlockSlab vitallium_slab_half;
+	public static BlockSlab vitallium_slab_double;
 	public static Block vitallium_ore;
 	public static Block perolit;
 	public static Block perolit_ore;
-	public static Block metalframeblock;
+	public static Block perola;
+	public static Block perolb;
+	public static Block perolc;
+	public static Block perold;
+	public static Block klingonium_ore;
 	public static Block klingonit;
 	public static Block klingodur;
 	public static Block klingopar;
@@ -36,67 +42,64 @@ public class BasicBlocks {
 	public static Block klingonium_wall6;
 	public static Block klingonium_wall7;
 	public static Block klingonium_wall8;
-	public static Block klingonium_ore;
-	public static Block constructor1;
-	public static Block constructor2;
-	public static Block constructor3;
-	public static Block constructor4;
-	public static Block constructor5;
 	public static Block strontenium;
+	public static Block strontecore;
 	public static Block strontenium_glass;
 	public static Block strontenium_glass_pane;
 	public static Block strontenium0;
 	public static Block strontenium1;
 	public static Block strontenium2;
 	public static Block strontenium_ore;
-	public static Block pipes_connector;
 	public static Block strontenita;
 	public static Block strontenitb;
 	public static Block strontenitc;
 	public static Block strontenitd;
 	public static Block strontenal;
+	public static Block oxygen;
 	public static Block strontopal;
 	public static Block strontopala;
 	public static Block strontopalb;
-	public static Block oxygen;
-	public static Block perola;
-	public static Block perolb;
-	public static Block perolc;
-	public static Block perold;
-	public static Block table;
-	public static Block lux;
-	public static Block ceiling_lamp;
-	public static Block speedway;
-	public static Block tresor;
-	public static Block strontecore;
+	public static Block cyberit_Ore;
+	public static Block block_cyberol;
+	public static BlockSlab space_quartz_slab_half;
+	public static BlockSlab space_quartz_slab_double;
 	public static Block block_space_quartz;
 	public static Block block_space_quartza;
 	public static Block block_space_quartz_mfblock;
-	public static Block cyberit_Ore;
-	public static Block vitallium_glass;
-	public static Block vitallium_glass_pane;
-	public static Block analyser;
-	public static Block virtual_screen;
 	public static Block space_quartz_ore;
+	public static Block table;
+	public static Block speedway;
+	public static Block tresor;
+	public static Block analyser;
 	public static Block solar_panel;
 	public static Block satellite_antenna;
-	public static Block light_box;
+	public static Block virtual_screen;
+	public static Block vitallium_glass;
+	public static Block vitallium_glass_pane;
 	public static Block quartz_window;
 	public static Block quartz_window_pane;
 	public static Block block_engine;
-	public static Block block_cyberol;
+	public static Block ceiling_lamp;
+	public static Block light_box;
+	public static Block lux;
 	public static Block metal_lamp;
 	public static Block metal_lamp_lit;
+	public static Block pipes_connector;
+	public static Block constructor1;
+	public static Block constructor2;
+	public static Block constructor3;
+	public static Block constructor4;
+	public static Block constructor5;
+	public static Block metalframeblock;
 	public static Block metal_frame_straight;
 	public static Block metal_frame_l;
 	public static Block metal_frame_t;
 	public static Block metal_frame_x;
 	public static Block metal_frame_post;
 	public static Block metal_frame_zero;
-	public static Block metal_ladder;
 	public static Block metal_frame_vert;
-	public static BlockSlab vitallium_slab_half;
-	public static BlockSlab vitallium_slab_double;
+	public static Block metal_ladder;
+	
 
 	public BasicBlocks() {
 		init();
@@ -274,11 +277,14 @@ public class BasicBlocks {
 		NameUtils.setNames(metal_frame_vert, "metal_frame_vert");
 		metal_ladder = new BlockMetal_Ladder().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_ladder, "metal_ladder");
-
 		vitallium_slab_half = (BlockSlab) new BlockVitallium_Slab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(vitallium_slab_half, "vitallium_slab_half");
 		vitallium_slab_double = new BlockVitallium_Slab.Double();
 		NameUtils.setNames(vitallium_slab_double, "vitallium_slab_double");
+		space_quartz_slab_half = (BlockSlab) new BlockSpace_Quartz_Slab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(space_quartz_slab_half, "space_quartz_slab_half");
+		space_quartz_slab_double = new BlockSpace_Quartz_Slab.Double();
+		NameUtils.setNames(space_quartz_slab_double, "space_quartz_slab_double");
 
 	}
 
@@ -365,7 +371,7 @@ public class BasicBlocks {
 		registerBlock(metal_frame_zero);
 		registerBlock(metal_frame_vert);
 		registerBlock(metal_ladder);
-
+		registerSlab(space_quartz_slab_half,space_quartz_slab_double);
 		registerSlab(vitallium_slab_half, vitallium_slab_double);
 	}
 

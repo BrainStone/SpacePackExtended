@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom,variant=default": {
+            "model": "spaceextended:space_quartz_slab_half"
+        },
+        "half=top,variant=default": {
+            "model": "spaceextended:space_quartz_slab_upper"
+        }
+    }
+}

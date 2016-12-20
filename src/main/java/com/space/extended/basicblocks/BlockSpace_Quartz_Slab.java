@@ -14,10 +14,10 @@ import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public abstract class BlockVitallium_Slab extends BlockSlab {
+public abstract class BlockSpace_Quartz_Slab extends BlockSlab{
 	public static final PropertyEnum<Variant> VARIANT = PropertyEnum.<Variant>create("variant", Variant.class);
-
-	public BlockVitallium_Slab() {
+	
+	public BlockSpace_Quartz_Slab() {
 		super(Material.IRON);
 		useNeighborBrightness = true;
 		setHardness(2F);
@@ -29,18 +29,17 @@ public abstract class BlockVitallium_Slab extends BlockSlab {
 			state.withProperty(HALF, EnumBlockHalf.BOTTOM);
 			setDefaultState(state);
 		}
-	}
+}
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return Item.getItemFromBlock(BasicBlocks.vitallium_slab_half);
+		return Item.getItemFromBlock(BasicBlocks.space_quartz_slab_half);
 	}
-
+	
 	@Override
 	public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
-		return new ItemStack(BasicBlocks.vitallium_slab_half);
+		return new ItemStack(BasicBlocks.space_quartz_slab_half);
 	}
-
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		IBlockState iblockstate = getDefaultState().withProperty(VARIANT, Variant.DEFAULT);
@@ -52,7 +51,6 @@ public abstract class BlockVitallium_Slab extends BlockSlab {
 
 		return iblockstate;
 	}
-
 	@Override
 	public int getMetaFromState(IBlockState state) {
 		int i = 0;
@@ -63,7 +61,6 @@ public abstract class BlockVitallium_Slab extends BlockSlab {
 
 		return i;
 	}
-
 	@Override
 	protected BlockStateContainer createBlockState() {
 		return isDouble() ? new BlockStateContainer(this, new IProperty[] { VARIANT })
@@ -84,21 +81,18 @@ public abstract class BlockVitallium_Slab extends BlockSlab {
 	public Comparable<?> getTypeForItem(ItemStack stack) {
 		return Variant.DEFAULT;
 	}
-
-	public static class Double extends BlockVitallium_Slab {
+	public static class Double extends BlockSpace_Quartz_Slab {
 		@Override
 		public boolean isDouble() {
 			return true;
 		}
 	}
-
-	public static class Half extends BlockVitallium_Slab {
+	public static class Half extends BlockSpace_Quartz_Slab {
 		@Override
 		public boolean isDouble() {
 			return false;
 		}
 	}
-
 	public static enum Variant implements IStringSerializable {
 		DEFAULT;
 
@@ -107,4 +101,4 @@ public abstract class BlockVitallium_Slab extends BlockSlab {
 			return "default";
 		}
 	}
-}
+}	

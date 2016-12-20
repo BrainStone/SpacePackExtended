@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "variant=default": {
+            "model": "spaceextended:block_space_quartz"
+        }
+    }
+}

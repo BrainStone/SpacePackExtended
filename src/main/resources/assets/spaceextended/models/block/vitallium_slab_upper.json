@@ -3,6 +3,6 @@
     "textures": {
         "bottom": "spaceextended:blocks/vitallium",
         "top": "spaceextended:blocks/vitallium",
-        "side": "spaceextended:blocks/vitallium"
+        "side": "spaceextended:blocks/vitallium_slab_side"
     }
 }

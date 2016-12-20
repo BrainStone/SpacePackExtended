@@ -18,10 +18,10 @@ public class BasicCrafting {
 
 	private void register() {
 		// 1 VitalliumBlock
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium, 1),
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium, 6),
 				new Object[] { "X X", " X ", " X ", 'X', new ItemStack(BasicItems.vitallium_ingot) });
 		// 2 KlingoniumBlock
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonium, 1),
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonium, 6),
 				new Object[] { "X  ", "X  ", " X ", 'X', new ItemStack(BasicItems.klingonium_shard) });
 		// 3 Klingonium_Stairs
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.klingonium_stairs, 4),
@@ -357,6 +357,16 @@ public class BasicCrafting {
 		// 104 Metal_Frame_Vert
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_frame_vert, 5),
 				new Object[] { "FF ", "FF ", "FF ", 'F', new ItemStack(BasicItems.vitallium_ingot) });
-	}
+		// 104 Metal_Frame_Vert
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_frame_vert, 5),
+						new Object[] { "FF ", "FF ", "FF ", 'F', new ItemStack(BasicItems.vitallium_ingot) });
+		// 105 Vitallium_Slab
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_slab_half, 8),
+				new Object[] { "   ", "FFF", "   ", 'F', new ItemStack(BasicBlocks.vitallium) });
+		// 106 Space_Quartz_Slab
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.space_quartz_slab_half, 8),
+				new Object[] { "   ", "FFF", "   ", 'F', new ItemStack(BasicBlocks.block_space_quartz) });
+		
+			}
 
 }
