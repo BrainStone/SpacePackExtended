@@ -111,6 +111,9 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.space_quartz_slab_double, 0);
 		registerModel(BasicBlocks.vitallium_slab_half, 0);
 		registerModel(BasicBlocks.vitallium_slab_double, 0);
+		registerModel(BasicBlocks.metal_frame_slab_half, 0);
+		registerModel(BasicBlocks.metal_frame_slab_double, 0);
+		
 
 		// Items
 		registerModel(BasicItems.vitallium_ingot, 0);

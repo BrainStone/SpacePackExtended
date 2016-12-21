@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=bottom,variant=default": {
+            "model": "spaceextended:metal_frame_slab_half"
+        },
+        "half=top,variant=default": {
+            "model": "spaceextended:metal_frame_slab_upper"
+        }
+    }
+}

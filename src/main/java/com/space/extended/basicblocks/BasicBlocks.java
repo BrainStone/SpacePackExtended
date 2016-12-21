@@ -99,6 +99,8 @@ public class BasicBlocks {
 	public static Block metal_frame_zero;
 	public static Block metal_frame_vert;
 	public static Block metal_ladder;
+	public static BlockSlab metal_frame_slab_half;
+	public static BlockSlab metal_frame_slab_double;
 	
 
 	public BasicBlocks() {
@@ -285,6 +287,13 @@ public class BasicBlocks {
 		NameUtils.setNames(space_quartz_slab_half, "space_quartz_slab_half");
 		space_quartz_slab_double = new BlockSpace_Quartz_Slab.Double();
 		NameUtils.setNames(space_quartz_slab_double, "space_quartz_slab_double");
+		metal_frame_slab_half = (BlockSlab) new BlockMetal_Frame_Slab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(metal_frame_slab_half, "metal_frame_slab_half");
+		metal_frame_slab_double = new BlockMetal_Frame_Slab.Double();
+		NameUtils.setNames(metal_frame_slab_double, "metal_frame_slab_double");
+		
+		
+		
 
 	}
 
@@ -373,6 +382,8 @@ public class BasicBlocks {
 		registerBlock(metal_ladder);
 		registerSlab(space_quartz_slab_half,space_quartz_slab_double);
 		registerSlab(vitallium_slab_half, vitallium_slab_double);
+		registerSlab(metal_frame_slab_half,metal_frame_slab_double);
+		
 	}
 
 	private void registerBlock(Block block) {

@@ -87,7 +87,7 @@ tile.metal_ladder.name=§5Metal Ladder§r
 tile.vitallium_slab_half.name=§5Vitallium Slab§r
 tile.metal_frame_vert.name=§5Metal Frame Vertical§r
 tile.space_quartz_slab_half.name=§5Space Quartz Slab§r
-
+tile.metal_frame_slab_half.name=§5Metal Frame Slab§r
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r
