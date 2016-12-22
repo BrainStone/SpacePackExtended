@@ -42,7 +42,7 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.metalframestairs, 3), new Object[] { "  F", " FG", "FGG",
 				'F', new ItemStack(BasicItems.vitallium_ingot), 'G', new ItemStack(Items.IRON_INGOT) });
 		// 8 MetalFrameBlock
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metalframeblock, 3),
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metalframeblock, 8),
 				new Object[] { "F F", " F ", "F F", 'F', new ItemStack(BasicItems.vitallium_ingot) });
 		// 9 Metal1_Stairs
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.metal1_stairs, 3),
@@ -263,7 +263,7 @@ public class BasicCrafting {
 		// 74 KlingoPar
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingopar, 3), new Object[] { " X ", " S ", " S ", 'X',
 				new ItemStack(BasicItems.klingonium_shard), 'S', new ItemStack(BasicItems.strontenium_ingot) });
-		// 75 Tresor
+		// 75 Safe
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.tresor, 1),
 				new Object[] { " X ", "PSP", "PSP", 'P', new ItemStack(Items.IRON_INGOT), 'S',
 						new ItemStack(BasicItems.strontenium_ingot), 'X', new ItemStack(BasicItems.vitallium_ingot) });
@@ -366,6 +366,15 @@ public class BasicCrafting {
 		// 106 Space_Quartz_Slab
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.space_quartz_slab_half, 8),
 				new Object[] { "   ", "FFF", "   ", 'F', new ItemStack(BasicBlocks.block_space_quartz) });
+		// 107Space_Quartz_Slab
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_frame_slab_half, 8),
+				new Object[] { "   ", "FFF", "   ", 'F', new ItemStack(BasicBlocks.metalframeblock) });
+		// 34 Klingosit
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingosit, 6),
+				new Object[] { "KKK", "   ", "   ", 'K', new ItemStack(BasicBlocks.klingonium_ore) });
+		
+		
+		
 		
 			}
 

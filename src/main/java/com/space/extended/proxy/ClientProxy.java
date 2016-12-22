@@ -30,6 +30,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.metalframeblock, 0);
 		registerModel(BasicBlocks.klingonium, 0);
 		registerModel(BasicBlocks.klingonit, 0);
+		registerModel(BasicBlocks.klingosit, 0);
 		registerModel(BasicBlocks.klingodur, 0);
 		registerModel(BasicBlocks.klingonium_screw, 0);
 		registerModel(BasicBlocks.klingonium0, 0);
