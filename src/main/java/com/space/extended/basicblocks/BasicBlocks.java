@@ -26,6 +26,8 @@ public class BasicBlocks {
 	public static Block klingonium_ore;
 	public static Block klingonit;
 	public static Block klingosit;
+	public static Block klingosita;
+	public static Block klingositb;
 	public static Block klingodur;
 	public static Block klingopar;
 	public static Block klingonium_screw;
@@ -123,6 +125,10 @@ public class BasicBlocks {
 		NameUtils.setNames(klingonit, "klingonit");
 		klingosit = new BlockKlingosit().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingosit, "klingosit");
+		klingosita = new BlockKlingosita().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(klingosita, "klingosita");
+		klingositb = new BlockKlingositb().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(klingositb, "klingositb");
 		klingonium_ore = new BlockSpaceExtendedOre().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingonium_ore, "klingonium_ore");
 		constructor1 = new BlockConstructor(1).setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -308,6 +314,8 @@ public class BasicBlocks {
 		registerBlock(klingodur);
 		registerBlock(klingonit);
 		registerBlock(klingosit);
+		registerBlock(klingosita);
+		registerBlock(klingositb);
 		registerBlock(klingonium0);
 		registerBlock(klingonium1);
 		registerBlock(klingonium2);

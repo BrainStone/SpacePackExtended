@@ -1,0 +1,80 @@
+{
+	"__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+	"textures": {
+		"particle": "spaceextended:blocks/carrel",
+		"0": "spaceextended:blocks/carrel",
+		"1": "spaceextended:blocks/laboratory_bencha",
+		"2": "spaceextended:blocks/klingonium_pipes_outer"
+	},
+	"elements": [
+		{
+			"from": [ 2.999308, -4.106178E-05, -0.000312406 ],
+			"to": [ 15.99931, 12.99996, 15.99969 ],
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 15.75, 16, 0 ], "texture": "#2",  "rotation": 90 },
+				"north": { "uv": [ 3.125, 0, 13.125, 15.875 ], "texture": "#1"},
+				"south": { "uv": [ 3, 0, 13, 16 ], "texture": "#1" },
+				"west": { "uv": [ 3, 0, 13, 16 ], "texture": "#0" },
+				"east": { "uv": [ 3, 0.75, 13, 16 ], "texture": "#1" }
+			}
+		},
+		{
+			"from": [ 0.0005655339, 13.00066, 0.0003959871 ],
+			"to": [ 16.00057, 16.00066, 16.0004 ],
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#2", "rotation": 180 },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#2" },
+				"north": { "uv": [ 0, 0, 16, 2.75 ], "texture": "#0"},
+				"south": { "uv": [ 0, 0, 16, 2.75 ], "texture": "#0" },
+				"west": { "uv": [ 0, 0, 16, 2.75 ], "texture": "#0" },
+				"east": { "uv": [ 0, 0, 16, 2.75 ], "texture": "#0"}
+			}
+		},
+		{
+			"name": "schraege",
+            "from": [ 2.737417, 9.147049, 0.12549 ], 
+            "to": [ 5.612417, 15.94705, 15.87549 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.875, 3.5, 3.25, 6.875 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 2.625, 16.0, 7.625 ] },
+                "south": { "texture": "#0", "uv": [ 11.75, 3.5, 14.125, 6.875 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 2.5, 16.0, 7.875 ] }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation":  [ 75, 45, 0 ],
+			"translation":  [ 0, 2.5, 0 ],
+			"scale":  [ 0.375, 0.375, 0.375 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation":  [ 75, 45, 0 ],
+			"translation":  [ 0, 2.5, 0 ],
+			"scale":  [ 0.375, 0.375, 0.375 ]
+		},
+		"firstperson_righthand": {
+			"rotation":  [ 0, 144, 0 ],
+			"scale":  [ 0.4, 0.4, 0.4 ]
+		},
+		"firstperson_lefthand": {
+			"rotation":  [ 0, 134, 0 ],
+			"scale":  [ 0.4, 0.4, 0.4 ]
+		},
+		"gui": {
+			"rotation":  [ 30, 125, 0 ],
+			"scale":  [ 0.625, 0.625, 0.625 ]
+		},
+		"ground": {
+			"translation":  [ 0, 3, 0 ],
+			"scale":  [ 0.25, 0.25, 0.25 ]
+		},
+		"fixed": {
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		}
+	}
+}

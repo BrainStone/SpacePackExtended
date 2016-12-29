@@ -31,6 +31,8 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.klingonium, 0);
 		registerModel(BasicBlocks.klingonit, 0);
 		registerModel(BasicBlocks.klingosit, 0);
+		registerModel(BasicBlocks.klingosita, 0);
+		registerModel(BasicBlocks.klingositb, 0);
 		registerModel(BasicBlocks.klingodur, 0);
 		registerModel(BasicBlocks.klingonium_screw, 0);
 		registerModel(BasicBlocks.klingonium0, 0);
@@ -115,6 +117,8 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.metal_frame_slab_half, 0);
 		registerModel(BasicBlocks.metal_frame_slab_double, 0);
 		
+		
+		
 
 		// Items
 		registerModel(BasicItems.vitallium_ingot, 0);
@@ -168,6 +172,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicStairs.block_space_quartzc, 0);
 		registerModel(BasicStairs.space_quartz_stair, 0);
 		registerModel(BasicStairs.space_quartz_metalframe, 0);
+		registerModel(BasicStairs.carrel, 0);
 
 	}
 

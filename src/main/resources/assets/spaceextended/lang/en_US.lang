@@ -89,6 +89,9 @@ tile.vitallium_slab_half.name=§5Vitallium Slab§r
 tile.metal_frame_vert.name=§5Metal Frame Vertical§r
 tile.space_quartz_slab_half.name=§5Space Quartz Slab§r
 tile.metal_frame_slab_half.name=§5Metal Frame Slab§r
+tile.klingosit.name=§5Klingosit§r
+tile.klingosita.name=§5Klingosit A§r
+tile.klingositb.name=§5Klingosit B§r
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r
@@ -119,7 +122,7 @@ tile.block_space_quartzd.name=§5Space Quartz D§r
 tile.block_space_quartzt.name=§5Space Quartz T§r
 tile.space_quartz_stair.name=§5Space Quartz Stair§r
 tile.space_quartz_metalframe.name=§5Space Quartz Stair MF§r
-
+tile.carrel.name=§5Carrel§r
 
 /*Items*/
 item.vitallium_ingot.name=§5Vitallium Ingot§r

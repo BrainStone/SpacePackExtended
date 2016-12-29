@@ -37,6 +37,9 @@ public class BasicStairs {
 	public static BlockStairs block_space_quartzd;
 	public static BlockStairs block_space_quartzc;
 	public static BlockStairs space_quartz_metalframe;
+	public static BlockStairs carrel;
+	
+	
 
 	public BasicStairs() {
 		init();
@@ -103,6 +106,11 @@ public class BasicStairs {
 		space_quartz_metalframe = (BlockStairs) new Block_Space_Quartz_MetalFrame()
 				.setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(space_quartz_metalframe, "space_quartz_metalframe");
+		carrel = (BlockStairs) new BlockCarrel().setCreativeTab(SpaceExtendedMain.stairsTab);
+		NameUtils.setNames(carrel, "carrel");
+		
+		
+		
 
 	}
 
@@ -135,6 +143,7 @@ public class BasicStairs {
 		registerBlockStairs(block_space_quartzc);
 		registerBlockStairs(space_quartz_stair);
 		registerBlockStairs(space_quartz_metalframe);
+		registerBlockStairs(carrel);
 
 	}
 

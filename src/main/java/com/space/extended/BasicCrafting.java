@@ -369,10 +369,18 @@ public class BasicCrafting {
 		// 107Space_Quartz_Slab
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_frame_slab_half, 8),
 				new Object[] { "   ", "FFF", "   ", 'F', new ItemStack(BasicBlocks.metalframeblock) });
-		// 34 Klingosit
+		// 108 Klingosit
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingosit, 6),
 				new Object[] { "KKK", "   ", "   ", 'K', new ItemStack(BasicBlocks.klingonium_ore) });
-		
+		// 109 Klingosit A
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingosita, 6),
+				new Object[] { "KKK", " K ", "   ", 'K', new ItemStack(BasicBlocks.klingonium_ore) });
+		// 110 Klingosit B
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingositb, 6),
+						new Object[] { "KKK", " K ", " K ", 'K', new ItemStack(BasicBlocks.klingonium_ore) });
+		// 111 Carrel
+		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.carrel, 6),
+				new Object[] { "KKK", "K  ", "K  ", 'K', new ItemStack(BasicBlocks.klingonium_ore) });
 		
 		
 		

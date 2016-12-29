@@ -588,7 +588,7 @@
             }
         },
         {
-            "name": "post unten s\u00fcd",
+            "name": "post unten sued",
             "from": [
                 10.0,
                 0.0,
@@ -639,7 +639,7 @@
             }
         },
         {
-            "name": "post oben s\u00fcd",
+            "name": "post oben sued",
             "from": [
                 10.0,
                 14.5,
@@ -690,7 +690,7 @@
             }
         },
         {
-            "name": "schr\u00e4ge ost",
+            "name": "schraege ost",
             "from": [
                 14.625,
                 13.375,
@@ -769,7 +769,7 @@
             }
         },
         {
-            "name": "schr\u00e4ge west",
+            "name": "schraege west",
             "from": [
                 8.5,
                 0.625,
@@ -848,7 +848,7 @@
             }
         },
         {
-            "name": "schr\u00e4ge west 2",
+            "name": "schraege west 2",
             "from": [
                 14.4,
                 0.625,
@@ -927,7 +927,7 @@
             }
         },
         {
-            "name": "schr\u00e4ge ost 2",
+            "name": "schraege ost 2",
             "from": [
                 8.5,
                 13.375,
@@ -1082,8 +1082,8 @@
                 0
             ],
             "translation": [
-                0.5,
-                0,
+                1,
+               -1,
                 0
             ],
             "scale": [

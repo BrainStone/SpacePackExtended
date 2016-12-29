@@ -1,0 +1,111 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "textures": {
+        "particle": "spaceextended:blocks/carrel",
+        "0": "spaceextended:blocks/carrel",
+        "1": "spaceextended:blocks/laboratory_bencha",
+        "2": "spaceextended:blocks/klingonium_pipes_outer"
+    },
+    "elements": [
+        {
+            "name": "basis",
+            "from": [ 3.0, 0.0, 3.0 ], 
+            "to": [ 16.0, 13.0, 16.0 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 3.0, 1.0, 13.0, 16.0 ] },
+                "east": { "texture": "#1", "uv": [ 3.0, 0.0, 13.0, 16.0 ] },
+                "south": { "texture": "#1", "uv": [ 3.0, 0.0, 13.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 3.0, 1.0, 13.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 13.5 ], "rotation": 180 },
+                "down": { "texture": "#2", "uv": [ 0.0, 15.75, 16.0, 0.0 ], "rotation": 270 }
+            }
+        },
+        {
+            "name": "platte",
+            "from": [ 0.0, 13.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 2.75 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 2.75 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 2.75 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 2.75 ] },
+                "up": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "rotation": 90 },
+                "down": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "schraege nord",
+            "from": [ 3.0, 9.3755, 2.525 ], 
+            "to": [ 13.5, 16.1755, 5.4 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8.0, 9.0, 8.0 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 2.625, 16.0, 7.625 ] },
+                "east": { "texture": "#0", "uv": [ 11.75, 3.5, 14.125, 6.875 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 2.5, 16.0, 7.875 ] },
+                "west": { "texture": "#0", "uv": [ 0.875, 3.5, 3.25, 6.875 ] },
+                "up": { "texture": "#0", "uv": [ 1.0, 11.625, 4.0, 14.0 ], "rotation": 180 },
+                "down": { "texture": "#0", "uv": [ 1.0, 12.0, 4.0, 14.375 ], "rotation": 180 }
+            }
+        },
+        {
+            "name": "schraege west",
+            "from": [ 2.6, 9.4, 3.0 ], 
+            "to": [ 5.5, 16.2, 13.5 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8.0, 9.0, 8.0 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 2.0, 3.0, 4.9, 6.8 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 3.0, 11.8, 6.8 ] },
+                "south": { "texture": "#0", "uv": [ 2.0, 3.0, 4.9, 6.8 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 3.0, 15.8, 7.8 ] },
+                "up": { "texture": "#0", "uv": [ 1.0, 3.0, 4.9, 6.8 ], "rotation": 180 },
+                "down": { "texture": "#0", "uv": [ 4.0, 3.0, 9.9, 7.8 ], "rotation": 180 }
+            }
+        },
+        {
+            "name": "pfosten nw",
+            "from": [ 0.5, 0.0, 0.5 ], 
+            "to": [ 3.0, 13.0, 3.0 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 1.0, 1.0, 3.5, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 1.0, 1.0, 3.5, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 1.0, 1.0, 3.5, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 1.0, 1.0, 3.5, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.5, 2.5 ], "rotation": 180 },
+                "down": { "texture": "#2", "uv": [ 3.0, 5.0, 5.5, 7.5 ], "rotation": 180 }
+            }
+        },
+        {
+            "name": "pfosten ost",
+            "from": [ 13.5, 0.0, 0.5 ], 
+            "to": [ 16.0, 13.0, 3.0 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 2.0, 1.0, 4.5, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 2.0, 1.0, 4.5, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 2.0, 1.0, 4.5, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 2.0, 1.0, 4.5, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.5, 2.5 ], "rotation": 90 },
+                "down": { "texture": "#2", "uv": [ 3.0, 5.0, 5.5, 7.5 ], "rotation": 270 }
+            }
+        },
+        {
+            "name": "pfosten west",
+            "from": [ 0.5, 0.0, 13.5 ], 
+            "to": [ 3.0, 13.0, 16.0 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 1.0, 1.0, 3.5, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 1.0, 1.0, 3.5, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 1.0, 1.0, 3.5, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 1.0, 1.0, 3.5, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.5, 2.5 ], "rotation": 90 },
+                "down": { "texture": "#2", "uv": [ 3.0, 5.0, 5.5, 7.5 ], "rotation": 270 }
+            }
+        }
+    ]
+}
