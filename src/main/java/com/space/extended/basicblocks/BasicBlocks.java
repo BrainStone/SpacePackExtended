@@ -101,10 +101,9 @@ public class BasicBlocks {
 	public static Block metal_frame_post;
 	public static Block metal_frame_zero;
 	public static Block metal_frame_vert;
-	public static Block metal_ladder;
 	public static BlockSlab metal_frame_slab_half;
 	public static BlockSlab metal_frame_slab_double;
-	
+	public static Block metal_ladder;
 
 	public BasicBlocks() {
 		init();
@@ -308,29 +307,27 @@ public class BasicBlocks {
 
 	private void register() {
 		registerBlock(vitallium);
+		registerSlab(vitallium_slab_half, vitallium_slab_double);
 		registerBlock(vitallium_ore);
-		registerBlock(metalframeblock);
-		registerBlock(klingonium);
-		registerBlock(klingodur);
+		registerBlock(perolit);
+		registerBlock(perolit_ore);
+		registerBlock(perola);
+		registerBlock(perolb);
+		registerBlock(perolc);
+		registerBlock(perold);
+		registerBlock(klingonium_ore);
 		registerBlock(klingonit);
 		registerBlock(klingosit);
 		registerBlock(klingosita);
 		registerBlock(klingositb);
+		registerBlock(klingodur);
+		registerBlock(klingopar);
+		registerBlock(klingonium_screw);
+		registerBlock(klingonium);
 		registerBlock(klingonium0);
 		registerBlock(klingonium1);
 		registerBlock(klingonium2);
 		registerBlock(klingonium3);
-		registerBlock(klingonium_ore);
-		registerBlock(constructor1);
-		registerBlock(constructor2);
-		registerBlock(constructor3);
-		registerBlock(constructor4);
-		registerBlock(constructor5);
-		registerBlock(strontenium);
-		registerBlock(strontenium0);
-		registerBlock(strontenium1);
-		registerBlock(strontenium2);
-		registerBlock(strontenium_ore);
 		registerBlock(klingonium_wall0);
 		registerBlock(klingonium_wall1);
 		registerBlock(klingonium_wall2);
@@ -340,50 +337,54 @@ public class BasicBlocks {
 		registerBlock(klingonium_wall6);
 		registerBlock(klingonium_wall7);
 		registerBlock(klingonium_wall8);
-		registerBlock(klingonium_screw);
-		registerBlock(perolit);
-		registerBlock(perolit_ore);
-		registerBlock(pipes_connector);
+		registerBlock(strontenium);
+		registerBlock(strontecore);
+		registerBlock(strontenium_glass);
+		registerBlock(strontenium_glass_pane);
+		registerBlock(strontenium0);
+		registerBlock(strontenium1);
+		registerBlock(strontenium2);
+		registerBlock(strontenium_ore);
 		registerBlock(strontenita);
 		registerBlock(strontenitb);
 		registerBlock(strontenitc);
 		registerBlock(strontenitd);
 		registerBlock(strontenal);
 		registerBlock(oxygen);
-		registerBlock(perola);
-		registerBlock(perolb);
-		registerBlock(perolc);
-		registerBlock(perold);
-		registerBlock(table);
 		registerBlock(strontopal);
 		registerBlock(strontopala);
 		registerBlock(strontopalb);
-		registerBlock(lux);
-		registerBlock(ceiling_lamp);
-		registerBlock(speedway);
-		registerBlock(klingopar);
-		registerBlock(tresor);
-		registerBlock(strontecore);
 		registerBlock(cyberit_Ore);
-		registerBlock(vitallium_glass);
-		registerBlock(vitallium_glass_pane);
-		registerBlock(strontenium_glass);
-		registerBlock(strontenium_glass_pane);
-		registerBlock(analyser);
-		registerBlock(virtual_screen);
+		registerBlock(block_cyberol);
+        registerSlab(space_quartz_slab_half,space_quartz_slab_double);
 		registerBlock(block_space_quartz);
 		registerBlock(block_space_quartza);
 		registerBlock(block_space_quartz_mfblock);
 		registerBlock(space_quartz_ore);
+		registerBlock(table);
+		registerBlock(speedway);
+		registerBlock(tresor);
+		registerBlock(analyser);
 		registerBlock(solar_panel);
 		registerBlock(satellite_antenna);
-		registerBlock(light_box);
+		registerBlock(virtual_screen);
+		registerBlock(vitallium_glass);
+		registerBlock(vitallium_glass_pane);
 		registerBlock(quartz_window);
 		registerBlock(quartz_window_pane);
 		registerBlock(block_engine);
-		registerBlock(block_cyberol);
+		registerBlock(ceiling_lamp);
+		registerBlock(light_box);
+		registerBlock(lux);
 		registerBlock(metal_lamp);
 		registerBlock(metal_lamp_lit);
+		registerBlock(pipes_connector);
+		registerBlock(constructor1);
+		registerBlock(constructor2);
+		registerBlock(constructor3);
+		registerBlock(constructor4);
+		registerBlock(constructor5);
+		registerBlock(metalframeblock);
 		registerBlock(metal_frame_straight);
 		registerBlock(metal_frame_l);
 		registerBlock(metal_frame_t);
@@ -391,11 +392,11 @@ public class BasicBlocks {
 		registerBlock(metal_frame_post);
 		registerBlock(metal_frame_zero);
 		registerBlock(metal_frame_vert);
-		registerBlock(metal_ladder);
-		registerSlab(space_quartz_slab_half,space_quartz_slab_double);
-		registerSlab(vitallium_slab_half, vitallium_slab_double);
 		registerSlab(metal_frame_slab_half,metal_frame_slab_double);
+		registerBlock(metal_ladder);
+							
 		
+				
 	}
 
 	private void registerBlock(Block block) {
