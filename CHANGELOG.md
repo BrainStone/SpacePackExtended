@@ -1,3 +1,13 @@
+2.0.55-beta
+-----------
+
+* Added SpaceQuartzSlab
+* Added MetalFrameSlab
+* Added Klingosit (with variants)
+* Added Carrelblock
+* Optimized textures
+* Optimized the order of the blocks in the creative menu
+
 2.0.50-beta
 -----------
 
