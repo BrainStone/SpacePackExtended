@@ -10,14 +10,14 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockStairsMetalFrameStairs extends BlockStairs {
-	public BlockStairsMetalFrameStairs() {
+public class BlockStronteniumStairs extends BlockStairs {
+	public BlockStronteniumStairs() {
 		super(Blocks.IRON_BLOCK.getDefaultState());
 		setHardness(2F);
 		setResistance(5F);
-		setLightOpacity(1);
-		setHarvestLevel("axe", 1);
-		setSoundType(SoundType.LADDER);
+		setHarvestLevel("axe", 2);
+		setLightOpacity(2);
+		setSoundType(SoundType.METAL);
 	}
 
 	@Override

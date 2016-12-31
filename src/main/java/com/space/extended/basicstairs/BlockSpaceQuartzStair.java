@@ -10,19 +10,19 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockStairsMetalFrameStairs extends BlockStairs {
-	public BlockStairsMetalFrameStairs() {
-		super(Blocks.IRON_BLOCK.getDefaultState());
+public class BlockSpaceQuartzStair extends BlockStairs {
+	protected BlockSpaceQuartzStair() {
+		super(Blocks.STONE_STAIRS.getDefaultState());
 		setHardness(2F);
-		setResistance(5F);
-		setLightOpacity(1);
+		setResistance(2F);
 		setHarvestLevel("axe", 1);
-		setSoundType(SoundType.LADDER);
+		setLightOpacity(1);
+		setSoundType(SoundType.STONE);
 	}
 
 	@Override
 	@SideOnly(Side.CLIENT)
 	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
-		return state.isOpaqueCube();
+		return false;
 	}
 }

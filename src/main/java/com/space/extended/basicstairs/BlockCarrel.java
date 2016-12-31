@@ -10,8 +10,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockCarrel extends BlockStairs{
-	
+public class BlockCarrel extends BlockStairs {
 	public BlockCarrel() {
 		super(Blocks.OAK_STAIRS.getDefaultState());
 		setHardness(2F);
@@ -22,14 +21,8 @@ public class BlockCarrel extends BlockStairs{
 	}
 
 	@Override
-	public boolean isFullCube(IBlockState state) {
-		return false;
-	}
-
-	@Override
 	@SideOnly(Side.CLIENT)
 	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
 		return false;
 	}
-
 }

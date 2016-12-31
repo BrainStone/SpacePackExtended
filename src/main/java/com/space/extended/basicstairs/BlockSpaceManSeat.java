@@ -10,14 +10,14 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockStairsMetalFrameStairs extends BlockStairs {
-	public BlockStairsMetalFrameStairs() {
+public class BlockSpaceManSeat extends BlockStairs {
+	public BlockSpaceManSeat() {
 		super(Blocks.IRON_BLOCK.getDefaultState());
 		setHardness(2F);
 		setResistance(5F);
 		setLightOpacity(1);
 		setHarvestLevel("axe", 1);
-		setSoundType(SoundType.LADDER);
+		setSoundType(SoundType.METAL);
 	}
 
 	@Override

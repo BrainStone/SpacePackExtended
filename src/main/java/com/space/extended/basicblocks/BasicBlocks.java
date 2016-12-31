@@ -12,7 +12,6 @@ import net.minecraft.item.ItemSlab;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class BasicBlocks {
-
 	public static Block vitallium;
 	public static BlockSlab vitallium_slab_half;
 	public static BlockSlab vitallium_slab_double;
@@ -108,7 +107,6 @@ public class BasicBlocks {
 	public BasicBlocks() {
 		init();
 		register();
-
 	}
 
 	private void init() {
@@ -160,23 +158,23 @@ public class BasicBlocks {
 		NameUtils.setNames(klingonium2, "klingonium2");
 		klingonium3 = new BlockKlingonium().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingonium3, "klingonium3");
-		klingonium_wall0 = new BlockKlingonium_Wall().setCreativeTab(SpaceExtendedMain.spaceTab);
+		klingonium_wall0 = new BlockKlingoniumWall().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingonium_wall0, "klingonium_wall0");
-		klingonium_wall1 = new BlockKlingonium_Wall().setCreativeTab(SpaceExtendedMain.spaceTab);
+		klingonium_wall1 = new BlockKlingoniumWall().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingonium_wall1, "klingonium_wall1");
-		klingonium_wall2 = new BlockKlingonium_Wall().setCreativeTab(SpaceExtendedMain.spaceTab);
+		klingonium_wall2 = new BlockKlingoniumWall().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingonium_wall2, "klingonium_wall2");
-		klingonium_wall3 = new BlockKlingonium_Wall().setCreativeTab(SpaceExtendedMain.spaceTab);
+		klingonium_wall3 = new BlockKlingoniumWall().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingonium_wall3, "klingonium_wall3");
-		klingonium_wall4 = new BlockKlingonium_Wall().setCreativeTab(SpaceExtendedMain.spaceTab);
+		klingonium_wall4 = new BlockKlingoniumWall().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingonium_wall4, "klingonium_wall4");
-		klingonium_wall5 = new BlockKlingonium_Wall().setCreativeTab(SpaceExtendedMain.spaceTab);
+		klingonium_wall5 = new BlockKlingoniumWall().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingonium_wall5, "klingonium_wall5");
-		klingonium_wall6 = new BlockKlingonium_Wall().setCreativeTab(SpaceExtendedMain.spaceTab);
+		klingonium_wall6 = new BlockKlingoniumWall().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingonium_wall6, "klingonium_wall6");
-		klingonium_wall7 = new BlockKlingonium_Wall().setCreativeTab(SpaceExtendedMain.spaceTab);
+		klingonium_wall7 = new BlockKlingoniumWall().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingonium_wall7, "klingonium_wall7");
-		klingonium_wall8 = new BlockKlingonium_Wall().setCreativeTab(SpaceExtendedMain.spaceTab);
+		klingonium_wall8 = new BlockKlingoniumWall().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingonium_wall8, "klingonium_wall8");
 		klingonium_screw = new BlockKlingoniumScrew().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingonium_screw, "klingonium_screw");
@@ -184,7 +182,7 @@ public class BasicBlocks {
 		NameUtils.setNames(perolit, "perolit");
 		perolit_ore = new BlockSpaceExtendedOre().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(perolit_ore, "perolit_ore");
-		pipes_connector = new BlockPipes_Connector().setCreativeTab(SpaceExtendedMain.spaceTab);
+		pipes_connector = new BlockPipesConnector().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(pipes_connector, "pipes_connector");
 		strontenita = new BlockStrontenit().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontenita, "strontenita");
@@ -216,7 +214,7 @@ public class BasicBlocks {
 		NameUtils.setNames(strontopalb, "strontopalb");
 		lux = new BlockLux().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(lux, "lux");
-		ceiling_lamp = new BlockCeiling_Lamp().setCreativeTab(SpaceExtendedMain.spaceTab);
+		ceiling_lamp = new BlockCeilingLamp().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(ceiling_lamp, "ceiling_lamp");
 		speedway = new BlockSpeedWay().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(speedway, "speedway");
@@ -236,35 +234,35 @@ public class BasicBlocks {
 		NameUtils.setNames(cyberit_Ore, "cyberit_ore");
 		analyser = new BlockAnalyser().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(analyser, "analyser");
-		vitallium_glass = new BlockVitallium_Glass(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		vitallium_glass = new BlockVitalliumGlass(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(vitallium_glass, "vitallium_glass");
-		vitallium_glass_pane = new BlockVitallium_Glass_Pane(Material.GLASS, false)
+		vitallium_glass_pane = new BlockVitalliumGlassPane(Material.GLASS, false)
 				.setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(vitallium_glass_pane, "vitallium_glass_pane");
-		virtual_screen = new BlockVirtual_Screen(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		virtual_screen = new BlockVirtualScreen(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(virtual_screen, "virtual_screen");
-		block_space_quartz = new Block_Space_Quartz().setCreativeTab(SpaceExtendedMain.spaceTab);
+		block_space_quartz = new BlockSpaceQuartz().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(block_space_quartz, "block_space_quartz");
-		block_space_quartza = new Block_Space_QuartzA().setCreativeTab(SpaceExtendedMain.spaceTab);
+		block_space_quartza = new BlockSpaceQuartzA().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(block_space_quartza, "block_space_quartza");
-		block_space_quartz_mfblock = new Block_Space_Quartz_MFblock(null).setCreativeTab(SpaceExtendedMain.spaceTab);
+		block_space_quartz_mfblock = new BlockSpaceQuartzMFblock(null).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(block_space_quartz_mfblock, "block_space_quartz_mfblock");
 		space_quartz_ore = new BlockSpaceExtendedOre(Material.ROCK).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(space_quartz_ore, "space_quartz_ore");
-		solar_panel = new BlockSolar_Panel().setCreativeTab(SpaceExtendedMain.spaceTab);
+		solar_panel = new BlockSolarPanel().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(solar_panel, "solar_panel");
-		satellite_antenna = new BlockSatellite_Antenna().setCreativeTab(SpaceExtendedMain.spaceTab);
+		satellite_antenna = new BlockSatelliteAntenna().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(satellite_antenna, "satellite_antenna");
 		light_box = new BlockLight_Box().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(light_box, "light_box");
-		quartz_window = new BlockQuartz_Window(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		quartz_window = new BlockQuartzWindow(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(quartz_window, "quartz_window");
-		quartz_window_pane = new BlockQuartz_Window_Pane(Material.GLASS, false)
+		quartz_window_pane = new BlockQuartzWindowPane(Material.GLASS, false)
 				.setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(quartz_window_pane, "quartz_window_pane");
-		block_engine = new Block_Engine().setCreativeTab(SpaceExtendedMain.spaceTab);
+		block_engine = new BlockEngine().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(block_engine, "block_engine");
-		block_cyberol = new Block_Cyberol().setCreativeTab(SpaceExtendedMain.spaceTab);
+		block_cyberol = new BlockCyberol().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(block_cyberol, "block_cyberol");
 		metal_lamp = new BlockMetalLamp(false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_lamp, "metal_lamp");
@@ -283,26 +281,22 @@ public class BasicBlocks {
 		NameUtils.setNames(metal_frame_post, "metal_frame_post");
 		metal_frame_zero = new BlockMetalFrameCatway(CatwayType.ZERO).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_zero, "metal_frame_zero");
-		metal_frame_vert = new BlockMetal_Frame_Vert().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_frame_vert = new BlockMetalFrameVert().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_vert, "metal_frame_vert");
-		metal_ladder = new BlockMetal_Ladder().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_ladder = new BlockMetalLadder().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_ladder, "metal_ladder");
-		vitallium_slab_half = (BlockSlab) new BlockVitallium_Slab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);
+		vitallium_slab_half = (BlockSlab) new BlockVitalliumSlab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(vitallium_slab_half, "vitallium_slab_half");
-		vitallium_slab_double = new BlockVitallium_Slab.Double();
+		vitallium_slab_double = new BlockVitalliumSlab.Double();
 		NameUtils.setNames(vitallium_slab_double, "vitallium_slab_double");
-		space_quartz_slab_half = (BlockSlab) new BlockSpace_Quartz_Slab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);
+		space_quartz_slab_half = (BlockSlab) new BlockSpaceQuartzSlab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(space_quartz_slab_half, "space_quartz_slab_half");
-		space_quartz_slab_double = new BlockSpace_Quartz_Slab.Double();
+		space_quartz_slab_double = new BlockSpaceQuartzSlab.Double();
 		NameUtils.setNames(space_quartz_slab_double, "space_quartz_slab_double");
-		metal_frame_slab_half = (BlockSlab) new BlockMetal_Frame_Slab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);
+		metal_frame_slab_half = (BlockSlab) new BlockMetalFrameSlab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_slab_half, "metal_frame_slab_half");
-		metal_frame_slab_double = new BlockMetal_Frame_Slab.Double();
+		metal_frame_slab_double = new BlockMetalFrameSlab.Double();
 		NameUtils.setNames(metal_frame_slab_double, "metal_frame_slab_double");
-		
-		
-		
-
 	}
 
 	private void register() {
@@ -356,7 +350,7 @@ public class BasicBlocks {
 		registerBlock(strontopalb);
 		registerBlock(cyberit_Ore);
 		registerBlock(block_cyberol);
-        registerSlab(space_quartz_slab_half,space_quartz_slab_double);
+		registerSlab(space_quartz_slab_half, space_quartz_slab_double);
 		registerBlock(block_space_quartz);
 		registerBlock(block_space_quartza);
 		registerBlock(block_space_quartz_mfblock);
@@ -392,11 +386,8 @@ public class BasicBlocks {
 		registerBlock(metal_frame_post);
 		registerBlock(metal_frame_zero);
 		registerBlock(metal_frame_vert);
-		registerSlab(metal_frame_slab_half,metal_frame_slab_double);
+		registerSlab(metal_frame_slab_half, metal_frame_slab_double);
 		registerBlock(metal_ladder);
-							
-		
-				
 	}
 
 	private void registerBlock(Block block) {

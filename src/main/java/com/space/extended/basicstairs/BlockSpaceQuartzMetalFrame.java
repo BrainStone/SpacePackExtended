@@ -10,8 +10,8 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockStairsMetalFrameStairs extends BlockStairs {
-	public BlockStairsMetalFrameStairs() {
+public class BlockSpaceQuartzMetalFrame extends BlockStairs {
+	protected BlockSpaceQuartzMetalFrame() {
 		super(Blocks.IRON_BLOCK.getDefaultState());
 		setHardness(2F);
 		setResistance(5F);

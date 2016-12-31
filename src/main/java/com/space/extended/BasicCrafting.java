@@ -359,7 +359,7 @@ public class BasicCrafting {
 				new Object[] { "FF ", "FF ", "FF ", 'F', new ItemStack(BasicItems.vitallium_ingot) });
 		// 104 Metal_Frame_Vert
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_frame_vert, 5),
-						new Object[] { "FF ", "FF ", "FF ", 'F', new ItemStack(BasicItems.vitallium_ingot) });
+				new Object[] { "FF ", "FF ", "FF ", 'F', new ItemStack(BasicItems.vitallium_ingot) });
 		// 105 Vitallium_Slab
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_slab_half, 8),
 				new Object[] { "   ", "FFF", "   ", 'F', new ItemStack(BasicBlocks.vitallium) });
@@ -376,14 +376,12 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingosita, 6),
 				new Object[] { "KKK", " K ", "   ", 'K', new ItemStack(BasicBlocks.klingonium_ore) });
 		// 110 Klingosit B
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingositb, 6),
-						new Object[] { "KKK", " K ", " K ", 'K', new ItemStack(BasicBlocks.klingonium_ore) });
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingositb, 6),
+				new Object[] { "KKK", " K ", " K ", 'K', new ItemStack(BasicBlocks.klingonium_ore) });
 		// 111 Carrel
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.carrel, 6),
 				new Object[] { "KKK", "K  ", "K  ", 'K', new ItemStack(BasicBlocks.klingonium_ore) });
-		
-		
-		
-			}
+
+	}
 
 }

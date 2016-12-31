@@ -21,11 +21,6 @@ public class BlockStairsChairMonitorStairs extends BlockStairs {
 	}
 
 	@Override
-	public boolean isFullCube(IBlockState state) {
-		return false;
-	}
-
-	@Override
 	@SideOnly(Side.CLIENT)
 	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
 		return state.isOpaqueCube();

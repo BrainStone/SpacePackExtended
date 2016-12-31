@@ -5,7 +5,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
 public class BlockKlingositb extends Block {
-	
+
 	public BlockKlingositb() {
 		super(Material.IRON);
 		setHardness(2F);
