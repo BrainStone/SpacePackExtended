@@ -86,6 +86,8 @@ public class BasicBlocks {
 	public static Block lux;
 	public static Block metal_lamp;
 	public static Block metal_lamp_lit;
+	public static Block wall_lamp;
+	public static Block wall_lamp_lit;
 	public static Block pipes_connector;
 	public static Block constructor1;
 	public static Block constructor2;
@@ -297,6 +299,10 @@ public class BasicBlocks {
 		NameUtils.setNames(metal_frame_slab_half, "metal_frame_slab_half");
 		metal_frame_slab_double = new BlockMetalFrameSlab.Double();
 		NameUtils.setNames(metal_frame_slab_double, "metal_frame_slab_double");
+		wall_lamp = new BlockWallLamp(false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(wall_lamp, "wall_lamp");
+		wall_lamp_lit = new BlockWallLamp(true);
+		NameUtils.setNames(wall_lamp_lit, "wall_lamp_lit");
 	}
 
 	private void register() {
@@ -372,6 +378,8 @@ public class BasicBlocks {
 		registerBlock(lux);
 		registerBlock(metal_lamp);
 		registerBlock(metal_lamp_lit);
+		registerBlock(wall_lamp);
+		registerBlock(wall_lamp_lit);
 		registerBlock(pipes_connector);
 		registerBlock(constructor1);
 		registerBlock(constructor2);
