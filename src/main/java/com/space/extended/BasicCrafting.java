@@ -381,7 +381,11 @@ public class BasicCrafting {
 		// 111 Carrel
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.carrel, 6),
 				new Object[] { "KKK", "K  ", "K  ", 'K', new ItemStack(BasicBlocks.klingonium_ore) });
-
+		// 112 WallLamp
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wall_lamp, 4),
+				new Object[] { "KKK", "   ", "B B", 'K', new ItemStack(BasicBlocks.klingonium_ore),
+							   'B', new ItemStack(Blocks.REDSTONE_TORCH)	});
+		
 	}
 
 }

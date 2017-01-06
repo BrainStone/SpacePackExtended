@@ -65,7 +65,7 @@ public class BlockWallLamp extends Block{
 			if (isOn && !worldIn.isBlockPowered(pos)) {
 				worldIn.setBlockState(pos, BasicBlocks.wall_lamp.getDefaultState(), 2);
 			} else if (!isOn && worldIn.isBlockPowered(pos)) {
-				worldIn.setBlockState(pos, BasicBlocks.wall_lamp_lit.getExtendedState(state, worldIn, pos), 2);
+				worldIn.setBlockState(pos, BasicBlocks.wall_lamp_lit.getDefaultState(), 2);
 			}
 		}
 	}
