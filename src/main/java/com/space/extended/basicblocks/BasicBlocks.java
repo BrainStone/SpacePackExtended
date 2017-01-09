@@ -75,6 +75,7 @@ public class BasicBlocks {
 	public static Block analyser;
 	public static Block solar_panel;
 	public static Block satellite_antenna;
+	public static Block stand_console;
 	public static Block virtual_screen;
 	public static Block vitallium_glass;
 	public static Block vitallium_glass_pane;
@@ -105,6 +106,7 @@ public class BasicBlocks {
 	public static BlockSlab metal_frame_slab_half;
 	public static BlockSlab metal_frame_slab_double;
 	public static Block metal_ladder;
+	
 
 	public BasicBlocks() {
 		init();
@@ -303,6 +305,8 @@ public class BasicBlocks {
 		NameUtils.setNames(wall_lamp, "wall_lamp");
 		wall_lamp_lit = new BlockWallLamp(true);
 		NameUtils.setNames(wall_lamp_lit, "wall_lamp_lit");
+		stand_console = new BlockStandConsole().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(stand_console, "stand_console");
 	}
 
 	private void register() {
@@ -367,6 +371,7 @@ public class BasicBlocks {
 		registerBlock(analyser);
 		registerBlock(solar_panel);
 		registerBlock(satellite_antenna);
+		registerBlock(stand_console);
 		registerBlock(virtual_screen);
 		registerBlock(vitallium_glass);
 		registerBlock(vitallium_glass_pane);

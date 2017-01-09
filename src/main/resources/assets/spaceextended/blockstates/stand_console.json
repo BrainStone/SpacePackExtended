@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:stand_console",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "spaceextended:stand_consoleb",
+            "y": 270
+        },
+        "facing=west": {
+            "model": "spaceextended:stand_consolec"
+        },
+        "facing=east": {
+            "model": "spaceextended:stand_consoled",
+            "y": 180
+        }
+    }
+}

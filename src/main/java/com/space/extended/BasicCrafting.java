@@ -382,9 +382,13 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.carrel, 6),
 				new Object[] { "KKK", "K  ", "K  ", 'K', new ItemStack(BasicBlocks.klingonium_ore) });
 		// 112 WallLamp
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wall_lamp, 4),
-				new Object[] { "KKK", "   ", "B B", 'K', new ItemStack(BasicBlocks.klingonium_ore),
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wall_lamp, 4),
+				new Object[] { "KKK", "   ", "B B", 'K', new ItemStack(BasicItems.cyberit_gem),
 							   'B', new ItemStack(Blocks.REDSTONE_TORCH)	});
+		// 113 WallLamp
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.stand_console, 2),
+				new Object[] { "KKK", " B ", " B ", 'K', new ItemStack(BasicItems.perolit_sphere),
+							   'B', new ItemStack(BasicItems.kit4)	});
 		
 	}
 
