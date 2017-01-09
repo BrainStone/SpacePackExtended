@@ -385,7 +385,7 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wall_lamp, 4),
 				new Object[] { "KKK", "   ", "B B", 'K', new ItemStack(BasicItems.cyberit_gem),
 							   'B', new ItemStack(Blocks.REDSTONE_TORCH)	});
-		// 113 WallLamp
+		// 113 StandConsole
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.stand_console, 2),
 				new Object[] { "KKK", " B ", " B ", 'K', new ItemStack(BasicItems.perolit_sphere),
 							   'B', new ItemStack(BasicItems.kit4)	});
