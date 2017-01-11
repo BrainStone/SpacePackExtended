@@ -37,6 +37,7 @@ public class BasicStairs {
 	public static BlockStairs block_space_quartzc;
 	public static BlockStairs space_quartz_metalframe;
 	public static BlockStairs carrel;
+	public static BlockStairs slope_pipes;
 
 	public BasicStairs() {
 		init();
@@ -105,6 +106,8 @@ public class BasicStairs {
 		NameUtils.setNames(space_quartz_metalframe, "space_quartz_metalframe");
 		carrel = (BlockStairs) new BlockCarrel().setCreativeTab(SpaceExtendedMain.stairsTab);
 		NameUtils.setNames(carrel, "carrel");
+		slope_pipes = (BlockStairs) new BlockSlopePipes().setCreativeTab(SpaceExtendedMain.stairsTab);
+		NameUtils.setNames(slope_pipes, "slope_pipes");
 	}
 
 	private void register() {
@@ -137,6 +140,7 @@ public class BasicStairs {
 		registerBlockStairs(space_quartz_stair);
 		registerBlockStairs(space_quartz_metalframe);
 		registerBlockStairs(carrel);
+		registerBlockStairs(slope_pipes);
 	}
 
 	private void registerBlockStairs(BlockStairs blockstairs) {

@@ -127,6 +127,7 @@ tile.block_space_quartzt.name=§5Space Quartz T§r
 tile.space_quartz_stair.name=§5Space Quartz Stair§r
 tile.space_quartz_metalframe.name=§5Space Quartz Stair MF§r
 tile.carrel.name=§5Carrel§r
+tile.slope_pipes.name=§5Slope Pipes§r
 
 /*Items*/
 item.vitallium_ingot.name=§5Vitallium Ingot§r

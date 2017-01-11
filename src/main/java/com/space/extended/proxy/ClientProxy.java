@@ -173,6 +173,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicStairs.space_quartz_stair, 0);
 		registerModel(BasicStairs.space_quartz_metalframe, 0);
 		registerModel(BasicStairs.carrel, 0);
+		registerModel(BasicStairs.slope_pipes, 0);
 
 	}
 
