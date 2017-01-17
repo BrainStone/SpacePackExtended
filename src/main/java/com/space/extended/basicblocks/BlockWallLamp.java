@@ -2,6 +2,8 @@ package com.space.extended.basicblocks;
 
 import java.util.Random;
 
+import javax.annotation.Nullable;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -13,6 +15,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -33,7 +36,11 @@ public class BlockWallLamp extends Block{
 			setLightLevel(1.0F);
 		}
 	}
-	
+	 @Nullable
+	    public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos)
+	    {
+	        return NULL_AABB;
+	    }
 
 	@Override
 	public IBlockState getStateFromMeta(int meta) {

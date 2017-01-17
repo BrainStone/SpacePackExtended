@@ -1,5 +1,7 @@
 package com.space.extended.basicblocks;
 
+import javax.annotation.Nullable;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -9,6 +11,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -29,7 +32,11 @@ public class BlockCeilingLamp extends Block {
 	public IBlockState getStateForEntityRender(IBlockState state) {
 		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
 	}
-
+	 @Nullable
+	    public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos)
+	    {
+	        return NULL_AABB;
+	    }
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		EnumFacing enumFacing = EnumFacing.getFront(meta);
