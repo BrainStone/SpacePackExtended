@@ -95,6 +95,7 @@ public class BasicBlocks {
 	public static Block constructor3;
 	public static Block constructor4;
 	public static Block constructor5;
+	public static Block metal_diagonal;
 	public static Block metalframeblock;
 	public static Block metal_frame_straight;
 	public static Block metal_frame_l;
@@ -307,6 +308,8 @@ public class BasicBlocks {
 		NameUtils.setNames(wall_lamp_lit, "wall_lamp_lit");
 		stand_console = new BlockStandConsole().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(stand_console, "stand_console");
+		metal_diagonal = new BlockMetalDiagonal().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(metal_diagonal, "metal_diagonal");
 	}
 
 	private void register() {
@@ -391,6 +394,7 @@ public class BasicBlocks {
 		registerBlock(constructor3);
 		registerBlock(constructor4);
 		registerBlock(constructor5);
+		registerBlock(metal_diagonal);
 		registerBlock(metalframeblock);
 		registerBlock(metal_frame_straight);
 		registerBlock(metal_frame_l);

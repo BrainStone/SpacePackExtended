@@ -390,9 +390,12 @@ public class BasicCrafting {
 				new Object[] { "KKK", " B ", " B ", 'K', new ItemStack(BasicItems.perolit_sphere),
 							   'B', new ItemStack(BasicItems.kit4)	});
 		// 114 SlopePipes
-				GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.slope_pipes, 6),
+		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.slope_pipes, 6),
 						new Object[] { "KKK", "X X", " K ", 'K', new ItemStack(BasicItems.klingonium_shard),
 							'X',new ItemStack(BasicItems.quartz_component)});
+		// 115 MetalDiagonal
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_diagonal, 5),
+						new Object[] { "F  ", "FFF", "  F", 'F', new ItemStack(BasicItems.vitallium_ingot) });		
 		
 	}
 
