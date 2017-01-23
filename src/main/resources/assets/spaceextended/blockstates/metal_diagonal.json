@@ -10,8 +10,7 @@
         },
         "facing=west": {
             "model": "spaceextended:metal_diagonal"
-		},
-			
+        },
         "facing=east": {
             "model": "spaceextended:metal_diagonal",
             "y": 180
