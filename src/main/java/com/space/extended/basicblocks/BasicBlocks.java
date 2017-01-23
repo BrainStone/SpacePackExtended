@@ -107,6 +107,7 @@ public class BasicBlocks {
 	public static BlockSlab metal_frame_slab_half;
 	public static BlockSlab metal_frame_slab_double;
 	public static Block metal_ladder;
+	public static Block lever1;
 	
 
 	public BasicBlocks() {
@@ -310,6 +311,8 @@ public class BasicBlocks {
 		NameUtils.setNames(stand_console, "stand_console");
 		metal_diagonal = new BlockMetalDiagonal().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_diagonal, "metal_diagonal");
+		lever1 = new BlockCustomLever();
+		NameUtils.setNames(lever1, "lever1");
 	}
 
 	private void register() {
@@ -405,6 +408,7 @@ public class BasicBlocks {
 		registerBlock(metal_frame_vert);
 		registerSlab(metal_frame_slab_half, metal_frame_slab_double);
 		registerBlock(metal_ladder);
+		registerBlock(lever1);
 	}
 
 	private void registerBlock(Block block) {
