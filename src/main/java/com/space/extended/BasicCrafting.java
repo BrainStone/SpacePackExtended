@@ -396,7 +396,11 @@ public class BasicCrafting {
 		// 115 MetalDiagonal
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_diagonal, 5),
 						new Object[] { "F  ", "FFF", "  F", 'F', new ItemStack(BasicItems.vitallium_ingot) });		
-		
-	}
+		// 116 Lever1
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.lever1, 3),
+	              new Object[] { "FFF", " B ", " B ", 'F', new ItemStack(Items.STICK),
+	            		  'B', new ItemStack(BasicItems.kit4) });
 
+	}
+	
 }
