@@ -391,15 +391,23 @@ public class BasicCrafting {
 							   'B', new ItemStack(BasicItems.kit4)	});
 		// 114 SlopePipes
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.slope_pipes, 6),
-						new Object[] { "KKK", "X X", " K ", 'K', new ItemStack(BasicItems.klingonium_shard),
+				new Object[] { "KKK", "X X", " K ", 'K', new ItemStack(BasicItems.klingonium_shard),
 							'X',new ItemStack(BasicItems.quartz_component)});
 		// 115 MetalDiagonal
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_diagonal, 5),
-						new Object[] { "F  ", "FFF", "  F", 'F', new ItemStack(BasicItems.vitallium_ingot) });		
+				new Object[] { "F  ", "FFF", "  F", 'F', new ItemStack(BasicItems.vitallium_ingot) });		
 		// 116 Lever1
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.lever1, 3),
-	              new Object[] { "FFF", " B ", " B ", 'F', new ItemStack(Items.STICK),
+	             new Object[] { "FFF", " B ", " B ", 'F', new ItemStack(Items.STICK),
 	            		  'B', new ItemStack(BasicItems.kit4) });
+		// 117 BlockRibbed
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.block_ribbed, 5),
+			      new Object[] { "FBC", "   ", "   ", 'F', new ItemStack(Items.IRON_INGOT),
+			            		  'B', new ItemStack(BasicItems.strontenium_ingot),'C', new ItemStack(Items.GOLD_INGOT) });
+		
+		
+		
+		
 
 	}
 	

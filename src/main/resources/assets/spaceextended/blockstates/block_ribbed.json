@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "spaceextended:block_ribbed"
+        },
+        "axis=z": {
+            "model": "spaceextended:block_ribbed",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "spaceextended:block_ribbed",
+            "x": 90,
+            "y": 90
+        }
+    }
+}

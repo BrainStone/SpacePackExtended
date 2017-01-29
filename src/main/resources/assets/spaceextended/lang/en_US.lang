@@ -97,6 +97,10 @@ tile.lever1.name=§5Lever 1§r
 tile.vitallium_door.name=§Vitallium Door§r
 tile.stand_console.name=§5Terminal§r
 tile.metal_diagonal.name=§5Metal Block Diagonal§r
+tile.block_ribbed.name=§5Ribbed Block§r
+
+
+
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r

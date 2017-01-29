@@ -82,6 +82,7 @@ public class BasicBlocks {
 	public static Block quartz_window;
 	public static Block quartz_window_pane;
 	public static Block block_engine;
+	public static Block block_ribbed;
 	public static Block ceiling_lamp;
 	public static Block light_box;
 	public static Block lux;
@@ -313,6 +314,8 @@ public class BasicBlocks {
 		NameUtils.setNames(metal_diagonal, "metal_diagonal");
 		lever1 = new BlockCustomLever();
 		NameUtils.setNames(lever1, "lever1");
+		block_ribbed = new BlockRibbed().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(block_ribbed, "block_ribbed");
 	}
 
 	private void register() {
@@ -384,6 +387,7 @@ public class BasicBlocks {
 		registerBlock(quartz_window);
 		registerBlock(quartz_window_pane);
 		registerBlock(block_engine);
+		registerBlock(block_ribbed);
 		registerBlock(ceiling_lamp);
 		registerBlock(light_box);
 		registerBlock(lux);
