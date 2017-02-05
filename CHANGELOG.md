@@ -1,3 +1,16 @@
+2.0.78-beta
+-----------
+
+* Added Wall Lamp
+* Added Lever1
+* Added StandConsole
+* Added SlopePipes
+* Added MetalDiagonal
+* Added Ribbed Block
+* Texture tweaks and optimizations
+* Optimizations
+* Cleanups
+
 2.0.55-beta
 -----------
 
