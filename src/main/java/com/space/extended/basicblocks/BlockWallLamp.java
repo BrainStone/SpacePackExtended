@@ -14,7 +14,6 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -35,6 +34,7 @@ public class BlockWallLamp extends Block {
 		}
 	}
 
+	@Override
 	@Nullable
 	public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
 		return NULL_AABB;
@@ -62,12 +62,23 @@ public class BlockWallLamp extends Block {
 
 	@Override
 	public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY,
-			float hitZ, int meta, EntityLivingBase placer, EnumHand hand) {
-		return getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
+			float hitZ, int meta, EntityLivingBase placer) {
+		if (canPlaceAt(worldIn, pos, facing))
+			return getDefaultState().withProperty(FACING, facing);
+		else {
+			for (EnumFacing enumfacing : EnumFacing.Plane.HORIZONTAL) {
+				if (canPlaceAt(worldIn, pos, enumfacing))
+					return getDefaultState().withProperty(FACING, enumfacing);
+			}
+
+			return getDefaultState();
+		}
 	}
 
 	@Override
 	public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
+		checkForDrop(worldIn, pos, state);
+
 		if (!worldIn.isRemote) {
 			if (isOn && !worldIn.isBlockPowered(pos)) {
 				worldIn.setBlockState(pos, BasicBlocks.wall_lamp.getDefaultState(), 2);
@@ -79,11 +90,14 @@ public class BlockWallLamp extends Block {
 
 	@Override
 	public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
+		checkForDrop(worldIn, pos, state);
+
 		if (!worldIn.isRemote) {
 			if (isOn && !worldIn.isBlockPowered(pos)) {
 				worldIn.scheduleUpdate(pos, this, 4);
 			} else if (!isOn && worldIn.isBlockPowered(pos)) {
-				worldIn.setBlockState(pos, BasicBlocks.wall_lamp_lit.getDefaultState(), 2);
+				worldIn.setBlockState(pos, BasicBlocks.wall_lamp_lit.getDefaultState().withProperty(FACING,
+						worldIn.getBlockState(pos).getValue(FACING)), 2);
 			}
 		}
 	}
@@ -92,7 +106,8 @@ public class BlockWallLamp extends Block {
 	public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
 		if (!worldIn.isRemote) {
 			if (isOn && !worldIn.isBlockPowered(pos)) {
-				worldIn.setBlockState(pos, BasicBlocks.wall_lamp.getDefaultState(), 2);
+				worldIn.setBlockState(pos, BasicBlocks.wall_lamp.getDefaultState().withProperty(FACING,
+						worldIn.getBlockState(pos).getValue(FACING)), 2);
 			}
 		}
 	}
@@ -112,7 +127,8 @@ public class BlockWallLamp extends Block {
 		return new ItemStack(BasicBlocks.wall_lamp);
 	}
 
-	public boolean isOpaqueCube() {
+	@Override
+	public boolean isOpaqueCube(IBlockState state) {
 		return false;
 	}
 
@@ -124,5 +140,33 @@ public class BlockWallLamp extends Block {
 	@Override
 	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
 		return false;
+	}
+
+	private boolean canPlaceAt(World worldIn, BlockPos pos, EnumFacing facing) {
+		BlockPos blockpos = pos.offset(facing.getOpposite());
+		return facing.getAxis().isHorizontal() && worldIn.isSideSolid(blockpos, facing, true);
+	}
+
+	@Override
+	public boolean canPlaceBlockAt(World worldIn, BlockPos pos) {
+		for (EnumFacing enumfacing : FACING.getAllowedValues()) {
+			if (canPlaceAt(worldIn, pos, enumfacing))
+				return true;
+		}
+
+		return false;
+	}
+
+	protected boolean checkForDrop(World worldIn, BlockPos pos, IBlockState state) {
+		if ((state.getBlock() == this) && canPlaceAt(worldIn, pos, state.getValue(FACING)))
+			return true;
+		else {
+			if (worldIn.getBlockState(pos).getBlock() == this) {
+				dropBlockAsItem(worldIn, pos, BasicBlocks.wall_lamp.getDefaultState(), 0);
+				worldIn.setBlockToAir(pos);
+			}
+
+			return false;
+		}
 	}
 }
