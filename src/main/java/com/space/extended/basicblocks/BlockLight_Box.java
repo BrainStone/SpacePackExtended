@@ -62,11 +62,12 @@ public class BlockLight_Box extends Block {
 			float hitZ, int meta, EntityLivingBase placer, EnumHand hand) {
 		return getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
 	}
-	 @Nullable
-	    public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos)
-	    {
-	        return NULL_AABB;
-	    }
+
+	@Override
+	@Nullable
+	public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
+		return NULL_AABB;
+	}
 
 	public boolean isOpaqueCube() {
 		return false;

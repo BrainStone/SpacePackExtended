@@ -10,8 +10,8 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockSlopePipes extends BlockStairs{
-	
+public class BlockSlopePipes extends BlockStairs {
+
 	public BlockSlopePipes() {
 		super(Blocks.OAK_STAIRS.getDefaultState());
 		setHardness(2F);
@@ -27,5 +27,3 @@ public class BlockSlopePipes extends BlockStairs{
 		return false;
 	}
 }
-
-

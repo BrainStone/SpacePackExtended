@@ -32,11 +32,13 @@ public class BlockCeilingLamp extends Block {
 	public IBlockState getStateForEntityRender(IBlockState state) {
 		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
 	}
-	 @Nullable
-	    public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos)
-	    {
-	        return NULL_AABB;
-	    }
+
+	@Override
+	@Nullable
+	public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
+		return NULL_AABB;
+	}
+
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		EnumFacing enumFacing = EnumFacing.getFront(meta);

@@ -109,7 +109,6 @@ public class BasicBlocks {
 	public static BlockSlab metal_frame_slab_double;
 	public static Block metal_ladder;
 	public static Block lever1;
-	
 
 	public BasicBlocks() {
 		init();

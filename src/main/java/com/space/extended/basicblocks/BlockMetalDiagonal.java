@@ -12,12 +12,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockMetalDiagonal extends Block{
+public class BlockMetalDiagonal extends Block {
 
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-	
+
 	public BlockMetalDiagonal() {
-		
 
 		super(Material.ANVIL);
 		setHardness(2F);
