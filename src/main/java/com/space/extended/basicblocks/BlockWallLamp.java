@@ -20,11 +20,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockWallLamp extends Block{
-	
+public class BlockWallLamp extends Block {
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-	
-	
+
 	private final boolean isOn;
 
 	public BlockWallLamp(boolean isOn) {
@@ -36,11 +34,11 @@ public class BlockWallLamp extends Block{
 			setLightLevel(1.0F);
 		}
 	}
-	 @Nullable
-	    public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos)
-	    {
-	        return NULL_AABB;
-	    }
+
+	@Nullable
+	public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
+		return NULL_AABB;
+	}
 
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
@@ -56,6 +54,7 @@ public class BlockWallLamp extends Block{
 	public int getMetaFromState(IBlockState state) {
 		return state.getValue(FACING).getIndex();
 	}
+
 	@Override
 	protected BlockStateContainer createBlockState() {
 		return new BlockStateContainer(this, new IProperty[] { FACING });
@@ -66,6 +65,7 @@ public class BlockWallLamp extends Block{
 			float hitZ, int meta, EntityLivingBase placer, EnumHand hand) {
 		return getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
 	}
+
 	@Override
 	public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
 		if (!worldIn.isRemote) {
@@ -96,6 +96,7 @@ public class BlockWallLamp extends Block{
 			}
 		}
 	}
+
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
 		return Item.getItemFromBlock(BasicBlocks.wall_lamp);
@@ -110,6 +111,7 @@ public class BlockWallLamp extends Block{
 	protected ItemStack getSilkTouchDrop(IBlockState state) {
 		return new ItemStack(BasicBlocks.wall_lamp);
 	}
+
 	public boolean isOpaqueCube() {
 		return false;
 	}
