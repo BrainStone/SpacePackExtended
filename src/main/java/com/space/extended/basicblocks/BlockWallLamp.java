@@ -77,22 +77,26 @@ public class BlockWallLamp extends Block {
 
 	@Override
 	public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
-		checkForDrop(worldIn, pos, state);
-
 		if (!worldIn.isRemote) {
+			if (!checkForDrop(worldIn, pos, state))
+				return;
+
 			if (isOn && !worldIn.isBlockPowered(pos)) {
-				worldIn.setBlockState(pos, BasicBlocks.wall_lamp.getDefaultState(), 2);
+				worldIn.setBlockState(pos, BasicBlocks.wall_lamp.getDefaultState().withProperty(FACING,
+						worldIn.getBlockState(pos).getValue(FACING)), 2);
 			} else if (!isOn && worldIn.isBlockPowered(pos)) {
-				worldIn.setBlockState(pos, BasicBlocks.wall_lamp_lit.getDefaultState(), 2);
+				worldIn.setBlockState(pos, BasicBlocks.wall_lamp_lit.getDefaultState().withProperty(FACING,
+						worldIn.getBlockState(pos).getValue(FACING)), 2);
 			}
 		}
 	}
 
 	@Override
 	public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
-		checkForDrop(worldIn, pos, state);
-
 		if (!worldIn.isRemote) {
+			if (!checkForDrop(worldIn, pos, state))
+				return;
+
 			if (isOn && !worldIn.isBlockPowered(pos)) {
 				worldIn.scheduleUpdate(pos, this, 4);
 			} else if (!isOn && worldIn.isBlockPowered(pos)) {
