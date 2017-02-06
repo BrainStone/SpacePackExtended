@@ -1,3 +1,27 @@
+2.0.82
+------
+
+* Updated to 1.11
+* Added Metal Lamp
+* Added Metal Frame Series
+* Added Metal Ladder
+* Added Vitalium Half Slab
+* Added SpaceQuartzSlab
+* Added MetalFrameSlab
+* Added Klingosit (with variants)
+* Added Carrelblock
+* Added Wall Lamp
+* Added Lever1
+* Added StandConsole
+* Added SlopePipes
+* Added MetalDiagonal
+* Added Ribbed Block
+* Texture tweaks and optimizations
+* Changed block and item id. (ex. klingoniumIngot turned to klingonium_ingot)
+* Reduced file size
+* Fixed [#1](https://github.com/BrainStone/SpacePackExtended/issues/1)
+* Optimized the order of the blocks in the creative menu
+
 2.0.78-beta
 -----------
 
