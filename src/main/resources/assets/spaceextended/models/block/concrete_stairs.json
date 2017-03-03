@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "spaceextended:blocks/concrete_stairs",
+        "top": "spaceextended:blocks/concrete_stairs",
+        "side": "spaceextended:blocks/concrete_stairs"
+    }
+}

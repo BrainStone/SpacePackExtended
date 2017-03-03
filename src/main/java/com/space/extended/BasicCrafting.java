@@ -400,6 +400,11 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.block_ribbed, 5),
 				new Object[] { "FBC", "   ", "   ", 'F', new ItemStack(Items.IRON_INGOT), 'B',
 						new ItemStack(BasicItems.strontenium_ingot), 'C', new ItemStack(Items.GOLD_INGOT) });
+		// 118 Concrete_Stairs
+		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.concrete_stairs, 6),
+				new Object[] { "  F", " FF", "FFF", 'F', new ItemStack(BasicItems.kit4) });
+		
+		
 
 	}
 
