@@ -90,6 +90,8 @@ public class BasicBlocks {
 	public static Block metal_lamp_lit;
 	public static Block wall_lamp;
 	public static Block wall_lamp_lit;
+	public static Block cellar_lamp;
+	public static Block cellar_lamp_lit;
 	public static Block pipes_connector;
 	public static Block constructor1;
 	public static Block constructor2;
@@ -109,6 +111,8 @@ public class BasicBlocks {
 	public static BlockSlab metal_frame_slab_double;
 	public static Block metal_ladder;
 	public static Block lever1;
+	public static Block lever2;
+	public static Block lever3;
 
 	public BasicBlocks() {
 		init();
@@ -313,8 +317,16 @@ public class BasicBlocks {
 		NameUtils.setNames(metal_diagonal, "metal_diagonal");
 		lever1 = new BlockCustomLever();
 		NameUtils.setNames(lever1, "lever1");
+		lever2 = new BlockCustomLever();
+		NameUtils.setNames(lever2, "lever2");
+		lever3= new BlockCustomLever();
+		NameUtils.setNames(lever3, "lever3");
 		block_ribbed = new BlockRibbed().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(block_ribbed, "block_ribbed");
+		cellar_lamp = new BlockCellarLamp(false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(cellar_lamp, "cellar_lamp");
+		cellar_lamp_lit = new BlockCellarLamp(true);
+		NameUtils.setNames(cellar_lamp_lit, "cellar_lamp_lit");
 	}
 
 	private void register() {
@@ -412,6 +424,10 @@ public class BasicBlocks {
 		registerSlab(metal_frame_slab_half, metal_frame_slab_double);
 		registerBlock(metal_ladder);
 		registerBlock(lever1);
+		registerBlock(lever2);
+		registerBlock(lever3);
+		registerBlock(cellar_lamp);
+		registerBlock(cellar_lamp_lit);
 	}
 
 	private void registerBlock(Block block) {

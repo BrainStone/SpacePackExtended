@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:cellar_lamp"
+        },
+        "facing=south": {
+            "model": "spaceextended:cellar_lamp",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "spaceextended:cellar_lamp",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "spaceextended:cellar_lamp",
+            "y": 90
+        }
+    }
+}

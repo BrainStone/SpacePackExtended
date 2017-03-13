@@ -403,8 +403,15 @@ public class BasicCrafting {
 		// 118 Concrete_Stairs
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.concrete_stairs, 6),
 				new Object[] { "  F", " FF", "FFF", 'F', new ItemStack(BasicItems.kit4) });
-		
-		
+		// 119 Lever2
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.lever2, 3), new Object[] { "FFF", " B ", " B ", 'F',
+				new ItemStack(Items.STICK), 'B', new ItemStack(BasicItems.kit3) });
+		// 120 Lever3
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.lever3, 3), new Object[] { "FFF", " B ", " B ", 'F',
+				new ItemStack(Items.STICK), 'B', new ItemStack(BasicItems.kit2) });
+		// 121 Cellar_Lamp
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cellar_lamp, 4), new Object[] { "KKK", " K ", "B B", 'K',
+						new ItemStack(BasicItems.cyberit_gem), 'B', new ItemStack(Blocks.REDSTONE_TORCH) });
 
 	}
 
