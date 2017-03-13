@@ -113,6 +113,8 @@ public class BasicBlocks {
 	public static Block lever1;
 	public static Block lever2;
 	public static Block lever3;
+	public static Block bed1;
+	
 
 	public BasicBlocks() {
 		init();
@@ -327,6 +329,9 @@ public class BasicBlocks {
 		NameUtils.setNames(cellar_lamp, "cellar_lamp");
 		cellar_lamp_lit = new BlockCellarLamp(true);
 		NameUtils.setNames(cellar_lamp_lit, "cellar_lamp_lit");
+		bed1 = new BlockCustomBed();
+		NameUtils.setNames(bed1,"bed1");
+		
 	}
 
 	private void register() {
@@ -428,6 +433,8 @@ public class BasicBlocks {
 		registerBlock(lever3);
 		registerBlock(cellar_lamp);
 		registerBlock(cellar_lamp_lit);
+		registerBlock(bed1);
+		
 	}
 
 	private void registerBlock(Block block) {

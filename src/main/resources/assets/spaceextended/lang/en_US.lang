@@ -101,7 +101,7 @@ tile.metal_diagonal.name=§5Metal Block Diagonal§r
 tile.block_ribbed.name=§5Ribbed Block§r
 tile.lever2.name=§5Lever 2§r
 tile.lever3.name=§5Lever 3§r
-
+tile.bed1.name=§5Lifebox§r
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r
