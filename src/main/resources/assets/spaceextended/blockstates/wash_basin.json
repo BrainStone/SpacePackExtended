@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:wash_basin",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "spaceextended:wash_basin",
+            "y": 270
+        },
+        "facing=west": {
+            "model": "spaceextended:wash_basin"
+        },
+        "facing=east": {
+            "model": "spaceextended:wash_basin",
+            "y": 180
+        }
+		
+    
+    }
+}

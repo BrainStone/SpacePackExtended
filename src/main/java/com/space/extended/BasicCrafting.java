@@ -357,9 +357,6 @@ public class BasicCrafting {
 		// 104 Metal_Frame_Vert
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_frame_vert, 5),
 				new Object[] { "FF ", "FF ", "FF ", 'F', new ItemStack(BasicItems.vitallium_ingot) });
-		// 104 Metal_Frame_Vert
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_frame_vert, 5),
-				new Object[] { "FF ", "FF ", "FF ", 'F', new ItemStack(BasicItems.vitallium_ingot) });
 		// 105 Vitallium_Slab
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_slab_half, 8),
 				new Object[] { "   ", "FFF", "   ", 'F', new ItemStack(BasicBlocks.vitallium) });
@@ -410,8 +407,12 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.lever3, 3), new Object[] { "FFF", " B ", " B ", 'F',
 				new ItemStack(Items.STICK), 'B', new ItemStack(BasicItems.kit2) });
 		// 121 Cellar_Lamp
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cellar_lamp, 4), new Object[] { "KKK", " K ", "B B", 'K',
-						new ItemStack(BasicItems.cyberit_gem), 'B', new ItemStack(Blocks.REDSTONE_TORCH) });
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cellar_lamp, 4), new Object[] { "KKK", " K ", "B B", 'K',
+				new ItemStack(BasicItems.cyberit_gem), 'B', new ItemStack(Blocks.REDSTONE_TORCH) });
+		// 122 Wash_Basin
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wash_basin, 6),
+				new Object[] { "K K", "K  ", "K  ", 'K', new ItemStack(BasicBlocks.klingonium_ore) });		
+				
 
 	}
 
