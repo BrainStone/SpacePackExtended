@@ -411,9 +411,16 @@ public class BasicCrafting {
 				new ItemStack(BasicItems.cyberit_gem), 'B', new ItemStack(Blocks.REDSTONE_TORCH) });
 		// 122 Wash_Basin
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wash_basin, 6),
-				new Object[] { "K K", "K  ", "K  ", 'K', new ItemStack(BasicBlocks.klingonium_ore) });		
-				
-
+				new Object[] { "K K", "K  ", "K  ", 'K', new ItemStack(BasicBlocks.klingonium_ore) });
+		// 123 Cooker
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cooker, 5),
+				new Object[] { "LLL", "L L", " L ", 'L', new ItemStack(Blocks.BLACK_SHULKER_BOX) });
+		//124 KlingonitPP
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonit_pp,4),
+				new Object[] { "   ", "BB  ", "   ", 'B', new ItemStack(BasicBlocks.klingonium_wall0) });
+		//125 Klingonit1PP
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonit1_pp,4),
+						new Object[] { "   ", "BB  ", "   ", 'B', new ItemStack(BasicBlocks.klingonium_wall1) });
 	}
 
 }

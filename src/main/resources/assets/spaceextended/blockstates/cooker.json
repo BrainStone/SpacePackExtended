@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:cooker",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "spaceextended:cooker",
+            "y": 270
+        },
+        "facing=west": {
+            "model": "spaceextended:cooker"
+        },
+        "facing=east": {
+            "model": "spaceextended:cooker",
+            "y": 180
+        }
+    }
+}

@@ -95,7 +95,7 @@ tile.klingositb.name=§5Klingosit B§r
 tile.wall_lamp.name=§5Wall Lamp§r
 tile.cellar_lamp.name=§5Cellar Lamp§r
 tile.lever1.name=§5Lever 1§r
-tile.vitallium_door.name=§Vitallium Door§r
+tile.vitallium_door.name=§5Vitallium Door§r
 tile.stand_console.name=§5Terminal§r
 tile.metal_diagonal.name=§5Metal Block Diagonal§r
 tile.block_ribbed.name=§5Ribbed Block§r
@@ -103,9 +103,9 @@ tile.lever2.name=§5Lever 2§r
 tile.lever3.name=§5Lever 3§r
 tile.bed1.name=§5Lifebox§r
 tile.wash_basin.name=§5Wash Basin§r
-
-
-
+tile.cooker.name=§5Cooker§r
+tile.klingonit_pp.name=§5Klingonit Pressure Plate§r
+tile.klingonit1_pp.name=§5Klingonit1 Pressure Plate§r
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r

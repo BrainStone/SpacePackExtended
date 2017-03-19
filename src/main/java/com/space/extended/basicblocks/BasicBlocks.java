@@ -115,6 +115,11 @@ public class BasicBlocks {
 	public static Block lever3;
 	public static Block bed1;
 	public static Block wash_basin;
+	public static Block cooker;
+	public static Block klingonit_pp;
+	public static Block klingonit1_pp;
+	public static Block vitallium_door;
+	
 
 	public BasicBlocks() {
 		init();
@@ -333,7 +338,14 @@ public class BasicBlocks {
 		NameUtils.setNames(bed1, "bed1");
 		wash_basin = new BlockWashBasin().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(wash_basin, "wash_basin");
-		
+		cooker = new BlockCooker().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(cooker, "cooker");
+		klingonit_pp = new BlockCustomPP();
+		NameUtils.setNames(klingonit_pp, "klingonit_pp");
+		klingonit1_pp = new BlockCustomPP();
+		NameUtils.setNames(klingonit1_pp, "klingonit1_pp");
+		vitallium_door = new BlockVitalliumDoor().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(vitallium_door, "vitallium_door");
 	}
 
 	private void register() {
@@ -437,7 +449,14 @@ public class BasicBlocks {
 		registerBlock(cellar_lamp_lit);
 		registerBlock(bed1);
 		registerBlock(wash_basin);
+		registerBlock(cooker);
+		registerBlock(klingonit_pp);
+		registerBlock(klingonit1_pp);
+		registerBlock(vitallium_door);
 	}
+	
+	
+		
 
 	private void registerBlock(Block block) {
 		GameRegistry.register(block);

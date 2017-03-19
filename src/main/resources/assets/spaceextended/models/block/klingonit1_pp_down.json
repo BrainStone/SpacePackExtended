@@ -1,0 +1,6 @@
+{
+    "parent": "block/pressure_plate_down",
+    "textures": {
+        "texture": "spaceextended:blocks/klingonit1_pp"
+    }
+}
