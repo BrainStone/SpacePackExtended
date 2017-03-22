@@ -16,6 +16,8 @@ public class BasicBlocks {
 	public static BlockSlab vitallium_slab_half;
 	public static BlockSlab vitallium_slab_double;
 	public static Block vitallium_ore;
+	public static Block vitallium_fence;
+	public static Block vitallium_fence_gate;
 	public static Block perolit;
 	public static Block perolit_ore;
 	public static Block perola;
@@ -116,8 +118,11 @@ public class BasicBlocks {
 	public static Block bed1;
 	public static Block wash_basin;
 	public static Block cooker;
+	public static Block metal_button;
+	public static Block concrete_pp;
 	public static Block klingonit_pp;
 	public static Block klingonit1_pp;
+	public static Block klingonit2_pp;
 	public static Block vitallium_door;
 	
 
@@ -340,18 +345,30 @@ public class BasicBlocks {
 		NameUtils.setNames(wash_basin, "wash_basin");
 		cooker = new BlockCooker().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(cooker, "cooker");
+		concrete_pp = new BlockCustomPP();
+		NameUtils.setNames(concrete_pp, "concrete_pp");
 		klingonit_pp = new BlockCustomPP();
 		NameUtils.setNames(klingonit_pp, "klingonit_pp");
 		klingonit1_pp = new BlockCustomPP();
 		NameUtils.setNames(klingonit1_pp, "klingonit1_pp");
+		klingonit2_pp = new BlockCustomPP();
+		NameUtils.setNames(klingonit2_pp, "klingonit2_pp");
 		vitallium_door = new BlockVitalliumDoor().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(vitallium_door, "vitallium_door");
+		metal_button = new BlockMetalButton(false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(metal_button, "metal_button");
+		vitallium_fence = new BlockVitalliumFence(null).setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(vitallium_fence, "vitallium_fence");
+		vitallium_fence_gate = new BlockVitalliumFenceGate(null).setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(vitallium_fence_gate, "vitallium_fence_gate");
 	}
 
 	private void register() {
 		registerBlock(vitallium);
 		registerSlab(vitallium_slab_half, vitallium_slab_double);
 		registerBlock(vitallium_ore);
+		registerBlock(vitallium_fence);
+		registerBlock(vitallium_fence_gate);
 		registerBlock(perolit);
 		registerBlock(perolit_ore);
 		registerBlock(perola);
@@ -450,8 +467,11 @@ public class BasicBlocks {
 		registerBlock(bed1);
 		registerBlock(wash_basin);
 		registerBlock(cooker);
+		registerBlock(metal_button);
+		registerBlock(concrete_pp);
 		registerBlock(klingonit_pp);
 		registerBlock(klingonit1_pp);
+		registerBlock(klingonit2_pp);
 		registerBlock(vitallium_door);
 	}
 	

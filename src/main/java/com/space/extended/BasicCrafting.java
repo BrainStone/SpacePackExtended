@@ -420,7 +420,25 @@ public class BasicCrafting {
 				new Object[] { "   ", "BB  ", "   ", 'B', new ItemStack(BasicBlocks.klingonium_wall0) });
 		//125 Klingonit1PP
 				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonit1_pp,4),
-						new Object[] { "   ", "BB  ", "   ", 'B', new ItemStack(BasicBlocks.klingonium_wall1) });
+				new Object[] { "   ", "BB  ", "   ", 'B', new ItemStack(BasicBlocks.klingonium_wall1) });
+		//126 Klingonit2PP
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonit2_pp,4),
+				new Object[] { "   ", "BB  ", "   ", 'B', new ItemStack(BasicBlocks.klingonium_wall2) });
+		//127 ConcretePP
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.concrete_pp,4),
+				new Object[] { "   ", "BB  ", "   ", 'B', new ItemStack(BasicStairs.concrete_stairs) });		
+		//128 Metal Button
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_button,1),
+				new Object[] { "   ", " B ", "   ", 'B', new ItemStack(Blocks.IRON_BLOCK) });
+		//129 Vitallium Fence
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_fence, 4), new Object[] { "   ", "BKB", "BKB", 'K',
+				new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.vitallium) });
+		//130 Vitallium Fence Gate
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_fence_gate, 4), new Object[] { "   ", "KBK", "KBK", 'K',
+				new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.vitallium) });
+		//131 Vitallium Door
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_door,3),
+				new Object[] { "BB ", "BB ", "BB ", 'B', new ItemStack(BasicBlocks.vitallium) });
 	}
 
 }

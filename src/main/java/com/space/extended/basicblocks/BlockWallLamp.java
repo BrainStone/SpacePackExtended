@@ -26,6 +26,9 @@ public class BlockWallLamp extends Block {
 
 	public BlockWallLamp(boolean isOn) {
 		super(Material.REDSTONE_LIGHT);
+		setHardness(2F);
+		setResistance(5F);
+		this.setHarvestLevel("axe", 2);
 		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 		this.isOn = isOn;
 

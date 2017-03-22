@@ -106,6 +106,11 @@ tile.wash_basin.name=§5Wash Basin§r
 tile.cooker.name=§5Cooker§r
 tile.klingonit_pp.name=§5Klingonit Pressure Plate§r
 tile.klingonit1_pp.name=§5Klingonit1 Pressure Plate§r
+tile.klingonit2_pp.name=§5Klingonit2 Pressure Plate§r
+tile.concrete_pp.name=§5Concrete Pressure Plate§r
+tile.metal_button.name=§5Metal Button§r
+tile.vitallium_fence.name=§5Vitallium Fence§r
+tile.vitallium_fence_gate.name=§5Vitallium Fence Gate§r
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r
