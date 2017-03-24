@@ -419,7 +419,7 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonit_pp,4),
 				new Object[] { "   ", "BB  ", "   ", 'B', new ItemStack(BasicBlocks.klingonium_wall0) });
 		//125 Klingonit1PP
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonit1_pp,4),
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonit1_pp,4),
 				new Object[] { "   ", "BB  ", "   ", 'B', new ItemStack(BasicBlocks.klingonium_wall1) });
 		//126 Klingonit2PP
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonit2_pp,4),
@@ -439,6 +439,18 @@ public class BasicCrafting {
 		//131 Vitallium Door
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_door,3),
 				new Object[] { "BB ", "BB ", "BB ", 'B', new ItemStack(BasicBlocks.vitallium) });
+		//132 Wall Panel
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wall_panel, 4), new Object[] { "   ", "KBK", "   ", 'K',
+				new ItemStack(BasicItems.klingonium_shard), 'B', new ItemStack(BasicItems.kit1) });
+		//133 Wall Panel A
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wall_panel1, 4), new Object[] { "   ", "KBK", "   ", 'K',
+				new ItemStack(BasicItems.klingonium_shard), 'B', new ItemStack(BasicItems.kit2) });	
+		//134 Wall Panel B
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wall_panel2, 4), new Object[] { "   ", "KBK", "   ", 'K',
+				new ItemStack(BasicItems.klingonium_shard), 'B', new ItemStack(BasicItems.kit3) });
+		//135 Wall Panel C
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wall_panel3, 4), new Object[] { "   ", "KBK", "   ", 'K',
+				new ItemStack(BasicItems.klingonium_shard), 'B', new ItemStack(BasicItems.kit4) });
 	}
 
 }

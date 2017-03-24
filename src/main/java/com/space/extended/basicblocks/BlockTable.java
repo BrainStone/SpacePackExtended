@@ -13,6 +13,7 @@ public class BlockTable extends Block {
 		super(Material.WOOD);
 		setHardness(2F);
 		setResistance(1F);
+		setLightOpacity(10);
 		setHarvestLevel("axe", 1);
 		setSoundType(SoundType.WOOD);
 	}

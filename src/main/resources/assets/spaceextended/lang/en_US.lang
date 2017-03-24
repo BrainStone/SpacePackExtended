@@ -111,6 +111,12 @@ tile.concrete_pp.name=§5Concrete Pressure Plate§r
 tile.metal_button.name=§5Metal Button§r
 tile.vitallium_fence.name=§5Vitallium Fence§r
 tile.vitallium_fence_gate.name=§5Vitallium Fence Gate§r
+tile.wall_panel.name=§5Wall Panel§r
+tile.wall_panel1.name=§5Wall Panel A§r
+tile.wall_panel2.name=§5Wall Panel B§r
+tile.wall_panel3.name=§5Wall Panel C§r
+
+
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r

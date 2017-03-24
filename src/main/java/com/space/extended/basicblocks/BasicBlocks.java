@@ -124,6 +124,11 @@ public class BasicBlocks {
 	public static Block klingonit1_pp;
 	public static Block klingonit2_pp;
 	public static Block vitallium_door;
+	public static Block wall_panel;
+	public static Block wall_panel1;
+	public static Block wall_panel2;
+	public static Block wall_panel3;
+	
 	
 
 	public BasicBlocks() {
@@ -361,6 +366,15 @@ public class BasicBlocks {
 		NameUtils.setNames(vitallium_fence, "vitallium_fence");
 		vitallium_fence_gate = new BlockVitalliumFenceGate(null).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(vitallium_fence_gate, "vitallium_fence_gate");
+		wall_panel = new CustomWallPanel();
+		NameUtils.setNames(wall_panel, "wall_panel");
+		wall_panel1 = new CustomWallPanel();
+		NameUtils.setNames(wall_panel1, "wall_panel1");
+		wall_panel2 = new CustomWallPanel();
+		NameUtils.setNames(wall_panel2, "wall_panel2");
+		wall_panel3 = new CustomWallPanel();
+		NameUtils.setNames(wall_panel3, "wall_panel3");
+		
 	}
 
 	private void register() {
@@ -473,6 +487,10 @@ public class BasicBlocks {
 		registerBlock(klingonit1_pp);
 		registerBlock(klingonit2_pp);
 		registerBlock(vitallium_door);
+		registerBlock(wall_panel);
+		registerBlock(wall_panel1);
+		registerBlock(wall_panel2);
+		registerBlock(wall_panel3);
 	}
 	
 	

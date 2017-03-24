@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:wall_panel"
+        },
+        "facing=south": {
+            "model": "spaceextended:wall_panel",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "spaceextended:wall_panel",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "spaceextended:wall_panel",
+            "y": 90
+        }
+    }
+}
