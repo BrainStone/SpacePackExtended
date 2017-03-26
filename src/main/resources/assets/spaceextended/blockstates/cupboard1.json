@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:cupboard1"
+        },
+        "facing=south": {
+            "model": "spaceextended:cupboard1",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "spaceextended:cupboard1",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "spaceextended:cupboard1",
+            "y": 90
+        }
+    }
+}
