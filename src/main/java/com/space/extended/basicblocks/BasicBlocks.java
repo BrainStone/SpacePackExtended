@@ -132,6 +132,11 @@ public class BasicBlocks {
 	public static Block cupboard1;
 	public static Block cupboard2;
 	public static Block cupboard3;
+	public static Block cupboard4;
+	public static Block cupboard_lower;
+	public static Block cupboard_lower1;
+	public static Block cupboard_lower2;
+	public static Block cupboard_lower3;
 
 	public BasicBlocks() {
 		init();
@@ -384,6 +389,16 @@ public class BasicBlocks {
 		NameUtils.setNames(cupboard2, "cupboard2");
 		cupboard3 = new CustomCupboard();
 		NameUtils.setNames(cupboard3, "cupboard3");
+		cupboard4 = new CustomCupboard();
+		NameUtils.setNames(cupboard4, "cupboard4");
+		cupboard_lower = new BlockCustomCupboardLower();
+		NameUtils.setNames(cupboard_lower, "cupboard_lower");
+		cupboard_lower1 = new BlockCustomCupboardLower();
+		NameUtils.setNames(cupboard_lower1, "cupboard_lower1");
+		cupboard_lower2 = new BlockCustomCupboardLower();
+		NameUtils.setNames(cupboard_lower2, "cupboard_lower2");
+		cupboard_lower3 = new BlockCustomCupboardLower();
+		NameUtils.setNames(cupboard_lower3, "cupboard_lower3");
 	}
 
 	private void register() {
@@ -504,6 +519,11 @@ public class BasicBlocks {
 		registerBlock(cupboard1);
 		registerBlock(cupboard2);
 		registerBlock(cupboard3);
+		registerBlock(cupboard4);
+		registerBlock(cupboard_lower);
+		registerBlock(cupboard_lower1);
+		registerBlock(cupboard_lower2);
+		registerBlock(cupboard_lower3);
 	}
 	
 	

@@ -451,6 +451,34 @@ public class BasicCrafting {
 		//135 Wall Panel C
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wall_panel3, 4), new Object[] { "   ", "KBK", "   ", 'K',
 				new ItemStack(BasicItems.klingonium_shard), 'B', new ItemStack(BasicItems.kit4) });
+		//136 Cupboard
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard, 5), new Object[] { "   ", "KBK", "   ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit1) });
+		//137 Cupboard1
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard1, 5), new Object[] { "   ", "KBK", "   ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit2) });		
+		//138 Cupboard2
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard2, 5), new Object[] { "   ", "KBK", "   ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit3) });		
+		//139 Cupboard3
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard3, 5), new Object[] { "   ", "KBK", "   ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit4) });		
+		//140 Cupboard4
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard4, 5), new Object[] { "   ", "KBK", "   ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit5) });		
+		//141 Cupboard_Lower
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower, 5), new Object[] { "KBK", "KBK", "   ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit1) });		
+		//142 Cupboard_Lower1
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower1, 5), new Object[] { "KBK", "KBK", "   ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit2) });				
+		//143 Cupboard_Lower2
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower2, 5), new Object[] { "KBK", "KBK", "   ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit3) });				
+		//144 Cupboard_Lower3
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower3, 5), new Object[] { "KBK", "KBK", "   ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit4) });				
+		
 	}
 
 }

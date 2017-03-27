@@ -115,8 +115,15 @@ tile.wall_panel.name=§5Wall Panel§r
 tile.wall_panel1.name=§5Wall Panel A§r
 tile.wall_panel2.name=§5Wall Panel B§r
 tile.wall_panel3.name=§5Wall Panel C§r
-
-
+tile.cupboard.name=§5Cupboard§r
+tile.cupboard1.name=§5Cupboard A§r
+tile.cupboard2.name=§5Cupboard B§r
+tile.cupboard3.name=§5Range Hood§r
+tile.cupboard4.name=§5Cupboard C§r
+tile.cupboard_lower.name=§5Cupboard Lower§r
+tile.cupboard_lower1.name=§5Cupboard Lower A§r
+tile.cupboard_lower2.name=§5Cupboard Lower B§r
+tile.cupboard_lower3.name=§5Cupboard Lower C§r
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r

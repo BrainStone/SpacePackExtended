@@ -1,6 +1,6 @@
 package com.space.extended.basicblocks;
 
-import javax.annotation.Nullable;
+import com.space.extended.SpaceExtendedMain;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -11,29 +11,24 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockLight_Box extends Block {
-
+public class BlockCustomCupboardLower extends Block{
+	
+	
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-	protected static final AxisAlignedBB AABB_NORTH= new AxisAlignedBB(0.15D, 0.0D, 1.0D, 0.85D, 0.40D, 0.0D);
-	protected static final AxisAlignedBB AABB_SOUTH = new AxisAlignedBB(0.15D, 0.0D, 1.0D, 0.85D, 0.40D, 0.0D);
-	protected static final AxisAlignedBB AABB_WEST= new AxisAlignedBB(0.0D, 0.0D, 0.15D, 1.0D, 0.40D, 0.85D);
-	protected static final AxisAlignedBB AABB_EAST = new AxisAlignedBB(0.0D, 0.0D, 0.15D, 1.0D, 0.40D, 0.85D);
 
-	public BlockLight_Box() {
+	public BlockCustomCupboardLower() {
 
-		super(Material.IRON);
-		blockSoundType = SoundType.METAL;
+		super(Material.WOOD);
 		setHardness(2F);
 		setResistance(5F);
-		this.setHarvestLevel("axe", 2);
-		setLightLevel(0.8f);
+		setHarvestLevel("axe", 1);
 		setLightOpacity(1);
+		setSoundType(SoundType.WOOD);
+		this.setCreativeTab(SpaceExtendedMain.spaceTab);
 		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 
@@ -41,21 +36,6 @@ public class BlockLight_Box extends Block {
 		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
 	}
 
-	 public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
-	    {
-		 switch ((EnumFacing)state.getValue(FACING))
-		 {
-      case NORTH:
-      default:
-          return AABB_NORTH;
-      case SOUTH:
-          return AABB_SOUTH;
-      case WEST:
-          return AABB_WEST;
-      case EAST:
-          return AABB_EAST;
-		 }
-  }
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		EnumFacing enumFacing = EnumFacing.getFront(meta);
@@ -78,11 +58,9 @@ public class BlockLight_Box extends Block {
 
 	@Override
 	public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY,
-			float hitZ, int meta, EntityLivingBase placer, EnumHand hand) {
+			float hitZ, int meta, EntityLivingBase placer) {
 		return getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
 	}
-
-	
 
 	public boolean isOpaqueCube() {
 		return false;

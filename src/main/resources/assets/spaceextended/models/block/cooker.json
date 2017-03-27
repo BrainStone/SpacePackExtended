@@ -2,24 +2,25 @@
 	"__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "spaceextended:blocks/carrel",
+		"particle": "spaceextended:blocks/construct",
 		"0": "spaceextended:blocks/carrel",
 		"1": "spaceextended:blocks/laboratory_bencha",
 		"2": "spaceextended:blocks/wash_basin",
 		"3": "spaceextended:blocks/klingonium_wall3",
-		"4": "spaceextended:blocks/cooker"
+		"4": "spaceextended:blocks/cooker",
+		"texture": "spaceextended:blocks/klingonit"
 	},
 	"elements": [
 		{
 			"__comment": "basis",
-			"from": [ 3, 0, 0 ],
-			"to": [ 16, 13, 16 ],
+			"from": [ 0.875, 0, 0 ],
+			"to": [ 15.875, 13, 16 ],
 			"shade": false,
 			"faces": {
-				"down": { "uv": [ 3, 15.5, 12.5, 0.5 ], "texture": "#1", "rotation": 270 },
-				"north": { "uv": [ 3.125, 0, 13.125, 15.875 ], "texture": "#1" },
+				"down": { "uv": [ 3, 3, 13, 14.5 ], "texture": "#1", "rotation": 90 },
+				"north": { "uv": [ 3, 0, 13, 16 ], "texture": "#1" },
 				"south": { "uv": [ 3, 0, 13, 16 ], "texture": "#1" },
-				"west": { "uv": [ 3, 0, 13, 16 ], "texture": "#0" },
+				"west": { "uv": [ 0, 2.5, 16, 16 ], "texture": "#texture" },
 				"east": { "uv": [ 3, 0, 13, 16 ], "texture": "#1" }
 			}
 		},
@@ -39,8 +40,8 @@
 		},
 		{
 			"__comment": "Cube4",
-			"from": [ 1.5, 11, 11.5 ],
-			"to": [ 2, 11.5, 12 ],
+			"from": [ -0.125, 11, 11 ],
+			"to": [ 0.375, 11.5, 11.5 ],
 			"faces": {
 				"down": { "uv": [ 0, 8, 8, 9 ], "texture": "#4", "rotation": 90 },
 				"up": { "uv": [ 0, 8, 8, 9 ], "texture": "#4", "rotation": 90 },
@@ -52,21 +53,21 @@
 		},
 		{
 			"__comment": "griff",
-			"from": [ 1, 10.75, 4 ],
-			"to": [ 1.5, 11.75, 12 ],
+			"from": [ -0.5, 10.75, 4 ],
+			"to": [ 0, 11.75, 12 ],
 			"faces": {
-				"down": { "uv": [ 0, 8, 8, 9 ], "texture": "#4" },
-				"up": { "uv": [ 0, 8, 8, 9 ], "texture": "#4" },
-				"north": { "uv": [ 0, 8, 8, 9 ], "texture": "#4" },
-				"south": { "uv": [ 0, 8, 8, 9 ], "texture": "#4", "rotation": 180 },
-				"west": { "uv": [ 0, 8, 8, 9 ], "texture": "#4" },
-				"east": { "uv": [ 0, 8, 8, 9 ], "texture": "#4" }
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#particle", "rotation": 90 },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#particle", "rotation": 90 },
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#particle", "rotation": 90 },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#particle", "rotation": 270 },
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#particle", "rotation": 180 },
+				"east": { "uv": [ 0, 8, 8, 9 ], "texture": "#particle" }
 			}
 		},
 		{
 			"__comment": "Cube4",
-			"from": [ 1.5, 11, 4.125 ],
-			"to": [ 2, 11.5, 4.625 ],
+			"from": [ -0.125, 11, 4.25 ],
+			"to": [ 0.375, 11.5, 4.75 ],
 			"faces": {
 				"down": { "uv": [ 0, 8, 8, 9 ], "texture": "#4", "rotation": 90 },
 				"up": { "uv": [ 0, 8, 8, 9 ], "texture": "#4", "rotation": 90 },
@@ -481,8 +482,8 @@
 		},
 		{
 			"__comment": "schaltleiste",
-			"from": [ 1.5, 16.375, 12.125 ],
-			"to": [ 3.5, 16.675, 14.125 ],
+			"from": [ 1.5, 16.375, 12.25 ],
+			"to": [ 3.5, 16.675, 14.25 ],
 			"faces": {
 				"down": { "uv": [ 14, 10, 16, 12 ], "texture": "#4" },
 				"up": { "uv": [ 14, 10, 16, 12 ], "texture": "#4", "rotation": 90 },
@@ -533,8 +534,8 @@
 		},
 		{
 			"__comment": "schalter",
-			"from": [ 2, 16.5, 12.875 ],
-			"to": [ 3, 16.8, 13.375 ],
+			"from": [ 2, 16.5, 13 ],
+			"to": [ 3, 16.8, 13.5 ],
 			"faces": {
 				"down": { "uv": [ 14.5, 15, 15.5, 15.5 ], "texture": "#4" },
 				"up": { "uv": [ 15, 12, 16, 13 ], "texture": "#4" },
@@ -585,14 +586,14 @@
 		},
 		{
 			"__comment": "tuere1",
-			"from": [ 2, 3.875, 0.125 ],
-			"to": [ 3, 11.875, 15.925 ],
+			"from": [ 0.375, 1.5, 0 ],
+			"to": [ 0.875, 12.5, 16 ],
 			"faces": {
-				"down": { "uv": [ 0, 8, 8, 9 ], "texture": "#4" },
-				"up": { "uv": [ 0, 8, 8, 9 ], "texture": "#4" },
-				"north": { "uv": [ 0, 8, 8, 9 ], "texture": "#4" },
-				"south": { "uv": [ 0, 8, 8, 9 ], "texture": "#4" },
-				"west": { "uv": [ 0, 0, 12, 8 ], "texture": "#4" },
+				"down": { "uv": [ 0, 0, 1, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 0, 1, 16 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 0, 1, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 0, 1, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 0, 12, 11 ], "texture": "#4" },
 				"east": { "uv": [ 0, 0, 12, 8 ], "texture": "#4" }
 			}
 		}

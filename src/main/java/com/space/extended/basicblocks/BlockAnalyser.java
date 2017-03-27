@@ -20,6 +20,7 @@ public class BlockAnalyser extends Block {
 	
 
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+	protected static final AxisAlignedBB AABB= new AxisAlignedBB(0.20D, 0.0D, 0.15D, 0.80D, 0.70D, 0.80D);
 
 	public BlockAnalyser() {
 
@@ -34,6 +35,10 @@ public class BlockAnalyser extends Block {
 	public IBlockState getStateForEntityRender(IBlockState state) {
 		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
 	}
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+    {
+        return AABB;
+    }
 	@Override
 	@Nullable
 	public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
