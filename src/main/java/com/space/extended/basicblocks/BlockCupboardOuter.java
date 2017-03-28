@@ -17,15 +17,16 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class CustomCupboard extends Block {
+public class BlockCupboardOuter extends Block{
+	
 	
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-	protected static final AxisAlignedBB AABB_NORTH= new AxisAlignedBB(0.0D, 0.0D, 0.5D, 1.0D, 1.0D, 1.0D);
-	protected static final AxisAlignedBB AABB_SOUTH = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 0.5D);
-	protected static final AxisAlignedBB AABB_WEST= new AxisAlignedBB(0.5D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-	protected static final AxisAlignedBB AABB_EAST = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.5D, 1.0D, 1.0D);
+	protected static final AxisAlignedBB AABB_NORTH= new AxisAlignedBB(0.0D, 0.0D, 0.6D, 0.4D, 1.0D, 1.0D);
+	protected static final AxisAlignedBB AABB_SOUTH = new AxisAlignedBB(0.6D, 0.0D, 0.0D, 1.0D, 1.0D, 0.4D);
+	protected static final AxisAlignedBB AABB_WEST= new AxisAlignedBB(0.6D, 0.0D, 0.6D, 1.0D, 1.0D, 1.0D);
+	protected static final AxisAlignedBB AABB_EAST = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.4D, 1.0D, 0.4D);
 
-	public CustomCupboard() {
+	public BlockCupboardOuter() {
 
 		super(Material.WOOD);
 		blockSoundType = SoundType.WOOD;
@@ -33,7 +34,6 @@ public class CustomCupboard extends Block {
 		setResistance(5F);
 		this.setHarvestLevel("axe", 2);
 		setLightOpacity(0);
-		this.setCreativeTab(SpaceExtendedMain.furnitureTab);
 		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 

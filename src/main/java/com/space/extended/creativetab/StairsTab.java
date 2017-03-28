@@ -1,5 +1,7 @@
 package com.space.extended.creativetab;
 
+import com.space.extended.basicstairs.BasicStairs;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
@@ -14,6 +16,6 @@ public class StairsTab extends CreativeTabs {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public ItemStack getTabIconItem() {
-		return new ItemStack(Blocks.STONE_STAIRS);
+		return new ItemStack(BasicStairs.laboratory_bench);
 	}
 }

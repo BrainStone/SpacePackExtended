@@ -26,9 +26,9 @@ public class BlockCustomCupboardLower extends Block{
 		setHardness(2F);
 		setResistance(5F);
 		setHarvestLevel("axe", 1);
-		setLightOpacity(1);
+		setLightOpacity(2);
 		setSoundType(SoundType.WOOD);
-		this.setCreativeTab(SpaceExtendedMain.spaceTab);
+		this.setCreativeTab(SpaceExtendedMain.furnitureTab);
 		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 

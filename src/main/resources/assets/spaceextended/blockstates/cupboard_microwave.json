@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:cupboard_microwave"
+        },
+        "facing=south": {
+            "model": "spaceextended:cupboard_microwave",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "spaceextended:cupboard_microwave",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "spaceextended:cupboard_microwave",
+            "y": 90
+        }
+    }
+}

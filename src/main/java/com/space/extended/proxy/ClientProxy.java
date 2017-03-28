@@ -146,10 +146,14 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.cupboard2, 0);
 		registerModel(BasicBlocks.cupboard3, 0);
 		registerModel(BasicBlocks.cupboard4, 0);
+		registerModel(BasicBlocks.cupboard_outer, 0);
+		registerModel(BasicBlocks.cupboard_inner, 0);
+		registerModel(BasicBlocks.cupboard_microwave, 0);
 		registerModel(BasicBlocks.cupboard_lower, 0);
 		registerModel(BasicBlocks.cupboard_lower1, 0);
 		registerModel(BasicBlocks.cupboard_lower2, 0);
 		registerModel(BasicBlocks.cupboard_lower3, 0);
+		registerModel(BasicBlocks.cupboard_lower_outer, 0);
 
 		// Items
 		registerModel(BasicItems.vitallium_ingot, 0);

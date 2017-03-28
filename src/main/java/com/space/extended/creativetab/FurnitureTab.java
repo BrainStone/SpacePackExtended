@@ -1,21 +1,20 @@
 package com.space.extended.creativetab;
 
-import com.space.extended.items.BasicItems;
+import com.space.extended.basicstairs.BasicStairs;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ArmorTab extends CreativeTabs {
-	public ArmorTab() {
-		super("armortab");
+public class FurnitureTab extends CreativeTabs {
+	public FurnitureTab() {
+		super("furnituretab");
 	}
-
 	@Override
 	@SideOnly(Side.CLIENT)
 	public ItemStack getTabIconItem() {
-		return new ItemStack(BasicItems.kit1);
+		return new ItemStack(BasicStairs.officechair_stairs);
 	}
+
 }

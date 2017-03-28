@@ -478,7 +478,18 @@ public class BasicCrafting {
 		//144 Cupboard_Lower3
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower3, 5), new Object[] { "KBK", "KBK", "   ", 'K',
 				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit4) });				
-		
+		//145 Cupboard_Outer
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_outer, 5), new Object[] { "KBK", "KBK", " K ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit1) });
+		//146 Cupboard_Inner
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_inner, 5), new Object[] { "KBK", "KBK", " K ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit2) });
+		//147 Cupboard_Lower_Outer
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower_outer, 5), new Object[] { "KBK", "KBK", " K ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit5) });
+		//148 Cupboard Microwave
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_microwave, 5), new Object[] { "   ", "KBK", "   ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(Blocks.REDSTONE_TORCH) });		
 	}
 
 }

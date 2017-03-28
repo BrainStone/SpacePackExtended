@@ -7,7 +7,7 @@ import net.minecraft.block.BlockBed;
 
 public class BlockCustomBed extends BlockBed {
 	public BlockCustomBed() {
-		setCreativeTab(SpaceExtendedMain.spaceTab);
+		setCreativeTab(SpaceExtendedMain.furnitureTab);
 	}
 
 }

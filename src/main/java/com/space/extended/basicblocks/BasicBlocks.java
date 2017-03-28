@@ -133,10 +133,14 @@ public class BasicBlocks {
 	public static Block cupboard2;
 	public static Block cupboard3;
 	public static Block cupboard4;
+	public static Block cupboard_outer;
+	public static Block cupboard_inner;
+	public static Block cupboard_microwave;
 	public static Block cupboard_lower;
 	public static Block cupboard_lower1;
 	public static Block cupboard_lower2;
 	public static Block cupboard_lower3;
+	public static Block cupboard_lower_outer;
 
 	public BasicBlocks() {
 		init();
@@ -238,7 +242,7 @@ public class BasicBlocks {
 		NameUtils.setNames(perolc, "perolc");
 		perold = new BlockPerol().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(perold, "perold");
-		table = new BlockTable().setCreativeTab(SpaceExtendedMain.spaceTab);
+		table = new BlockTable().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(table, "table");
 		strontopal = new BlockStrontopal().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontopal, "strontopal");
@@ -246,15 +250,15 @@ public class BasicBlocks {
 		NameUtils.setNames(strontopala, "strontopala");
 		strontopalb = new BlockStrontopal().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontopalb, "strontopalb");
-		lux = new BlockLux().setCreativeTab(SpaceExtendedMain.spaceTab);
+		lux = new BlockLux().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(lux, "lux");
-		ceiling_lamp = new BlockCeilingLamp().setCreativeTab(SpaceExtendedMain.spaceTab);
+		ceiling_lamp = new BlockCeilingLamp().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(ceiling_lamp, "ceiling_lamp");
 		speedway = new BlockSpeedWay().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(speedway, "speedway");
 		klingopar = new BlockKlingoPar().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingopar, "klingopar");
-		tresor = new BlockTresor().setCreativeTab(SpaceExtendedMain.spaceTab);
+		tresor = new BlockTresor().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(tresor, "tresor");
 		strontecore = new BlockStronteCore().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontecore, "strontecore");
@@ -266,7 +270,7 @@ public class BasicBlocks {
 		NameUtils.setNames(strontenium_glass_pane, "strontenium_glass_pane");
 		cyberit_Ore = new BlockSpaceExtendedOre().setLightLevel(0.7f).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(cyberit_Ore, "cyberit_ore");
-		analyser = new BlockAnalyser().setCreativeTab(SpaceExtendedMain.spaceTab);
+		analyser = new BlockAnalyser().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(analyser, "analyser");
 		vitallium_glass = new BlockVitalliumGlass(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(vitallium_glass, "vitallium_glass");
@@ -287,7 +291,7 @@ public class BasicBlocks {
 		NameUtils.setNames(solar_panel, "solar_panel");
 		satellite_antenna = new BlockSatelliteAntenna().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(satellite_antenna, "satellite_antenna");
-		light_box = new BlockLight_Box().setCreativeTab(SpaceExtendedMain.spaceTab);
+		light_box = new BlockLight_Box().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(light_box, "light_box");
 		quartz_window = new BlockQuartzWindow(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(quartz_window, "quartz_window");
@@ -331,7 +335,7 @@ public class BasicBlocks {
 		NameUtils.setNames(metal_frame_slab_half, "metal_frame_slab_half");
 		metal_frame_slab_double = new BlockMetalFrameSlab.Double();
 		NameUtils.setNames(metal_frame_slab_double, "metal_frame_slab_double");
-		wall_lamp = new BlockWallLamp(false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		wall_lamp = new BlockWallLamp(false).setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(wall_lamp, "wall_lamp");
 		wall_lamp_lit = new BlockWallLamp(true);
 		NameUtils.setNames(wall_lamp_lit, "wall_lamp_lit");
@@ -347,15 +351,15 @@ public class BasicBlocks {
 		NameUtils.setNames(lever3, "lever3");
 		block_ribbed = new BlockRibbed().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(block_ribbed, "block_ribbed");
-		cellar_lamp = new BlockCellarLamp(false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		cellar_lamp = new BlockCellarLamp(false).setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(cellar_lamp, "cellar_lamp");
 		cellar_lamp_lit = new BlockCellarLamp(true);
 		NameUtils.setNames(cellar_lamp_lit, "cellar_lamp_lit");
 		bed1 = new BlockCustomBed();
 		NameUtils.setNames(bed1, "bed1");
-		wash_basin = new BlockWashBasin().setCreativeTab(SpaceExtendedMain.spaceTab);
+		wash_basin = new BlockWashBasin().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(wash_basin, "wash_basin");
-		cooker = new BlockCooker().setCreativeTab(SpaceExtendedMain.spaceTab);
+		cooker = new BlockCooker().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(cooker, "cooker");
 		concrete_pp = new BlockCustomPP();
 		NameUtils.setNames(concrete_pp, "concrete_pp");
@@ -391,6 +395,12 @@ public class BasicBlocks {
 		NameUtils.setNames(cupboard3, "cupboard3");
 		cupboard4 = new CustomCupboard();
 		NameUtils.setNames(cupboard4, "cupboard4");
+		cupboard_microwave = new CustomCupboard();
+		NameUtils.setNames(cupboard_microwave, "cupboard_microwave");
+		cupboard_outer = new BlockCupboardOuter().setCreativeTab(SpaceExtendedMain.furnitureTab);
+		NameUtils.setNames(cupboard_outer, "cupboard_outer");
+		cupboard_inner = new BlockCupboardInner().setCreativeTab(SpaceExtendedMain.furnitureTab);
+		NameUtils.setNames(cupboard_inner, "cupboard_inner");
 		cupboard_lower = new BlockCustomCupboardLower();
 		NameUtils.setNames(cupboard_lower, "cupboard_lower");
 		cupboard_lower1 = new BlockCustomCupboardLower();
@@ -399,6 +409,8 @@ public class BasicBlocks {
 		NameUtils.setNames(cupboard_lower2, "cupboard_lower2");
 		cupboard_lower3 = new BlockCustomCupboardLower();
 		NameUtils.setNames(cupboard_lower3, "cupboard_lower3");
+		cupboard_lower_outer = new BlockCustomCupboardLower();
+		NameUtils.setNames(cupboard_lower_outer, "cupboard_lower_outer");
 	}
 
 	private void register() {
@@ -520,10 +532,14 @@ public class BasicBlocks {
 		registerBlock(cupboard2);
 		registerBlock(cupboard3);
 		registerBlock(cupboard4);
+		registerBlock(cupboard_outer);
+		registerBlock(cupboard_inner);
+		registerBlock(cupboard_microwave);
 		registerBlock(cupboard_lower);
 		registerBlock(cupboard_lower1);
 		registerBlock(cupboard_lower2);
 		registerBlock(cupboard_lower3);
+		registerBlock(cupboard_lower_outer);
 	}
 	
 	
