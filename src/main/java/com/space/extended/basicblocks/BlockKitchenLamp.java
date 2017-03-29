@@ -1,7 +1,8 @@
 package com.space.extended.basicblocks;
 
+import javax.annotation.Nullable;
+
 import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
@@ -9,27 +10,55 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockWashBasin extends Block{
+public class BlockKitchenLamp extends Block{
 	
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+	protected static final AxisAlignedBB AABB_NORTH= new AxisAlignedBB(0.20D,  0.75D, 0.75D, 0.80D, 1.0D, 1.0D);
+	protected static final AxisAlignedBB AABB_SOUTH = new AxisAlignedBB(0.20D, 0.75D, 0.0D, 0.80D, 1.0D, 0.25D);
+	protected static final AxisAlignedBB AABB_WEST= new AxisAlignedBB(0.75D, 0.75D, 0.20D, 1.0D, 1.0D, 0.80D);
+	protected static final AxisAlignedBB AABB_EAST = new AxisAlignedBB(0.0D, 0.75D, 0.20D, 0.25D, 1.0D, 0.80D);
+	
 
-	public BlockWashBasin() {
-
-		super(Material.WOOD);
+	public BlockKitchenLamp() {
+		super(Material.GLASS);
 		setHardness(2F);
 		setResistance(5F);
-		setHarvestLevel("axe", 1);
-		setLightOpacity(0);
-		setSoundType(SoundType.METAL);
+		this.setHarvestLevel("axe", 2);
+		setLightLevel(1F);
+		setLightOpacity(100);
 		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 
 	public IBlockState getStateForEntityRender(IBlockState state) {
 		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
+	}
+	
+	 public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+	    {
+		 switch ((EnumFacing)state.getValue(FACING))
+		 {
+   case NORTH:
+   default:
+       return AABB_NORTH;
+   case SOUTH:
+       return AABB_SOUTH;
+   case WEST:
+       return AABB_WEST;
+   case EAST:
+       return AABB_EAST;
+		 }
+	 }
+
+	@Override
+	@Nullable
+	public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
+		return NULL_AABB;
 	}
 
 	@Override
@@ -54,7 +83,7 @@ public class BlockWashBasin extends Block{
 
 	@Override
 	public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY,
-			float hitZ, int meta, EntityLivingBase placer) {
+			float hitZ, int meta, EntityLivingBase placer, EnumHand hand) {
 		return getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
 	}
 

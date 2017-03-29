@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:kitchen_lamp"
+        },
+        "facing=south": {
+            "model": "spaceextended:kitchen_lamp",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "spaceextended:kitchen_lamp",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "spaceextended:kitchen_lamp",
+            "y": 90
+        }
+    }
+}

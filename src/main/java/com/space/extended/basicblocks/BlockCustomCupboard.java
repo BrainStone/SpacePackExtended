@@ -17,7 +17,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class CustomCupboard extends Block {
+public class BlockCustomCupboard extends Block {
 	
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 	protected static final AxisAlignedBB AABB_NORTH= new AxisAlignedBB(0.0D, 0.0D, 0.5D, 1.0D, 1.0D, 1.0D);
@@ -25,7 +25,7 @@ public class CustomCupboard extends Block {
 	protected static final AxisAlignedBB AABB_WEST= new AxisAlignedBB(0.5D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
 	protected static final AxisAlignedBB AABB_EAST = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.5D, 1.0D, 1.0D);
 
-	public CustomCupboard() {
+	public BlockCustomCupboard() {
 
 		super(Material.WOOD);
 		blockSoundType = SoundType.WOOD;
