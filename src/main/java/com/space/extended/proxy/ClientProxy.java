@@ -73,6 +73,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.perolc, 0);
 		registerModel(BasicBlocks.perold, 0);
 		registerModel(BasicBlocks.table, 0);
+		registerModel(BasicBlocks.kitchen_table, 0);
 		registerModel(BasicBlocks.strontopal, 0);
 		registerModel(BasicBlocks.strontopala, 0);
 		registerModel(BasicBlocks.strontopalb, 0);

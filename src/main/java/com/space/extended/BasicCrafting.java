@@ -489,7 +489,10 @@ public class BasicCrafting {
 				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit5) });
 		//148 Cupboard Microwave
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_microwave, 5), new Object[] { "   ", "KBK", "   ", 'K',
-				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(Blocks.REDSTONE_TORCH) });		
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(Blocks.REDSTONE_TORCH) });
+		//149 Kitchen Table
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.kitchen_table, 4),
+				new Object[] { "OOO", "O O", "O O", 'O', new ItemStack(BasicItems.kit4) });
 	}
 
 }

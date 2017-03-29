@@ -72,6 +72,7 @@ public class BasicBlocks {
 	public static Block block_space_quartz_mfblock;
 	public static Block space_quartz_ore;
 	public static Block table;
+	public static Block kitchen_table;
 	public static Block speedway;
 	public static Block tresor;
 	public static Block analyser;
@@ -245,6 +246,8 @@ public class BasicBlocks {
 		NameUtils.setNames(perold, "perold");
 		table = new BlockTable().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(table, "table");
+		kitchen_table = new BlockKitchenTable().setCreativeTab(SpaceExtendedMain.furnitureTab);
+		NameUtils.setNames(kitchen_table, "kitchen_table");
 		strontopal = new BlockStrontopal().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontopal, "strontopal");
 		strontopala = new BlockStrontopal().setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -475,6 +478,7 @@ public class BasicBlocks {
 		registerBlock(block_space_quartz_mfblock);
 		registerBlock(space_quartz_ore);
 		registerBlock(table);
+		registerBlock(kitchen_table);
 		registerBlock(speedway);
 		registerBlock(tresor);
 		registerBlock(analyser);
