@@ -1,7 +1,7 @@
 {
     "variants": {
         "normal": {
-            "model": "spaceextended:kitchen_table"
+            "model": "spaceextended:table1"
         }
     }
 }

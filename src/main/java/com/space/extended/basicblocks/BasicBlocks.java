@@ -18,6 +18,8 @@ public class BasicBlocks {
 	public static Block vitallium_ore;
 	public static Block vitallium_fence;
 	public static Block vitallium_fence_gate;
+	public static Block strontenium_fence_gate;
+	public static Block strontenium_fence;
 	public static Block perolit;
 	public static Block perolit_ore;
 	public static Block perola;
@@ -72,7 +74,8 @@ public class BasicBlocks {
 	public static Block block_space_quartz_mfblock;
 	public static Block space_quartz_ore;
 	public static Block table;
-	public static Block kitchen_table;
+	public static Block table1;
+	public static Block chair;
 	public static Block speedway;
 	public static Block tresor;
 	public static Block analyser;
@@ -246,8 +249,10 @@ public class BasicBlocks {
 		NameUtils.setNames(perold, "perold");
 		table = new BlockTable().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(table, "table");
-		kitchen_table = new BlockKitchenTable().setCreativeTab(SpaceExtendedMain.furnitureTab);
-		NameUtils.setNames(kitchen_table, "kitchen_table");
+		table1 = new BlockTable1().setCreativeTab(SpaceExtendedMain.furnitureTab);
+		NameUtils.setNames(table1, "table1");
+		chair = new BlockChair().setCreativeTab(SpaceExtendedMain.furnitureTab);
+		NameUtils.setNames(chair, "chair");
 		strontopal = new BlockStrontopal().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontopal, "strontopal");
 		strontopala = new BlockStrontopal().setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -383,6 +388,10 @@ public class BasicBlocks {
 		NameUtils.setNames(vitallium_fence, "vitallium_fence");
 		vitallium_fence_gate = new BlockVitalliumFenceGate(null).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(vitallium_fence_gate, "vitallium_fence_gate");
+		strontenium_fence = new BlockStronteniumFence(null).setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(strontenium_fence, "strontenium_fence");
+		strontenium_fence_gate = new BlockStronteniumFenceGate(null).setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(strontenium_fence_gate, "strontenium_fence_gate");
 		wall_panel = new BlockCustomWallPanel();
 		NameUtils.setNames(wall_panel, "wall_panel");
 		wall_panel1 = new BlockCustomWallPanel();
@@ -425,6 +434,8 @@ public class BasicBlocks {
 		registerBlock(vitallium_ore);
 		registerBlock(vitallium_fence);
 		registerBlock(vitallium_fence_gate);
+		registerBlock(strontenium_fence);
+		registerBlock(strontenium_fence_gate);
 		registerBlock(perolit);
 		registerBlock(perolit_ore);
 		registerBlock(perola);
@@ -478,7 +489,8 @@ public class BasicBlocks {
 		registerBlock(block_space_quartz_mfblock);
 		registerBlock(space_quartz_ore);
 		registerBlock(table);
-		registerBlock(kitchen_table);
+		registerBlock(table1);
+		registerBlock(chair);
 		registerBlock(speedway);
 		registerBlock(tresor);
 		registerBlock(analyser);

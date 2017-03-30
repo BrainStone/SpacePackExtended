@@ -129,7 +129,12 @@ tile.cupboard_inner.name=§5Cupboard Inner§r
 tile.cupboard_lower_outer.name=§5Cupboard Lower Outer§r
 tile.cupboard_microwave.name=§5Microwave§r
 tile.kitchen_lamp.name=§5Kitchen Lamp§r
-tile.kitchen_table.name=§5Kitchen Table§r
+tile.table1.name=§5Office Table§r
+tile.chair.name=§5Chair§r
+tile.strontenium_fence.name=§5Strontenium Fence§r
+tile.strontenium_fence_gate.name=§5Strontenium Fence Gate§r
+
+
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r

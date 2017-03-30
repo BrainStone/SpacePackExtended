@@ -8,9 +8,9 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class BlockKitchenTable extends Block{
+public class BlockTable1 extends Block{
 	
-	public BlockKitchenTable() {
+	public BlockTable1() {
 		super(Material.WOOD);
 		setHardness(2F);
 		setResistance(1F);

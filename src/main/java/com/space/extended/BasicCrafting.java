@@ -490,9 +490,18 @@ public class BasicCrafting {
 		//148 Cupboard Microwave
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_microwave, 5), new Object[] { "   ", "KBK", "   ", 'K',
 				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(Blocks.REDSTONE_TORCH) });
-		//149 Kitchen Table
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.kitchen_table, 4),
+		//149 Table1
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.table1, 4),
 				new Object[] { "OOO", "O O", "O O", 'O', new ItemStack(BasicItems.kit4) });
+		//150 Chair
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.chair, 4),
+				new Object[] { "   ", "O  ", "OO ", 'O', new ItemStack(BasicBlocks.perolit_ore) });
+		//151 Strontenium Fence
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenium_fence, 4), new Object[] { "   ", "BKB", "BKB", 'K',
+				new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.strontenium_ore) });
+		//152 Strontenium Fence Gate
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenium_fence_gate, 4), new Object[] { "   ", "KBK", "KBK", 'K',
+				new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.strontenium_ore) });
 	}
 
 }

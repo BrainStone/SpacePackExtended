@@ -12,4 +12,5 @@ public class BlockVitalliumFence extends BlockFence{
 		this.useNeighborBrightness = true;
 	}
 
+	
 }

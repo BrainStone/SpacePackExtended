@@ -1,0 +1,150 @@
+{
+	"__comment": "Designed by Norzeteus with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "spaceextended:blocks/kitchen_table_side",
+		"texture": "spaceextended:blocks/kitchen_table_top"
+	},
+	"elements": [
+		{
+			"__comment": "sitz unten",
+			"from": [ 2.25, 6.125, 1.25 ],
+			"to": [ 13.75, 7.125, 10.25 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 0, 16, 0.5 ], "texture": "#particle" },
+				"south": { "uv": [ 0, 0, 16, 0.5 ], "texture": "#particle" },
+				"west": { "uv": [ 0, 0, 16, 0.5 ], "texture": "#particle" },
+				"east": { "uv": [ 0, 0, 16, 0.5 ], "texture": "#particle" }
+			}
+		},
+		{
+			"__comment": "verbindung",
+			"from": [ 2, 6, 10 ],
+			"to": [ 14, 9, 12 ],
+			"faces": {
+				"down": { "uv": [ 4, 1.5, 12, 9.5 ], "texture": "#particle" },
+				"up": { "uv": [ 4, 1.5, 12, 9.5 ], "texture": "#particle" },
+				"north": { "uv": [ 4, 1.5, 12, 9.5 ], "texture": "#particle" },
+				"south": { "uv": [ 4, 1.5, 12, 9.5 ], "texture": "#particle" },
+				"west": { "uv": [ 4, 1.5, 12, 9.5 ], "texture": "#particle" },
+				"east": { "uv": [ 4, 1.5, 12, 9.5 ], "texture": "#particle" }
+			}
+		},
+		{
+			"__comment": "schraege fuss",
+			"from": [ 5.75, 0.125, 12.875 ],
+			"to": [ 10.25, 6.625, 13.875 ],
+			"rotation": { "origin": [ 5.75, 0.125, 12.875 ], "axis": "x", "angle": -22.5 },
+			"faces": {
+				"down": { "uv": [ 3.5, 3.5, 4.5, 4.5 ], "texture": "#texture" },
+				"up": { "uv": [ 6, 7, 7, 8 ], "texture": "#texture" },
+				"north": { "uv": [ 4, 3.5, 5, 9.5 ], "texture": "#texture" },
+				"south": { "uv": [ 3, 3, 4, 9 ], "texture": "#texture" },
+				"west": { "uv": [ 3.5, 3.5, 4.5, 9.5 ], "texture": "#texture" },
+				"east": { "uv": [ 3.5, 3, 4.5, 9 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "fussplatte",
+			"from": [ 5.5, 0, 7 ],
+			"to": [ 10.5, 0.5, 14 ],
+			"faces": {
+				"down": { "uv": [ 6, 3.5, 11, 10.5 ], "texture": "#texture" },
+				"up": { "uv": [ 4, 3.5, 9, 10.5 ], "texture": "#texture" },
+				"north": { "uv": [ 5.5, 15.5, 10.5, 16 ], "texture": "#particle" },
+				"south": { "uv": [ 1, 6.5, 3.5, 9 ], "texture": "#particle" },
+				"west": { "uv": [ 1, 6.5, 3.5, 9.5 ], "texture": "#particle" },
+				"east": { "uv": [ 1, 6.5, 3, 9.5 ], "texture": "#particle" }
+			}
+		},
+		{
+			"__comment": "lehne",
+			"from": [ 2.875, 8.5, 10.375 ],
+			"to": [ 13.375, 20, 11.375 ],
+			"rotation": { "origin": [ 2.875, 8.5, 10.375 ], "axis": "x", "angle": 22.5 },
+			"faces": {
+				"down": { "uv": [ 0, 0, 1, 1 ], "texture": "#particle" },
+				"up": { "uv": [ 0, 0, 16, 0.5 ], "texture": "#particle" },
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 0, 16, 0.5 ], "texture": "#particle", "rotation": 90 },
+				"east": { "uv": [ 0, 0, 16, 0.5 ], "texture": "#particle", "rotation": 90 }
+			}
+		},
+		{
+			"__comment": "fussplatte klein",
+			"from": [ 4, 0, 4 ],
+			"to": [ 12, 0.5, 7 ],
+			"faces": {
+				"down": { "uv": [ 5, 2, 11.5, 8 ], "texture": "#particle" },
+				"up": { "uv": [ 5.5, 3, 11.5, 6 ], "texture": "#particle" },
+				"north": { "uv": [ 6.5, 7, 9, 7.5 ], "texture": "#particle" },
+				"south": { "uv": [ 5, 6.5, 9, 7 ], "texture": "#particle" },
+				"west": { "uv": [ 6, 7, 9, 7.5 ], "texture": "#particle" },
+				"east": { "uv": [ 7, 6.5, 10, 7 ], "texture": "#particle" }
+			}
+		},
+		{
+			"__comment": "sitz oben",
+			"from": [ 1.5, 7.75, 0.25 ],
+			"to": [ 14.5, 8.75, 10.25 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 0, 16, 0.5 ], "texture": "#particle" },
+				"south": { "uv": [ 0, 0, 16, 0.5 ], "texture": "#particle" },
+				"west": { "uv": [ 0, 0, 16, 0.5 ], "texture": "#particle" },
+				"east": { "uv": [ 0, 0, 16, 0.5 ], "texture": "#particle" }
+			}
+		},
+		{
+			"__comment": "sitz mitte",
+			"from": [ 3, 7.125, 2.5 ],
+			"to": [ 13, 7.775, 10 ],
+			"faces": {
+				"down": { "uv": [ 3, 4.5, 13, 12 ], "texture": "#texture" },
+				"up": { "uv": [ 3, 2.5, 13, 10 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 0.5, 16, 1.5 ], "texture": "#particle" },
+				"south": { "uv": [ 0, 0.5, 16, 1.5 ], "texture": "#particle" },
+				"west": { "uv": [ 0, 0.5, 16, 1.5 ], "texture": "#particle" },
+				"east": { "uv": [ 0, 0.5, 16, 1.5 ], "texture": "#particle" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation":  [ 75, 45, 0 ],
+			"translation":  [ 0, 2.5, 0 ],
+			"scale":  [ 0.375, 0.375, 0.375 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation":  [ 75, 45, 0 ],
+			"translation":  [ 0, 2.5, 0 ],
+			"scale":  [ 0.375, 0.375, 0.375 ]
+		},
+		"firstperson_righthand": {
+			"rotation":  [ 0, 133, 0 ],
+			"translation":  [ 0, 2.0869, 0 ],
+			"scale":  [ 0.4, 0.4, 0.4 ]
+		},
+		"firstperson_lefthand": {
+			"rotation":  [ 0, 133, 0 ],
+			"translation":  [ 0, 2.0869, 0 ],
+			"scale":  [ 0.4, 0.4, 0.4 ]
+		},
+		"gui": {
+			"rotation":  [ 30, 225, 0 ],
+			"translation":  [ 0, -1.391, 0 ],
+			"scale":  [ 0.625, 0.625, 0.625 ]
+		},
+		"ground": {
+			"translation":  [ 0, 3, 0 ],
+			"scale":  [ 0.25, 0.25, 0.25 ]
+		},
+		"fixed": {
+			"translation":  [ 0, 0, -2.782 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		}
+	}
+}
