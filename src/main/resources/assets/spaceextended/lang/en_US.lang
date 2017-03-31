@@ -101,7 +101,7 @@ tile.metal_diagonal.name=§5Metal Block Diagonal§r
 tile.block_ribbed.name=§5Ribbed Block§r
 tile.lever2.name=§5Lever 2§r
 tile.lever3.name=§5Lever 3§r
-tile.bed1.name=§5Lifebox§r
+
 tile.wash_basin.name=§5Wash Basin§r
 tile.cooker.name=§5Cooker§r
 tile.klingonit_pp.name=§5Klingonit Pressure Plate§r
@@ -185,7 +185,7 @@ item.cyberit_gem.name=§5Cyberit Gem§r
 item.cyberit_beetle.name=§5Cyberit Beetle§r
 item.ferropal.name=§5Ferropal§r
 item.quartz_component.name=§5Quartz Component§r
-
+item.bed1.name=§5Lifebox§r
 item.vitallium_helmet.name=§5Vitallium Helmet§r
 item.vitallium_chestplate.name=§5Vitallium Chestplate§r
 item.vitallium_leggings.name=§5Vitallium Leggings§r
