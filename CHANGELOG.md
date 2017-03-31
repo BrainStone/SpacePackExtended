@@ -1,3 +1,23 @@
+2.1.22-beta
+-----------
+
+* Added Concrete Stairs
+* Added Lever2
+* Added Lever3
+* Added Cellar Lamp
+* Added Lifebox
+* Added Wash Basin
+* Added Cooker
+* Added Pressure Plates
+* Added Vitallium Door
+* Added Metal Button
+* Added Vitallium Fence and Gate
+* Added Wall Panel
+* Added Cupboards
+* Added Kitchen Lamp
+* Added Kitchen Table
+* Added Strontenium Fence and Gate
+
 2.0.82
 ------
 

@@ -2,7 +2,7 @@
 ===================================================================================
 
 [![Curse Forge](http://cf.way2muchnoise.eu/short_252607_downloads.svg)](https://minecraft.curseforge.com/projects/space-extended-mod)
-[![Build Status](https://gitlab.brainstonemod.com/BrainStone/SpacePackExtended/badges/master/build.svg)](https://gitlab.crazyblock-network.net/BrainStone/SpacePackExtended/commits/master)
+[![Build Status](https://gitlab.brainstonemod.com/BrainStone/SpacePackExtended/badges/master/build.svg)](https://gitlab.brainstonemod.com/BrainStone/SpacePackExtended/commits/master)
 
 Starts where all others end
 

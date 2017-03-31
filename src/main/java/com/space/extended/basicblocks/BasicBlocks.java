@@ -542,7 +542,7 @@ public class BasicBlocks {
 		registerBlock(klingonit_pp);
 		registerBlock(klingonit1_pp);
 		registerBlock(klingonit2_pp);
-		registerBlock(vitallium_door);
+		registerBlockOnly(vitallium_door);
 		registerBlock(wall_panel);
 		registerBlock(wall_panel1);
 		registerBlock(wall_panel2);
