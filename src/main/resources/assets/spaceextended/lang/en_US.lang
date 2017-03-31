@@ -95,7 +95,6 @@ tile.klingositb.name=§5Klingosit B§r
 tile.wall_lamp.name=§5Wall Lamp§r
 tile.cellar_lamp.name=§5Cellar Lamp§r
 tile.lever1.name=§5Lever 1§r
-tile.vitallium_door.name=§5Vitallium Door§r
 tile.stand_console.name=§5Terminal§r
 tile.metal_diagonal.name=§5Metal Block Diagonal§r
 tile.block_ribbed.name=§5Ribbed Block§r
@@ -169,6 +168,8 @@ tile.carrel.name=§5Carrel§r
 tile.slope_pipes.name=§5Slope Pipes§r
 tile.concrete_stairs.name=§5Concrete Stairs§r
 
+
+
 /*Items*/
 item.vitallium_ingot.name=§5Vitallium Ingot§r
 item.klingonium_shard.name=§5Klingonium Shard§r
@@ -185,6 +186,8 @@ item.cyberit_gem.name=§5Cyberit Gem§r
 item.cyberit_beetle.name=§5Cyberit Beetle§r
 item.ferropal.name=§5Ferropal§r
 item.quartz_component.name=§5Quartz Component§r
+item.vitallium_door.name=§5Vitallium Door§r
+item.bed1.name=§5Lifebox§r
 
 item.vitallium_helmet.name=§5Vitallium Helmet§r
 item.vitallium_chestplate.name=§5Vitallium Chestplate§r
