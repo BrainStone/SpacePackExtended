@@ -33,6 +33,7 @@ public class BasicItems {
 	public static Item vitallium_leggings;
 	public static Item vitallium_boots;
 	public static Item bed1;
+	public static Item vitallium_door;
 
 	public BasicItems() {
 		init();
@@ -86,6 +87,8 @@ public class BasicItems {
 
 		bed1 = new ItemCustomBed();
 		NameUtils.setNames(bed1, "bed1");
+		vitallium_door = new ItemVitalliumDoor();
+		NameUtils.setNames(vitallium_door, "vitallium_door");
 	}
 
 	public void register() {
@@ -109,6 +112,7 @@ public class BasicItems {
 		registerItem(vitallium_boots);
 		registerItem(quartz_component);
 		registerItem(bed1);
+		registerItem(vitallium_door);
 	}
 
 	private void registerItem(Item item) {

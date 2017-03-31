@@ -175,6 +175,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicItems.cyberit_beetle, 0);
 		registerModel(BasicItems.quartz_component, 0);
 		registerModel(BasicItems.bed1, 0);
+		registerModel(BasicItems.vitallium_door, 0);
 
 		registerModel(BasicItems.grenade, 0);
 		registerModel(BasicItems.flamethrower, 0);
