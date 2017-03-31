@@ -39,7 +39,6 @@ public class BasicStairs {
 	public static BlockStairs carrel;
 	public static BlockStairs slope_pipes;
 	public static BlockStairs concrete_stairs;
-	
 
 	public BasicStairs() {
 		init();
@@ -110,7 +109,7 @@ public class BasicStairs {
 		NameUtils.setNames(carrel, "carrel");
 		slope_pipes = (BlockStairs) new BlockSlopePipes().setCreativeTab(SpaceExtendedMain.stairsTab);
 		NameUtils.setNames(slope_pipes, "slope_pipes");
-		concrete_stairs  = (BlockStairs) new BlockConcreteStairs().setCreativeTab(SpaceExtendedMain.spaceTab);
+		concrete_stairs = (BlockStairs) new BlockConcreteStairs().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(concrete_stairs, "concrete_stairs");
 	}
 

@@ -1,289 +1,1459 @@
 {
-	"__comment": "Designed by Norzeteus with Cubik Studio - https://cubik.studio",
-	"textures": {
-		"particle": "spaceextended:blocks/life_box/life-box",
-		"texture": "spaceextended:blocks/life_box/life-box",
-		"texture1": "spaceextended:blocks/life_box/life-box1",
-		"texture2": "spaceextended:blocks/life_box/life_box2",
-		"texture3": "spaceextended:blocks/life_box/life_box3",
-		"texture4": "spaceextended:blocks/life_box/life_box4",
-		"texture5": "spaceextended:blocks/life_box/life_box5",
-		"texture6": "spaceextended:blocks/life_box/life_box6"
-	},
-	"elements": [
-		{
-			"__comment": "ecke schraeg re ob",
-			"from": [ 13.175, 14.625, 10 ],
-			"to": [ 15.175, 16.625, 16 ],
-			"rotation": { "origin": [ 13.175, 14.625, 10 ], "axis": "z", "angle": -45 },
-			"faces": {
-				"down": { "uv": [ 7.5, 0, 9.5, 6 ], "texture": "#texture" },
-				"up": { "uv": [ 7.5, 0, 9.5, 6 ], "texture": "#texture" },
-				"north": { "uv": [ 7.5, 6, 9.5, 8 ], "texture": "#texture" },
-				"south": { "uv": [ 7.5, 6, 9.5, 8 ], "texture": "#texture" },
-				"west": { "uv": [ 5.5, 14, 10.5, 16 ], "texture": "#texture" },
-				"east": { "uv": [ 6, 14, 11, 16 ], "texture": "#texture" }
-			}
-		},
-		{
-			"__comment": "ecke schraeg li ob",
-			"from": [ 0, 14.625, 10 ],
-			"to": [ 2, 16.625, 16 ],
-			"rotation": { "origin": [ 0, 14.625, 10 ], "axis": "z", "angle": -45 },
-			"faces": {
-				"down": { "uv": [ 7.5, 0, 9.5, 6 ], "texture": "#texture" },
-				"up": { "uv": [ 7.5, 0, 9.5, 6 ], "texture": "#texture" },
-				"north": { "uv": [ 7.5, 6, 9.5, 8 ], "texture": "#texture", "rotation": 90 },
-				"south": { "uv": [ 7.5, 6, 9.5, 8 ], "texture": "#texture", "rotation": 270 },
-				"west": { "uv": [ 5.5, 14, 10.5, 16 ], "texture": "#texture" },
-				"east": { "uv": [ 6, 14, 11, 16 ], "texture": "#texture" }
-			}
-		},
-		{
-			"__comment": "ecke schraeg li un",
-			"from": [ 0, 1.375, 0 ],
-			"to": [ 2, 3.375, 16 ],
-			"rotation": { "origin": [ 0, 1.375, 0 ], "axis": "z", "angle": -45 },
-			"faces": {
-				"down": { "uv": [ 0, 14, 16, 16 ], "texture": "#texture", "rotation": 90 },
-				"up": { "uv": [ 0, 14, 16, 16 ], "texture": "#texture" },
-				"north": { "uv": [ 8, 14, 10, 16 ], "texture": "#texture" },
-				"south": { "uv": [ 7.5, 6, 9.5, 8 ], "texture": "#texture" },
-				"west": { "uv": [ 0, 14, 16, 16 ], "texture": "#texture" },
-				"east": { "uv": [ 0, 14, 16, 16 ], "texture": "#texture" }
-			}
-		},
-		{
-			"__comment": "ecke schraeg re un",
-			"from": [ 13.175, 1.375, 0 ],
-			"to": [ 15.175, 3.375, 16 ],
-			"rotation": { "origin": [ 13.175, 1.375, 0 ], "axis": "z", "angle": -45 },
-			"faces": {
-				"down": { "uv": [ 0, 14, 16, 16 ], "texture": "#texture", "rotation": 90 },
-				"up": { "uv": [ 0, 14, 16, 16 ], "texture": "#texture", "rotation": 270 },
-				"north": { "uv": [ 8, 14, 10, 16 ], "texture": "#texture" },
-				"south": { "uv": [ 7.5, 6, 9.5, 8 ], "texture": "#texture", "rotation": 270 },
-				"west": { "uv": [ 0, 14, 16, 16 ], "texture": "#texture" },
-				"east": { "uv": [ 0, 14, 16, 16 ], "texture": "#texture", "rotation": 180 }
-			}
-		},
-		{
-			"__comment": "rand oben",
-			"from": [ 1.405, 14.53, 10.01 ],
-			"to": [ 14.575, 16.03, 15.99 ],
-			"faces": {
-				"down": { "uv": [ 0.5, 0, 6, 14 ], "texture": "#texture" },
-				"up": { "uv": [ 0, 0, 6, 14 ], "texture": "#texture", "rotation": 270 },
-				"north": { "uv": [ 6, 0, 7.575, 14 ], "texture": "#texture", "rotation": 90 },
-				"south": { "uv": [ 6, 0, 7.595, 14 ], "texture": "#texture", "rotation": 90 },
-				"west": { "uv": [ 6, 0, 7.5, 6.5 ], "texture": "#texture" },
-				"east": { "uv": [ 6, 0, 7.49, 6 ], "texture": "#texture" }
-			}
-		},
-		{
-			"__comment": "rand unten",
-			"from": [ 1.375, 0, 0 ],
-			"to": [ 14.545, 1.5, 15.99 ],
-			"faces": {
-				"down": { "uv": [ 0, 0, 6.125, 13.99 ], "texture": "#texture", "rotation": 90 },
-				"up": { "uv": [ 0, 0, 6, 14 ], "texture": "#texture", "rotation": 270 },
-				"north": { "uv": [ 1.455, 14.5, 14.625, 16 ], "texture": "#texture" },
-				"south": { "uv": [ 6, 0, 7.5, 14 ], "texture": "#texture", "rotation": 90 },
-				"west": { "uv": [ 0, 14.5, 15.99, 16 ], "texture": "#texture" },
-				"east": { "uv": [ 0.01000023, 14.5, 16, 16 ], "texture": "#texture" }
-			}
-		},
-		{
-			"__comment": "rand rechts",
-			"from": [ 14.5, 1.375, 10.01 ],
-			"to": [ 16, 14.635, 15.99 ],
-			"faces": {
-				"down": { "uv": [ 6, 8, 7.5, 13.98 ], "texture": "#texture" },
-				"up": { "uv": [ 6, 8, 7.5, 13.98 ], "texture": "#texture" },
-				"north": { "uv": [ 6, 0, 7.5, 14 ], "texture": "#texture" },
-				"south": { "uv": [ 6, 0, 7.5, 14 ], "texture": "#texture" },
-				"west": { "uv": [ 0, 0, 6, 14 ], "texture": "#texture" },
-				"east": { "uv": [ 0, 0, 6, 14 ], "texture": "#texture" }
-			}
-		},
-		{
-			"__comment": "rand links",
-			"from": [ 0, 1.375, 10.01 ],
-			"to": [ 1.5, 14.635, 15.99 ],
-			"faces": {
-				"down": { "uv": [ 6, 0, 7.5, 5.98 ], "texture": "#texture" },
-				"up": { "uv": [ 6, 0, 7.5, 5.98 ], "texture": "#texture" },
-				"north": { "uv": [ 6, 0, 7.5, 13.26 ], "texture": "#texture" },
-				"south": { "uv": [ 6, 0, 7.5, 13.26 ], "texture": "#texture" },
-				"west": { "uv": [ 0, 0, 6, 14 ], "texture": "#texture", "rotation": 180 },
-				"east": { "uv": [ 0, 0, 6, 14 ], "texture": "#texture" }
-			}
-		},
-		{
-			"__comment": "wand kopf",
-			"from": [ 1.5, 1.5, 10.375 ],
-			"to": [ 14.5, 14.54, 15.375 ],
-			"faces": {
-				"down": { "uv": [ 6, 14.5, 7, 15.5 ], "texture": "#texture1" },
-				"up": { "uv": [ 1.5, 10.375, 14.5, 15.375 ], "texture": "#texture1" },
-				"north": { "uv": [ 0, 0, 13, 13.04 ], "texture": "#texture5" },
-				"south": { "uv": [ 0, 0, 13, 13 ], "texture": "#texture1" },
-				"west": { "uv": [ 10.375, 1.46, 15.375, 14.5 ], "texture": "#texture1" },
-				"east": { "uv": [ 0.625, 1.46, 5.625, 14.5 ], "texture": "#texture1" }
-			}
-		},
-		{
-			"__comment": "kopfteil",
-			"from": [ 1.5, 1.5, 0 ],
-			"to": [ 14.5, 8, 10 ],
-			"faces": {
-				"down": { "uv": [ 1.5, 6, 14.5, 16 ], "texture": "#texture2" },
-				"up": { "uv": [ 0, 6, 13, 16 ], "texture": "#texture2", "rotation": 180 },
-				"north": { "uv": [ 0.5, 0, 13.5, 5 ], "texture": "#texture2" },
-				"south": { "uv": [ 1.5, 8, 14.5, 14.5 ], "texture": "#texture2" },
-				"west": { "uv": [ 10, 0, 0, 6.5 ], "texture": "#texture4" },
-				"east": { "uv": [ 0, 0, 10, 6.5 ], "texture": "#texture4" }
-			}
-		},
-		{
-			"__comment": "leiste links",
-			"from": [ 0.875, 7, 0 ],
-			"to": [ 1.875, 9, 10 ],
-			"faces": {
-				"down": { "uv": [ 11.5, 0, 12.5, 10 ], "texture": "#texture" },
-				"up": { "uv": [ 11.5, 0, 12.5, 10 ], "texture": "#texture" },
-				"north": { "uv": [ 13, 7, 14, 9 ], "texture": "#texture" },
-				"south": { "uv": [ 10, 1.5, 11, 3.5 ], "texture": "#texture" },
-				"west": { "uv": [ 11.5, 0, 9.5, 10 ], "texture": "#texture", "rotation": 270 },
-				"east": { "uv": [ 11.5, 10, 9.5, 0 ], "texture": "#texture", "rotation": 270 }
-			}
-		},
-		{
-			"__comment": "leiste rechts",
-			"from": [ 14.125, 7, 0 ],
-			"to": [ 15.125, 9, 10 ],
-			"faces": {
-				"down": { "uv": [ 11.5, 0, 12.5, 10 ], "texture": "#texture" },
-				"up": { "uv": [ 11.5, 0, 12.5, 10 ], "texture": "#texture" },
-				"north": { "uv": [ 13, 8, 14, 10 ], "texture": "#texture" },
-				"south": { "uv": [ 13, 7.5, 14, 9.5 ], "texture": "#texture" },
-				"west": { "uv": [ 9.5, 10, 11.5, 0 ], "texture": "#texture", "rotation": 90 },
-				"east": { "uv": [ 11.5, 10, 9.5, 0 ], "texture": "#texture", "rotation": 270 }
-			}
-		},
-		{
-			"__comment": "deckelrand links",
-			"from": [ 14.5, 9, 9 ],
-			"to": [ 15.5, 13.5, 10 ],
-			"faces": {
-				"down": { "uv": [ 8.5, 13, 9.5, 14 ], "texture": "#texture1" },
-				"up": { "uv": [ 7.5, 13, 8.5, 14 ], "texture": "#texture1" },
-				"north": { "uv": [ 0, 13, 5.5, 14 ], "texture": "#texture1", "rotation": 90 },
-				"south": { "uv": [ 1.5, 13, 6.5, 14 ], "texture": "#texture1", "rotation": 90 },
-				"west": { "uv": [ 2, 13, 7, 14 ], "texture": "#texture1", "rotation": 90 },
-				"east": { "uv": [ 3, 13, 7.5, 14 ], "texture": "#texture1", "rotation": 90 }
-			}
-		},
-		{
-			"__comment": "deckelrand rechts",
-			"from": [ 0.5, 9, 9 ],
-			"to": [ 1.5, 13.5, 10 ],
-			"faces": {
-				"down": { "uv": [ 0.5, 13, 1.5, 14 ], "texture": "#texture1" },
-				"up": { "uv": [ 1, 13, 2, 14 ], "texture": "#texture1" },
-				"north": { "uv": [ 1, 13, 5.5, 14 ], "texture": "#texture1", "rotation": 90 },
-				"south": { "uv": [ 0, 13, 5.5, 14 ], "texture": "#texture1", "rotation": 90 },
-				"west": { "uv": [ 1.5, 13, 6.5, 14 ], "texture": "#texture1", "rotation": 90 },
-				"east": { "uv": [ 0, 13, 5.5, 14 ], "texture": "#texture1", "rotation": 90 }
-			}
-		},
-		{
-			"__comment": "deckelrand schr rechts",
-			"from": [ 0.5, 13.5, 9.01 ],
-			"to": [ 1.5, 16, 10 ],
-			"rotation": { "origin": [ 0.5, 13.5, 9.01 ], "axis": "z", "angle": -45 },
-			"faces": {
-				"down": { "uv": [ 6.5, 13, 7.5, 14 ], "texture": "#texture1" },
-				"up": { "uv": [ 7, 13, 8, 14 ], "texture": "#texture1" },
-				"north": { "uv": [ 0, 13, 4.625, 14 ], "texture": "#texture1", "rotation": 90 },
-				"south": { "uv": [ 0, 13, 4, 14 ], "texture": "#texture1", "rotation": 90 },
-				"west": { "uv": [ 1, 13, 4.5, 14 ], "texture": "#texture1", "rotation": 90 },
-				"east": { "uv": [ 0.5, 13, 5, 14 ], "texture": "#texture1", "rotation": 90 }
-			}
-		},
-		{
-			"__comment": "deckelrand schr links",
-			"from": [ 14.78, 12.8, 9.01 ],
-			"to": [ 15.78, 15.3, 10 ],
-			"rotation": { "origin": [ 14.78, 12.8, 9.01 ], "axis": "z", "angle": 45 },
-			"faces": {
-				"down": { "uv": [ 9, 13, 10, 14 ], "texture": "#texture1" },
-				"up": { "uv": [ 9.5, 13, 10.5, 14 ], "texture": "#texture1" },
-				"north": { "uv": [ 0, 13, 10.5, 14 ], "texture": "#texture1", "rotation": 90 },
-				"south": { "uv": [ 0.5, 13, 4, 14 ], "texture": "#texture1" },
-				"west": { "uv": [ 1, 13, 8.5, 14 ], "texture": "#texture1", "rotation": 90 },
-				"east": { "uv": [ 3.5, 13, 9, 14 ], "texture": "#texture1", "rotation": 90 }
-			}
-		},
-		{
-			"__comment": "deckelrand oben",
-			"from": [ 2.27, 14.27, 9 ],
-			"to": [ 13.73, 15.27, 10 ],
-			"faces": {
-				"down": { "uv": [ 0, 13, 12, 14 ], "texture": "#texture1" },
-				"up": { "uv": [ 0, 13, 12, 14 ], "texture": "#texture1" },
-				"north": { "uv": [ 0, 13, 12, 14 ], "texture": "#texture1" },
-				"south": { "uv": [ 0, 13, 12, 14 ], "texture": "#texture1" },
-				"west": { "uv": [ 6, 13, 7, 14 ], "texture": "#texture1" },
-				"east": { "uv": [ 4, 13, 5, 14 ], "texture": "#texture1" }
-			}
-		},
-		{
-			"__comment": "glas oben",
-			"from": [ 2.25, 14.75, 5.5 ],
-			"to": [ 13.75, 14.751, 9 ],
-			"faces": {
-				"down": { "uv": [ 1, 1, 12.5, 4.5 ], "texture": "#texture6" },
-				"up": { "uv": [ 2.25, 5.5, 13.75, 9 ], "texture": "#texture6" }
-			}
-		},
-		{
-			"__comment": "glas schraege links",
-			"from": [ 13.75, 14.75, 5.5 ],
-			"to": [ 15.517, 14.751, 9 ],
-			"rotation": { "origin": [ 13.75, 14.75, 5.5 ], "axis": "z", "angle": -45 },
-			"faces": {
-				"down": { "uv": [ 1.5, 1.5, 3.5, 5 ], "texture": "#texture6" },
-				"up": { "uv": [ 3, 3, 5, 6.5 ], "texture": "#texture6" }
-			}
-		},
-		{
-			"__comment": "glas schraege rechts",
-			"from": [ 1, 13.5, 5.5 ],
-			"to": [ 2.767, 13.501, 9 ],
-			"rotation": { "origin": [ 1, 13.5, 5.5 ], "axis": "z", "angle": 45 },
-			"faces": {
-				"down": { "uv": [ 1, 7, 3, 10.5 ], "texture": "#texture6" },
-				"up": { "uv": [ 1, 5.5, 3, 9 ], "texture": "#texture6" }
-			}
-		},
-		{
-			"__comment": "glas rechts",
-			"from": [ 1, 9, 5.5 ],
-			"to": [ 1.001, 13.51, 9 ],
-			"faces": {
-				"west": { "uv": [ 5.5, 2.49, 9, 7 ], "texture": "#texture6" },
-				"east": { "uv": [ 7, 2.49, 10.5, 7 ], "texture": "#texture6" }
-			}
-		},
-		{
-			"__comment": "glas links",
-			"from": [ 15, 9, 5.5 ],
-			"to": [ 15.001, 13.51, 9 ],
-			"faces": {
-				"west": { "uv": [ 5.5, 2.49, 9, 7 ], "texture": "#texture6" },
-				"east": { "uv": [ 7, 2.49, 10.5, 7 ], "texture": "#texture6" }
-			}
-		}
-	]
+    "__comment": "Designed by Norzeteus with Cubik Studio - https://cubik.studio",
+    "textures": {
+        "particle": "spaceextended:blocks/life_box/life-box",
+        "texture": "spaceextended:blocks/life_box/life-box",
+        "texture1": "spaceextended:blocks/life_box/life-box1",
+        "texture2": "spaceextended:blocks/life_box/life_box2",
+        "texture3": "spaceextended:blocks/life_box/life_box3",
+        "texture4": "spaceextended:blocks/life_box/life_box4",
+        "texture5": "spaceextended:blocks/life_box/life_box5",
+        "texture6": "spaceextended:blocks/life_box/life_box6"
+    },
+    "elements": [
+        {
+            "__comment": "ecke schraeg re ob",
+            "from": [
+                13.175,
+                14.625,
+                10
+            ],
+            "to": [
+                15.175,
+                16.625,
+                16
+            ],
+            "rotation": {
+                "origin": [
+                    13.175,
+                    14.625,
+                    10
+                ],
+                "axis": "z",
+                "angle": -45
+            },
+            "faces": {
+                "down": {
+                    "uv": [
+                        7.5,
+                        0,
+                        9.5,
+                        6
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        7.5,
+                        0,
+                        9.5,
+                        6
+                    ],
+                    "texture": "#texture"
+                },
+                "north": {
+                    "uv": [
+                        7.5,
+                        6,
+                        9.5,
+                        8
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        7.5,
+                        6,
+                        9.5,
+                        8
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        5.5,
+                        14,
+                        10.5,
+                        16
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        6,
+                        14,
+                        11,
+                        16
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        },
+        {
+            "__comment": "ecke schraeg li ob",
+            "from": [
+                0,
+                14.625,
+                10
+            ],
+            "to": [
+                2,
+                16.625,
+                16
+            ],
+            "rotation": {
+                "origin": [
+                    0,
+                    14.625,
+                    10
+                ],
+                "axis": "z",
+                "angle": -45
+            },
+            "faces": {
+                "down": {
+                    "uv": [
+                        7.5,
+                        0,
+                        9.5,
+                        6
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        7.5,
+                        0,
+                        9.5,
+                        6
+                    ],
+                    "texture": "#texture"
+                },
+                "north": {
+                    "uv": [
+                        7.5,
+                        6,
+                        9.5,
+                        8
+                    ],
+                    "texture": "#texture",
+                    "rotation": 90
+                },
+                "south": {
+                    "uv": [
+                        7.5,
+                        6,
+                        9.5,
+                        8
+                    ],
+                    "texture": "#texture",
+                    "rotation": 270
+                },
+                "west": {
+                    "uv": [
+                        5.5,
+                        14,
+                        10.5,
+                        16
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        6,
+                        14,
+                        11,
+                        16
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        },
+        {
+            "__comment": "ecke schraeg li un",
+            "from": [
+                0,
+                1.375,
+                0
+            ],
+            "to": [
+                2,
+                3.375,
+                16
+            ],
+            "rotation": {
+                "origin": [
+                    0,
+                    1.375,
+                    0
+                ],
+                "axis": "z",
+                "angle": -45
+            },
+            "faces": {
+                "down": {
+                    "uv": [
+                        0,
+                        14,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture",
+                    "rotation": 90
+                },
+                "up": {
+                    "uv": [
+                        0,
+                        14,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture"
+                },
+                "north": {
+                    "uv": [
+                        8,
+                        14,
+                        10,
+                        16
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        7.5,
+                        6,
+                        9.5,
+                        8
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        14,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        0,
+                        14,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        },
+        {
+            "__comment": "ecke schraeg re un",
+            "from": [
+                13.175,
+                1.375,
+                0
+            ],
+            "to": [
+                15.175,
+                3.375,
+                16
+            ],
+            "rotation": {
+                "origin": [
+                    13.175,
+                    1.375,
+                    0
+                ],
+                "axis": "z",
+                "angle": -45
+            },
+            "faces": {
+                "down": {
+                    "uv": [
+                        0,
+                        14,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture",
+                    "rotation": 90
+                },
+                "up": {
+                    "uv": [
+                        0,
+                        14,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture",
+                    "rotation": 270
+                },
+                "north": {
+                    "uv": [
+                        8,
+                        14,
+                        10,
+                        16
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        7.5,
+                        6,
+                        9.5,
+                        8
+                    ],
+                    "texture": "#texture",
+                    "rotation": 270
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        14,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        0,
+                        14,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture",
+                    "rotation": 180
+                }
+            }
+        },
+        {
+            "__comment": "rand oben",
+            "from": [
+                1.405,
+                14.53,
+                10.01
+            ],
+            "to": [
+                14.575,
+                16.03,
+                15.99
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        0.5,
+                        0,
+                        6,
+                        14
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        0,
+                        0,
+                        6,
+                        14
+                    ],
+                    "texture": "#texture",
+                    "rotation": 270
+                },
+                "north": {
+                    "uv": [
+                        6,
+                        0,
+                        7.575,
+                        14
+                    ],
+                    "texture": "#texture",
+                    "rotation": 90
+                },
+                "south": {
+                    "uv": [
+                        6,
+                        0,
+                        7.595,
+                        14
+                    ],
+                    "texture": "#texture",
+                    "rotation": 90
+                },
+                "west": {
+                    "uv": [
+                        6,
+                        0,
+                        7.5,
+                        6.5
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        6,
+                        0,
+                        7.49,
+                        6
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        },
+        {
+            "__comment": "rand unten",
+            "from": [
+                1.375,
+                0,
+                0
+            ],
+            "to": [
+                14.545,
+                1.5,
+                15.99
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        0,
+                        0,
+                        6.125,
+                        13.99
+                    ],
+                    "texture": "#texture",
+                    "rotation": 90
+                },
+                "up": {
+                    "uv": [
+                        0,
+                        0,
+                        6,
+                        14
+                    ],
+                    "texture": "#texture",
+                    "rotation": 270
+                },
+                "north": {
+                    "uv": [
+                        1.455,
+                        14.5,
+                        14.625,
+                        16
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        6,
+                        0,
+                        7.5,
+                        14
+                    ],
+                    "texture": "#texture",
+                    "rotation": 90
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        14.5,
+                        15.99,
+                        16
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        0.01000023,
+                        14.5,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        },
+        {
+            "__comment": "rand rechts",
+            "from": [
+                14.5,
+                1.375,
+                10.01
+            ],
+            "to": [
+                16,
+                14.635,
+                15.99
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        6,
+                        8,
+                        7.5,
+                        13.98
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        6,
+                        8,
+                        7.5,
+                        13.98
+                    ],
+                    "texture": "#texture"
+                },
+                "north": {
+                    "uv": [
+                        6,
+                        0,
+                        7.5,
+                        14
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        6,
+                        0,
+                        7.5,
+                        14
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        6,
+                        14
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        6,
+                        14
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        },
+        {
+            "__comment": "rand links",
+            "from": [
+                0,
+                1.375,
+                10.01
+            ],
+            "to": [
+                1.5,
+                14.635,
+                15.99
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        6,
+                        0,
+                        7.5,
+                        5.98
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        6,
+                        0,
+                        7.5,
+                        5.98
+                    ],
+                    "texture": "#texture"
+                },
+                "north": {
+                    "uv": [
+                        6,
+                        0,
+                        7.5,
+                        13.26
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        6,
+                        0,
+                        7.5,
+                        13.26
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        6,
+                        14
+                    ],
+                    "texture": "#texture",
+                    "rotation": 180
+                },
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        6,
+                        14
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        },
+        {
+            "__comment": "wand kopf",
+            "from": [
+                1.5,
+                1.5,
+                10.375
+            ],
+            "to": [
+                14.5,
+                14.54,
+                15.375
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        6,
+                        14.5,
+                        7,
+                        15.5
+                    ],
+                    "texture": "#texture1"
+                },
+                "up": {
+                    "uv": [
+                        1.5,
+                        10.375,
+                        14.5,
+                        15.375
+                    ],
+                    "texture": "#texture1"
+                },
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        13,
+                        13.04
+                    ],
+                    "texture": "#texture5"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        13,
+                        13
+                    ],
+                    "texture": "#texture1"
+                },
+                "west": {
+                    "uv": [
+                        10.375,
+                        1.46,
+                        15.375,
+                        14.5
+                    ],
+                    "texture": "#texture1"
+                },
+                "east": {
+                    "uv": [
+                        0.625,
+                        1.46,
+                        5.625,
+                        14.5
+                    ],
+                    "texture": "#texture1"
+                }
+            }
+        },
+        {
+            "__comment": "kopfteil",
+            "from": [
+                1.5,
+                1.5,
+                0
+            ],
+            "to": [
+                14.5,
+                8,
+                10
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        1.5,
+                        6,
+                        14.5,
+                        16
+                    ],
+                    "texture": "#texture2"
+                },
+                "up": {
+                    "uv": [
+                        0,
+                        6,
+                        13,
+                        16
+                    ],
+                    "texture": "#texture2",
+                    "rotation": 180
+                },
+                "north": {
+                    "uv": [
+                        0.5,
+                        0,
+                        13.5,
+                        5
+                    ],
+                    "texture": "#texture2"
+                },
+                "south": {
+                    "uv": [
+                        1.5,
+                        8,
+                        14.5,
+                        14.5
+                    ],
+                    "texture": "#texture2"
+                },
+                "west": {
+                    "uv": [
+                        10,
+                        0,
+                        0,
+                        6.5
+                    ],
+                    "texture": "#texture4"
+                },
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        10,
+                        6.5
+                    ],
+                    "texture": "#texture4"
+                }
+            }
+        },
+        {
+            "__comment": "leiste links",
+            "from": [
+                0.875,
+                7,
+                0
+            ],
+            "to": [
+                1.875,
+                9,
+                10
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        11.5,
+                        0,
+                        12.5,
+                        10
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        11.5,
+                        0,
+                        12.5,
+                        10
+                    ],
+                    "texture": "#texture"
+                },
+                "north": {
+                    "uv": [
+                        13,
+                        7,
+                        14,
+                        9
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        10,
+                        1.5,
+                        11,
+                        3.5
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        11.5,
+                        0,
+                        9.5,
+                        10
+                    ],
+                    "texture": "#texture",
+                    "rotation": 270
+                },
+                "east": {
+                    "uv": [
+                        11.5,
+                        10,
+                        9.5,
+                        0
+                    ],
+                    "texture": "#texture",
+                    "rotation": 270
+                }
+            }
+        },
+        {
+            "__comment": "leiste rechts",
+            "from": [
+                14.125,
+                7,
+                0
+            ],
+            "to": [
+                15.125,
+                9,
+                10
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        11.5,
+                        0,
+                        12.5,
+                        10
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        11.5,
+                        0,
+                        12.5,
+                        10
+                    ],
+                    "texture": "#texture"
+                },
+                "north": {
+                    "uv": [
+                        13,
+                        8,
+                        14,
+                        10
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        13,
+                        7.5,
+                        14,
+                        9.5
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        9.5,
+                        10,
+                        11.5,
+                        0
+                    ],
+                    "texture": "#texture",
+                    "rotation": 90
+                },
+                "east": {
+                    "uv": [
+                        11.5,
+                        10,
+                        9.5,
+                        0
+                    ],
+                    "texture": "#texture",
+                    "rotation": 270
+                }
+            }
+        },
+        {
+            "__comment": "deckelrand links",
+            "from": [
+                14.5,
+                9,
+                9
+            ],
+            "to": [
+                15.5,
+                13.5,
+                10
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        8.5,
+                        13,
+                        9.5,
+                        14
+                    ],
+                    "texture": "#texture1"
+                },
+                "up": {
+                    "uv": [
+                        7.5,
+                        13,
+                        8.5,
+                        14
+                    ],
+                    "texture": "#texture1"
+                },
+                "north": {
+                    "uv": [
+                        0,
+                        13,
+                        5.5,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                },
+                "south": {
+                    "uv": [
+                        1.5,
+                        13,
+                        6.5,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                },
+                "west": {
+                    "uv": [
+                        2,
+                        13,
+                        7,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                },
+                "east": {
+                    "uv": [
+                        3,
+                        13,
+                        7.5,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                }
+            }
+        },
+        {
+            "__comment": "deckelrand rechts",
+            "from": [
+                0.5,
+                9,
+                9
+            ],
+            "to": [
+                1.5,
+                13.5,
+                10
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        0.5,
+                        13,
+                        1.5,
+                        14
+                    ],
+                    "texture": "#texture1"
+                },
+                "up": {
+                    "uv": [
+                        1,
+                        13,
+                        2,
+                        14
+                    ],
+                    "texture": "#texture1"
+                },
+                "north": {
+                    "uv": [
+                        1,
+                        13,
+                        5.5,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        13,
+                        5.5,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                },
+                "west": {
+                    "uv": [
+                        1.5,
+                        13,
+                        6.5,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                },
+                "east": {
+                    "uv": [
+                        0,
+                        13,
+                        5.5,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                }
+            }
+        },
+        {
+            "__comment": "deckelrand schr rechts",
+            "from": [
+                0.5,
+                13.5,
+                9.01
+            ],
+            "to": [
+                1.5,
+                16,
+                10
+            ],
+            "rotation": {
+                "origin": [
+                    0.5,
+                    13.5,
+                    9.01
+                ],
+                "axis": "z",
+                "angle": -45
+            },
+            "faces": {
+                "down": {
+                    "uv": [
+                        6.5,
+                        13,
+                        7.5,
+                        14
+                    ],
+                    "texture": "#texture1"
+                },
+                "up": {
+                    "uv": [
+                        7,
+                        13,
+                        8,
+                        14
+                    ],
+                    "texture": "#texture1"
+                },
+                "north": {
+                    "uv": [
+                        0,
+                        13,
+                        4.625,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        13,
+                        4,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                },
+                "west": {
+                    "uv": [
+                        1,
+                        13,
+                        4.5,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                },
+                "east": {
+                    "uv": [
+                        0.5,
+                        13,
+                        5,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                }
+            }
+        },
+        {
+            "__comment": "deckelrand schr links",
+            "from": [
+                14.78,
+                12.8,
+                9.01
+            ],
+            "to": [
+                15.78,
+                15.3,
+                10
+            ],
+            "rotation": {
+                "origin": [
+                    14.78,
+                    12.8,
+                    9.01
+                ],
+                "axis": "z",
+                "angle": 45
+            },
+            "faces": {
+                "down": {
+                    "uv": [
+                        9,
+                        13,
+                        10,
+                        14
+                    ],
+                    "texture": "#texture1"
+                },
+                "up": {
+                    "uv": [
+                        9.5,
+                        13,
+                        10.5,
+                        14
+                    ],
+                    "texture": "#texture1"
+                },
+                "north": {
+                    "uv": [
+                        0,
+                        13,
+                        10.5,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                },
+                "south": {
+                    "uv": [
+                        0.5,
+                        13,
+                        4,
+                        14
+                    ],
+                    "texture": "#texture1"
+                },
+                "west": {
+                    "uv": [
+                        1,
+                        13,
+                        8.5,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                },
+                "east": {
+                    "uv": [
+                        3.5,
+                        13,
+                        9,
+                        14
+                    ],
+                    "texture": "#texture1",
+                    "rotation": 90
+                }
+            }
+        },
+        {
+            "__comment": "deckelrand oben",
+            "from": [
+                2.27,
+                14.27,
+                9
+            ],
+            "to": [
+                13.73,
+                15.27,
+                10
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        0,
+                        13,
+                        12,
+                        14
+                    ],
+                    "texture": "#texture1"
+                },
+                "up": {
+                    "uv": [
+                        0,
+                        13,
+                        12,
+                        14
+                    ],
+                    "texture": "#texture1"
+                },
+                "north": {
+                    "uv": [
+                        0,
+                        13,
+                        12,
+                        14
+                    ],
+                    "texture": "#texture1"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        13,
+                        12,
+                        14
+                    ],
+                    "texture": "#texture1"
+                },
+                "west": {
+                    "uv": [
+                        6,
+                        13,
+                        7,
+                        14
+                    ],
+                    "texture": "#texture1"
+                },
+                "east": {
+                    "uv": [
+                        4,
+                        13,
+                        5,
+                        14
+                    ],
+                    "texture": "#texture1"
+                }
+            }
+        },
+        {
+            "__comment": "glas oben",
+            "from": [
+                2.25,
+                14.75,
+                5.5
+            ],
+            "to": [
+                13.75,
+                14.751,
+                9
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        1,
+                        1,
+                        12.5,
+                        4.5
+                    ],
+                    "texture": "#texture6"
+                },
+                "up": {
+                    "uv": [
+                        2.25,
+                        5.5,
+                        13.75,
+                        9
+                    ],
+                    "texture": "#texture6"
+                }
+            }
+        },
+        {
+            "__comment": "glas schraege links",
+            "from": [
+                13.75,
+                14.75,
+                5.5
+            ],
+            "to": [
+                15.517,
+                14.751,
+                9
+            ],
+            "rotation": {
+                "origin": [
+                    13.75,
+                    14.75,
+                    5.5
+                ],
+                "axis": "z",
+                "angle": -45
+            },
+            "faces": {
+                "down": {
+                    "uv": [
+                        1.5,
+                        1.5,
+                        3.5,
+                        5
+                    ],
+                    "texture": "#texture6"
+                },
+                "up": {
+                    "uv": [
+                        3,
+                        3,
+                        5,
+                        6.5
+                    ],
+                    "texture": "#texture6"
+                }
+            }
+        },
+        {
+            "__comment": "glas schraege rechts",
+            "from": [
+                1,
+                13.5,
+                5.5
+            ],
+            "to": [
+                2.767,
+                13.501,
+                9
+            ],
+            "rotation": {
+                "origin": [
+                    1,
+                    13.5,
+                    5.5
+                ],
+                "axis": "z",
+                "angle": 45
+            },
+            "faces": {
+                "down": {
+                    "uv": [
+                        1,
+                        7,
+                        3,
+                        10.5
+                    ],
+                    "texture": "#texture6"
+                },
+                "up": {
+                    "uv": [
+                        1,
+                        5.5,
+                        3,
+                        9
+                    ],
+                    "texture": "#texture6"
+                }
+            }
+        },
+        {
+            "__comment": "glas rechts",
+            "from": [
+                1,
+                9,
+                5.5
+            ],
+            "to": [
+                1.001,
+                13.51,
+                9
+            ],
+            "faces": {
+                "west": {
+                    "uv": [
+                        5.5,
+                        2.49,
+                        9,
+                        7
+                    ],
+                    "texture": "#texture6"
+                },
+                "east": {
+                    "uv": [
+                        7,
+                        2.49,
+                        10.5,
+                        7
+                    ],
+                    "texture": "#texture6"
+                }
+            }
+        },
+        {
+            "__comment": "glas links",
+            "from": [
+                15,
+                9,
+                5.5
+            ],
+            "to": [
+                15.001,
+                13.51,
+                9
+            ],
+            "faces": {
+                "west": {
+                    "uv": [
+                        5.5,
+                        2.49,
+                        9,
+                        7
+                    ],
+                    "texture": "#texture6"
+                },
+                "east": {
+                    "uv": [
+                        7,
+                        2.49,
+                        10.5,
+                        7
+                    ],
+                    "texture": "#texture6"
+                }
+            }
+        }
+    ]
 }

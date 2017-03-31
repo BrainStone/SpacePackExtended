@@ -18,11 +18,11 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockCustomCupboard extends Block {
-	
+
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-	protected static final AxisAlignedBB AABB_NORTH= new AxisAlignedBB(0.0D, 0.0D, 0.5D, 1.0D, 1.0D, 1.0D);
+	protected static final AxisAlignedBB AABB_NORTH = new AxisAlignedBB(0.0D, 0.0D, 0.5D, 1.0D, 1.0D, 1.0D);
 	protected static final AxisAlignedBB AABB_SOUTH = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 0.5D);
-	protected static final AxisAlignedBB AABB_WEST= new AxisAlignedBB(0.5D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
+	protected static final AxisAlignedBB AABB_WEST = new AxisAlignedBB(0.5D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
 	protected static final AxisAlignedBB AABB_EAST = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.5D, 1.0D, 1.0D);
 
 	public BlockCustomCupboard() {
@@ -33,28 +33,29 @@ public class BlockCustomCupboard extends Block {
 		setResistance(5F);
 		this.setHarvestLevel("axe", 2);
 		setLightOpacity(0);
-		this.setCreativeTab(SpaceExtendedMain.furnitureTab);
+		setCreativeTab(SpaceExtendedMain.furnitureTab);
 		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 
 	public IBlockState getStateForEntityRender(IBlockState state) {
 		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
 	}
-	 public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
-	    {
-		 switch ((EnumFacing)state.getValue(FACING))
-		 {
-         case NORTH:
-         default:
-             return AABB_NORTH;
-         case SOUTH:
-             return AABB_SOUTH;
-         case WEST:
-             return AABB_WEST;
-         case EAST:
-             return AABB_EAST;
-     }
-	    }
+
+	@Override
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+		switch (state.getValue(FACING)) {
+		case NORTH:
+		default:
+			return AABB_NORTH;
+		case SOUTH:
+			return AABB_SOUTH;
+		case WEST:
+			return AABB_WEST;
+		case EAST:
+			return AABB_EAST;
+		}
+	}
+
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		EnumFacing enumFacing = EnumFacing.getFront(meta);

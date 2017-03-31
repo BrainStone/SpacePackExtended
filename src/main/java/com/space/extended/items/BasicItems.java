@@ -83,7 +83,7 @@ public class BasicItems {
 		NameUtils.setNames(vitallium_leggings, "vitallium_leggings");
 		vitallium_boots = new ItemVitalliumArmor(vitalliumarmor, EntityEquipmentSlot.FEET);
 		NameUtils.setNames(vitallium_boots, "vitallium_boots");
-		
+
 		bed1 = new ItemCustomBed();
 		NameUtils.setNames(bed1, "bed1");
 	}

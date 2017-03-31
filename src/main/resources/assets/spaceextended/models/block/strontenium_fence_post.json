@@ -1,48 +1,220 @@
 {
-	"__comment": "Designed by Norzeteus with Cubik Studio - https://cubik.studio",
-	"textures": {
-		"particle": "spaceextended:blocks/kitchen_table_side",
-		"texture": "spaceextended:blocks/kitchen_table_side"
-	},
-	"elements": [
-		{
-			"__comment": "Cube1",
-			"from": [ 7, 15, 7 ],
-			"to": [ 9, 16, 9 ],
-			"faces": {
-				"down": { "uv": [ 2, 10.5, 4, 12.5 ], "texture": "#texture" },
-				"up": { "uv": [ 2, 10.5, 4, 12.5 ], "texture": "#texture" },
-				"north": { "uv": [ 2, 12.5, 4, 13.5 ], "texture": "#texture" },
-				"south": { "uv": [ 2, 12.5, 4, 13.5 ], "texture": "#texture" },
-				"west": { "uv": [ 2, 12.5, 4, 13.5 ], "texture": "#texture" },
-				"east": { "uv": [ 2, 12.5, 4, 13.5 ], "texture": "#texture" }
-			}
-		},
-		{
-			"__comment": "Cube1",
-			"from": [ 7, 0, 7 ],
-			"to": [ 9, 1, 9 ],
-			"faces": {
-				"down": { "uv": [ 2, 10.5, 4, 12.5 ], "texture": "#texture" },
-				"up": { "uv": [ 2, 10.5, 4, 12.5 ], "texture": "#texture" },
-				"north": { "uv": [ 2, 12.5, 4, 13.5 ], "texture": "#texture" },
-				"south": { "uv": [ 2, 12.5, 4, 13.5 ], "texture": "#texture" },
-				"west": { "uv": [ 2, 12.5, 4, 13.5 ], "texture": "#texture" },
-				"east": { "uv": [ 2, 12.5, 4, 13.5 ], "texture": "#texture" }
-			}
-		},
-		{
-			"__comment": "Cube5",
-			"from": [ 7.5, 1, 7.5 ],
-			"to": [ 8.5, 15, 8.5 ],
-			"faces": {
-				"down": { "uv": [ 7.5, 7.5, 8.5, 8.5 ], "texture": "#texture" },
-				"up": { "uv": [ 7.5, 7.5, 8.5, 8.5 ], "texture": "#texture" },
-				"north": { "uv": [ 2, 15, 16, 16 ], "texture": "#texture", "rotation": 90 },
-				"south": { "uv": [ 2, 15, 16, 16 ], "texture": "#texture", "rotation": 90 },
-				"west": { "uv": [ 2, 15, 16, 16 ], "texture": "#texture", "rotation": 90 },
-				"east": { "uv": [ 2, 15, 16, 16 ], "texture": "#texture", "rotation": 90 }
-			}
-		}
-	]
+    "__comment": "Designed by Norzeteus with Cubik Studio - https://cubik.studio",
+    "textures": {
+        "particle": "spaceextended:blocks/kitchen_table_side",
+        "texture": "spaceextended:blocks/kitchen_table_side"
+    },
+    "elements": [
+        {
+            "__comment": "Cube1",
+            "from": [
+                7,
+                15,
+                7
+            ],
+            "to": [
+                9,
+                16,
+                9
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        2,
+                        10.5,
+                        4,
+                        12.5
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        2,
+                        10.5,
+                        4,
+                        12.5
+                    ],
+                    "texture": "#texture"
+                },
+                "north": {
+                    "uv": [
+                        2,
+                        12.5,
+                        4,
+                        13.5
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        2,
+                        12.5,
+                        4,
+                        13.5
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        2,
+                        12.5,
+                        4,
+                        13.5
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        2,
+                        12.5,
+                        4,
+                        13.5
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        },
+        {
+            "__comment": "Cube1",
+            "from": [
+                7,
+                0,
+                7
+            ],
+            "to": [
+                9,
+                1,
+                9
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        2,
+                        10.5,
+                        4,
+                        12.5
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        2,
+                        10.5,
+                        4,
+                        12.5
+                    ],
+                    "texture": "#texture"
+                },
+                "north": {
+                    "uv": [
+                        2,
+                        12.5,
+                        4,
+                        13.5
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        2,
+                        12.5,
+                        4,
+                        13.5
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        2,
+                        12.5,
+                        4,
+                        13.5
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        2,
+                        12.5,
+                        4,
+                        13.5
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        },
+        {
+            "__comment": "Cube5",
+            "from": [
+                7.5,
+                1,
+                7.5
+            ],
+            "to": [
+                8.5,
+                15,
+                8.5
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        7.5,
+                        7.5,
+                        8.5,
+                        8.5
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        7.5,
+                        7.5,
+                        8.5,
+                        8.5
+                    ],
+                    "texture": "#texture"
+                },
+                "north": {
+                    "uv": [
+                        2,
+                        15,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture",
+                    "rotation": 90
+                },
+                "south": {
+                    "uv": [
+                        2,
+                        15,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture",
+                    "rotation": 90
+                },
+                "west": {
+                    "uv": [
+                        2,
+                        15,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture",
+                    "rotation": 90
+                },
+                "east": {
+                    "uv": [
+                        2,
+                        15,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture",
+                    "rotation": 90
+                }
+            }
+        }
+    ]
 }

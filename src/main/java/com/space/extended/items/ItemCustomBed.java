@@ -5,6 +5,7 @@ import com.space.extended.basicblocks.BasicBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBed;
+import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
@@ -23,14 +24,15 @@ public class ItemCustomBed extends ItemBed {
 		setCreativeTab(SpaceExtendedMain.furnitureTab);
 	}
 
+	@Override
 	@SuppressWarnings("deprecation")
 	public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand,
 			EnumFacing facing, float hitX, float hitY, float hitZ) {
-		if (worldIn.isRemote) {
+		if (worldIn.isRemote)
 			return EnumActionResult.SUCCESS;
-		} else if (facing != EnumFacing.UP) {
+		else if (facing != EnumFacing.UP)
 			return EnumActionResult.FAIL;
-		} else {
+		else {
 			IBlockState iblockstate = worldIn.getBlockState(pos);
 			Block block = iblockstate.getBlock();
 			boolean flag = block.isReplaceable(worldIn, pos);
@@ -39,7 +41,7 @@ public class ItemCustomBed extends ItemBed {
 				pos = pos.up();
 			}
 
-			int i = MathHelper.floor((double) (player.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
+			int i = MathHelper.floor((player.rotationYaw * 4.0F) / 360.0F + 0.5D) & 3;
 			EnumFacing enumfacing = EnumFacing.getHorizontal(i);
 			BlockPos blockpos = pos.offset(enumfacing);
 			ItemStack itemstack = player.getHeldItem(hand);
@@ -54,7 +56,7 @@ public class ItemCustomBed extends ItemBed {
 						&& worldIn.getBlockState(blockpos.down()).isFullyOpaque()) {
 					IBlockState iblockstate2 = BasicBlocks.bed1.getDefaultState()
 							.withProperty(BlockBed.OCCUPIED, Boolean.valueOf(false))
-							.withProperty(BlockBed.FACING, enumfacing)
+							.withProperty(BlockHorizontal.FACING, enumfacing)
 							.withProperty(BlockBed.PART, BlockBed.EnumPartType.FOOT);
 					worldIn.setBlockState(pos, iblockstate2, 10);
 					worldIn.setBlockState(blockpos,
@@ -66,12 +68,10 @@ public class ItemCustomBed extends ItemBed {
 							(soundtype.getVolume() + 1.0F) / 2.0F, soundtype.getPitch() * 0.8F);
 					itemstack.shrink(1);
 					return EnumActionResult.SUCCESS;
-				} else {
+				} else
 					return EnumActionResult.FAIL;
-				}
-			} else {
+			} else
 				return EnumActionResult.FAIL;
-			}
 		}
 	}
 }

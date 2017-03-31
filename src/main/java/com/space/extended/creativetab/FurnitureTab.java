@@ -11,6 +11,7 @@ public class FurnitureTab extends CreativeTabs {
 	public FurnitureTab() {
 		super("furnituretab");
 	}
+
 	@Override
 	@SideOnly(Side.CLIENT)
 	public ItemStack getTabIconItem() {

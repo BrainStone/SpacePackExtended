@@ -19,8 +19,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockCellarLamp extends Block{
-	
+public class BlockCellarLamp extends Block {
+
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
 	private final boolean isOn;
@@ -177,7 +177,5 @@ public class BlockCellarLamp extends Block{
 			return false;
 		}
 	}
-	
-	
 
 }

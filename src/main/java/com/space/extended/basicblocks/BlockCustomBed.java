@@ -17,14 +17,17 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockCustomBed extends BlockBed {
+	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
 		return state.getValue(PART) == BlockBed.EnumPartType.HEAD ? Items.AIR : BasicItems.bed1;
 	}
 
+	@Override
 	public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
 		return new ItemStack(BasicItems.bed1);
 	}
 
+	@Override
 	public boolean isBed(IBlockState state, IBlockAccess world, BlockPos pos, @Nullable Entity player) {
 		return (this == BasicBlocks.bed1);
 	}

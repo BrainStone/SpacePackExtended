@@ -415,93 +415,93 @@ public class BasicCrafting {
 		// 123 Cooker
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cooker, 5),
 				new Object[] { "LLL", "L L", " L ", 'L', new ItemStack(Blocks.BLACK_SHULKER_BOX) });
-		//124 KlingonitPP
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonit_pp,4),
+		// 124 KlingonitPP
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonit_pp, 4),
 				new Object[] { "   ", "BB  ", "   ", 'B', new ItemStack(BasicBlocks.klingonium_wall0) });
-		//125 Klingonit1PP
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonit1_pp,4),
+		// 125 Klingonit1PP
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonit1_pp, 4),
 				new Object[] { "   ", "BB  ", "   ", 'B', new ItemStack(BasicBlocks.klingonium_wall1) });
-		//126 Klingonit2PP
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonit2_pp,4),
+		// 126 Klingonit2PP
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingonit2_pp, 4),
 				new Object[] { "   ", "BB  ", "   ", 'B', new ItemStack(BasicBlocks.klingonium_wall2) });
-		//127 ConcretePP
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.concrete_pp,4),
-				new Object[] { "   ", "BB  ", "   ", 'B', new ItemStack(BasicStairs.concrete_stairs) });		
-		//128 Metal Button
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_button,1),
+		// 127 ConcretePP
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.concrete_pp, 4),
+				new Object[] { "   ", "BB  ", "   ", 'B', new ItemStack(BasicStairs.concrete_stairs) });
+		// 128 Metal Button
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.metal_button, 1),
 				new Object[] { "   ", " B ", "   ", 'B', new ItemStack(Blocks.IRON_BLOCK) });
-		//129 Vitallium Fence
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_fence, 4), new Object[] { "   ", "BKB", "BKB", 'K',
-				new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.vitallium) });
-		//130 Vitallium Fence Gate
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_fence_gate, 4), new Object[] { "   ", "KBK", "KBK", 'K',
-				new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.vitallium) });
-		//131 Vitallium Door
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_door,3),
+		// 129 Vitallium Fence
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_fence, 4), new Object[] { "   ", "BKB", "BKB",
+				'K', new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.vitallium) });
+		// 130 Vitallium Fence Gate
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_fence_gate, 4), new Object[] { "   ", "KBK",
+				"KBK", 'K', new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.vitallium) });
+		// 131 Vitallium Door
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_door, 3),
 				new Object[] { "BB ", "BB ", "BB ", 'B', new ItemStack(BasicBlocks.vitallium) });
-		//132 Wall Panel
+		// 132 Wall Panel
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wall_panel, 4), new Object[] { "   ", "KBK", "   ", 'K',
 				new ItemStack(BasicItems.klingonium_shard), 'B', new ItemStack(BasicItems.kit1) });
-		//133 Wall Panel A
+		// 133 Wall Panel A
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wall_panel1, 4), new Object[] { "   ", "KBK", "   ", 'K',
-				new ItemStack(BasicItems.klingonium_shard), 'B', new ItemStack(BasicItems.kit2) });	
-		//134 Wall Panel B
+				new ItemStack(BasicItems.klingonium_shard), 'B', new ItemStack(BasicItems.kit2) });
+		// 134 Wall Panel B
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wall_panel2, 4), new Object[] { "   ", "KBK", "   ", 'K',
 				new ItemStack(BasicItems.klingonium_shard), 'B', new ItemStack(BasicItems.kit3) });
-		//135 Wall Panel C
+		// 135 Wall Panel C
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wall_panel3, 4), new Object[] { "   ", "KBK", "   ", 'K',
 				new ItemStack(BasicItems.klingonium_shard), 'B', new ItemStack(BasicItems.kit4) });
-		//136 Cupboard
+		// 136 Cupboard
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard, 5), new Object[] { "   ", "KBK", "   ", 'K',
 				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit1) });
-		//137 Cupboard1
+		// 137 Cupboard1
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard1, 5), new Object[] { "   ", "KBK", "   ", 'K',
-				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit2) });		
-		//138 Cupboard2
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard2, 5), new Object[] { "   ", "KBK", "   ", 'K',
-				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit3) });		
-		//139 Cupboard3
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard3, 5), new Object[] { "   ", "KBK", "   ", 'K',
-				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit4) });		
-		//140 Cupboard4
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard4, 5), new Object[] { "   ", "KBK", "   ", 'K',
-				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit5) });		
-		//141 Cupboard_Lower
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower, 5), new Object[] { "KBK", "KBK", "   ", 'K',
-				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit1) });		
-		//142 Cupboard_Lower1
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower1, 5), new Object[] { "KBK", "KBK", "   ", 'K',
-				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit2) });				
-		//143 Cupboard_Lower2
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower2, 5), new Object[] { "KBK", "KBK", "   ", 'K',
-				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit3) });				
-		//144 Cupboard_Lower3
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower3, 5), new Object[] { "KBK", "KBK", "   ", 'K',
-				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit4) });				
-		//145 Cupboard_Outer
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_outer, 5), new Object[] { "KBK", "KBK", " K ", 'K',
-				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit1) });
-		//146 Cupboard_Inner
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_inner, 5), new Object[] { "KBK", "KBK", " K ", 'K',
 				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit2) });
-		//147 Cupboard_Lower_Outer
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower_outer, 5), new Object[] { "KBK", "KBK", " K ", 'K',
+		// 138 Cupboard2
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard2, 5), new Object[] { "   ", "KBK", "   ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit3) });
+		// 139 Cupboard3
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard3, 5), new Object[] { "   ", "KBK", "   ", 'K',
+				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit4) });
+		// 140 Cupboard4
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard4, 5), new Object[] { "   ", "KBK", "   ", 'K',
 				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit5) });
-		//148 Cupboard Microwave
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_microwave, 5), new Object[] { "   ", "KBK", "   ", 'K',
-				new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(Blocks.REDSTONE_TORCH) });
-		//149 Table1
+		// 141 Cupboard_Lower
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower, 5), new Object[] { "KBK", "KBK", "   ",
+				'K', new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit1) });
+		// 142 Cupboard_Lower1
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower1, 5), new Object[] { "KBK", "KBK", "   ",
+				'K', new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit2) });
+		// 143 Cupboard_Lower2
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower2, 5), new Object[] { "KBK", "KBK", "   ",
+				'K', new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit3) });
+		// 144 Cupboard_Lower3
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower3, 5), new Object[] { "KBK", "KBK", "   ",
+				'K', new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit4) });
+		// 145 Cupboard_Outer
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_outer, 5), new Object[] { "KBK", "KBK", " K ",
+				'K', new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit1) });
+		// 146 Cupboard_Inner
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_inner, 5), new Object[] { "KBK", "KBK", " K ",
+				'K', new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit2) });
+		// 147 Cupboard_Lower_Outer
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_lower_outer, 5), new Object[] { "KBK", "KBK",
+				" K ", 'K', new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(BasicItems.kit5) });
+		// 148 Cupboard Microwave
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.cupboard_microwave, 5), new Object[] { "   ", "KBK",
+				"   ", 'K', new ItemStack(BasicBlocks.klingonium_screw), 'B', new ItemStack(Blocks.REDSTONE_TORCH) });
+		// 149 Table1
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.table1, 4),
 				new Object[] { "OOO", "O O", "O O", 'O', new ItemStack(BasicItems.kit4) });
-		//150 Chair
+		// 150 Chair
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.chair, 4),
 				new Object[] { "   ", "O  ", "OO ", 'O', new ItemStack(BasicBlocks.perolit_ore) });
-		//151 Strontenium Fence
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenium_fence, 4), new Object[] { "   ", "BKB", "BKB", 'K',
-				new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.strontenium_ore) });
-		//152 Strontenium Fence Gate
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenium_fence_gate, 4), new Object[] { "   ", "KBK", "KBK", 'K',
-				new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.strontenium_ore) });
+		// 151 Strontenium Fence
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenium_fence, 4), new Object[] { "   ", "BKB",
+				"BKB", 'K', new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.strontenium_ore) });
+		// 152 Strontenium Fence Gate
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenium_fence_gate, 4), new Object[] { "   ", "KBK",
+				"KBK", 'K', new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.strontenium_ore) });
 	}
 
 }

@@ -48,8 +48,7 @@ public class SpaceExtendedMain {
 	public static CreativeTabs stairsTab;
 	public static CreativeTabs armorTab;
 	public static CreativeTabs furnitureTab;
-	
-	
+
 	private SpaceextendedEntity entity;
 
 	private BasicBlocks blocks;

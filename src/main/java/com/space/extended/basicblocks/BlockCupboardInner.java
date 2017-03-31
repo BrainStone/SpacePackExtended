@@ -16,7 +16,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockCupboardInner extends Block {
-	
+
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
 	public BlockCupboardInner() {
@@ -27,7 +27,7 @@ public class BlockCupboardInner extends Block {
 		setHarvestLevel("axe", 1);
 		setLightOpacity(2);
 		setSoundType(SoundType.WOOD);
-		this.setCreativeTab(SpaceExtendedMain.spaceTab);
+		setCreativeTab(SpaceExtendedMain.spaceTab);
 		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 

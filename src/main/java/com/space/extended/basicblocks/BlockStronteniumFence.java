@@ -6,14 +6,15 @@ import net.minecraft.util.BlockRenderLayer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockStronteniumFence extends BlockFence{
-	
-	public BlockStronteniumFence(Material material ) {
+public class BlockStronteniumFence extends BlockFence {
+
+	public BlockStronteniumFence(Material material) {
 		super(Material.IRON, Material.IRON.getMaterialMapColor());
-		this.setHardness(3);
-		this.setResistance(20);
-		this.useNeighborBrightness = true;
+		setHardness(3);
+		setResistance(20);
+		useNeighborBrightness = true;
 	}
+
 	@Override
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getBlockLayer() {

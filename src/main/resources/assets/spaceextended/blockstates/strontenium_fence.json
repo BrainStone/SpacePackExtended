@@ -1,17 +1,44 @@
 {
     "multipart": [
-        {   "apply": { "model": "spaceextended:strontenium_fence_post" }},
-        {   "when": { "north": "true" },
-            "apply": { "model": "spaceextended:strontenium_fence_side"}
+        {
+            "apply": {
+                "model": "spaceextended:strontenium_fence_post"
+            }
         },
-        {   "when": { "east": "true" },
-            "apply": { "model": "spaceextended:strontenium_fence_side", "y": 90 }
+        {
+            "when": {
+                "north": "true"
+            },
+            "apply": {
+                "model": "spaceextended:strontenium_fence_side"
+            }
         },
-        {   "when": { "south": "true" },
-            "apply": { "model": "spaceextended:strontenium_fence_side", "y": 180 }
+        {
+            "when": {
+                "east": "true"
+            },
+            "apply": {
+                "model": "spaceextended:strontenium_fence_side",
+                "y": 90
+            }
         },
-        {   "when": { "west": "true" },
-            "apply": { "model": "spaceextended:strontenium_fence_side", "y": 270 }
+        {
+            "when": {
+                "south": "true"
+            },
+            "apply": {
+                "model": "spaceextended:strontenium_fence_side",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "west": "true"
+            },
+            "apply": {
+                "model": "spaceextended:strontenium_fence_side",
+                "y": 270
+            }
         }
     ]
 }

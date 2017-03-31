@@ -16,14 +16,13 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockKitchenLamp extends Block{
-	
+public class BlockKitchenLamp extends Block {
+
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-	protected static final AxisAlignedBB AABB_NORTH= new AxisAlignedBB(0.20D,  0.75D, 0.75D, 0.80D, 1.0D, 1.0D);
+	protected static final AxisAlignedBB AABB_NORTH = new AxisAlignedBB(0.20D, 0.75D, 0.75D, 0.80D, 1.0D, 1.0D);
 	protected static final AxisAlignedBB AABB_SOUTH = new AxisAlignedBB(0.20D, 0.75D, 0.0D, 0.80D, 1.0D, 0.25D);
-	protected static final AxisAlignedBB AABB_WEST= new AxisAlignedBB(0.75D, 0.75D, 0.20D, 1.0D, 1.0D, 0.80D);
+	protected static final AxisAlignedBB AABB_WEST = new AxisAlignedBB(0.75D, 0.75D, 0.20D, 1.0D, 1.0D, 0.80D);
 	protected static final AxisAlignedBB AABB_EAST = new AxisAlignedBB(0.0D, 0.75D, 0.20D, 0.25D, 1.0D, 0.80D);
-	
 
 	public BlockKitchenLamp() {
 		super(Material.GLASS);
@@ -38,22 +37,21 @@ public class BlockKitchenLamp extends Block{
 	public IBlockState getStateForEntityRender(IBlockState state) {
 		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
 	}
-	
-	 public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
-	    {
-		 switch ((EnumFacing)state.getValue(FACING))
-		 {
-   case NORTH:
-   default:
-       return AABB_NORTH;
-   case SOUTH:
-       return AABB_SOUTH;
-   case WEST:
-       return AABB_WEST;
-   case EAST:
-       return AABB_EAST;
-		 }
-	 }
+
+	@Override
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+		switch (state.getValue(FACING)) {
+		case NORTH:
+		default:
+			return AABB_NORTH;
+		case SOUTH:
+			return AABB_SOUTH;
+		case WEST:
+			return AABB_WEST;
+		case EAST:
+			return AABB_EAST;
+		}
+	}
 
 	@Override
 	@Nullable
