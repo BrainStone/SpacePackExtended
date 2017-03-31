@@ -358,7 +358,7 @@ public class BasicBlocks {
 		NameUtils.setNames(lever1, "lever1");
 		lever2 = new BlockCustomLever();
 		NameUtils.setNames(lever2, "lever2");
-		lever3= new BlockCustomLever();
+		lever3 = new BlockCustomLever();
 		NameUtils.setNames(lever3, "lever3");
 		block_ribbed = new BlockRibbed().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(block_ribbed, "block_ribbed");
@@ -534,7 +534,7 @@ public class BasicBlocks {
 		registerBlock(lever3);
 		registerBlock(cellar_lamp);
 		registerBlock(cellar_lamp_lit);
-		registerBlock(bed1);
+		registerBlockOnly(bed1);
 		registerBlock(wash_basin);
 		registerBlock(cooker);
 		registerBlock(metal_button);
@@ -561,15 +561,16 @@ public class BasicBlocks {
 		registerBlock(cupboard_lower3);
 		registerBlock(cupboard_lower_outer);
 	}
-	
-	
-		
 
 	private void registerBlock(Block block) {
 		GameRegistry.register(block);
 		ItemBlock itemblock = new ItemBlock(block);
 		itemblock.setUnlocalizedName(block.getUnlocalizedName()).setRegistryName(block.getRegistryName());
 		GameRegistry.register(itemblock);
+	}
+
+	private void registerBlockOnly(Block block) {
+		GameRegistry.register(block);
 	}
 
 	private void registerSlab(BlockSlab halfSlab, BlockSlab doubleSlab) {

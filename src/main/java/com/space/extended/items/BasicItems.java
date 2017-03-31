@@ -32,6 +32,7 @@ public class BasicItems {
 	public static Item vitallium_chestplate;
 	public static Item vitallium_leggings;
 	public static Item vitallium_boots;
+	public static Item bed1;
 
 	public BasicItems() {
 		init();
@@ -82,6 +83,9 @@ public class BasicItems {
 		NameUtils.setNames(vitallium_leggings, "vitallium_leggings");
 		vitallium_boots = new ItemVitalliumArmor(vitalliumarmor, EntityEquipmentSlot.FEET);
 		NameUtils.setNames(vitallium_boots, "vitallium_boots");
+		
+		bed1 = new ItemCustomBed();
+		NameUtils.setNames(bed1, "bed1");
 	}
 
 	public void register() {
@@ -104,6 +108,7 @@ public class BasicItems {
 		registerItem(vitallium_leggings);
 		registerItem(vitallium_boots);
 		registerItem(quartz_component);
+		registerItem(bed1);
 	}
 
 	private void registerItem(Item item) {
