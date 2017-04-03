@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top",
+    "textures": {
+        "bottom": "spaceextended:blocks/door_strontenit_lower",
+        "top": "spaceextended:blocks/door_strontenit_upper"
+    }
+}

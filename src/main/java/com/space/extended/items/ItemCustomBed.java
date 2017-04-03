@@ -74,4 +74,5 @@ public class ItemCustomBed extends ItemBed {
 				return EnumActionResult.FAIL;
 		}
 	}
+	
 }

@@ -167,7 +167,7 @@ tile.space_quartz_metalframe.name=§5Space Quartz Stair MF§r
 tile.carrel.name=§5Carrel§r
 tile.slope_pipes.name=§5Slope Pipes§r
 tile.concrete_stairs.name=§5Concrete Stairs§r
-
+tile.alarm_light.name=§5Alarm Lamp§r
 
 
 /*Items*/
@@ -187,6 +187,8 @@ item.cyberit_beetle.name=§5Cyberit Beetle§r
 item.ferropal.name=§5Ferropal§r
 item.quartz_component.name=§5Quartz Component§r
 item.vitallium_door.name=§5Vitallium Door§r
+item.strontenit_door.name=§5Strontenit Door§r
+item.metalframe_door.name=§5MetalFrame Door§r
 item.bed1.name=§5Lifebox§r
 
 item.vitallium_helmet.name=§5Vitallium Helmet§r

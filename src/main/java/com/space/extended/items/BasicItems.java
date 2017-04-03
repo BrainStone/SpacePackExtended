@@ -34,6 +34,10 @@ public class BasicItems {
 	public static Item vitallium_boots;
 	public static Item bed1;
 	public static Item vitallium_door;
+	public static Item strontenit_door;
+	public static Item metalframe_door;
+	
+	
 
 	public BasicItems() {
 		init();
@@ -89,6 +93,10 @@ public class BasicItems {
 		NameUtils.setNames(bed1, "bed1");
 		vitallium_door = new ItemVitalliumDoor();
 		NameUtils.setNames(vitallium_door, "vitallium_door");
+		strontenit_door = new ItemStrontenitDoor();
+		NameUtils.setNames(strontenit_door, "strontenit_door");
+		metalframe_door = new ItemMetalFrameDoor();
+		NameUtils.setNames(metalframe_door, "metalframe_door");
 	}
 
 	public void register() {
@@ -113,6 +121,8 @@ public class BasicItems {
 		registerItem(quartz_component);
 		registerItem(bed1);
 		registerItem(vitallium_door);
+		registerItem(strontenit_door);
+		registerItem(metalframe_door);
 	}
 
 	private void registerItem(Item item) {

@@ -437,7 +437,7 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_fence_gate, 4), new Object[] { "   ", "KBK",
 				"KBK", 'K', new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.vitallium) });
 		// 131 Vitallium Door
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_door, 3),
+		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.vitallium_door, 3),
 				new Object[] { "BB ", "BB ", "BB ", 'B', new ItemStack(BasicBlocks.vitallium) });
 		// 132 Wall Panel
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.wall_panel, 4), new Object[] { "   ", "KBK", "   ", 'K',
@@ -502,6 +502,18 @@ public class BasicCrafting {
 		// 152 Strontenium Fence Gate
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.strontenium_fence_gate, 4), new Object[] { "   ", "KBK",
 				"KBK", 'K', new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.strontenium_ore) });
+		// 153 Strontenit Door
+		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.strontenit_door, 3),
+				new Object[] { "BB ", "BB ", "BB ", 'B', new ItemStack(BasicBlocks.strontenium) });	
+		// 154 MetalFrame Door
+		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.metalframe_door, 3),
+				new Object[] { "BC ", "BC ", "BC ", 'B', new ItemStack(BasicItems.vitallium_ingot),
+						'C', new ItemStack(BasicBlocks.vitallium)});
+		// 155 Alarm Light
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.alarm_light, 2),
+				new Object[] { "   ", "BCB", "BCB", 'B', new ItemStack(BasicItems.cyberit_gem),
+						'C', new ItemStack(Blocks.COAL_BLOCK)});
+		
 	}
 
 }

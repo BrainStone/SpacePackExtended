@@ -12,9 +12,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
-public class BlockVitalliumDoor extends BlockDoor {
-	public BlockVitalliumDoor() {
-		super(Material.WOOD);
+public class BlockMetalFrameDoor extends BlockDoor {
+	
+	public BlockMetalFrameDoor() {
+		super(Material.IRON);
 		setHardness(3);
 		setResistance(20);
 		
@@ -22,17 +23,18 @@ public class BlockVitalliumDoor extends BlockDoor {
 
 	@Override
 	public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
-		return new ItemStack(BasicBlocks.vitallium_door);
+		return new ItemStack(BasicBlocks.metalframe_door);
 	}
 
 	@Override
 	public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos,
 			EntityPlayer player) {
-		return new ItemStack(BasicBlocks.vitallium_door);
+		return new ItemStack(BasicBlocks.metalframe_door);
 	}
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return Item.getItemFromBlock(BasicBlocks.vitallium_door);
+		return Item.getItemFromBlock(BasicBlocks.metalframe_door);
 	}
+
 }

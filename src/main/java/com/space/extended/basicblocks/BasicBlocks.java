@@ -99,6 +99,8 @@ public class BasicBlocks {
 	public static Block wall_lamp_lit;
 	public static Block cellar_lamp;
 	public static Block cellar_lamp_lit;
+	public static Block alarm_light;
+	public static Block alarm_light_lit;
 	public static Block pipes_connector;
 	public static Block constructor1;
 	public static Block constructor2;
@@ -129,6 +131,8 @@ public class BasicBlocks {
 	public static Block klingonit1_pp;
 	public static Block klingonit2_pp;
 	public static Block vitallium_door;
+	public static Block strontenit_door;
+	public static Block metalframe_door;
 	public static Block wall_panel;
 	public static Block wall_panel1;
 	public static Block wall_panel2;
@@ -366,6 +370,10 @@ public class BasicBlocks {
 		NameUtils.setNames(cellar_lamp, "cellar_lamp");
 		cellar_lamp_lit = new BlockCellarLamp(true);
 		NameUtils.setNames(cellar_lamp_lit, "cellar_lamp_lit");
+		alarm_light = new BlockAlarmLight(false).setCreativeTab(SpaceExtendedMain.furnitureTab);
+		NameUtils.setNames(alarm_light, "alarm_light");
+		alarm_light_lit = new BlockAlarmLight(true);
+		NameUtils.setNames(alarm_light_lit, "alarm_light_lit");
 		bed1 = new BlockCustomBed();
 		NameUtils.setNames(bed1, "bed1");
 		wash_basin = new BlockWashBasin().setCreativeTab(SpaceExtendedMain.furnitureTab);
@@ -380,8 +388,12 @@ public class BasicBlocks {
 		NameUtils.setNames(klingonit1_pp, "klingonit1_pp");
 		klingonit2_pp = new BlockCustomPP();
 		NameUtils.setNames(klingonit2_pp, "klingonit2_pp");
-		vitallium_door = new BlockVitalliumDoor().setCreativeTab(SpaceExtendedMain.spaceTab);
+		vitallium_door = new BlockVitalliumDoor();
 		NameUtils.setNames(vitallium_door, "vitallium_door");
+		strontenit_door = new BlockStrontenitDoor();
+		NameUtils.setNames(strontenit_door, "strontenit_door");
+		metalframe_door = new BlockMetalFrameDoor();
+		NameUtils.setNames(metalframe_door, "metalframe_door");
 		metal_button = new BlockMetalButton(false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_button, "metal_button");
 		vitallium_fence = new BlockVitalliumFence(null).setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -534,6 +546,8 @@ public class BasicBlocks {
 		registerBlock(lever3);
 		registerBlock(cellar_lamp);
 		registerBlock(cellar_lamp_lit);
+		registerBlock(alarm_light);
+		registerBlock(alarm_light_lit);
 		registerBlockOnly(bed1);
 		registerBlock(wash_basin);
 		registerBlock(cooker);
@@ -543,6 +557,8 @@ public class BasicBlocks {
 		registerBlock(klingonit1_pp);
 		registerBlock(klingonit2_pp);
 		registerBlockOnly(vitallium_door);
+		registerBlockOnly(strontenit_door);
+		registerBlockOnly(metalframe_door);
 		registerBlock(wall_panel);
 		registerBlock(wall_panel1);
 		registerBlock(wall_panel2);
