@@ -130,9 +130,10 @@ tile.cupboard_microwave.name=§5Microwave§r
 tile.kitchen_lamp.name=§5Kitchen Lamp§r
 tile.table1.name=§5Office Table§r
 tile.chair.name=§5Chair§r
+tile.single_arm_chair.name=§5Single Arm Chair§r
 tile.strontenium_fence.name=§5Strontenium Fence§r
 tile.strontenium_fence_gate.name=§5Strontenium Fence Gate§r
-
+tile.alarm_light.name=§5Alarm Lamp§r
 
 
 /*Stairs*/
@@ -167,7 +168,7 @@ tile.space_quartz_metalframe.name=§5Space Quartz Stair MF§r
 tile.carrel.name=§5Carrel§r
 tile.slope_pipes.name=§5Slope Pipes§r
 tile.concrete_stairs.name=§5Concrete Stairs§r
-tile.alarm_light.name=§5Alarm Lamp§r
+tile.arm_chair.name=§5Arm Chair§r
 
 
 /*Items*/

@@ -76,6 +76,7 @@ public class BasicBlocks {
 	public static Block table;
 	public static Block table1;
 	public static Block chair;
+	public static Block single_arm_chair;
 	public static Block speedway;
 	public static Block tresor;
 	public static Block analyser;
@@ -257,6 +258,8 @@ public class BasicBlocks {
 		NameUtils.setNames(table1, "table1");
 		chair = new BlockChair().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(chair, "chair");
+		single_arm_chair = new BlockSingleArmChair().setCreativeTab(SpaceExtendedMain.furnitureTab);
+		NameUtils.setNames(single_arm_chair, "single_arm_chair");
 		strontopal = new BlockStrontopal().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontopal, "strontopal");
 		strontopala = new BlockStrontopal().setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -503,6 +506,7 @@ public class BasicBlocks {
 		registerBlock(table);
 		registerBlock(table1);
 		registerBlock(chair);
+		registerBlock(single_arm_chair);
 		registerBlock(speedway);
 		registerBlock(tresor);
 		registerBlock(analyser);

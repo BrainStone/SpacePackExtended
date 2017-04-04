@@ -513,6 +513,12 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.alarm_light, 2),
 				new Object[] { "   ", "BCB", "BCB", 'B', new ItemStack(BasicItems.cyberit_gem),
 						'C', new ItemStack(Blocks.COAL_BLOCK)});
+		// 156 Arm Chair
+		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.arm_chair, 4),
+				new Object[] { "O  ", "O  ", "OOO", 'O', new ItemStack(BasicItems.kit5) });
+		// 157 Single Arm Chair
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.single_arm_chair, 4),
+				new Object[] { "OO ", "O  ", "OO ", 'O', new ItemStack(BasicBlocks.perolit_ore) });
 		
 	}
 

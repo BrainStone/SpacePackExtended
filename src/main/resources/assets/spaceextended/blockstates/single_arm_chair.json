@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:single_arm_chair"
+        },
+        "facing=south": {
+            "model": "spaceextended:single_arm_chair",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "spaceextended:single_arm_chair",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "spaceextended:single_arm_chair",
+            "y": 90
+        }
+    }
+}

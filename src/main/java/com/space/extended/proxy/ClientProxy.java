@@ -75,6 +75,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.table, 0);
 		registerModel(BasicBlocks.table1, 0);
 		registerModel(BasicBlocks.chair, 0);
+		registerModel(BasicBlocks.single_arm_chair, 0);
 		registerModel(BasicBlocks.strontopal, 0);
 		registerModel(BasicBlocks.strontopala, 0);
 		registerModel(BasicBlocks.strontopalb, 0);
@@ -222,6 +223,8 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicStairs.carrel, 0);
 		registerModel(BasicStairs.slope_pipes, 0);
 		registerModel(BasicStairs.concrete_stairs, 0);
+		registerModel(BasicStairs.arm_chair, 0);
+		
 	}
 
 	@Override
