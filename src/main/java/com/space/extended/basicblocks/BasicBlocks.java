@@ -75,8 +75,10 @@ public class BasicBlocks {
 	public static Block space_quartz_ore;
 	public static Block table;
 	public static Block table1;
+	public static Block couch_table;
 	public static Block chair;
 	public static Block single_arm_chair;
+	public static Block single_stool;
 	public static Block speedway;
 	public static Block tresor;
 	public static Block analyser;
@@ -91,6 +93,7 @@ public class BasicBlocks {
 	public static Block block_engine;
 	public static Block block_ribbed;
 	public static Block ceiling_lamp;
+	public static Block spot_lamp;
 	public static Block kitchen_lamp;
 	public static Block light_box;
 	public static Block lux;
@@ -110,6 +113,7 @@ public class BasicBlocks {
 	public static Block constructor5;
 	public static Block metal_diagonal;
 	public static Block metalframeblock;
+	public static Block vitallium_grid;
 	public static Block metal_frame_straight;
 	public static Block metal_frame_l;
 	public static Block metal_frame_t;
@@ -256,10 +260,14 @@ public class BasicBlocks {
 		NameUtils.setNames(table, "table");
 		table1 = new BlockTable1().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(table1, "table1");
+		couch_table = new BlockCouchTable().setCreativeTab(SpaceExtendedMain.furnitureTab);
+		NameUtils.setNames(couch_table, "couch_table");
 		chair = new BlockChair().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(chair, "chair");
 		single_arm_chair = new BlockSingleArmChair().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(single_arm_chair, "single_arm_chair");
+		single_stool = new BlockSingleStool().setCreativeTab(SpaceExtendedMain.furnitureTab);
+		NameUtils.setNames(single_stool,"single_stool");
 		strontopal = new BlockStrontopal().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontopal, "strontopal");
 		strontopala = new BlockStrontopal().setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -270,6 +278,8 @@ public class BasicBlocks {
 		NameUtils.setNames(lux, "lux");
 		ceiling_lamp = new BlockCeilingLamp().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(ceiling_lamp, "ceiling_lamp");
+		spot_lamp = new BlockSpotLamp().setCreativeTab(SpaceExtendedMain.furnitureTab);
+		NameUtils.setNames(spot_lamp, "spot_lamp");
 		kitchen_lamp = new BlockKitchenLamp().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(kitchen_lamp, "kitchen_lamp");
 		speedway = new BlockSpeedWay().setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -339,6 +349,8 @@ public class BasicBlocks {
 		NameUtils.setNames(metal_frame_zero, "metal_frame_zero");
 		metal_frame_vert = new BlockMetalFrameVert().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_vert, "metal_frame_vert");
+		vitallium_grid = new BlockVitalliumGrid().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(vitallium_grid,"vitallium_grid");
 		metal_ladder = new BlockMetalLadder().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_ladder, "metal_ladder");
 		vitallium_slab_half = (BlockSlab) new BlockVitalliumSlab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -505,8 +517,10 @@ public class BasicBlocks {
 		registerBlock(space_quartz_ore);
 		registerBlock(table);
 		registerBlock(table1);
+		registerBlock(couch_table);
 		registerBlock(chair);
 		registerBlock(single_arm_chair);
+		registerBlock(single_stool);
 		registerBlock(speedway);
 		registerBlock(tresor);
 		registerBlock(analyser);
@@ -521,6 +535,7 @@ public class BasicBlocks {
 		registerBlock(block_engine);
 		registerBlock(block_ribbed);
 		registerBlock(ceiling_lamp);
+		registerBlock(spot_lamp);
 		registerBlock(kitchen_lamp);
 		registerBlock(light_box);
 		registerBlock(lux);
@@ -544,6 +559,7 @@ public class BasicBlocks {
 		registerBlock(metal_frame_zero);
 		registerBlock(metal_frame_vert);
 		registerSlab(metal_frame_slab_half, metal_frame_slab_double);
+		registerBlock(vitallium_grid);
 		registerBlock(metal_ladder);
 		registerBlock(lever1);
 		registerBlock(lever2);

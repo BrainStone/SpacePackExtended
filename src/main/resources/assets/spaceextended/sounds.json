@@ -1,16 +1,3 @@
-{
-    "mobbeetle.death": {
-        "category": "master",
-        "sounds": [
-            "spaceextended:mobbeetle/mobbeetle_death"
-        ]
-    },
-    "mobbeetle.say": {
-        "category": "master",
-        "sounds": [
-            "spaceextended:mobbeetle/mobbeetle_say1",
-            "spaceextended:mobbeetle/mobbeetle_say2",
-            "spaceextended:mobbeetle/mobbeetle_say3"
-        ]
-    }
-}
+{"mobbeetle.death":{"category":"master","sounds":["spaceextended:mobbeetle/mobbeetle_death"]},"mobbeetle.say":{"category":"master","sounds":["spaceextended:mobbeetle/mobbeetle_say1","spaceextended:mobbeetle/mobbeetle_say2","spaceextended:mobbeetle/mobbeetle_say3"]}
+{"strontenitdoor.open":{"category":"master","sounds":["spaceextended:random/strontenitdoor_open"]},
+{"strontenitdoor.close":{"category":"master","sounds":["spaceextended:random/strontenitdoor_close"]}}}}

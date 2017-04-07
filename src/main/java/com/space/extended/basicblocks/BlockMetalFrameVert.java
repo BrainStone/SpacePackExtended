@@ -15,9 +15,13 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockMetalFrameVert extends Block {
+	
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-	protected static final AxisAlignedBB FRAME_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-
+	protected static final AxisAlignedBB AABB_NORTH = new AxisAlignedBB(0.0D, 0.0D, 0.5D, 1.0D, 1.0D, 1.0D);
+	protected static final AxisAlignedBB AABB_SOUTH = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 0.5D);
+	protected static final AxisAlignedBB AABB_WEST = new AxisAlignedBB(0.5D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
+	protected static final AxisAlignedBB AABB_EAST = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.5D, 1.0D, 1.0D);	
+	
 	public BlockMetalFrameVert() {
 		super(Material.IRON);
 		setHardness(2F);
@@ -30,7 +34,17 @@ public class BlockMetalFrameVert extends Block {
 
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-		return FRAME_AABB;
+		switch (state.getValue(FACING)) {
+		case NORTH:
+		default:
+			return AABB_NORTH;
+		case SOUTH:
+			return AABB_SOUTH;
+		case WEST:
+			return AABB_WEST;
+		case EAST:
+			return AABB_EAST;
+		}
 	}
 
 	public IBlockState getStateForEntityRender(IBlockState state) {

@@ -519,6 +519,18 @@ public class BasicCrafting {
 		// 157 Single Arm Chair
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.single_arm_chair, 4),
 				new Object[] { "OO ", "O  ", "OO ", 'O', new ItemStack(BasicBlocks.perolit_ore) });
+		// 158 CouchTable
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.couch_table, 4),
+				new Object[] { "O O", "   ", "O O", 'O', new ItemStack(BasicBlocks.perolit_ore) });
+		// 159 Single Stool
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.single_stool, 4),
+				new Object[] { "O O", " O ", "O O", 'O', new ItemStack(BasicBlocks.perolit_ore) });
+		// 160 Spot Lamp
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.spot_lamp, 5),new Object[] { "R R", "TTT", "   ",
+				'R', new ItemStack(Items.REDSTONE), 'T', new ItemStack(Blocks.REDSTONE_TORCH) });
+		// Vitallium Grid
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_grid, 2),
+		        new Object[] { "   ", " O ", "   ", 'O', new ItemStack(BasicItems.vitallium_ingot) });
 		
 	}
 

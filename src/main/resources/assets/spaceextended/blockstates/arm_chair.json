@@ -76,97 +76,97 @@
             "y": 180
         },
         "facing=east,half=top,shape=straight": {
-            "model": "spaceextended:arm_chair",
+            "model": "spaceextended:arm_chair_top",
             "x": 180
         },
         "facing=west,half=top,shape=straight": {
-            "model": "spaceextended:arm_chair",
+            "model": "spaceextended:arm_chair_top1",
             "x": 180,
             "y": 180
         },
         "facing=south,half=top,shape=straight": {
-            "model": "spaceextended:arm_chair",
+            "model": "spaceextended:arm_chair_top2",
             "x": 180,
             "y": 90
         },
         "facing=north,half=top,shape=straight": {
-            "model": "spaceextended:arm_chair",
+            "model": "spaceextended:arm_chair_top3",
             "x": 180,
             "y": 270
         },
         "facing=east,half=top,shape=outer_right": {
-            "model": "spaceextended:arm_chair_outer",
+            "model": "spaceextended:arm_chair_top_outer",
             "x": 180,
             "y": 90
         },
         "facing=west,half=top,shape=outer_right": {
-            "model": "spaceextended:arm_chair_outer",
+            "model": "spaceextended:arm_chair_top_outer",
             "x": 180,
             "y": 270
         },
         "facing=south,half=top,shape=outer_right": {
-            "model": "spaceextended:arm_chair_outer",
+            "model": "spaceextended:arm_chair_top_outer",
             "x": 180,
             "y": 180
         },
         "facing=north,half=top,shape=outer_right": {
-            "model": "spaceextended:arm_chair_outer",
+            "model": "spaceextended:arm_chair_top_outer",
             "x": 180
         },
         "facing=east,half=top,shape=outer_left": {
-            "model": "spaceextended:arm_chair_outer",
+            "model": "spaceextended:arm_chair_top_outer",
             "x": 180
         },
         "facing=west,half=top,shape=outer_left": {
-            "model": "spaceextended:arm_chair_outer",
+            "model": "spaceextended:arm_chair_top_outer",
             "x": 180,
             "y": 180
         },
         "facing=south,half=top,shape=outer_left": {
-            "model": "spaceextended:arm_chair_outer",
+            "model": "spaceextended:arm_chair_top_outer",
             "x": 180,
             "y": 90
         },
         "facing=north,half=top,shape=outer_left": {
-            "model": "spaceextended:arm_chair_outer",
+            "model": "spaceextended:arm_chair_top_outer",
             "x": 180,
             "y": 270
         },
         "facing=east,half=top,shape=inner_right": {
-            "model": "spaceextended:arm_chair_inner",
+            "model": "spaceextended:arm_chair_top_inner",
             "x": 180,
             "y": 90
         },
         "facing=west,half=top,shape=inner_right": {
-            "model": "spaceextended:arm_chair_inner",
+            "model": "spaceextended:arm_chair_top_inner",
             "x": 180,
             "y": 270
         },
         "facing=south,half=top,shape=inner_right": {
-            "model": "spaceextended:arm_chair_inner",
+            "model": "spaceextended:arm_chair_top_inner",
             "x": 180,
             "y": 180
         },
         "facing=north,half=top,shape=inner_right": {
-            "model": "spaceextended:arm_chair_inner",
+            "model": "spaceextended:arm_chair_top_inner",
             "x": 180
         },
         "facing=east,half=top,shape=inner_left": {
-            "model": "spaceextended:arm_chair_inner",
+            "model": "spaceextended:arm_chair_top_inner",
             "x": 180
         },
         "facing=west,half=top,shape=inner_left": {
-            "model": "spaceextended:arm_chair_inner",
+            "model": "spaceextended:arm_chair_top_inner",
             "x": 180,
             "y": 180
         },
         "facing=south,half=top,shape=inner_left": {
-            "model": "spaceextended:arm_chair_inner",
+            "model": "spaceextended:arm_chair_top_inner",
             "x": 180,
             "y": 90
         },
         "facing=north,half=top,shape=inner_left": {
-            "model": "spaceextended:arm_chair_inner",
+            "model": "spaceextended:arm_chair_top_inner",
             "x": 180,
             "y": 270
         }

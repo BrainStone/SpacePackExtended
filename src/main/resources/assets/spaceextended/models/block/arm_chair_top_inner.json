@@ -1,0 +1,35 @@
+{
+	"__comment": "Designed by Norzeteus with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "spaceextended:blocks/arm_chair_top4",
+		"texture": "spaceextended:blocks/arm_chair_top5"
+	},
+	"elements": [
+		{
+			"__comment": "Cube1",
+			"from": [ 15.5, 0, 0 ],
+			"to": [ 16, 16, 15.5 ],
+			"faces": {
+				"down": { "uv": [ 0, 15, 16, 15.5 ], "texture": "#texture" },
+				"up": { "uv": [ 0.5, 0, 16, 1 ], "texture": "#texture", "rotation": 270 },
+				"north": { "uv": [ 0, 0, 0.5, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 15.5, 0, 16, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 0, 15.5, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0.5, 0, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Cube2",
+			"from": [ 0, 0, 15.5 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 0.5 ], "texture": "#particle" },
+				"up": { "uv": [ 0, 15.5, 16, 16 ], "texture": "#particle" },
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#particle" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#particle" },
+				"west": { "uv": [ 15.5, 0, 16, 16 ], "texture": "#particle" },
+				"east": { "uv": [ 0, 0, 0.5, 16 ], "texture": "#particle" }
+			}
+		}
+	]
+}

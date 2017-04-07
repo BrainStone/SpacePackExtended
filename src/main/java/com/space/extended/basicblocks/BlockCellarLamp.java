@@ -22,6 +22,10 @@ import net.minecraft.world.World;
 public class BlockCellarLamp extends Block {
 
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+	protected static final AxisAlignedBB AABB_NORTH = new AxisAlignedBB(0.25D, 0.25D, 0.80D, 0.75D, 0.90D, 1.0D);
+	protected static final AxisAlignedBB AABB_SOUTH = new AxisAlignedBB(0.25D, 0.25D, 0.0D, 0.75D, 0.90D, 0.20D);
+	protected static final AxisAlignedBB AABB_WEST = new AxisAlignedBB(0.80D, 0.25D, 0.25D, 1.0D, 0.90D, 0.75D);
+	protected static final AxisAlignedBB AABB_EAST = new AxisAlignedBB(0.0D, 0.25D, 0.25D, 0.20D, 0.90D, 0.75D);
 
 	private final boolean isOn;
 
@@ -35,6 +39,20 @@ public class BlockCellarLamp extends Block {
 
 		if (isOn) {
 			setLightLevel(1.0F);
+		}
+	}
+	@Override
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+		switch (state.getValue(FACING)) {
+		case NORTH:
+		default:
+			return AABB_NORTH;
+		case SOUTH:
+			return AABB_SOUTH;
+		case WEST:
+			return AABB_WEST;
+		case EAST:
+			return AABB_EAST;
 		}
 	}
 

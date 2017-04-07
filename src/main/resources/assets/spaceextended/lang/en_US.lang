@@ -134,6 +134,11 @@ tile.single_arm_chair.name=§5Single Arm Chair§r
 tile.strontenium_fence.name=§5Strontenium Fence§r
 tile.strontenium_fence_gate.name=§5Strontenium Fence Gate§r
 tile.alarm_light.name=§5Alarm Lamp§r
+tile.couch_table.name=§5Couch Table§r
+tile.single_stool.name=§5Single Stool§r
+tile.spot_lamp.name=§5Spot Lamp§r
+tile.vitallium_grid.name=§5Vitallium Grid§r
+
 
 
 /*Stairs*/
@@ -168,7 +173,7 @@ tile.space_quartz_metalframe.name=§5Space Quartz Stair MF§r
 tile.carrel.name=§5Carrel§r
 tile.slope_pipes.name=§5Slope Pipes§r
 tile.concrete_stairs.name=§5Concrete Stairs§r
-tile.arm_chair.name=§5Arm Chair§r
+tile.arm_chair.name=§5Arm Chair CTM§r
 
 
 /*Items*/

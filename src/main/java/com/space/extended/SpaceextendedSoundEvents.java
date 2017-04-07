@@ -8,11 +8,16 @@ public class SpaceextendedSoundEvents {
 
 	public static SoundEvent ENTITY_MOBBEETLE_DEATH;
 	public static SoundEvent ENTITY_MOBBEETLE_AMBIENT;
+	public static SoundEvent STRONTENITDOOR_OPEN;
+	public static SoundEvent STRONTENITDOOR_CLOSE;
 
 	public static void registerSounds() {
 
 		ENTITY_MOBBEETLE_DEATH = registerSound("mobbeetle.death");
 		ENTITY_MOBBEETLE_AMBIENT = registerSound("mobbeetle.say");
+		STRONTENITDOOR_OPEN = registerSound("strontenitdoor.open");
+		STRONTENITDOOR_CLOSE = registerSound("strontenitdoor.close");
+		
 	}
 
 	private static SoundEvent registerSound(String soundName) {
