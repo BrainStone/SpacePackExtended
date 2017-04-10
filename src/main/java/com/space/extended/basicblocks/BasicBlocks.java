@@ -97,6 +97,8 @@ public class BasicBlocks {
 	public static Block kitchen_lamp;
 	public static Block light_box;
 	public static Block lux;
+	public static Block bollard_lamp;
+	public static Block bollard_lamp_lit;
 	public static Block metal_lamp;
 	public static Block metal_lamp_lit;
 	public static Block wall_lamp;
@@ -330,6 +332,10 @@ public class BasicBlocks {
 		NameUtils.setNames(block_engine, "block_engine");
 		block_cyberol = new BlockCyberol().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(block_cyberol, "block_cyberol");
+		bollard_lamp = new BlockBollardLamp(false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(bollard_lamp,"bollard_lamp");
+		bollard_lamp_lit = new BlockBollardLamp(true);
+		NameUtils.setNames(bollard_lamp_lit,"bollard_lamp_lit");		
 		metal_lamp = new BlockMetalLamp(false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_lamp, "metal_lamp");
 		metal_lamp_lit = new BlockMetalLamp(true);
@@ -539,6 +545,8 @@ public class BasicBlocks {
 		registerBlock(kitchen_lamp);
 		registerBlock(light_box);
 		registerBlock(lux);
+		registerBlock(bollard_lamp);
+		registerBlock(bollard_lamp_lit);
 		registerBlock(metal_lamp);
 		registerBlock(metal_lamp_lit);
 		registerBlock(wall_lamp);

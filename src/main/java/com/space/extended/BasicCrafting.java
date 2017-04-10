@@ -531,7 +531,11 @@ public class BasicCrafting {
 		// Vitallium Grid
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_grid, 2),
 		        new Object[] { "   ", " O ", "   ", 'O', new ItemStack(BasicItems.vitallium_ingot) });
-		
+		// Bollard Lamp
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.bollard_lamp,3), new Object[] {  "O O", " T ", "   ", 'O',
+				new ItemStack(BasicItems.quartz_component),'T', new ItemStack(Blocks.REDSTONE_TORCH) });
+				
+		}
 	}
 
-}
+

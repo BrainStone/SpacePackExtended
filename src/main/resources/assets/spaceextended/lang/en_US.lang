@@ -138,7 +138,7 @@ tile.couch_table.name=§5Couch Table§r
 tile.single_stool.name=§5Single Stool§r
 tile.spot_lamp.name=§5Spot Lamp§r
 tile.vitallium_grid.name=§5Vitallium Grid§r
-
+tile.bollard_lamp.name=§5Bollard Lamp§r
 
 
 /*Stairs*/
