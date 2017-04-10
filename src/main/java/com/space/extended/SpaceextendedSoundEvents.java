@@ -15,8 +15,8 @@ public class SpaceextendedSoundEvents {
 
 		ENTITY_MOBBEETLE_DEATH = registerSound("mobbeetle.death");
 		ENTITY_MOBBEETLE_AMBIENT = registerSound("mobbeetle.say");
-		STRONTENITDOOR_OPEN = registerSound("strontenitdoor.open");
-		STRONTENITDOOR_CLOSE = registerSound("strontenitdoor.close");
+		STRONTENITDOOR_OPEN = registerSound("block.strontenitdoor.open");
+		STRONTENITDOOR_CLOSE = registerSound("block.strontenitdoor.close");
 		
 	}
 
