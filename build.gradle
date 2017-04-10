@@ -69,7 +69,6 @@ def signJar(archivePath) {
 
 def MainDirResources = fileTree(dir: file('.'), includes: ['README.md', 'LICENSE', 'CHANGELOG.md'])
 def jsonPatterns = ["mcmod.info", "**/*.json", "**/*.mcmeta", "**/*.cf", "**/*.ctx"]
-def commonManifest = { attributes "FMLAT": "SpaceExtended_at.cfg" }
 version = getVersionName()
 group = "com.space.extended" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "SpacePackExtended"
@@ -130,8 +129,6 @@ processResources {
     
     from MainDirResources
     
-    rename "(.+_at.cfg)", 'META-INF/$1'
-    
     // Minify json resources
     doLast {
         fileTree(dir: outputs.files.asPath, includes: jsonPatterns).each {
@@ -161,8 +158,6 @@ task showVersion {
 }
 
 jar {
-    manifest commonManifest
-    
     doLast {
         if (!gradle.taskGraph.hasTask(reobfJar)) {
             signJar(jar)
@@ -179,7 +174,6 @@ reobfJar {
 task deobfJar(type: Jar) {
     from sourceSets.main.output
     classifier = 'deobf'
-    manifest commonManifest
     
     doLast {
         signJar(deobfJar.archivePath)
