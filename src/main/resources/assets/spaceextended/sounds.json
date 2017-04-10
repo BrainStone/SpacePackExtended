@@ -1,12 +1,12 @@
 {
     "mobbeetle.death": {
-        "category": "master",
+        "category": "hostile",
         "sounds": [
             "spaceextended:mobbeetle/mobbeetle_death"
         ]
     },
     "mobbeetle.say": {
-        "category": "master",
+        "category": "hostile",
         "sounds": [
             "spaceextended:mobbeetle/mobbeetle_say1",
             "spaceextended:mobbeetle/mobbeetle_say2",
@@ -14,13 +14,13 @@
         ]
     },
     "block.strontenitdoor.open": {
-        "category": "master",
+        "category": "block",
         "sounds": [
             "spaceextended:random/strontenitdoor_open"
         ]
     },
     "block.strontenitdoor.close": {
-        "category": "master",
+        "category": "block",
         "sounds": [
             "spaceextended:random/strontenitdoor_close"
         ]
