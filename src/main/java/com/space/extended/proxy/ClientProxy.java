@@ -230,7 +230,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicStairs.slope_pipes, 0);
 		registerModel(BasicStairs.concrete_stairs, 0);
 		registerModel(BasicStairs.arm_chair, 0);
-		
+
 	}
 
 	@Override

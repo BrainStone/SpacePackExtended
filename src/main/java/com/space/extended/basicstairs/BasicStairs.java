@@ -114,7 +114,7 @@ public class BasicStairs {
 		NameUtils.setNames(concrete_stairs, "concrete_stairs");
 		arm_chair = (BlockStairs) new BlockArmChair().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(arm_chair, "arm_chair");
-		
+
 	}
 
 	private void register() {

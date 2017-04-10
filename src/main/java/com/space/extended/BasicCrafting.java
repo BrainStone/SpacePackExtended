@@ -504,15 +504,13 @@ public class BasicCrafting {
 				"KBK", 'K', new ItemStack(Items.STICK), 'B', new ItemStack(BasicBlocks.strontenium_ore) });
 		// 153 Strontenit Door
 		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.strontenit_door, 3),
-				new Object[] { "BB ", "BB ", "BB ", 'B', new ItemStack(BasicBlocks.strontenium) });	
+				new Object[] { "BB ", "BB ", "BB ", 'B', new ItemStack(BasicBlocks.strontenium) });
 		// 154 MetalFrame Door
-		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.metalframe_door, 3),
-				new Object[] { "BC ", "BC ", "BC ", 'B', new ItemStack(BasicItems.vitallium_ingot),
-						'C', new ItemStack(BasicBlocks.vitallium)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.metalframe_door, 3), new Object[] { "BC ", "BC ", "BC ",
+				'B', new ItemStack(BasicItems.vitallium_ingot), 'C', new ItemStack(BasicBlocks.vitallium) });
 		// 155 Alarm Light
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.alarm_light, 2),
-				new Object[] { "   ", "BCB", "BCB", 'B', new ItemStack(BasicItems.cyberit_gem),
-						'C', new ItemStack(Blocks.COAL_BLOCK)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.alarm_light, 2), new Object[] { "   ", "BCB", "BCB", 'B',
+				new ItemStack(BasicItems.cyberit_gem), 'C', new ItemStack(Blocks.COAL_BLOCK) });
 		// 156 Arm Chair
 		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.arm_chair, 4),
 				new Object[] { "O  ", "O  ", "OOO", 'O', new ItemStack(BasicItems.kit5) });
@@ -526,16 +524,14 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.single_stool, 4),
 				new Object[] { "O O", " O ", "O O", 'O', new ItemStack(BasicBlocks.perolit_ore) });
 		// 160 Spot Lamp
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.spot_lamp, 5),new Object[] { "R R", "TTT", "   ",
-				'R', new ItemStack(Items.REDSTONE), 'T', new ItemStack(Blocks.REDSTONE_TORCH) });
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.spot_lamp, 5), new Object[] { "R R", "TTT", "   ", 'R',
+				new ItemStack(Items.REDSTONE), 'T', new ItemStack(Blocks.REDSTONE_TORCH) });
 		// Vitallium Grid
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_grid, 2),
-		        new Object[] { "   ", " O ", "   ", 'O', new ItemStack(BasicItems.vitallium_ingot) });
+				new Object[] { "   ", " O ", "   ", 'O', new ItemStack(BasicItems.vitallium_ingot) });
 		// Bollard Lamp
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.bollard_lamp,3), new Object[] {  "O O", " T ", "   ", 'O',
-				new ItemStack(BasicItems.quartz_component),'T', new ItemStack(Blocks.REDSTONE_TORCH) });
-				
-		}
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.bollard_lamp, 3), new Object[] { "O O", " T ", "   ",
+				'O', new ItemStack(BasicItems.quartz_component), 'T', new ItemStack(Blocks.REDSTONE_TORCH) });
+
 	}
-
-
+}

@@ -34,11 +34,10 @@ public class BlockCustomBed extends BlockBed {
 	public boolean isBed(IBlockState state, IBlockAccess world, BlockPos pos, @Nullable Entity player) {
 		return (this == BasicBlocks.bed1);
 	}
+
 	@Override
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getBlockLayer() {
 		return BlockRenderLayer.SOLID;
 	}
 }
-	
-	

@@ -41,7 +41,7 @@ public class ItemCustomBed extends ItemBed {
 				pos = pos.up();
 			}
 
-			int i = MathHelper.floor((player.rotationYaw * 4.0F) / 360.0F + 0.5D) & 3;
+			int i = MathHelper.floor(((player.rotationYaw * 4.0F) / 360.0F) + 0.5D) & 3;
 			EnumFacing enumfacing = EnumFacing.getHorizontal(i);
 			BlockPos blockpos = pos.offset(enumfacing);
 			ItemStack itemstack = player.getHeldItem(hand);
@@ -74,5 +74,5 @@ public class ItemCustomBed extends ItemBed {
 				return EnumActionResult.FAIL;
 		}
 	}
-	
+
 }

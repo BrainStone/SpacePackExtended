@@ -41,6 +41,7 @@ public class BlockCellarLamp extends Block {
 			setLightLevel(1.0F);
 		}
 	}
+
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		switch (state.getValue(FACING)) {

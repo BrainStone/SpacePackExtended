@@ -9,10 +9,10 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class BlockSpotLamp extends Block{
-	
+public class BlockSpotLamp extends Block {
+
 	protected static final AxisAlignedBB AABB_UP = new AxisAlignedBB(0.0D, 0.85D, 0.0D, 1.0D, 1.0D, 1.0D);
-	
+
 	public BlockSpotLamp() {
 		super(Material.GLASS);
 		setHardness(2F);
@@ -22,12 +22,11 @@ public class BlockSpotLamp extends Block{
 		setHarvestLevel("axe", 1);
 		setSoundType(SoundType.GLASS);
 	}
+
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		return AABB_UP;
 	}
-
-	
 
 	@Override
 	public boolean isFullCube(IBlockState state) {

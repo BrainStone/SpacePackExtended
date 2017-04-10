@@ -17,7 +17,7 @@ public class SpaceextendedSoundEvents {
 		ENTITY_MOBBEETLE_AMBIENT = registerSound("mobbeetle.say");
 		STRONTENITDOOR_OPEN = registerSound("block.strontenitdoor.open");
 		STRONTENITDOOR_CLOSE = registerSound("block.strontenitdoor.close");
-		
+
 	}
 
 	private static SoundEvent registerSound(String soundName) {

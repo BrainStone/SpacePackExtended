@@ -37,7 +37,7 @@ public class BlockStrontenitDoor extends BlockCustomDoor {
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
 		return Item.getItemFromBlock(BasicBlocks.strontenit_door);
 	}
-	
+
 	@Override
 	protected Item getItem() {
 		return BasicItems.strontenit_door;

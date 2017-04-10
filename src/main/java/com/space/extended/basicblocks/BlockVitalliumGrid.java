@@ -9,10 +9,10 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class BlockVitalliumGrid extends Block{
-	
+public class BlockVitalliumGrid extends Block {
+
 	protected static final AxisAlignedBB AABB_UP = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.1D, 1.0D);
-	
+
 	public BlockVitalliumGrid() {
 		super(Material.IRON);
 		setHardness(2F);
@@ -21,9 +21,11 @@ public class BlockVitalliumGrid extends Block{
 		setSoundType(SoundType.LADDER);
 		setLightOpacity(1);
 	}
+
 	public boolean isOpaqueCube() {
 		return false;
 	}
+
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		return AABB_UP;

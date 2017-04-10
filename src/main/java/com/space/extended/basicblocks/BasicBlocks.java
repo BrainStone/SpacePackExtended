@@ -269,7 +269,7 @@ public class BasicBlocks {
 		single_arm_chair = new BlockSingleArmChair().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(single_arm_chair, "single_arm_chair");
 		single_stool = new BlockSingleStool().setCreativeTab(SpaceExtendedMain.furnitureTab);
-		NameUtils.setNames(single_stool,"single_stool");
+		NameUtils.setNames(single_stool, "single_stool");
 		strontopal = new BlockStrontopal().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontopal, "strontopal");
 		strontopala = new BlockStrontopal().setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -333,9 +333,9 @@ public class BasicBlocks {
 		block_cyberol = new BlockCyberol().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(block_cyberol, "block_cyberol");
 		bollard_lamp = new BlockBollardLamp(false).setCreativeTab(SpaceExtendedMain.spaceTab);
-		NameUtils.setNames(bollard_lamp,"bollard_lamp");
+		NameUtils.setNames(bollard_lamp, "bollard_lamp");
 		bollard_lamp_lit = new BlockBollardLamp(true);
-		NameUtils.setNames(bollard_lamp_lit,"bollard_lamp_lit");		
+		NameUtils.setNames(bollard_lamp_lit, "bollard_lamp_lit");
 		metal_lamp = new BlockMetalLamp(false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_lamp, "metal_lamp");
 		metal_lamp_lit = new BlockMetalLamp(true);
@@ -356,7 +356,7 @@ public class BasicBlocks {
 		metal_frame_vert = new BlockMetalFrameVert().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_frame_vert, "metal_frame_vert");
 		vitallium_grid = new BlockVitalliumGrid().setCreativeTab(SpaceExtendedMain.spaceTab);
-		NameUtils.setNames(vitallium_grid,"vitallium_grid");
+		NameUtils.setNames(vitallium_grid, "vitallium_grid");
 		metal_ladder = new BlockMetalLadder().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_ladder, "metal_ladder");
 		vitallium_slab_half = (BlockSlab) new BlockVitalliumSlab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);

@@ -9,9 +9,9 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class BlockCouchTable extends Block{
+public class BlockCouchTable extends Block {
 	protected static final AxisAlignedBB AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D);
-	
+
 	public BlockCouchTable() {
 		super(Material.WOOD);
 		setHardness(2F);
@@ -20,6 +20,7 @@ public class BlockCouchTable extends Block{
 		setHarvestLevel("axe", 1);
 		setSoundType(SoundType.WOOD);
 	}
+
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		return AABB;

@@ -25,7 +25,7 @@ public class BlockWallLamp extends Block {
 	protected static final AxisAlignedBB AABB_SOUTH = new AxisAlignedBB(0.25D, 0.25D, 0.0D, 0.75D, 0.90D, 0.20D);
 	protected static final AxisAlignedBB AABB_WEST = new AxisAlignedBB(0.80D, 0.25D, 0.25D, 1.0D, 0.90D, 0.75D);
 	protected static final AxisAlignedBB AABB_EAST = new AxisAlignedBB(0.0D, 0.25D, 0.25D, 0.20D, 0.90D, 0.75D);
-	
+
 	private final boolean isOn;
 
 	public BlockWallLamp(boolean isOn) {
@@ -40,6 +40,7 @@ public class BlockWallLamp extends Block {
 			setLightLevel(1.0F);
 		}
 	}
+
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		switch (state.getValue(FACING)) {

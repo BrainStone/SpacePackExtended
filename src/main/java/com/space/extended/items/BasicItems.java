@@ -36,8 +36,6 @@ public class BasicItems {
 	public static Item vitallium_door;
 	public static Item strontenit_door;
 	public static Item metalframe_door;
-	
-	
 
 	public BasicItems() {
 		init();

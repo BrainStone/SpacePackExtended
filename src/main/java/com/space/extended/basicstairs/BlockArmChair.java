@@ -10,8 +10,8 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockArmChair extends BlockStairs{
-	
+public class BlockArmChair extends BlockStairs {
+
 	public BlockArmChair() {
 		super(Blocks.BIRCH_STAIRS.getDefaultState());
 		setHardness(2F);

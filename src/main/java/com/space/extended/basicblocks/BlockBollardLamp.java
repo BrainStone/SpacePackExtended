@@ -12,8 +12,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockBollardLamp extends Block{
-	
+public class BlockBollardLamp extends Block {
+
 	private final boolean isOn;
 
 	public BlockBollardLamp(boolean isOn) {
@@ -70,6 +70,7 @@ public class BlockBollardLamp extends Block{
 	protected ItemStack getSilkTouchDrop(IBlockState state) {
 		return new ItemStack(BasicBlocks.bollard_lamp);
 	}
+
 	@Override
 	public boolean isOpaqueCube(IBlockState state) {
 		return false;
