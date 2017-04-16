@@ -17,6 +17,7 @@ public class BasicItems {
 	public static Item klingonium_shard;
 	public static Item strontenium_ingot;
 	public static Item perolit_sphere;
+	public static Item ironit_crystal;
 	public static Item kit1;
 	public static Item kit2;
 	public static Item kit3;
@@ -54,6 +55,8 @@ public class BasicItems {
 		NameUtils.setNames(strontenium_ingot, "strontenium_ingot");
 		perolit_sphere = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(perolit_sphere, "perolit_sphere");
+		ironit_crystal = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
+		NameUtils.setNames(ironit_crystal, "ironit_crystal");		
 		kit1 = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(kit1, "kit1");
 		kit2 = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
@@ -102,6 +105,7 @@ public class BasicItems {
 		registerItem(klingonium_shard);
 		registerItem(strontenium_ingot);
 		registerItem(perolit_sphere);
+		registerItem(ironit_crystal);
 		registerItem(cyberit_gem);
 		registerItem(cyberit_beetle);
 		registerItem(kit1);

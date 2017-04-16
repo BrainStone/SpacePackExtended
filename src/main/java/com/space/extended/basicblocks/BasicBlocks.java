@@ -20,6 +20,7 @@ public class BasicBlocks {
 	public static Block vitallium_fence_gate;
 	public static Block strontenium_fence_gate;
 	public static Block strontenium_fence;
+	public static Block ironium_ore;
 	public static Block perolit;
 	public static Block perolit_ore;
 	public static Block perola;
@@ -107,12 +108,15 @@ public class BasicBlocks {
 	public static Block cellar_lamp_lit;
 	public static Block alarm_light;
 	public static Block alarm_light_lit;
+	public static Block klingolight;
 	public static Block pipes_connector;
 	public static Block constructor1;
 	public static Block constructor2;
 	public static Block constructor3;
 	public static Block constructor4;
 	public static Block constructor5;
+	public static Block transport_box;
+	public static Block transport_box1;
 	public static Block metal_diagonal;
 	public static Block metalframeblock;
 	public static Block vitallium_grid;
@@ -192,6 +196,10 @@ public class BasicBlocks {
 		NameUtils.setNames(constructor4, "constructor4");
 		constructor5 = new BlockConstructor(5).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(constructor5, "constructor5");
+		transport_box = new BlockTransportBox().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(transport_box,"transport_box");
+		transport_box1 = new BlockTransportBox1().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(transport_box1,"transport_box1");
 		strontenium = new BlockStrontenium().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontenium, "strontenium");
 		strontenium0 = new BlockStrontenium0().setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -236,6 +244,8 @@ public class BasicBlocks {
 		NameUtils.setNames(perolit, "perolit");
 		perolit_ore = new BlockSpaceExtendedOre().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(perolit_ore, "perolit_ore");
+		ironium_ore = new BlockSpaceExtendedOre().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(ironium_ore,"ironium_ore");		
 		pipes_connector = new BlockPipesConnector().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(pipes_connector, "pipes_connector");
 		strontenita = new BlockStrontenit().setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -395,6 +405,8 @@ public class BasicBlocks {
 		NameUtils.setNames(alarm_light, "alarm_light");
 		alarm_light_lit = new BlockAlarmLight(true);
 		NameUtils.setNames(alarm_light_lit, "alarm_light_lit");
+		klingolight = new BlockKlingoLight().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(klingolight,"klingolight");
 		bed1 = new BlockCustomBed();
 		NameUtils.setNames(bed1, "bed1");
 		wash_basin = new BlockWashBasin().setCreativeTab(SpaceExtendedMain.furnitureTab);
@@ -469,6 +481,7 @@ public class BasicBlocks {
 		registerBlock(vitallium_fence_gate);
 		registerBlock(strontenium_fence);
 		registerBlock(strontenium_fence_gate);
+		registerBlock(ironium_ore);
 		registerBlock(perolit);
 		registerBlock(perolit_ore);
 		registerBlock(perola);
@@ -557,6 +570,8 @@ public class BasicBlocks {
 		registerBlock(constructor3);
 		registerBlock(constructor4);
 		registerBlock(constructor5);
+		registerBlock(transport_box);
+		registerBlock(transport_box1);
 		registerBlock(metal_diagonal);
 		registerBlock(metalframeblock);
 		registerBlock(metal_frame_straight);
@@ -576,6 +591,7 @@ public class BasicBlocks {
 		registerBlock(cellar_lamp_lit);
 		registerBlock(alarm_light);
 		registerBlock(alarm_light_lit);
+		registerBlock(klingolight);
 		registerBlockOnly(bed1);
 		registerBlock(wash_basin);
 		registerBlock(cooker);

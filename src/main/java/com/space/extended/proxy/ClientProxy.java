@@ -45,6 +45,8 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.constructor3, 0);
 		registerModel(BasicBlocks.constructor4, 0);
 		registerModel(BasicBlocks.constructor5, 0);
+		registerModel(BasicBlocks.transport_box, 0);
+		registerModel(BasicBlocks.transport_box1, 0);
 		registerModel(BasicBlocks.strontenium, 0);
 		registerModel(BasicBlocks.strontenium0, 0);
 		registerModel(BasicBlocks.strontenium1, 0);
@@ -61,6 +63,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.klingonium_wall8, 0);
 		registerModel(BasicBlocks.perolit, 0);
 		registerModel(BasicBlocks.perolit_ore, 0);
+		registerModel(BasicBlocks.ironium_ore, 0);
 		registerModel(BasicBlocks.pipes_connector, 0);
 		registerModel(BasicBlocks.strontenita, 0);
 		registerModel(BasicBlocks.strontenitb, 0);
@@ -169,12 +172,14 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.cupboard_lower2, 0);
 		registerModel(BasicBlocks.cupboard_lower3, 0);
 		registerModel(BasicBlocks.cupboard_lower_outer, 0);
+		registerModel(BasicBlocks.klingolight, 0);
 
 		// Items
 		registerModel(BasicItems.vitallium_ingot, 0);
 		registerModel(BasicItems.klingonium_shard, 0);
 		registerModel(BasicItems.strontenium_ingot, 0);
 		registerModel(BasicItems.perolit_sphere, 0);
+		registerModel(BasicItems.ironit_crystal, 0);
 		registerModel(BasicItems.kit1, 0);
 		registerModel(BasicItems.kit2, 0);
 		registerModel(BasicItems.kit3, 0);

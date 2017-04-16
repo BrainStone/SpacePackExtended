@@ -526,12 +526,25 @@ public class BasicCrafting {
 		// 160 Spot Lamp
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.spot_lamp, 5), new Object[] { "R R", "TTT", "   ", 'R',
 				new ItemStack(Items.REDSTONE), 'T', new ItemStack(Blocks.REDSTONE_TORCH) });
-		// Vitallium Grid
+		// 161 Vitallium Grid
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.vitallium_grid, 2),
 				new Object[] { "   ", " O ", "   ", 'O', new ItemStack(BasicItems.vitallium_ingot) });
-		// Bollard Lamp
+		// 162 Bollard Lamp
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.bollard_lamp, 3), new Object[] { "O O", " T ", "   ",
 				'O', new ItemStack(BasicItems.quartz_component), 'T', new ItemStack(Blocks.REDSTONE_TORCH) });
-
-	}
+		// 163 Container
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.transport_box, 4),
+				new Object[] { "O O", " M ", "O O", 'O', new ItemStack(BasicBlocks.block_ribbed),
+						'M', new ItemStack(BasicItems.quartz_component)});
+		// 164 Container A
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.transport_box1, 4),
+				new Object[] { "OMO", " M ", "O O", 'O', new ItemStack(BasicBlocks.block_ribbed),
+						'M', new ItemStack(BasicItems.quartz_component)});
+		// 165 KlingoLight
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingolight, 5),
+				new Object[] { "O O", " M ", "   ", 'O', new ItemStack(BasicItems.klingonium_shard),
+						'M', new ItemStack(Blocks.REDSTONE_TORCH)});
+				}
+						
 }
+

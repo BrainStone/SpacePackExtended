@@ -9,10 +9,14 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
+import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockSpaceExtendedOre extends Block {
 	public BlockSpaceExtendedOre() {
@@ -49,6 +53,8 @@ public class BlockSpaceExtendedOre extends Block {
 				exp = MathHelper.getInt(rand, 2, 6);
 			} else if (this == BasicBlocks.cyberit_Ore) {
 				exp = MathHelper.getInt(rand, 1, 3);
+			} else if (this == BasicBlocks.ironium_ore) {
+				exp = MathHelper.getInt(rand, 1, 2);
 			}
 
 			return exp;
@@ -67,6 +73,8 @@ public class BlockSpaceExtendedOre extends Block {
 			return BasicItems.klingonium_shard;
 		else if (this == BasicBlocks.cyberit_Ore)
 			return BasicItems.cyberit_gem;
+		else if (this == BasicBlocks.ironium_ore)
+			return BasicItems.ironit_crystal;
 		else
 			return Item.getItemFromBlock(this);
 	}
@@ -80,6 +88,8 @@ public class BlockSpaceExtendedOre extends Block {
 		else if (this == BasicBlocks.klingonium_ore)
 			return MathHelper.getInt(random, 2, 3);
 		else if (this == BasicBlocks.cyberit_Ore)
+			return MathHelper.getInt(random, 1, 2);
+		else if (this == BasicBlocks.ironium_ore)
 			return MathHelper.getInt(random, 1, 2);
 		else
 			return 1;
@@ -99,5 +109,20 @@ public class BlockSpaceExtendedOre extends Block {
 			return this.quantityDropped(random) * bonus;
 		} else
 			return this.quantityDropped(random);
+	}
+	
+	@Override
+	public boolean isFullCube(IBlockState state) {
+		return true;
+	}
+
+	@Override
+	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
+		return false;
+	}
+	@Override
+	@SideOnly(Side.CLIENT)
+	public BlockRenderLayer getBlockLayer() {
+		return BlockRenderLayer.TRANSLUCENT;
 	}
 }

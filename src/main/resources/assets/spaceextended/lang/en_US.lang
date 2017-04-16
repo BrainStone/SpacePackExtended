@@ -139,7 +139,10 @@ tile.single_stool.name=§5Single Stool§r
 tile.spot_lamp.name=§5Spot Lamp§r
 tile.vitallium_grid.name=§5Vitallium Grid§r
 tile.bollard_lamp.name=§5Bollard Lamp§r
-
+tile.transport_box.name=§5Container§r
+tile.ironium_ore.name=§5Ironium Ore§r
+tile.transport_box1.name=§5Container A§r
+tile.klingolight.name=§5Klingolight§r
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r
@@ -196,6 +199,7 @@ item.vitallium_door.name=§5Vitallium Door§r
 item.strontenit_door.name=§5Strontenit Door§r
 item.metalframe_door.name=§5MetalFrame Door§r
 item.bed1.name=§5Lifebox§r
+item.ironit_crystal.name=§5Ironit Crystal§r
 
 item.vitallium_helmet.name=§5Vitallium Helmet§r
 item.vitallium_chestplate.name=§5Vitallium Chestplate§r
