@@ -544,7 +544,11 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingolight, 5),
 				new Object[] { "O O", " M ", "   ", 'O', new ItemStack(BasicItems.klingonium_shard),
 						'M', new ItemStack(Blocks.REDSTONE_TORCH)});
+		// 166 Ironit Door
+		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.ironit_door, 2),
+				new Object[] { "LO ", "LO ", "LO ", 'O', new ItemStack(BasicItems.ironit_crystal),
+						'L', new ItemStack(BasicItems.kit1)});
 				}
-						
+		
 }
 

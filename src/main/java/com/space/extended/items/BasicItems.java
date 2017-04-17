@@ -37,6 +37,7 @@ public class BasicItems {
 	public static Item vitallium_door;
 	public static Item strontenit_door;
 	public static Item metalframe_door;
+	public static Item ironit_door;
 
 	public BasicItems() {
 		init();
@@ -98,6 +99,8 @@ public class BasicItems {
 		NameUtils.setNames(strontenit_door, "strontenit_door");
 		metalframe_door = new ItemMetalFrameDoor();
 		NameUtils.setNames(metalframe_door, "metalframe_door");
+		ironit_door = new ItemIronitDoor();
+		NameUtils.setNames(ironit_door,"ironit_door");
 	}
 
 	public void register() {
@@ -125,6 +128,7 @@ public class BasicItems {
 		registerItem(vitallium_door);
 		registerItem(strontenit_door);
 		registerItem(metalframe_door);
+		registerItem(ironit_door);
 	}
 
 	private void registerItem(Item item) {

@@ -142,6 +142,7 @@ public class BasicBlocks {
 	public static Block klingonit1_pp;
 	public static Block klingonit2_pp;
 	public static Block vitallium_door;
+	public static Block ironit_door;
 	public static Block strontenit_door;
 	public static Block metalframe_door;
 	public static Block wall_panel;
@@ -423,6 +424,8 @@ public class BasicBlocks {
 		NameUtils.setNames(klingonit2_pp, "klingonit2_pp");
 		vitallium_door = new BlockVitalliumDoor();
 		NameUtils.setNames(vitallium_door, "vitallium_door");
+		ironit_door = new BlockIronitDoor();
+		NameUtils.setNames(ironit_door,"ironit_door");
 		strontenit_door = new BlockStrontenitDoor();
 		NameUtils.setNames(strontenit_door, "strontenit_door");
 		metalframe_door = new BlockMetalFrameDoor();
@@ -601,6 +604,7 @@ public class BasicBlocks {
 		registerBlock(klingonit1_pp);
 		registerBlock(klingonit2_pp);
 		registerBlockOnly(vitallium_door);
+		registerBlockOnly(ironit_door);
 		registerBlockOnly(strontenit_door);
 		registerBlockOnly(metalframe_door);
 		registerBlock(wall_panel);

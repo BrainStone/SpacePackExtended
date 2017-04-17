@@ -24,5 +24,29 @@
         "sounds": [
             "spaceextended:random/strontenitdoor_close"
         ]
-    }
+    },
+	"block.ironitdoor.open": {
+        "category": "block",
+        "sounds": [
+            "spaceextended:random/ironitdoor_open"
+        ]
+    },
+    "block.ironitdoor.close": {
+        "category": "block",
+        "sounds": [
+            "spaceextended:random/ironitdoor_close"
+			]
+	},	
+    "block.metalframedoor.open": {
+        "category": "block",
+        "sounds": [
+            "spaceextended:random/metalframedoor_open"
+        ]
+    },
+    "block.metalframedoor.close": {
+        "category": "block",
+        "sounds": [
+            "spaceextended:random/metalframedoor_close"
+			]
+	}	
 }

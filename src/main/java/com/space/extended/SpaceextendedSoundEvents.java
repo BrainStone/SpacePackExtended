@@ -10,6 +10,12 @@ public class SpaceextendedSoundEvents {
 	public static SoundEvent ENTITY_MOBBEETLE_AMBIENT;
 	public static SoundEvent STRONTENITDOOR_OPEN;
 	public static SoundEvent STRONTENITDOOR_CLOSE;
+	public static SoundEvent IRONITDOOR_OPEN;
+	public static SoundEvent IRONITDOOR_CLOSE;
+	public static SoundEvent METALFRAMEDOOR_OPEN;
+	public static SoundEvent METALFRAMEDOOR_CLOSE;
+	
+	
 
 	public static void registerSounds() {
 
@@ -17,6 +23,11 @@ public class SpaceextendedSoundEvents {
 		ENTITY_MOBBEETLE_AMBIENT = registerSound("mobbeetle.say");
 		STRONTENITDOOR_OPEN = registerSound("block.strontenitdoor.open");
 		STRONTENITDOOR_CLOSE = registerSound("block.strontenitdoor.close");
+		IRONITDOOR_OPEN = registerSound("block.ironitdoor.open");
+		IRONITDOOR_CLOSE =registerSound("block.ironitdoor.close");
+		METALFRAMEDOOR_OPEN = registerSound("block.metalframedoor.open");
+		METALFRAMEDOOR_CLOSE = registerSound("block.metalframedoor.close");
+		
 
 	}
 

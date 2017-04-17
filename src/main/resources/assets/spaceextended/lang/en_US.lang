@@ -198,6 +198,7 @@ item.quartz_component.name=§5Quartz Component§r
 item.vitallium_door.name=§5Vitallium Door§r
 item.strontenit_door.name=§5Strontenit Door§r
 item.metalframe_door.name=§5MetalFrame Door§r
+item.ironit_door.name=§5Ironit Door§r
 item.bed1.name=§5Lifebox§r
 item.ironit_crystal.name=§5Ironit Crystal§r
 

@@ -8,11 +8,13 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockBollardLamp extends Block {
+	protected static final AxisAlignedBB AABB = new AxisAlignedBB(0.20D, 0.0D, 0.15D, 0.80D, 0.80D, 0.80D);
 
 	private final boolean isOn;
 
@@ -23,6 +25,10 @@ public class BlockBollardLamp extends Block {
 		if (isOn) {
 			setLightLevel(1.0F);
 		}
+	}
+	@Override
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+		return AABB;
 	}
 
 	@Override
