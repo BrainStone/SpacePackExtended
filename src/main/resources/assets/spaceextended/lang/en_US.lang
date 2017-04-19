@@ -143,6 +143,11 @@ tile.transport_box.name=§5Container§r
 tile.ironium_ore.name=§5Ironium Ore§r
 tile.transport_box1.name=§5Container A§r
 tile.klingolight.name=§5Klingolight§r
+tile.notice_board.name=§5Notice Board1§r
+tile.notice_board2.name=§5Notice Board2§r
+tile.notice_board3.name=§5Notice Board3§r
+tile.notice_board4.name=§5Notice Board4§r
+tile.notice_board5.name=§5Notice Board5§r
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r

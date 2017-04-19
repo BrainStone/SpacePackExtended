@@ -162,6 +162,12 @@ public class BasicBlocks {
 	public static Block cupboard_lower2;
 	public static Block cupboard_lower3;
 	public static Block cupboard_lower_outer;
+	public static Block notice_board;
+	public static Block notice_board2;
+	public static Block notice_board3;
+	public static Block notice_board4;
+	public static Block notice_board5;
+	
 
 	public BasicBlocks() {
 		init();
@@ -474,6 +480,18 @@ public class BasicBlocks {
 		NameUtils.setNames(cupboard_lower3, "cupboard_lower3");
 		cupboard_lower_outer = new BlockCustomCupboardLower();
 		NameUtils.setNames(cupboard_lower_outer, "cupboard_lower_outer");
+		notice_board = new BlockCustomNoticeBoard();
+		NameUtils.setNames(notice_board,"notice_board");
+		notice_board2 = new BlockCustomNoticeBoard();
+		NameUtils.setNames(notice_board2,"notice_board2");
+		notice_board3 = new BlockCustomNoticeBoard();
+		NameUtils.setNames(notice_board3,"notice_board3");
+		notice_board4 = new BlockCustomNoticeBoard();
+		NameUtils.setNames(notice_board4,"notice_board4");
+		notice_board5 = new BlockCustomNoticeBoard();
+		NameUtils.setNames(notice_board5,"notice_board5");
+		
+		
 	}
 
 	private void register() {
@@ -624,6 +642,11 @@ public class BasicBlocks {
 		registerBlock(cupboard_lower2);
 		registerBlock(cupboard_lower3);
 		registerBlock(cupboard_lower_outer);
+		registerBlock(notice_board);
+		registerBlock(notice_board2);
+		registerBlock(notice_board3);
+		registerBlock(notice_board4);
+		registerBlock(notice_board5);
 	}
 
 	private void registerBlock(Block block) {

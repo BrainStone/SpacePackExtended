@@ -548,7 +548,30 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.ironit_door, 2),
 				new Object[] { "LO ", "LO ", "LO ", 'O', new ItemStack(BasicItems.ironit_crystal),
 						'L', new ItemStack(BasicItems.kit1)});
+		// 167 Notice Board
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board,3),
+				new Object[] { "LO ", "   ", "   ",'O', new ItemStack(BasicItems.quartz_component),
+						'L', new ItemStack(Items.STICK)});
+		// 168 Notice Board2
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board2,3),
+						new Object[] { " LO", "   ", "   ",'O', new ItemStack(BasicItems.quartz_component),
+								'L', new ItemStack(Items.STICK)});
+		// 169 Notice Board3
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board3,3),
+						new Object[] { "   ", "LO ", "   ",'O', new ItemStack(BasicItems.quartz_component),
+								'L', new ItemStack(Items.STICK)});		
+		// 170 Notice Board4
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board4,3),
+						new Object[] { "   ", " LO", "   ",'O', new ItemStack(BasicItems.quartz_component),
+								'L', new ItemStack(Items.STICK)});
+		// 171 Notice Board5
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board5,3),
+						new Object[] { "   ", "   ", "LO ",'O', new ItemStack(BasicItems.quartz_component),
+								'L', new ItemStack(Items.STICK)});
 				}
 		
-}
+		
+		}
+		
+
 

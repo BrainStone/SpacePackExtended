@@ -1,6 +1,6 @@
 {
 	"__comment": "Designed by Norzeteus with Cubik Studio - https://cubik.studio",
-	"ambientocclusion": false,
+	"ambientocclusion": true,
 	"textures": {
 		"particle": "spaceextended:blocks/klingodur_top",
 		"texture": "spaceextended:blocks/klingolight"

@@ -13,6 +13,7 @@ public class BlockKlingoLight extends Block{
 		setHarvestLevel("pickaxe", 2);
 		setSoundType(SoundType.METAL);
 		setLightLevel(1.F);
+		setLightOpacity(10);
 	}
 
 }
