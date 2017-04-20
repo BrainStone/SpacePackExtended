@@ -34,7 +34,7 @@ public class BlockCustomNoticeBoard extends Block{
 		setResistance(5F);
 		this.setHarvestLevel("axe", 1);
 		setLightOpacity(1);
-		setCreativeTab(SpaceExtendedMain.furnitureTab);
+		setCreativeTab(SpaceExtendedMain.signTab);
 		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 

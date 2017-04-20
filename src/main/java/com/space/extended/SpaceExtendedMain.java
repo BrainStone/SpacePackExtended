@@ -4,6 +4,7 @@ import com.space.extended.basicblocks.BasicBlocks;
 import com.space.extended.basicstairs.BasicStairs;
 import com.space.extended.creativetab.ArmorTab;
 import com.space.extended.creativetab.FurnitureTab;
+import com.space.extended.creativetab.SignTab;
 import com.space.extended.creativetab.SpaceTab;
 import com.space.extended.creativetab.StairsTab;
 import com.space.extended.items.BasicItems;
@@ -48,7 +49,8 @@ public class SpaceExtendedMain {
 	public static CreativeTabs stairsTab;
 	public static CreativeTabs armorTab;
 	public static CreativeTabs furnitureTab;
-
+	public static CreativeTabs signTab;
+	
 	private SpaceextendedEntity entity;
 
 	private BasicBlocks blocks;
@@ -63,6 +65,7 @@ public class SpaceExtendedMain {
 		stairsTab = new StairsTab();
 		armorTab = new ArmorTab();
 		furnitureTab = new FurnitureTab();
+		signTab = new SignTab();
 		blocks = new BasicBlocks();
 		items = new BasicItems();
 		stairs = new BasicStairs();

@@ -167,8 +167,14 @@ public class BasicBlocks {
 	public static Block notice_board3;
 	public static Block notice_board4;
 	public static Block notice_board5;
+	public static Block notice_board_level0;
+	public static Block notice_board_level1;
+	public static Block notice_board_level2;
+	public static Block notice_board_level3;
+	public static Block notice_board_level4;
+	public static Block notice_board_level5;
 	
-
+	
 	public BasicBlocks() {
 		init();
 		register();
@@ -490,7 +496,18 @@ public class BasicBlocks {
 		NameUtils.setNames(notice_board4,"notice_board4");
 		notice_board5 = new BlockCustomNoticeBoard();
 		NameUtils.setNames(notice_board5,"notice_board5");
-		
+		notice_board_level0 = new BlockCustomNoticeBoard();
+		NameUtils.setNames(notice_board_level0,"notice_board_level0");
+		notice_board_level1 = new BlockCustomNoticeBoard();
+		NameUtils.setNames(notice_board_level1,"notice_board_level1");
+		notice_board_level2 = new BlockCustomNoticeBoard();
+		NameUtils.setNames(notice_board_level2,"notice_board_level2");
+		notice_board_level3 = new BlockCustomNoticeBoard();
+		NameUtils.setNames(notice_board_level3,"notice_board_level3");
+		notice_board_level4 = new BlockCustomNoticeBoard();
+		NameUtils.setNames(notice_board_level4,"notice_board_level4");
+		notice_board_level5 = new BlockCustomNoticeBoard();
+		NameUtils.setNames(notice_board_level5,"notice_board_level5");
 		
 	}
 
@@ -647,6 +664,14 @@ public class BasicBlocks {
 		registerBlock(notice_board3);
 		registerBlock(notice_board4);
 		registerBlock(notice_board5);
+		registerBlock(notice_board_level0);
+		registerBlock(notice_board_level1);
+		registerBlock(notice_board_level2);
+		registerBlock(notice_board_level3);
+		registerBlock(notice_board_level4);
+		registerBlock(notice_board_level5);
+		
+		
 	}
 
 	private void registerBlock(Block block) {

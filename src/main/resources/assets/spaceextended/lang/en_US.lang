@@ -143,11 +143,17 @@ tile.transport_box.name=§5Container§r
 tile.ironium_ore.name=§5Ironium Ore§r
 tile.transport_box1.name=§5Container A§r
 tile.klingolight.name=§5Klingolight§r
-tile.notice_board.name=§5Notice Board1§r
-tile.notice_board2.name=§5Notice Board2§r
-tile.notice_board3.name=§5Notice Board3§r
-tile.notice_board4.name=§5Notice Board4§r
-tile.notice_board5.name=§5Notice Board5§r
+tile.notice_board.name=§5Area 1§r
+tile.notice_board2.name=§5Area 2§r
+tile.notice_board3.name=§5Area 3§r
+tile.notice_board4.name=§5Area 4§r
+tile.notice_board5.name=§5Area 5§r
+tile.notice_board_level0.name=§5Level 0§r
+tile.notice_board_level1.name=§5Level 1§r
+tile.notice_board_level2.name=§5Level 2§r
+tile.notice_board_level3.name=§5Level 3§r
+tile.notice_board_level4.name=§5Level 4§r
+tile.notice_board_level5.name=§5Level 5§r
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r
@@ -216,7 +222,8 @@ item.flamethrower.name=§5Flamethrower§r
 entity.beetle.name=§5Scorpiolyth§r
 
 
-itemGroup.spacetab=§5Space Tab§r
+itemGroup.spacetab=§5Space Blocks§r
 itemGroup.stairstab=§5Modified Stairs§r
-itemGroup.armortab=§5Armor Tab§r
-itemGroup.furnituretab=§5Furniture Tab§r
+itemGroup.armortab=§5Armor Items§r
+itemGroup.furnituretab=§5Furniture §r
+itemGroup.signtab=§5Signs§r
