@@ -155,6 +155,7 @@ tile.notice_board_level3.name=§5Level 3§r
 tile.notice_board_level4.name=§5Level 4§r
 tile.notice_board_level5.name=§5Level 5§r
 
+
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r
 tile.drillmonitor.name=§5Drill/Monitor§r
@@ -212,6 +213,9 @@ item.metalframe_door.name=§5MetalFrame Door§r
 item.ironit_door.name=§5Ironit Door§r
 item.bed1.name=§5Lifebox§r
 item.ironit_crystal.name=§5Ironit Crystal§r
+item.glass_door.name=§5Glass Door§r
+
+
 
 item.vitallium_helmet.name=§5Vitallium Helmet§r
 item.vitallium_chestplate.name=§5Vitallium Chestplate§r

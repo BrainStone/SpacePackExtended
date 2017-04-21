@@ -152,6 +152,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.metalframe_door, 0);
 		registerModel(BasicBlocks.vitallium_door, 0);
 		registerModel(BasicBlocks.ironit_door, 0);
+		registerModel(BasicBlocks.glass_door, 0);
 		registerModel(BasicBlocks.vitallium_fence, 0);
 		registerModel(BasicBlocks.vitallium_fence_gate, 0);
 		registerModel(BasicBlocks.strontenium_fence, 0);
@@ -204,6 +205,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicItems.strontenit_door, 0);
 		registerModel(BasicItems.metalframe_door, 0);
 		registerModel(BasicItems.ironit_door, 0);
+		registerModel(BasicItems.glass_door, 0);
 		registerModel(BasicItems.bed1, 0);
 		registerModel(BasicItems.cyberit_gem, 0);
 		registerModel(BasicItems.cyberit_beetle, 0);

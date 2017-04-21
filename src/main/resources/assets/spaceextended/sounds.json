@@ -48,5 +48,20 @@
         "sounds": [
             "spaceextended:random/metalframedoor_close"
 			]
-	}	
+	},
+    "block.glassdoor.open": {
+        "category": "block",
+        "sounds": [
+            "spaceextended:random/glassdoor_open"
+        ]
+    },
+    "block.glassdoor.close": {
+        "category": "block",
+        "sounds": [
+            "spaceextended:random/glassdoor_close"
+			]	
+    }
+
+	
+		
 }

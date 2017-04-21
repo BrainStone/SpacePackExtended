@@ -14,7 +14,8 @@ public class SpaceextendedSoundEvents {
 	public static SoundEvent IRONITDOOR_CLOSE;
 	public static SoundEvent METALFRAMEDOOR_OPEN;
 	public static SoundEvent METALFRAMEDOOR_CLOSE;
-	
+	public static SoundEvent GLASSDOOR_OPEN;
+	public static SoundEvent GLASSDOOR_CLOSE;
 	
 
 	public static void registerSounds() {
@@ -27,7 +28,8 @@ public class SpaceextendedSoundEvents {
 		IRONITDOOR_CLOSE =registerSound("block.ironitdoor.close");
 		METALFRAMEDOOR_OPEN = registerSound("block.metalframedoor.open");
 		METALFRAMEDOOR_CLOSE = registerSound("block.metalframedoor.close");
-		
+		GLASSDOOR_OPEN = registerSound("block.glassdoor.open");
+		GLASSDOOR_CLOSE = registerSound("block.glassdoor.close");
 
 	}
 
