@@ -174,6 +174,7 @@ public class BasicBlocks {
 	public static Block notice_board_level3;
 	public static Block notice_board_level4;
 	public static Block notice_board_level5;
+	public static Block music_rack;
 	
 	
 	public BasicBlocks() {
@@ -511,6 +512,8 @@ public class BasicBlocks {
 		NameUtils.setNames(notice_board_level4,"notice_board_level4");
 		notice_board_level5 = new BlockCustomNoticeBoard();
 		NameUtils.setNames(notice_board_level5,"notice_board_level5");
+		music_rack = new BlockMusicRack().setCreativeTab(SpaceExtendedMain.furnitureTab);
+		NameUtils.setNames(music_rack, "music_rack");
 		
 	}
 
@@ -674,7 +677,7 @@ public class BasicBlocks {
 		registerBlock(notice_board_level3);
 		registerBlock(notice_board_level4);
 		registerBlock(notice_board_level5);
-		
+		registerBlock(music_rack);
 		
 	}
 
