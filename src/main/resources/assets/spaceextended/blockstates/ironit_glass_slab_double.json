@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "variant=default": {
+            "model": "spaceextended:ironit_glass"
+        }
+    }
+}

@@ -95,6 +95,8 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.cyberit_Ore, 0);
 		registerModel(BasicBlocks.vitallium_glass, 0);
 		registerModel(BasicBlocks.vitallium_glass_pane, 0);
+		registerModel(BasicBlocks.ironit_glass, 0);
+		registerModel(BasicBlocks.ironit_glass_pane, 0);
 		registerModel(BasicBlocks.strontenium_glass, 0);
 		registerModel(BasicBlocks.strontenium_glass_pane, 0);
 		registerModel(BasicBlocks.analyser, 0);
@@ -136,6 +138,8 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.space_quartz_slab_double, 0);
 		registerModel(BasicBlocks.vitallium_slab_half, 0);
 		registerModel(BasicBlocks.vitallium_slab_double, 0);
+		registerModel(BasicBlocks.ironit_glass_slab_half, 0);
+		registerModel(BasicBlocks.ironit_glass_slab_double, 0);
 		registerModel(BasicBlocks.metal_frame_slab_half, 0);
 		registerModel(BasicBlocks.metal_frame_slab_double, 0);
 		registerModel(BasicBlocks.lever1, 0);
@@ -256,6 +260,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicStairs.slope_pipes, 0);
 		registerModel(BasicStairs.concrete_stairs, 0);
 		registerModel(BasicStairs.arm_chair, 0);
+		registerModel(BasicStairs.ironit_glass_stairs, 0);
 
 	}
 

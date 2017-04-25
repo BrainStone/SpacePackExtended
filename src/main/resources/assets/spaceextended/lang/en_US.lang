@@ -66,6 +66,8 @@ tile.virtual_screen.name=§5Virtual Screen§r
 tile.ferrolit.name=§5Ferrolit§r
 tile.strontenium_glass.name=§5Strontenium Glass§r
 tile.strontenium_glass_pane.name=§5Strontenium Glass Pane§r
+tile.ironit_glass.name=§5Ironit Glass§r
+tile.ironit_glass_pane.name=§5Ironit Glass Pane§r
 tile.block_space_quartz.name=§5Space Quartz§r
 tile.block_space_quartza.name=§5Space Quartz A§r
 tile.block_space_quartz_mfblock.name=§5Space Quartz MFBlock§r
@@ -86,6 +88,7 @@ tile.metal_frame_straight.name=§5Metal Frame Straight§r
 tile.metal_frame_zero.name=§5Metal Frame Zero§r
 tile.metal_ladder.name=§5Metal Ladder§r
 tile.vitallium_slab_half.name=§5Vitallium Slab§r
+tile.ironit_glass_slab_half.name=§5Ironit Glass Slab§r
 tile.metal_frame_vert.name=§5Metal Frame Vertical§r
 tile.space_quartz_slab_half.name=§5Space Quartz Slab§r
 tile.metal_frame_slab_half.name=§5Metal Frame Slab§r
@@ -154,13 +157,14 @@ tile.notice_board_level2.name=§5Level 2§r
 tile.notice_board_level3.name=§5Level 3§r
 tile.notice_board_level4.name=§5Level 4§r
 tile.notice_board_level5.name=§5Level 5§r
-
+tile.music_rack.name=§5Radio§r
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r
 tile.drillmonitor.name=§5Drill/Monitor§r
 tile.pcdeskammo.name=§5Pcdesk/Ammo§r
 tile.vitalliumstairs.name=§5Vitalliumstairs§r
+tile.ironit_glass_stairs.name=§5Ironit Glass Stairs§r
 tile.metalframestairs.name=§5Metal Frame Stairs§r
 tile.lamp_stairs.name=§5Lamp§r
 tile.strontenium_stairs.name=§5Strontenium Stairs§r

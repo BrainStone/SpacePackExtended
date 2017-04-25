@@ -40,6 +40,7 @@ public class BasicStairs {
 	public static BlockStairs slope_pipes;
 	public static BlockStairs concrete_stairs;
 	public static BlockStairs arm_chair;
+	public static BlockStairs ironit_glass_stairs;
 
 	public BasicStairs() {
 		init();
@@ -114,6 +115,10 @@ public class BasicStairs {
 		NameUtils.setNames(concrete_stairs, "concrete_stairs");
 		arm_chair = (BlockStairs) new BlockArmChair().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(arm_chair, "arm_chair");
+		ironit_glass_stairs = (BlockStairs) new BlockIronitGlassStairs().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(ironit_glass_stairs, "ironit_glass_stairs");
+		
+		
 
 	}
 
@@ -150,6 +155,8 @@ public class BasicStairs {
 		registerBlockStairs(slope_pipes);
 		registerBlockStairs(concrete_stairs);
 		registerBlockStairs(arm_chair);
+		registerBlockStairs(ironit_glass_stairs);
+		
 	}
 
 	private void registerBlockStairs(BlockStairs blockstairs) {

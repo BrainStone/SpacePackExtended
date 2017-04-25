@@ -15,6 +15,8 @@ public class BasicBlocks {
 	public static Block vitallium;
 	public static BlockSlab vitallium_slab_half;
 	public static BlockSlab vitallium_slab_double;
+	public static BlockSlab ironit_glass_slab_half; 
+	public static BlockSlab ironit_glass_slab_double;
 	public static Block vitallium_ore;
 	public static Block vitallium_fence;
 	public static Block vitallium_fence_gate;
@@ -89,6 +91,8 @@ public class BasicBlocks {
 	public static Block virtual_screen;
 	public static Block vitallium_glass;
 	public static Block vitallium_glass_pane;
+	public static Block ironit_glass;
+	public static Block ironit_glass_pane;
 	public static Block quartz_window;
 	public static Block quartz_window_pane;
 	public static Block block_engine;
@@ -332,6 +336,11 @@ public class BasicBlocks {
 		vitallium_glass_pane = new BlockVitalliumGlassPane(Material.GLASS, false)
 				.setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(vitallium_glass_pane, "vitallium_glass_pane");
+		ironit_glass = new BlockIronitGlass(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(ironit_glass, "ironit_glass");
+		ironit_glass_pane = new BlockIronitGlassPane(Material.GLASS, false)
+				.setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(ironit_glass_pane, "ironit_glass_pane");		
 		virtual_screen = new BlockVirtualScreen(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(virtual_screen, "virtual_screen");
 		block_space_quartz = new BlockSpaceQuartz().setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -388,6 +397,11 @@ public class BasicBlocks {
 		NameUtils.setNames(vitallium_slab_half, "vitallium_slab_half");
 		vitallium_slab_double = new BlockVitalliumSlab.Double();
 		NameUtils.setNames(vitallium_slab_double, "vitallium_slab_double");
+		ironit_glass_slab_half = (BlockSlab) new BlockIronitGlassSlab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(ironit_glass_slab_half, "ironit_glass_slab_half");
+		ironit_glass_slab_double = new BlockIronitGlassSlab.Double();
+		NameUtils.setNames(ironit_glass_slab_double, "ironit_glass_slab_double");
+		
 		space_quartz_slab_half = (BlockSlab) new BlockSpaceQuartzSlab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(space_quartz_slab_half, "space_quartz_slab_half");
 		space_quartz_slab_double = new BlockSpaceQuartzSlab.Double();
@@ -520,6 +534,7 @@ public class BasicBlocks {
 	private void register() {
 		registerBlock(vitallium);
 		registerSlab(vitallium_slab_half, vitallium_slab_double);
+		registerSlab(ironit_glass_slab_half, ironit_glass_slab_double);
 		registerBlock(vitallium_ore);
 		registerBlock(vitallium_fence);
 		registerBlock(vitallium_fence_gate);
@@ -593,6 +608,8 @@ public class BasicBlocks {
 		registerBlock(virtual_screen);
 		registerBlock(vitallium_glass);
 		registerBlock(vitallium_glass_pane);
+		registerBlock(ironit_glass);
+		registerBlock(ironit_glass_pane);
 		registerBlock(quartz_window);
 		registerBlock(quartz_window_pane);
 		registerBlock(block_engine);

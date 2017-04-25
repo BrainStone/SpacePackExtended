@@ -320,9 +320,9 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.light_box, 8),
 				new Object[] { "   ", " X ", "X X", 'X', new ItemStack(BasicItems.quartz_component) });
 		// 93 Quartz_Window
-		GameRegistry.addShapelessRecipe(new ItemStack(BasicBlocks.quartz_window, 5), Blocks.GLASS,
-				BasicItems.quartz_component);
-
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.quartz_window, 6),
+				new Object[] { "   ", "YXY", "XYX", 'X', new ItemStack(Blocks.GLASS),
+						'Y', new ItemStack(BasicItems.quartz_component)});		
 		// 94 Quartz_Window_Pane
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.quartz_window_pane, 16),
 				new Object[] { "   ", "VVV", "VVV", 'V', new ItemStack(BasicBlocks.quartz_window) });
@@ -572,6 +572,24 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.glass_door, 3),
 				new Object[] { "LO ", "LO ", "LO ", 'O', new ItemStack(BasicItems.ironit_crystal),
 						'L', new ItemStack(BasicBlocks.quartz_window)});
+		// 173 Ironit Glass
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.ironit_glass,8),
+				new Object[] { "OOO", "OOO", "OOO",'O',new ItemStack(BasicItems.ironit_crystal)});
+		// 174 Ironit Glass Pane
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.ironit_glass_pane,16),
+				new Object[] { "OOO", "   ", "OOO",'O',new ItemStack(BasicBlocks.ironit_glass)});
+		
+		// 175 Ironit Glass Stairs
+		GameRegistry.addShapedRecipe( new ItemStack(BasicStairs.ironit_glass_stairs,8),
+				new Object[] { "  O", " OO", "OOO",'O',new ItemStack(BasicBlocks.ironit_glass)});
+		// 176 Ironit Glass Slab
+		GameRegistry.addShapedRecipe( new ItemStack(BasicBlocks.ironit_glass_slab_half, 6),
+				new Object[] { "   ", "OOO", "   ",'O',new ItemStack(BasicItems.ironit_crystal)});
+		
+				
+				
+				
+				
 				
 				}
 		

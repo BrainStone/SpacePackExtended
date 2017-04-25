@@ -1,0 +1,7 @@
+{
+    "parent": "block/pane_post",
+    "textures": {
+        "edge": "spaceextended:blocks/ironit_glass_pane_top",
+        "pane": "spaceextended:blocks/ironit_glass"
+    }
+}
