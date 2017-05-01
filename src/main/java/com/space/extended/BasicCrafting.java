@@ -585,16 +585,16 @@ public class BasicCrafting {
 		// 176 Ironit Glass Slab
 		GameRegistry.addShapedRecipe( new ItemStack(BasicBlocks.ironit_glass_slab_half, 6),
 				new Object[] { "   ", "OOO", "   ",'O',new ItemStack(BasicItems.ironit_crystal)});
-		
-				
-				
-				
-				
-				
+		//177 Notebook
+		GameRegistry.addShapedRecipe( new ItemStack(BasicBlocks.notebook, 1),
+				new Object[] { "   ", "OOO", "LLL",'O',new ItemStack(BasicBlocks.vitallium_glass_pane),
+						'L', new ItemStack(Items.REDSTONE)});
 				}
+				
+			}
 		
 		
-		}
+		
 		
 
 

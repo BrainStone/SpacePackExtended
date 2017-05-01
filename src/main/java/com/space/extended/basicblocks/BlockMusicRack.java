@@ -1,9 +1,7 @@
 package com.space.extended.basicblocks;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockJukebox;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.properties.PropertyDirection;
@@ -45,6 +43,7 @@ public class BlockMusicRack extends BlockJukebox {
 		blockSoundType = SoundType.WOOD;
 		setHardness(2F);
 		setResistance(5F);
+		setLightOpacity(1);
 		this.setHarvestLevel("axe", 2);
 		this.setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 		this.setDefaultState(this.blockState.getBaseState().withProperty(HAS_RECORD, Boolean.valueOf(false)));

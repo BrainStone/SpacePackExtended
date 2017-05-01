@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:notebook",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "spaceextended:notebook",
+            "y": 270
+        },
+        "facing=west": {
+            "model": "spaceextended:notebook"
+        },
+        "facing=east": {
+            "model": "spaceextended:notebook",
+            "y": 180
+        }
+    }
+}

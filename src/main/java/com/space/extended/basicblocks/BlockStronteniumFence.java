@@ -1,6 +1,7 @@
 package com.space.extended.basicblocks;
 
 import net.minecraft.block.BlockFence;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraftforge.fml.relauncher.Side;
@@ -12,6 +13,7 @@ public class BlockStronteniumFence extends BlockFence {
 		super(Material.IRON, Material.IRON.getMaterialMapColor());
 		setHardness(3);
 		setResistance(20);
+		blockSoundType = SoundType.GLASS;
 		useNeighborBrightness = true;
 	}
 

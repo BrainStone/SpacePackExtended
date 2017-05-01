@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.BlockWall;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyBool;
@@ -47,6 +48,7 @@ public class BlockStronteniumFenceGate extends BlockHorizontal {
 				.withProperty(POWERED, Boolean.valueOf(false)).withProperty(IN_WALL, Boolean.valueOf(false)));
 		setHardness(3);
 		setResistance(20);
+		blockSoundType = SoundType.GLASS;
 		useNeighborBrightness = true;
 	}
 
