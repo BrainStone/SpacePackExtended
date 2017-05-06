@@ -18,7 +18,7 @@ public class BlockSpotLamp extends Block {
 		setHardness(2F);
 		setResistance(1F);
 		setLightLevel(1F);
-		setLightOpacity(1);
+		setLightOpacity(50);
 		setHarvestLevel("axe", 1);
 		setSoundType(SoundType.GLASS);
 	}

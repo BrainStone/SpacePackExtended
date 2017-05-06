@@ -48,8 +48,8 @@
 		},
 		{
 			"__comment": "halter gerade",
-			"from": [ 8.915, 3.125, 3.635 ],
-			"to": [ 9.415, 7.125, 4.615 ],
+			"from": [ 9.04, 3.125, 3.635 ],
+			"to": [ 9.54, 7.125, 4.615 ],
 			"faces": {
 				"down": { "uv": [ 4.5, 4, 5.5, 4.5 ], "texture": "#texture", "rotation": 90 },
 				"up": { "uv": [ 4.5, 4, 5.5, 4.5 ], "texture": "#texture", "rotation": 270 },
