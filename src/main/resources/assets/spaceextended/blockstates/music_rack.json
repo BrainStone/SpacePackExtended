@@ -3,14 +3,14 @@
         "facing=north,has_record=true": {
             "model": "spaceextended:music_rack"
         },
-		"facing=north,has_record=false": {
+        "facing=north,has_record=false": {
             "model": "spaceextended:music_rack"
         },
         "facing=south,has_record=true": {
             "model": "spaceextended:music_rack",
             "y": 180
         },
-		"facing=south,has_record=false": {
+        "facing=south,has_record=false": {
             "model": "spaceextended:music_rack",
             "y": 180
         },
@@ -18,7 +18,7 @@
             "model": "spaceextended:music_rack",
             "y": 270
         },
-		"facing=west,has_record=false": {
+        "facing=west,has_record=false": {
             "model": "spaceextended:music_rack",
             "y": 270
         },
@@ -26,7 +26,7 @@
             "model": "spaceextended:music_rack",
             "y": 90
         },
-		"facing=east,has_record=false": {
+        "facing=east,has_record=false": {
             "model": "spaceextended:music_rack",
             "y": 90
         }

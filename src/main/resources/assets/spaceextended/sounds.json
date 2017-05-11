@@ -25,7 +25,7 @@
             "spaceextended:random/strontenitdoor_close"
         ]
     },
-	"block.ironitdoor.open": {
+    "block.ironitdoor.open": {
         "category": "block",
         "sounds": [
             "spaceextended:random/ironitdoor_open"
@@ -35,8 +35,8 @@
         "category": "block",
         "sounds": [
             "spaceextended:random/ironitdoor_close"
-			]
-	},	
+        ]
+    },
     "block.metalframedoor.open": {
         "category": "block",
         "sounds": [
@@ -47,8 +47,8 @@
         "category": "block",
         "sounds": [
             "spaceextended:random/metalframedoor_close"
-			]
-	},
+        ]
+    },
     "block.glassdoor.open": {
         "category": "block",
         "sounds": [
@@ -59,9 +59,6 @@
         "category": "block",
         "sounds": [
             "spaceextended:random/glassdoor_close"
-			]	
+        ]
     }
-
-	
-		
 }

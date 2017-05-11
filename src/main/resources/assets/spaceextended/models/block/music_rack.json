@@ -1,82 +1,322 @@
 {
-	"__comment": "Designed by Norzeteus with Cubik Studio - https://cubik.studio",
-	"textures": {
-		"particle": "spaceextended:blocks/music_rack_side",
-		"texture": "spaceextended:blocks/music_rack"
-	},
-	"elements": [
-		{
-			"__comment": "Cube1",
-			"from": [ 4, 0, 11 ],
-			"to": [ 12, 9, 16 ],
-			"faces": {
-				"down": { "uv": [ 0, 0, 8, 5 ], "texture": "#texture" },
-				"up": { "uv": [ 0, 0, 8, 5 ], "texture": "#texture" },
-				"north": { "uv": [ 0, 7, 8, 16 ], "texture": "#texture" },
-				"south": { "uv": [ 8, 7, 16, 16 ], "texture": "#texture" },
-				"west": { "uv": [ 4, 7.5, 9, 16 ], "texture": "#particle" },
-				"east": { "uv": [ 4, 7.5, 9, 16 ], "texture": "#particle" }
-			}
-		},
-		{
-			"__comment": "Cube2",
-			"from": [ 12, 0, 11 ],
-			"to": [ 16, 8.5, 16 ],
-			"faces": {
-				"down": { "uv": [ 0, 2.5, 4, 7.5 ], "texture": "#particle" },
-				"up": { "uv": [ 0, 2.5, 4, 7.5 ], "texture": "#particle" },
-				"north": { "uv": [ 0, 7.5, 4, 16 ], "texture": "#particle" },
-				"south": { "uv": [ 9, 7.5, 13, 16 ], "texture": "#particle" },
-				"west": { "uv": [ 4, 7.5, 9, 16 ], "texture": "#particle" },
-				"east": { "uv": [ 4, 7.5, 9, 16 ], "texture": "#particle" }
-			}
-		},
-		{
-			"__comment": "Cube2",
-			"from": [ 0, 0, 11 ],
-			"to": [ 4, 8.5, 16 ],
-			"faces": {
-				"down": { "uv": [ 0, 2.5, 4, 7.5 ], "texture": "#particle" },
-				"up": { "uv": [ 0, 2.5, 4, 7.5 ], "texture": "#particle" },
-				"north": { "uv": [ 0, 7.5, 4, 16 ], "texture": "#particle" },
-				"south": { "uv": [ 9, 7.5, 13, 16 ], "texture": "#particle" },
-				"west": { "uv": [ 4, 7.5, 9, 16 ], "texture": "#particle" },
-				"east": { "uv": [ 4, 7.5, 9, 16 ], "texture": "#particle" }
-			}
-		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation":  [ 75, 45, 0 ],
-			"translation":  [ 0, 2.5, 0 ],
-			"scale":  [ 0.375, 0.375, 0.375 ]
-		},
-		"thirdperson_lefthand": {
-			"rotation":  [ 75, 45, 0 ],
-			"translation":  [ 0, 2.5, 0 ],
-			"scale":  [ 0.375, 0.375, 0.375 ]
-		},
-		"firstperson_righthand": {
-			"rotation":  [ 0, 133, 0 ],
-			"translation":  [ 0, 3.4782, 0 ],
-			"scale":  [ 0.4, 0.4, 0.4 ]
-		},
-		"firstperson_lefthand": {
-			"rotation":  [ 0, 133, 0 ],
-			"translation":  [ 0, 3.4782, 0 ],
-			"scale":  [ 0.4, 0.4, 0.4 ]
-		},
-		"gui": {
-			"rotation":  [ 30, 225, 0 ],
-			"translation":  [ 2.0869, 0, 0 ],
-			"scale":  [ 0.625, 0.625, 0.625 ]
-		},
-		"ground": {
-			"translation":  [ 0, 3, 0 ],
-			"scale":  [ 0.25, 0.25, 0.25 ]
-		},
-		"fixed": {
-			"translation":  [ 0, 2.7826, -6.956 ]
-		}
-	}
+    "__comment": "Designed by Norzeteus with Cubik Studio - https://cubik.studio",
+    "textures": {
+        "particle": "spaceextended:blocks/music_rack_side",
+        "texture": "spaceextended:blocks/music_rack"
+    },
+    "elements": [
+        {
+            "__comment": "Cube1",
+            "from": [
+                4,
+                0,
+                11
+            ],
+            "to": [
+                12,
+                9,
+                16
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        0,
+                        0,
+                        8,
+                        5
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        0,
+                        0,
+                        8,
+                        5
+                    ],
+                    "texture": "#texture"
+                },
+                "north": {
+                    "uv": [
+                        0,
+                        7,
+                        8,
+                        16
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        8,
+                        7,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        4,
+                        7.5,
+                        9,
+                        16
+                    ],
+                    "texture": "#particle"
+                },
+                "east": {
+                    "uv": [
+                        4,
+                        7.5,
+                        9,
+                        16
+                    ],
+                    "texture": "#particle"
+                }
+            }
+        },
+        {
+            "__comment": "Cube2",
+            "from": [
+                12,
+                0,
+                11
+            ],
+            "to": [
+                16,
+                8.5,
+                16
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        0,
+                        2.5,
+                        4,
+                        7.5
+                    ],
+                    "texture": "#particle"
+                },
+                "up": {
+                    "uv": [
+                        0,
+                        2.5,
+                        4,
+                        7.5
+                    ],
+                    "texture": "#particle"
+                },
+                "north": {
+                    "uv": [
+                        0,
+                        7.5,
+                        4,
+                        16
+                    ],
+                    "texture": "#particle"
+                },
+                "south": {
+                    "uv": [
+                        9,
+                        7.5,
+                        13,
+                        16
+                    ],
+                    "texture": "#particle"
+                },
+                "west": {
+                    "uv": [
+                        4,
+                        7.5,
+                        9,
+                        16
+                    ],
+                    "texture": "#particle"
+                },
+                "east": {
+                    "uv": [
+                        4,
+                        7.5,
+                        9,
+                        16
+                    ],
+                    "texture": "#particle"
+                }
+            }
+        },
+        {
+            "__comment": "Cube2",
+            "from": [
+                0,
+                0,
+                11
+            ],
+            "to": [
+                4,
+                8.5,
+                16
+            ],
+            "faces": {
+                "down": {
+                    "uv": [
+                        0,
+                        2.5,
+                        4,
+                        7.5
+                    ],
+                    "texture": "#particle"
+                },
+                "up": {
+                    "uv": [
+                        0,
+                        2.5,
+                        4,
+                        7.5
+                    ],
+                    "texture": "#particle"
+                },
+                "north": {
+                    "uv": [
+                        0,
+                        7.5,
+                        4,
+                        16
+                    ],
+                    "texture": "#particle"
+                },
+                "south": {
+                    "uv": [
+                        9,
+                        7.5,
+                        13,
+                        16
+                    ],
+                    "texture": "#particle"
+                },
+                "west": {
+                    "uv": [
+                        4,
+                        7.5,
+                        9,
+                        16
+                    ],
+                    "texture": "#particle"
+                },
+                "east": {
+                    "uv": [
+                        4,
+                        7.5,
+                        9,
+                        16
+                    ],
+                    "texture": "#particle"
+                }
+            }
+        }
+    ],
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [
+                75,
+                45,
+                0
+            ],
+            "translation": [
+                0,
+                2.5,
+                0
+            ],
+            "scale": [
+                0.375,
+                0.375,
+                0.375
+            ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [
+                75,
+                45,
+                0
+            ],
+            "translation": [
+                0,
+                2.5,
+                0
+            ],
+            "scale": [
+                0.375,
+                0.375,
+                0.375
+            ]
+        },
+        "firstperson_righthand": {
+            "rotation": [
+                0,
+                133,
+                0
+            ],
+            "translation": [
+                0,
+                3.4782,
+                0
+            ],
+            "scale": [
+                0.4,
+                0.4,
+                0.4
+            ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [
+                0,
+                133,
+                0
+            ],
+            "translation": [
+                0,
+                3.4782,
+                0
+            ],
+            "scale": [
+                0.4,
+                0.4,
+                0.4
+            ]
+        },
+        "gui": {
+            "rotation": [
+                30,
+                225,
+                0
+            ],
+            "translation": [
+                2.0869,
+                0,
+                0
+            ],
+            "scale": [
+                0.625,
+                0.625,
+                0.625
+            ]
+        },
+        "ground": {
+            "translation": [
+                0,
+                3,
+                0
+            ],
+            "scale": [
+                0.25,
+                0.25,
+                0.25
+            ]
+        },
+        "fixed": {
+            "translation": [
+                0,
+                2.7826,
+                -6.956
+            ]
+        }
+    }
 }
