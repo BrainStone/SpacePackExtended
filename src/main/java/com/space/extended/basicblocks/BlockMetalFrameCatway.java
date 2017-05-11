@@ -37,7 +37,7 @@ public class BlockMetalFrameCatway extends BlockMetalFrame {
 
 	@Override
 	public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox,
-			List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn_) {
+			List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn_, boolean p_185477_7_) {
 		int meta = state.getValue(FACING).getHorizontalIndex();
 
 		if (type != CatwayType.POST) {
