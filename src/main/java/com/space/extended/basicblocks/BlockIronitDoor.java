@@ -16,7 +16,7 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
 public class BlockIronitDoor extends BlockCustomDoor {
-	
+
 	public BlockIronitDoor() {
 		super(Material.IRON);
 		setHardness(3);
@@ -43,6 +43,7 @@ public class BlockIronitDoor extends BlockCustomDoor {
 	protected Item getItem() {
 		return BasicItems.ironit_door;
 	}
+
 	@Override
 	protected SoundEvent getOpenSound() {
 		return SpaceextendedSoundEvents.IRONITDOOR_OPEN;

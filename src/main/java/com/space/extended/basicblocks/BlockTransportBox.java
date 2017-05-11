@@ -16,8 +16,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockTransportBox extends Block{
-	
+public class BlockTransportBox extends Block {
+
 	public static final PropertyEnum<EnumFacing.Axis> AXIS = PropertyEnum.<EnumFacing.Axis>create("axis",
 			EnumFacing.Axis.class);
 
@@ -103,6 +103,7 @@ public class BlockTransportBox extends Block{
 		return super.getStateForPlacement(worldIn, pos, facing, hitX, hitY, hitZ, meta, placer, hand).withProperty(AXIS,
 				facing.getAxis());
 	}
+
 	@Override
 	public boolean isFullCube(IBlockState state) {
 		return true;

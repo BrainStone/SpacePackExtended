@@ -11,8 +11,8 @@ import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockGlassDoor extends  BlockCustomDoor {
-	
+public class BlockGlassDoor extends BlockCustomDoor {
+
 	public BlockGlassDoor() {
 		super(Material.IRON);
 		setHardness(3);
@@ -24,13 +24,13 @@ public class BlockGlassDoor extends  BlockCustomDoor {
 	protected Item getItem() {
 		return BasicItems.glass_door;
 	}
-	
+
 	@Override
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getBlockLayer() {
 		return BlockRenderLayer.TRANSLUCENT;
 	}
-	
+
 	@Override
 	protected SoundEvent getOpenSound() {
 		return SpaceextendedSoundEvents.GLASSDOOR_OPEN;

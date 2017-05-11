@@ -117,8 +117,6 @@ public class BasicStairs {
 		NameUtils.setNames(arm_chair, "arm_chair");
 		ironit_glass_stairs = (BlockStairs) new BlockIronitGlassStairs().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(ironit_glass_stairs, "ironit_glass_stairs");
-		
-		
 
 	}
 
@@ -156,7 +154,7 @@ public class BasicStairs {
 		registerBlockStairs(concrete_stairs);
 		registerBlockStairs(arm_chair);
 		registerBlockStairs(ironit_glass_stairs);
-		
+
 	}
 
 	private void registerBlockStairs(BlockStairs blockstairs) {

@@ -20,8 +20,8 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public abstract class BlockIronitGlassSlab extends BlockSlab{
-	
+public abstract class BlockIronitGlassSlab extends BlockSlab {
+
 	public static final PropertyEnum<Variant> VARIANT = PropertyEnum.<Variant>create("variant", Variant.class);
 
 	public BlockIronitGlassSlab() {
@@ -115,12 +115,13 @@ public abstract class BlockIronitGlassSlab extends BlockSlab{
 			return "default";
 		}
 	}
+
 	@Override
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getBlockLayer() {
 		return BlockRenderLayer.TRANSLUCENT;
 	}
-	
+
 	@Override
 	public boolean isOpaqueCube(IBlockState state) {
 		return false;

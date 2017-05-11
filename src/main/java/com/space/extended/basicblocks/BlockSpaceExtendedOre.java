@@ -110,7 +110,7 @@ public class BlockSpaceExtendedOre extends Block {
 		} else
 			return this.quantityDropped(random);
 	}
-	
+
 	@Override
 	public boolean isFullCube(IBlockState state) {
 		return true;
@@ -120,6 +120,7 @@ public class BlockSpaceExtendedOre extends Block {
 	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
 		return false;
 	}
+
 	@Override
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getBlockLayer() {

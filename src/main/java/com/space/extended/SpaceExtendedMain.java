@@ -50,7 +50,7 @@ public class SpaceExtendedMain {
 	public static CreativeTabs armorTab;
 	public static CreativeTabs furnitureTab;
 	public static CreativeTabs signTab;
-	
+
 	private SpaceextendedEntity entity;
 
 	private BasicBlocks blocks;

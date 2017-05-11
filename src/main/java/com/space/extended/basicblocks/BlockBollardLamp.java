@@ -26,6 +26,7 @@ public class BlockBollardLamp extends Block {
 			setLightLevel(1.0F);
 		}
 	}
+
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		return AABB;

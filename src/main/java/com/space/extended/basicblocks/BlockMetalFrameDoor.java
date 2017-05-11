@@ -18,6 +18,7 @@ public class BlockMetalFrameDoor extends BlockCustomDoor {
 	protected Item getItem() {
 		return BasicItems.metalframe_door;
 	}
+
 	@Override
 	protected SoundEvent getOpenSound() {
 		return SpaceextendedSoundEvents.METALFRAMEDOOR_OPEN;

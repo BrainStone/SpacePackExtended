@@ -9,7 +9,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
 public class BlockRoofStairs extends BlockStairs {
-	
+
 	public BlockRoofStairs() {
 		super(Blocks.IRON_BLOCK.getDefaultState());
 		setHardness(2F);

@@ -13,8 +13,8 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockIronitGlassPane extends BlockPane{
-	
+public class BlockIronitGlassPane extends BlockPane {
+
 	private boolean ignoreSimilarity = true;
 
 	public BlockIronitGlassPane(Material materialIn, boolean canDrop) {

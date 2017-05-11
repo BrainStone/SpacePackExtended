@@ -58,7 +58,7 @@ public class BasicItems {
 		perolit_sphere = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(perolit_sphere, "perolit_sphere");
 		ironit_crystal = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
-		NameUtils.setNames(ironit_crystal, "ironit_crystal");		
+		NameUtils.setNames(ironit_crystal, "ironit_crystal");
 		kit1 = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(kit1, "kit1");
 		kit2 = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
@@ -101,10 +101,10 @@ public class BasicItems {
 		metalframe_door = new ItemMetalFrameDoor();
 		NameUtils.setNames(metalframe_door, "metalframe_door");
 		ironit_door = new ItemIronitDoor();
-		NameUtils.setNames(ironit_door,"ironit_door");
+		NameUtils.setNames(ironit_door, "ironit_door");
 		glass_door = new ItemGlassDoor();
-		NameUtils.setNames(glass_door,"glass_door");
-		
+		NameUtils.setNames(glass_door, "glass_door");
+
 	}
 
 	public void register() {

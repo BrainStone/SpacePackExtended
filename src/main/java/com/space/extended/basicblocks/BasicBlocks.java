@@ -15,7 +15,7 @@ public class BasicBlocks {
 	public static Block vitallium;
 	public static BlockSlab vitallium_slab_half;
 	public static BlockSlab vitallium_slab_double;
-	public static BlockSlab ironit_glass_slab_half; 
+	public static BlockSlab ironit_glass_slab_half;
 	public static BlockSlab ironit_glass_slab_double;
 	public static Block vitallium_ore;
 	public static Block vitallium_fence;
@@ -180,7 +180,7 @@ public class BasicBlocks {
 	public static Block notice_board_level5;
 	public static Block music_rack;
 	public static Block notebook;
-	
+
 	public BasicBlocks() {
 		init();
 		register();
@@ -216,9 +216,9 @@ public class BasicBlocks {
 		constructor5 = new BlockConstructor(5).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(constructor5, "constructor5");
 		transport_box = new BlockTransportBox().setCreativeTab(SpaceExtendedMain.spaceTab);
-		NameUtils.setNames(transport_box,"transport_box");
+		NameUtils.setNames(transport_box, "transport_box");
 		transport_box1 = new BlockTransportBox1().setCreativeTab(SpaceExtendedMain.spaceTab);
-		NameUtils.setNames(transport_box1,"transport_box1");
+		NameUtils.setNames(transport_box1, "transport_box1");
 		strontenium = new BlockStrontenium().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontenium, "strontenium");
 		strontenium0 = new BlockStrontenium0().setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -264,7 +264,7 @@ public class BasicBlocks {
 		perolit_ore = new BlockSpaceExtendedOre().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(perolit_ore, "perolit_ore");
 		ironium_ore = new BlockSpaceExtendedOre().setCreativeTab(SpaceExtendedMain.spaceTab);
-		NameUtils.setNames(ironium_ore,"ironium_ore");		
+		NameUtils.setNames(ironium_ore, "ironium_ore");
 		pipes_connector = new BlockPipesConnector().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(pipes_connector, "pipes_connector");
 		strontenita = new BlockStrontenit().setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -338,9 +338,8 @@ public class BasicBlocks {
 		NameUtils.setNames(vitallium_glass_pane, "vitallium_glass_pane");
 		ironit_glass = new BlockIronitGlass(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(ironit_glass, "ironit_glass");
-		ironit_glass_pane = new BlockIronitGlassPane(Material.GLASS, false)
-				.setCreativeTab(SpaceExtendedMain.spaceTab);
-		NameUtils.setNames(ironit_glass_pane, "ironit_glass_pane");		
+		ironit_glass_pane = new BlockIronitGlassPane(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(ironit_glass_pane, "ironit_glass_pane");
 		virtual_screen = new BlockVirtualScreen(Material.GLASS, false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(virtual_screen, "virtual_screen");
 		block_space_quartz = new BlockSpaceQuartz().setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -401,7 +400,7 @@ public class BasicBlocks {
 		NameUtils.setNames(ironit_glass_slab_half, "ironit_glass_slab_half");
 		ironit_glass_slab_double = new BlockIronitGlassSlab.Double();
 		NameUtils.setNames(ironit_glass_slab_double, "ironit_glass_slab_double");
-		
+
 		space_quartz_slab_half = (BlockSlab) new BlockSpaceQuartzSlab.Half().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(space_quartz_slab_half, "space_quartz_slab_half");
 		space_quartz_slab_double = new BlockSpaceQuartzSlab.Double();
@@ -435,7 +434,7 @@ public class BasicBlocks {
 		alarm_light_lit = new BlockAlarmLight(true);
 		NameUtils.setNames(alarm_light_lit, "alarm_light_lit");
 		klingolight = new BlockKlingoLight().setCreativeTab(SpaceExtendedMain.spaceTab);
-		NameUtils.setNames(klingolight,"klingolight");
+		NameUtils.setNames(klingolight, "klingolight");
 		bed1 = new BlockCustomBed();
 		NameUtils.setNames(bed1, "bed1");
 		wash_basin = new BlockWashBasin().setCreativeTab(SpaceExtendedMain.furnitureTab);
@@ -453,13 +452,13 @@ public class BasicBlocks {
 		vitallium_door = new BlockVitalliumDoor();
 		NameUtils.setNames(vitallium_door, "vitallium_door");
 		ironit_door = new BlockIronitDoor();
-		NameUtils.setNames(ironit_door,"ironit_door");
+		NameUtils.setNames(ironit_door, "ironit_door");
 		strontenit_door = new BlockStrontenitDoor();
 		NameUtils.setNames(strontenit_door, "strontenit_door");
 		metalframe_door = new BlockMetalFrameDoor();
 		NameUtils.setNames(metalframe_door, "metalframe_door");
 		glass_door = new BlockGlassDoor();
-		NameUtils.setNames(glass_door,"glass_door");
+		NameUtils.setNames(glass_door, "glass_door");
 		metal_button = new BlockMetalButton(false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_button, "metal_button");
 		vitallium_fence = new BlockVitalliumFence(null).setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -505,32 +504,32 @@ public class BasicBlocks {
 		cupboard_lower_outer = new BlockCustomCupboardLower();
 		NameUtils.setNames(cupboard_lower_outer, "cupboard_lower_outer");
 		notice_board = new BlockCustomNoticeBoard();
-		NameUtils.setNames(notice_board,"notice_board");
+		NameUtils.setNames(notice_board, "notice_board");
 		notice_board2 = new BlockCustomNoticeBoard();
-		NameUtils.setNames(notice_board2,"notice_board2");
+		NameUtils.setNames(notice_board2, "notice_board2");
 		notice_board3 = new BlockCustomNoticeBoard();
-		NameUtils.setNames(notice_board3,"notice_board3");
+		NameUtils.setNames(notice_board3, "notice_board3");
 		notice_board4 = new BlockCustomNoticeBoard();
-		NameUtils.setNames(notice_board4,"notice_board4");
+		NameUtils.setNames(notice_board4, "notice_board4");
 		notice_board5 = new BlockCustomNoticeBoard();
-		NameUtils.setNames(notice_board5,"notice_board5");
+		NameUtils.setNames(notice_board5, "notice_board5");
 		notice_board_level0 = new BlockCustomNoticeBoard();
-		NameUtils.setNames(notice_board_level0,"notice_board_level0");
+		NameUtils.setNames(notice_board_level0, "notice_board_level0");
 		notice_board_level1 = new BlockCustomNoticeBoard();
-		NameUtils.setNames(notice_board_level1,"notice_board_level1");
+		NameUtils.setNames(notice_board_level1, "notice_board_level1");
 		notice_board_level2 = new BlockCustomNoticeBoard();
-		NameUtils.setNames(notice_board_level2,"notice_board_level2");
+		NameUtils.setNames(notice_board_level2, "notice_board_level2");
 		notice_board_level3 = new BlockCustomNoticeBoard();
-		NameUtils.setNames(notice_board_level3,"notice_board_level3");
+		NameUtils.setNames(notice_board_level3, "notice_board_level3");
 		notice_board_level4 = new BlockCustomNoticeBoard();
-		NameUtils.setNames(notice_board_level4,"notice_board_level4");
+		NameUtils.setNames(notice_board_level4, "notice_board_level4");
 		notice_board_level5 = new BlockCustomNoticeBoard();
-		NameUtils.setNames(notice_board_level5,"notice_board_level5");
+		NameUtils.setNames(notice_board_level5, "notice_board_level5");
 		music_rack = new BlockMusicRack().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(music_rack, "music_rack");
 		notebook = new BlockNoteBook().setCreativeTab(SpaceExtendedMain.furnitureTab);
-		NameUtils.setNames(notebook,"notebook");
-		
+		NameUtils.setNames(notebook, "notebook");
+
 	}
 
 	private void register() {

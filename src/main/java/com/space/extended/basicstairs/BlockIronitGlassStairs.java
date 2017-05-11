@@ -11,8 +11,8 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockIronitGlassStairs extends BlockStairs{
-	
+public class BlockIronitGlassStairs extends BlockStairs {
+
 	protected BlockIronitGlassStairs() {
 		super(Blocks.STONE_STAIRS.getDefaultState());
 		setHardness(2F);
@@ -27,7 +27,7 @@ public class BlockIronitGlassStairs extends BlockStairs{
 	public BlockRenderLayer getBlockLayer() {
 		return BlockRenderLayer.TRANSLUCENT;
 	}
-	
+
 	@Override
 	@SideOnly(Side.CLIENT)
 	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {

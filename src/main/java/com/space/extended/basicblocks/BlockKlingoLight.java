@@ -8,8 +8,8 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class BlockKlingoLight extends Block{
-	
+public class BlockKlingoLight extends Block {
+
 	public BlockKlingoLight() {
 		super(Material.IRON);
 		setHardness(2F);
@@ -19,6 +19,7 @@ public class BlockKlingoLight extends Block{
 		setLightLevel(1.F);
 		setLightOpacity(1);
 	}
+
 	public boolean isOpaqueCube() {
 		return false;
 	}

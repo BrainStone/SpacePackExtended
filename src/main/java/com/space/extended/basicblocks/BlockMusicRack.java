@@ -31,12 +31,12 @@ public class BlockMusicRack extends BlockJukebox {
 	protected static final AxisAlignedBB AABB_SOUTH = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.6D, 0.30D);
 	protected static final AxisAlignedBB AABB_WEST = new AxisAlignedBB(0.70D, 0.0D, 0.0D, 1.0D, 0.6D, 1.0D);
 	protected static final AxisAlignedBB AABB_EAST = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.3D, 0.6D, 1.0D);
-	
-	public static void registerFixesJukebox(DataFixer fixer)
-    {
-        fixer.registerWalker(FixTypes.BLOCK_ENTITY, new ItemStackData(BlockJukebox.TileEntityJukebox.class, new String[] {"RecordItem"}));
-    }
-	
+
+	public static void registerFixesJukebox(DataFixer fixer) {
+		fixer.registerWalker(FixTypes.BLOCK_ENTITY,
+				new ItemStackData(BlockJukebox.TileEntityJukebox.class, new String[] { "RecordItem" }));
+	}
+
 	public BlockMusicRack() {
 
 		super();
@@ -45,9 +45,10 @@ public class BlockMusicRack extends BlockJukebox {
 		setResistance(5F);
 		setLightOpacity(1);
 		this.setHarvestLevel("axe", 2);
-		this.setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
-		this.setDefaultState(this.blockState.getBaseState().withProperty(HAS_RECORD, Boolean.valueOf(false)));
+		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+		setDefaultState(blockState.getBaseState().withProperty(HAS_RECORD, Boolean.valueOf(false)));
 	}
+
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		switch (state.getValue(FACING)) {
@@ -61,65 +62,57 @@ public class BlockMusicRack extends BlockJukebox {
 		case EAST:
 			return AABB_EAST;
 		}
-	}	
+	}
+
 	@Override
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
-    {
-        if (((Boolean)state.getValue(HAS_RECORD)).booleanValue())
-        {
-            this.dropRecord(worldIn, pos, state);
-            state = state.withProperty(HAS_RECORD, Boolean.valueOf(false));
-            worldIn.setBlockState(pos, state, 2);
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
+	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
+			EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+		if (state.getValue(HAS_RECORD).booleanValue()) {
+			dropRecord(worldIn, pos, state);
+			state = state.withProperty(HAS_RECORD, Boolean.valueOf(false));
+			worldIn.setBlockState(pos, state, 2);
+			return true;
+		} else
+			return false;
+	}
 
-    public void insertRecord(World worldIn, BlockPos pos, IBlockState state, ItemStack recordStack)
-    {
-        if (!worldIn.isRemote)
-        {
-            TileEntity tileentity = worldIn.getTileEntity(pos);
+	@Override
+	public void insertRecord(World worldIn, BlockPos pos, IBlockState state, ItemStack recordStack) {
+		if (!worldIn.isRemote) {
+			TileEntity tileentity = worldIn.getTileEntity(pos);
 
-            if (tileentity instanceof BlockJukebox.TileEntityJukebox)
-            {
-                ((BlockJukebox.TileEntityJukebox)tileentity).setRecord(recordStack.copy());
-                worldIn.setBlockState(pos, state.withProperty(HAS_RECORD, Boolean.valueOf(true)), 2);
-            }
-        }
-    }
+			if (tileentity instanceof BlockJukebox.TileEntityJukebox) {
+				((BlockJukebox.TileEntityJukebox) tileentity).setRecord(recordStack.copy());
+				worldIn.setBlockState(pos, state.withProperty(HAS_RECORD, Boolean.valueOf(true)), 2);
+			}
+		}
+	}
 
-    private void dropRecord(World worldIn, BlockPos pos, IBlockState state)
-    {
-        if (!worldIn.isRemote)
-        {
-            TileEntity tileentity = worldIn.getTileEntity(pos);
+	private void dropRecord(World worldIn, BlockPos pos, IBlockState state) {
+		if (!worldIn.isRemote) {
+			TileEntity tileentity = worldIn.getTileEntity(pos);
 
-            if (tileentity instanceof BlockJukebox.TileEntityJukebox)
-            {
-                BlockJukebox.TileEntityJukebox blockjukebox$tileentityjukebox = (BlockJukebox.TileEntityJukebox)tileentity;
-                ItemStack itemstack = blockjukebox$tileentityjukebox.getRecord();
+			if (tileentity instanceof BlockJukebox.TileEntityJukebox) {
+				BlockJukebox.TileEntityJukebox blockjukebox$tileentityjukebox = (BlockJukebox.TileEntityJukebox) tileentity;
+				ItemStack itemstack = blockjukebox$tileentityjukebox.getRecord();
 
-                if (!itemstack.isEmpty())
-                {
-                    worldIn.playEvent(1010, pos, 0);
-                    worldIn.playRecord(pos, (SoundEvent)null);
-                    blockjukebox$tileentityjukebox.setRecord(ItemStack.EMPTY);
-                    float f = 0.7F;
-                    double d0 = (double)(worldIn.rand.nextFloat() * 0.7F) + 0.15000000596046448D;
-                    double d1 = (double)(worldIn.rand.nextFloat() * 0.7F) + 0.06000000238418579D + 0.6D;
-                    double d2 = (double)(worldIn.rand.nextFloat() * 0.7F) + 0.15000000596046448D;
-                    ItemStack itemstack1 = itemstack.copy();
-                    EntityItem entityitem = new EntityItem(worldIn, (double)pos.getX() + d0, (double)pos.getY() + d1, (double)pos.getZ() + d2, itemstack1);
-                    entityitem.setDefaultPickupDelay();
-                    worldIn.spawnEntity(entityitem);
-                }
-            }
-        }
-    }   
+				if (!itemstack.isEmpty()) {
+					worldIn.playEvent(1010, pos, 0);
+					worldIn.playRecord(pos, (SoundEvent) null);
+					blockjukebox$tileentityjukebox.setRecord(ItemStack.EMPTY);
+					float f = 0.7F;
+					double d0 = worldIn.rand.nextFloat() * 0.7F + 0.15000000596046448D;
+					double d1 = worldIn.rand.nextFloat() * 0.7F + 0.06000000238418579D + 0.6D;
+					double d2 = worldIn.rand.nextFloat() * 0.7F + 0.15000000596046448D;
+					ItemStack itemstack1 = itemstack.copy();
+					EntityItem entityitem = new EntityItem(worldIn, pos.getX() + d0, pos.getY() + d1, pos.getZ() + d2,
+							itemstack1);
+					entityitem.setDefaultPickupDelay();
+					worldIn.spawnEntity(entityitem);
+				}
+			}
+		}
+	}
 
 	public IBlockState getStateForEntityRender(IBlockState state) {
 		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);

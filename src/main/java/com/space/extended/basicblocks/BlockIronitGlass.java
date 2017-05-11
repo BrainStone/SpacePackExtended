@@ -10,8 +10,8 @@ import net.minecraft.util.BlockRenderLayer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockIronitGlass extends BlockBreakable{
-	
+public class BlockIronitGlass extends BlockBreakable {
+
 	public BlockIronitGlass(Material materialIn, boolean ignoreSimilarityIn) {
 
 		super(materialIn, ignoreSimilarityIn);

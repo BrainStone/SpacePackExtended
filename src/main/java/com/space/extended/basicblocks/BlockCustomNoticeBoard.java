@@ -17,8 +17,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockCustomNoticeBoard extends Block{
-	
+public class BlockCustomNoticeBoard extends Block {
 
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 	protected static final AxisAlignedBB AABB_NORTH = new AxisAlignedBB(0.12D, 0.12D, 0.9D, 0.88D, 0.88D, 1.0D);
@@ -41,6 +40,7 @@ public class BlockCustomNoticeBoard extends Block{
 	public IBlockState getStateForEntityRender(IBlockState state) {
 		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
 	}
+
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		switch (state.getValue(FACING)) {
@@ -55,8 +55,6 @@ public class BlockCustomNoticeBoard extends Block{
 			return AABB_EAST;
 		}
 	}
-
-	
 
 	@Override
 	public IBlockState getStateFromMeta(int meta) {

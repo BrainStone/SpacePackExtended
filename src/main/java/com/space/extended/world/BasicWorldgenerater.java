@@ -34,7 +34,7 @@ public class BasicWorldgenerater implements IWorldGenerator {
 		GenerationUtil.generateOre(BasicBlocks.cyberit_Ore.getDefaultState(), random, x, z, world, 7, 17, 67, 3, 5);
 		GenerationUtil.generateOre(BasicBlocks.space_quartz_ore.getDefaultState(), random, x, z, world, 9, 12, 55, 4,
 				7);
-		GenerationUtil.generateOre(BasicBlocks.ironium_ore.getDefaultState(),random, x, z, world, 3, 23, 75, 2, 4);
+		GenerationUtil.generateOre(BasicBlocks.ironium_ore.getDefaultState(), random, x, z, world, 3, 23, 75, 2, 4);
 	}
 
 	private void end(Random random, int x, int z, World world) {

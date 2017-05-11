@@ -320,9 +320,8 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.light_box, 8),
 				new Object[] { "   ", " X ", "X X", 'X', new ItemStack(BasicItems.quartz_component) });
 		// 93 Quartz_Window
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.quartz_window, 6),
-				new Object[] { "   ", "YXY", "XYX", 'X', new ItemStack(Blocks.GLASS),
-						'Y', new ItemStack(BasicItems.quartz_component)});		
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.quartz_window, 6), new Object[] { "   ", "YXY", "XYX",
+				'X', new ItemStack(Blocks.GLASS), 'Y', new ItemStack(BasicItems.quartz_component) });
 		// 94 Quartz_Window_Pane
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.quartz_window_pane, 16),
 				new Object[] { "   ", "VVV", "VVV", 'V', new ItemStack(BasicBlocks.quartz_window) });
@@ -533,68 +532,51 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.bollard_lamp, 3), new Object[] { "O O", " T ", "   ",
 				'O', new ItemStack(BasicItems.quartz_component), 'T', new ItemStack(Blocks.REDSTONE_TORCH) });
 		// 163 Container
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.transport_box, 4),
-				new Object[] { "O O", " M ", "O O", 'O', new ItemStack(BasicBlocks.block_ribbed),
-						'M', new ItemStack(BasicItems.quartz_component)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.transport_box, 4), new Object[] { "O O", " M ", "O O",
+				'O', new ItemStack(BasicBlocks.block_ribbed), 'M', new ItemStack(BasicItems.quartz_component) });
 		// 164 Container A
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.transport_box1, 4),
-				new Object[] { "OMO", " M ", "O O", 'O', new ItemStack(BasicBlocks.block_ribbed),
-						'M', new ItemStack(BasicItems.quartz_component)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.transport_box1, 4), new Object[] { "OMO", " M ", "O O",
+				'O', new ItemStack(BasicBlocks.block_ribbed), 'M', new ItemStack(BasicItems.quartz_component) });
 		// 165 KlingoLight
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingolight, 5),
-				new Object[] { "O O", " M ", "   ", 'O', new ItemStack(BasicItems.klingonium_shard),
-						'M', new ItemStack(Blocks.REDSTONE_TORCH)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingolight, 5), new Object[] { "O O", " M ", "   ", 'O',
+				new ItemStack(BasicItems.klingonium_shard), 'M', new ItemStack(Blocks.REDSTONE_TORCH) });
 		// 166 Ironit Door
-		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.ironit_door, 2),
-				new Object[] { "LO ", "LO ", "LO ", 'O', new ItemStack(BasicItems.ironit_crystal),
-						'L', new ItemStack(BasicItems.kit1)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.ironit_door, 2), new Object[] { "LO ", "LO ", "LO ", 'O',
+				new ItemStack(BasicItems.ironit_crystal), 'L', new ItemStack(BasicItems.kit1) });
 		// 167 Notice Board
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board,3),
-				new Object[] { "LO ", "   ", "   ",'O', new ItemStack(BasicItems.quartz_component),
-						'L', new ItemStack(Items.STICK)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board, 3), new Object[] { "LO ", "   ", "   ",
+				'O', new ItemStack(BasicItems.quartz_component), 'L', new ItemStack(Items.STICK) });
 		// 168 Notice Board2
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board2,3),
-				new Object[] { " LO", "   ", "   ",'O', new ItemStack(BasicItems.quartz_component),
-								'L', new ItemStack(Items.STICK)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board2, 3), new Object[] { " LO", "   ", "   ",
+				'O', new ItemStack(BasicItems.quartz_component), 'L', new ItemStack(Items.STICK) });
 		// 169 Notice Board3
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board3,3),
-				new Object[] { "   ", "LO ", "   ",'O', new ItemStack(BasicItems.quartz_component),
-								'L', new ItemStack(Items.STICK)});		
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board3, 3), new Object[] { "   ", "LO ", "   ",
+				'O', new ItemStack(BasicItems.quartz_component), 'L', new ItemStack(Items.STICK) });
 		// 170 Notice Board4
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board4,3),
-				new Object[] { "   ", " LO", "   ",'O', new ItemStack(BasicItems.quartz_component),
-								'L', new ItemStack(Items.STICK)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board4, 3), new Object[] { "   ", " LO", "   ",
+				'O', new ItemStack(BasicItems.quartz_component), 'L', new ItemStack(Items.STICK) });
 		// 171 Notice Board5
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board5,3),
-				new Object[] { "   ", "   ", "LO ",'O', new ItemStack(BasicItems.quartz_component),
-								'L', new ItemStack(Items.STICK)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board5, 3), new Object[] { "   ", "   ", "LO ",
+				'O', new ItemStack(BasicItems.quartz_component), 'L', new ItemStack(Items.STICK) });
 		// 172 Glass Door
-		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.glass_door, 3),
-				new Object[] { "LO ", "LO ", "LO ", 'O', new ItemStack(BasicItems.ironit_crystal),
-						'L', new ItemStack(BasicBlocks.quartz_window)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.glass_door, 3), new Object[] { "LO ", "LO ", "LO ", 'O',
+				new ItemStack(BasicItems.ironit_crystal), 'L', new ItemStack(BasicBlocks.quartz_window) });
 		// 173 Ironit Glass
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.ironit_glass,8),
-				new Object[] { "OOO", "OOO", "OOO",'O',new ItemStack(BasicItems.ironit_crystal)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.ironit_glass, 8),
+				new Object[] { "OOO", "OOO", "OOO", 'O', new ItemStack(BasicItems.ironit_crystal) });
 		// 174 Ironit Glass Pane
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.ironit_glass_pane,16),
-				new Object[] { "OOO", "   ", "OOO",'O',new ItemStack(BasicBlocks.ironit_glass)});
-		
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.ironit_glass_pane, 16),
+				new Object[] { "OOO", "   ", "OOO", 'O', new ItemStack(BasicBlocks.ironit_glass) });
+
 		// 175 Ironit Glass Stairs
-		GameRegistry.addShapedRecipe( new ItemStack(BasicStairs.ironit_glass_stairs,8),
-				new Object[] { "  O", " OO", "OOO",'O',new ItemStack(BasicBlocks.ironit_glass)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicStairs.ironit_glass_stairs, 8),
+				new Object[] { "  O", " OO", "OOO", 'O', new ItemStack(BasicBlocks.ironit_glass) });
 		// 176 Ironit Glass Slab
-		GameRegistry.addShapedRecipe( new ItemStack(BasicBlocks.ironit_glass_slab_half, 6),
-				new Object[] { "   ", "OOO", "   ",'O',new ItemStack(BasicItems.ironit_crystal)});
-		//177 Notebook
-		GameRegistry.addShapedRecipe( new ItemStack(BasicBlocks.notebook, 1),
-				new Object[] { "   ", "OOO", "LLL",'O',new ItemStack(BasicBlocks.vitallium_glass_pane),
-						'L', new ItemStack(Items.REDSTONE)});
-				}
-				
-			}
-		
-		
-		
-		
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.ironit_glass_slab_half, 6),
+				new Object[] { "   ", "OOO", "   ", 'O', new ItemStack(BasicItems.ironit_crystal) });
+		// 177 Notebook
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notebook, 1), new Object[] { "   ", "OOO", "LLL", 'O',
+				new ItemStack(BasicBlocks.vitallium_glass_pane), 'L', new ItemStack(Items.REDSTONE) });
+	}
 
-
+}
