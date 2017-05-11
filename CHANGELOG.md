@@ -1,3 +1,39 @@
+2.1.57-beta
+-----------
+
+* Added notebook
+* Added Ironit and variants
+* Added Music Rack
+* Added Notice Boards
+* Added Ironium Ore
+* Added Transport Box
+* Added Klingolight
+* Added Bollar Lamp
+* Added Couch Table
+* Added Signle Stool
+* Added Vitallium Grid
+* Added Spot Lamp
+* Added Arm Chair and Single Arm Chair
+* Added Strontenit Door
+* Added Metal Frame Door
+* Added Alarm Light
+* Added Strotenium Fence and Gate
+* Added Kitchen Table
+* Added Kitchen Lamp
+* Added Cupboards
+* Added Microwave
+* Added Furniturelab
+* Added Wall Panel
+* Added Metal Button
+* Added Concrete Klingont
+* Added Vitallium Fence and Gate
+* Added Block Cooker
+* Added pressure Plated
+* Added Vitallium Door
+* Added Wash Basin
+* Added Lifepod
+* Updated to Minecraft 1.11.2
+
 2.1.22-beta
 -----------
 
