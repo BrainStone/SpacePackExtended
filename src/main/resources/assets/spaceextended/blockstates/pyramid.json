@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "spaceextended:pyramid"
+        },
+        "axis=z": {
+            "model": "spaceextended:pyramid",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "spaceextended:pyramid",
+            "x": 90,
+            "y": 90
+        }
+    }
+}

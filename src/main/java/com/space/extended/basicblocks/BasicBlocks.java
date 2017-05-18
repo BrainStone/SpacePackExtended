@@ -180,6 +180,7 @@ public class BasicBlocks {
 	public static Block notice_board_level5;
 	public static Block music_rack;
 	public static Block notebook;
+	public static Block pyramid;
 
 	public BasicBlocks() {
 		init();
@@ -529,7 +530,8 @@ public class BasicBlocks {
 		NameUtils.setNames(music_rack, "music_rack");
 		notebook = new BlockNoteBook().setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(notebook, "notebook");
-
+		pyramid = new BlockPyramid().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(pyramid, "pyramid");
 	}
 
 	private void register() {
@@ -697,6 +699,7 @@ public class BasicBlocks {
 		registerBlock(notice_board_level5);
 		registerBlock(music_rack);
 		registerBlock(notebook);
+		registerBlock(pyramid);
 	}
 
 	private void registerBlock(Block block) {

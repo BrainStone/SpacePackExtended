@@ -577,6 +577,16 @@ public class BasicCrafting {
 		// 177 Notebook
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notebook, 1), new Object[] { "   ", "OOO", "LLL", 'O',
 				new ItemStack(BasicBlocks.vitallium_glass_pane), 'L', new ItemStack(Items.REDSTONE) });
+		// 178 Radio
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.music_rack, 1),
+				new Object[] { "   ", "GOG", " O ", 'O', new ItemStack(Blocks.IRON_BLOCK),
+						'G',new ItemStack(BasicItems.vitallium_ingot)});
+		// 179 Pyramid
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.pyramid, 3),
+				new Object[] { " O ", "C C", "OOO", 'O', new ItemStack(Blocks.NOTEBLOCK),
+						'C',new ItemStack(BasicItems.cyberit_gem)});		
+				}
+			
 	}
 
-}
+
