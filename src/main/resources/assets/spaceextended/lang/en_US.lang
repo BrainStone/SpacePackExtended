@@ -163,6 +163,7 @@ tile.pyramid.name=§5Pyramid§r
 
 
 
+
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r
 tile.drillmonitor.name=§5Drill/Monitor§r
@@ -222,7 +223,7 @@ item.ironit_door.name=§5Ironit Door§r
 item.bed1.name=§5Lifebox§r
 item.ironit_crystal.name=§5Ironit Crystal§r
 item.glass_door.name=§5Glass Door§r
-
+item.concrete_brown_door.name=§5Concrete Brown Door§r
 
 
 item.vitallium_helmet.name=§5Vitallium Helmet§r

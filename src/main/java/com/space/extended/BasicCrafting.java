@@ -584,7 +584,9 @@ public class BasicCrafting {
 		// 179 Pyramid
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.pyramid, 3),
 				new Object[] { " O ", "C C", "OOO", 'O', new ItemStack(Blocks.NOTEBLOCK),
-						'C',new ItemStack(BasicItems.cyberit_gem)});		
+						'C',new ItemStack(BasicItems.cyberit_gem)});
+		// 180 ConcreteBrownDoor
+		
 				}
 			
 	}

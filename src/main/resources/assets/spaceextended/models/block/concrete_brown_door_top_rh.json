@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top_rh",
+    "textures": {
+        "bottom": "spaceextended:blocks/door_concrete_brown_lower",
+        "top": "spaceextended:blocks/door_concrete_brown_upper"
+    }
+}

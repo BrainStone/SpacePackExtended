@@ -150,6 +150,7 @@ public class BasicBlocks {
 	public static Block strontenit_door;
 	public static Block metalframe_door;
 	public static Block glass_door;
+	public static Block concrete_brown_door;
 	public static Block wall_panel;
 	public static Block wall_panel1;
 	public static Block wall_panel2;
@@ -460,6 +461,8 @@ public class BasicBlocks {
 		NameUtils.setNames(metalframe_door, "metalframe_door");
 		glass_door = new BlockGlassDoor();
 		NameUtils.setNames(glass_door, "glass_door");
+		concrete_brown_door = new BlockConcreteBrownDoor();
+		NameUtils.setNames(concrete_brown_door, "concrete_brown_door");
 		metal_button = new BlockMetalButton(false).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(metal_button, "metal_button");
 		vitallium_fence = new BlockVitalliumFence(null).setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -669,6 +672,7 @@ public class BasicBlocks {
 		registerBlockOnly(strontenit_door);
 		registerBlockOnly(metalframe_door);
 		registerBlockOnly(glass_door);
+		registerBlockOnly(concrete_brown_door);
 		registerBlock(wall_panel);
 		registerBlock(wall_panel1);
 		registerBlock(wall_panel2);
