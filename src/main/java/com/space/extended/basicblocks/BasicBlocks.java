@@ -182,6 +182,12 @@ public class BasicBlocks {
 	public static Block music_rack;
 	public static Block notebook;
 	public static Block pyramid;
+	public static Block hydraulic_bottom;
+	public static Block hydraulic_top;
+	public static Block hydraulic_middle;
+	public static Block hydraulic_bottom_horizontal;
+	public static Block hydraulic_middle_horizontal;
+	
 
 	public BasicBlocks() {
 		init();
@@ -535,6 +541,17 @@ public class BasicBlocks {
 		NameUtils.setNames(notebook, "notebook");
 		pyramid = new BlockPyramid().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(pyramid, "pyramid");
+		hydraulic_bottom = new BlockCustomHydraulic().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(hydraulic_bottom, "hydraulic_bottom");
+		hydraulic_top = new BlockCustomHydraulic().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(hydraulic_top, "hydraulic_top");
+		hydraulic_middle = new BlockCustomHydraulic().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(hydraulic_middle, "hydraulic_middle");
+		hydraulic_bottom_horizontal = new BlockCustomHydraulic().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(hydraulic_bottom_horizontal, "hydraulic_bottom_horizontal");
+		hydraulic_middle_horizontal = new BlockCustomHydraulic().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(hydraulic_middle_horizontal, "hydraulic_middle_horizontal");
+		
 	}
 
 	private void register() {
@@ -704,6 +721,12 @@ public class BasicBlocks {
 		registerBlock(music_rack);
 		registerBlock(notebook);
 		registerBlock(pyramid);
+		registerBlock(hydraulic_bottom);
+		registerBlock(hydraulic_top);
+		registerBlock(hydraulic_middle);
+		registerBlock(hydraulic_bottom_horizontal);
+		registerBlock(hydraulic_middle_horizontal);
+		
 	}
 
 	private void registerBlock(Block block) {

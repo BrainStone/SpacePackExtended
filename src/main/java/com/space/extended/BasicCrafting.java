@@ -586,8 +586,37 @@ public class BasicCrafting {
 				new Object[] { " O ", "C C", "OOO", 'O', new ItemStack(Blocks.NOTEBLOCK),
 						'C',new ItemStack(BasicItems.cyberit_gem)});
 		// 180 ConcreteBrownDoor
-		
-				}
+		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.concrete_brown_door, 3),
+				new Object[] { "AA ", "BB ", "OO ", 'A', new ItemStack(BasicItems.vitallium_ingot),
+						'B', new ItemStack(BasicItems.kit1), 'O', new ItemStack(BasicItems.strontenium_ingot)});
+				
+		// 181 Hydraulic Bottom
+	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_bottom, 5),
+	    		new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot),
+	    				'B', new ItemStack(BasicItems.kit1), 'C', new ItemStack(BasicItems.strontenium_ingot)});
+	    // 182 Hydraulic Top
+	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_top, 5),
+	    		new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot),
+	    				'B', new ItemStack(BasicItems.kit2), 'C', new ItemStack(BasicItems.strontenium_ingot)});
+	    // 183 Hydraulic Middle
+	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_middle, 5),
+	    		new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot),
+	    				'B', new ItemStack(BasicItems.kit3), 'C', new ItemStack(BasicItems.strontenium_ingot)});
+	    // 184 Hydraulic Bottom Horizontal
+	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_bottom_horizontal, 5),
+	    		new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot),
+	    				'B', new ItemStack(BasicItems.kit4), 'C', new ItemStack(BasicItems.strontenium_ingot)});
+	    // 185 Hydraulic Middle Horizontal
+	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_middle_horizontal, 5),
+	    		new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot),
+	    				'B', new ItemStack(BasicItems.kit5), 'C', new ItemStack(BasicItems.strontenium_ingot)});
+	    
+	    
+	    
+	    
+	    
+	    		}
+				
 			
 	}
 

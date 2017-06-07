@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:hydraulic_middle"
+        },
+        "facing=south": {
+            "model": "spaceextended:hydraulic_middle",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "spaceextended:hydraulic_middle",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "spaceextended:hydraulic_middle",
+            "y": 90
+        }
+    }
+}

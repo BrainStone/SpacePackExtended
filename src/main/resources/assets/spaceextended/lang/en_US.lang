@@ -160,6 +160,12 @@ tile.notice_board_level5.name=§5Level 5§r
 tile.music_rack.name=§5Radio§r
 tile.notebook.name=§5Notebook§r
 tile.pyramid.name=§5Pyramid§r
+tile.hydraulic_bottom.name=§5Hydraulic Bottom§r
+tile.hydraulic_top.name=§5Hydraulic Top§r
+tile.hydraulic_middle.name=§5Hydraulic Middle§r
+tile.hydraulic_bottom_horizontal.name=§5Hydraulic Bottom Horizontal§r
+tile.hydraulic_middle_horizontal.name=§5Hydraulic Middle Horizontal§r
+
 
 
 
