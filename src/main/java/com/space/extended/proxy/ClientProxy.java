@@ -199,6 +199,14 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.hydraulic_middle, 0);
 		registerModel(BasicBlocks.hydraulic_bottom_horizontal, 0);
 		registerModel(BasicBlocks.hydraulic_middle_horizontal, 0);
+		registerModel(BasicBlocks.gate_bottom_left, 0);
+		registerModel(BasicBlocks.gate_middle_left, 0);
+		registerModel(BasicBlocks.gate_top_left, 0);
+		registerModel(BasicBlocks.gate_top_middle, 0);
+		registerModel(BasicBlocks.gate_top_right, 0);
+		registerModel(BasicBlocks.gate_middle_right, 0);
+		registerModel(BasicBlocks.gate_bottom_right, 0);
+		
 		
 		
 		

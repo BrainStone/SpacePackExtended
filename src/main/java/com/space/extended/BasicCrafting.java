@@ -610,7 +610,27 @@ public class BasicCrafting {
 	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_middle_horizontal, 5),
 	    		new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot),
 	    				'B', new ItemStack(BasicItems.kit5), 'C', new ItemStack(BasicItems.strontenium_ingot)});
-	    
+	    // 186 Gate Bottom Left
+	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_bottom_left, 1),
+	    		new Object[] { "   ", "   ", "A  ",'A', new ItemStack(BasicBlocks.vitallium)});
+	    // 187 Gate Middle Left
+	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_middle_left, 1),
+	    		new Object[] { "   ", "A  ", "   ",'A', new ItemStack(BasicBlocks.vitallium)});	    
+	    // 188 Gate Top Left
+	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_top_left, 1),
+	    		new Object[] { "A  ", "   ", "   ",'A', new ItemStack(BasicBlocks.vitallium)});		    
+	    // 189 Gate Top Middle
+	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_top_middle, 1),
+	    		new Object[] { " A ", "   ", "   ",'A', new ItemStack(BasicBlocks.vitallium)});		    
+	    // 188 Gate Top Right
+	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_top_right, 1),
+	    		new Object[] { " AA", "   ", "   ",'A', new ItemStack(BasicBlocks.vitallium)});
+	    // 189 Gate Middle Right
+	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_middle_right, 1),
+	    		new Object[] { "   ", " AA", "   ",'A', new ItemStack(BasicBlocks.vitallium)});
+	    // 190 Gate Bottom Right
+	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_bottom_right, 1),
+	    		new Object[] { "   ", "   ", " AA",'A', new ItemStack(BasicBlocks.vitallium)});	    
 	    
 	    
 	    

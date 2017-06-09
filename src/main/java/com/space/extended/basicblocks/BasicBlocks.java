@@ -187,8 +187,15 @@ public class BasicBlocks {
 	public static Block hydraulic_middle;
 	public static Block hydraulic_bottom_horizontal;
 	public static Block hydraulic_middle_horizontal;
+	public static Block gate_bottom_left;
+	public static Block gate_middle_left;
+	public static Block gate_top_left;
+	public static Block gate_top_middle;
+	public static Block gate_top_right;
+	public static Block gate_middle_right;
+	public static Block gate_bottom_right;
 	
-
+	
 	public BasicBlocks() {
 		init();
 		register();
@@ -551,6 +558,20 @@ public class BasicBlocks {
 		NameUtils.setNames(hydraulic_bottom_horizontal, "hydraulic_bottom_horizontal");
 		hydraulic_middle_horizontal = new BlockCustomHydraulic().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(hydraulic_middle_horizontal, "hydraulic_middle_horizontal");
+		gate_bottom_left = new BlockCustomHydraulic().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(gate_bottom_left, "gate_bottom_left");
+		gate_middle_left = new BlockCustomHydraulic().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(gate_middle_left, "gate_middle_left");
+		gate_top_left = new BlockCustomHydraulic().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(gate_top_left, "gate_top_left");
+		gate_top_middle = new BlockCustomHydraulic().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(gate_top_middle, "gate_top_middle");
+		gate_top_right = new BlockCustomHydraulic().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(gate_top_right, "gate_top_right");
+		gate_middle_right = new BlockCustomHydraulic().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(gate_middle_right, "gate_middle_right");
+		gate_bottom_right = new BlockCustomHydraulic().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(gate_bottom_right, "gate_bottom_right");
 		
 	}
 
@@ -726,6 +747,15 @@ public class BasicBlocks {
 		registerBlock(hydraulic_middle);
 		registerBlock(hydraulic_bottom_horizontal);
 		registerBlock(hydraulic_middle_horizontal);
+		registerBlock(gate_bottom_left);
+		registerBlock(gate_middle_left);
+		registerBlock(gate_top_left);
+		registerBlock(gate_top_middle);
+		registerBlock(gate_top_right);
+		registerBlock(gate_middle_right);
+		registerBlock(gate_bottom_right);
+		
+		
 		
 	}
 

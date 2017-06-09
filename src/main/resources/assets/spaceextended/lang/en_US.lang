@@ -165,7 +165,13 @@ tile.hydraulic_top.name=§5Hydraulic Top§r
 tile.hydraulic_middle.name=§5Hydraulic Middle§r
 tile.hydraulic_bottom_horizontal.name=§5Hydraulic Bottom Horizontal§r
 tile.hydraulic_middle_horizontal.name=§5Hydraulic Middle Horizontal§r
-
+tile.gate_bottom_left.name=§5Gate Bottom Left§r
+tile.gate_middle_left.name=§5Gate Middle Left§r
+tile.gate_top_left.name=§5Gate Top Left§r
+tile.gate_top_middle.name=§5Gate Top Middle§r
+tile.gate_top_right.name=§5Gate Top Right§r
+tile.gate_middle_right.name=§5Gate Middle Right§r
+tile.gate_bottom_right.name=§5Gate Bottom Right§r
 
 
 

@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:gate_top_middle"
+        },
+        "facing=south": {
+            "model": "spaceextended:gate_top_middle",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "spaceextended:gate_top_middle",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "spaceextended:gate_top_middle",
+            "y": 90
+        }
+    }
+}
