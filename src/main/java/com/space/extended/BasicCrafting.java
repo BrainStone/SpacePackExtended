@@ -631,7 +631,9 @@ public class BasicCrafting {
 	    // 190 Gate Bottom Right
 	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_bottom_right, 1),
 	    		new Object[] { "   ", "   ", " AA",'A', new ItemStack(BasicBlocks.vitallium)});	    
-	    
+		// 191 Slope Pipes Connector
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.slope_pipes_connector, 5),
+				new Object[] { "X X", " X ", " X ", 'X', new ItemStack(BasicBlocks.strontenium_ore) });
 	    
 	    
 	    

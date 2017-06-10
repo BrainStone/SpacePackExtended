@@ -194,7 +194,7 @@ public class BasicBlocks {
 	public static Block gate_top_right;
 	public static Block gate_middle_right;
 	public static Block gate_bottom_right;
-	
+	public static Block slope_pipes_connector;
 	
 	public BasicBlocks() {
 		init();
@@ -282,6 +282,8 @@ public class BasicBlocks {
 		NameUtils.setNames(ironium_ore, "ironium_ore");
 		pipes_connector = new BlockPipesConnector().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(pipes_connector, "pipes_connector");
+		slope_pipes_connector = new BlockSlopePipesConnector().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(slope_pipes_connector, "slope_pipes_connector");
 		strontenita = new BlockStrontenit().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontenita, "strontenita");
 		strontenitb = new BlockStrontenit().setCreativeTab(SpaceExtendedMain.spaceTab);
@@ -670,6 +672,7 @@ public class BasicBlocks {
 		registerBlock(wall_lamp);
 		registerBlock(wall_lamp_lit);
 		registerBlock(pipes_connector);
+		registerBlock(slope_pipes_connector);
 		registerBlock(constructor1);
 		registerBlock(constructor2);
 		registerBlock(constructor3);

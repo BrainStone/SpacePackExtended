@@ -206,7 +206,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.gate_top_right, 0);
 		registerModel(BasicBlocks.gate_middle_right, 0);
 		registerModel(BasicBlocks.gate_bottom_right, 0);
-		
+		registerModel(BasicBlocks.slope_pipes_connector, 0);
 		
 		
 		
