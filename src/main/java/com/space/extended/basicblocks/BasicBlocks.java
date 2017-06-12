@@ -195,6 +195,7 @@ public class BasicBlocks {
 	public static Block gate_middle_right;
 	public static Block gate_bottom_right;
 	public static Block slope_pipes_connector;
+	public static Block power_station;
 	
 	public BasicBlocks() {
 		init();
@@ -574,6 +575,11 @@ public class BasicBlocks {
 		NameUtils.setNames(gate_middle_right, "gate_middle_right");
 		gate_bottom_right = new BlockCustomHydraulic().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(gate_bottom_right, "gate_bottom_right");
+		power_station = new BlockPowerStation().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(power_station, "power_station");
+		
+		
+		
 		
 	}
 
@@ -757,7 +763,7 @@ public class BasicBlocks {
 		registerBlock(gate_top_right);
 		registerBlock(gate_middle_right);
 		registerBlock(gate_bottom_right);
-		
+		registerBlock(power_station);
 		
 		
 	}

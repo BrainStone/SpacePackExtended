@@ -634,12 +634,13 @@ public class BasicCrafting {
 		// 191 Slope Pipes Connector
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.slope_pipes_connector, 5),
 				new Object[] { "X X", " X ", " X ", 'X', new ItemStack(BasicBlocks.strontenium_ore) });
+	    // 192 Power Station
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.power_station, 1),
+				new Object[] { "XXX", "X X" , "YYY", 'X', new ItemStack(BasicItems.kit5),
+						'Y', new ItemStack(Items.REDSTONE)});
+				}
 	    
 	    
-	    
-	    		}
-				
-			
-	}
+	    	}
 
 

@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:power_station",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "spaceextended:power_station",
+            "y": 270
+        },
+        "facing=west": {
+            "model": "spaceextended:power_station"
+        },
+        "facing=east": {
+            "model": "spaceextended:power_station",
+            "y": 180
+        }
+    }
+}
