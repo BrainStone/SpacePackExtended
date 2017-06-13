@@ -196,6 +196,7 @@ public class BasicBlocks {
 	public static Block gate_bottom_right;
 	public static Block slope_pipes_connector;
 	public static Block power_station;
+	public static Block greydur;
 	
 	public BasicBlocks() {
 		init();
@@ -577,7 +578,8 @@ public class BasicBlocks {
 		NameUtils.setNames(gate_bottom_right, "gate_bottom_right");
 		power_station = new BlockPowerStation().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(power_station, "power_station");
-		
+		greydur = new BlockGreydur().setCreativeTab(SpaceExtendedMain.spaceTab);
+		NameUtils.setNames(greydur, "greydur");
 		
 		
 		
@@ -764,7 +766,7 @@ public class BasicBlocks {
 		registerBlock(gate_middle_right);
 		registerBlock(gate_bottom_right);
 		registerBlock(power_station);
-		
+		registerBlock(greydur);
 		
 	}
 

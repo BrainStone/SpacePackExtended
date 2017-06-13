@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:greydur"
+        },
+        "facing=south": {
+            "model": "spaceextended:greydur",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "spaceextended:greydur",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "spaceextended:greydur",
+            "y": 90
+        }
+    }
+}

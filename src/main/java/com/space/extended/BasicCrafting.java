@@ -638,9 +638,12 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.power_station, 1),
 				new Object[] { "XXX", "X X" , "YYY", 'X', new ItemStack(BasicItems.kit5),
 						'Y', new ItemStack(Items.REDSTONE)});
+		//193 Greydur
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.greydur, 6),
+				new Object[] { " Y ", "YXY", " Y ", 'X', new ItemStack(BasicItems.ironit_crystal),
+						'Y', new ItemStack(BasicItems.kit2)});
 				}
-	    
-	    
-	    	}
+		
+	   	}
 
 
