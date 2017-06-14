@@ -137,6 +137,7 @@ public class BasicBlocks {
 	public static Block lever1;
 	public static Block lever2;
 	public static Block lever3;
+	public static Block power_switch;
 	public static Block bed1;
 	public static Block wash_basin;
 	public static Block cooker;
@@ -442,6 +443,8 @@ public class BasicBlocks {
 		NameUtils.setNames(lever2, "lever2");
 		lever3 = new BlockCustomLever();
 		NameUtils.setNames(lever3, "lever3");
+		power_switch = new BlockPowerSwitch();
+		NameUtils.setNames(power_switch, "power_switch");
 		block_ribbed = new BlockRibbed().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(block_ribbed, "block_ribbed");
 		cellar_lamp = new BlockCellarLamp(false).setCreativeTab(SpaceExtendedMain.furnitureTab);
@@ -703,6 +706,7 @@ public class BasicBlocks {
 		registerBlock(lever1);
 		registerBlock(lever2);
 		registerBlock(lever3);
+		registerBlock(power_switch);
 		registerBlock(cellar_lamp);
 		registerBlock(cellar_lamp_lit);
 		registerBlock(alarm_light);

@@ -145,6 +145,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.lever1, 0);
 		registerModel(BasicBlocks.lever2, 0);
 		registerModel(BasicBlocks.lever3, 0);
+		registerModel(BasicBlocks.power_switch, 0);
 		registerModel(BasicBlocks.bed1, 0);
 		registerModel(BasicBlocks.wash_basin, 0);
 		registerModel(BasicBlocks.cooker, 0);
