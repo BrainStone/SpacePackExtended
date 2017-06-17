@@ -160,16 +160,8 @@ public class BasicCrafting {
 		// 42 BlockPerolit
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.perolit, 4), new Object[] { "   ", "PRP", "PRP", 'P',
 				new ItemStack(BasicItems.perolit_sphere), 'R', new ItemStack(Items.REDSTONE) });
-		// 43 Perol A
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.perola, 4),
-				new Object[] { "PPP", "P P", "P P", 'P', new ItemStack(BasicItems.perolit_sphere) });
-		// 44 Perol B
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.perolb, 4),
-				new Object[] { "PPP", "PPP", "P P", 'P', new ItemStack(BasicItems.perolit_sphere) });
-		// 45 Perol C
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.perolc, 4),
-				new Object[] { "PPP", "P  ", "PPP", 'P', new ItemStack(BasicItems.perolit_sphere) });
-		// 46 Perol D
+		
+		// 46 Perol 
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.perold, 4),
 				new Object[] { "PPP", "P P", "PPP", 'P', new ItemStack(BasicItems.perolit_sphere) });
 

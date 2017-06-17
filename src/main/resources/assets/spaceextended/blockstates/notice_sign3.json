@@ -1,18 +1,18 @@
 {
     "variants": {
         "facing=north": {
-            "model": "spaceextended:perold"
+            "model": "spaceextended:notice_sign3"
         },
         "facing=south": {
-            "model": "spaceextended:perold",
+            "model": "spaceextended:notice_sign3",
             "y": 180
         },
         "facing=west": {
-            "model": "spaceextended:perold",
+            "model": "spaceextended:notice_sign3",
             "y": 270
         },
         "facing=east": {
-            "model": "spaceextended:perold",
+            "model": "spaceextended:notice_sign3",
             "y": 90
         }
     }

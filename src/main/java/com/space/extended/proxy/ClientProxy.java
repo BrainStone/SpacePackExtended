@@ -71,9 +71,6 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.strontenitd, 0);
 		registerModel(BasicBlocks.strontenal, 0);
 		registerModel(BasicBlocks.oxygen, 0);
-		registerModel(BasicBlocks.perola, 0);
-		registerModel(BasicBlocks.perolb, 0);
-		registerModel(BasicBlocks.perolc, 0);
 		registerModel(BasicBlocks.perold, 0);
 		registerModel(BasicBlocks.table, 0);
 		registerModel(BasicBlocks.table1, 0);
@@ -163,6 +160,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.vitallium_fence_gate, 0);
 		registerModel(BasicBlocks.strontenium_fence, 0);
 		registerModel(BasicBlocks.strontenium_fence_gate, 0);
+		registerModel(BasicBlocks.greydur_gate, 0);
 		registerModel(BasicBlocks.wall_panel, 0);
 		registerModel(BasicBlocks.wall_panel1, 0);
 		registerModel(BasicBlocks.wall_panel2, 0);
@@ -192,6 +190,11 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.notice_board_level3, 0);
 		registerModel(BasicBlocks.notice_board_level4, 0);
 		registerModel(BasicBlocks.notice_board_level5, 0);
+		registerModel(BasicBlocks.notice_sign, 0);
+		registerModel(BasicBlocks.notice_sign1, 0);
+		registerModel(BasicBlocks.notice_sign2, 0);
+		registerModel(BasicBlocks.notice_sign3, 0);
+		registerModel(BasicBlocks.notice_sign4, 0);
 		registerModel(BasicBlocks.music_rack, 0);
 		registerModel(BasicBlocks.notebook, 0);
 		registerModel(BasicBlocks.pyramid, 0);

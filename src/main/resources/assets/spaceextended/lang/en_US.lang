@@ -40,10 +40,7 @@ tile.strontenitc.name=§5Strontenit C§r
 tile.strontenitd.name=§5Strontenit D§r
 tile.strontenal.name=§5Strontenal §r
 tile.oxygen.name=§5Oxygen Block§r
-tile.perola.name=§5Perol A§r
-tile.perolb.name=§5Perol B§r
-tile.perolc.name=§5Perol C§r
-tile.perold.name=§5Perol D§r
+tile.perold.name=§5Perol§r
 tile.table.name=§5Table§r
 tile.strontenal.name=§5Strontenal§r
 tile.strontopal.name=§5Strontopal§r
@@ -176,9 +173,12 @@ tile.slope_pipes_connector.name=§5Slope Pipes Connector§r
 tile.power_station.name=§5Power Station§r
 tile.greydur.name=§5Greydur§r
 tile.power_switch.name=§5Power Switch§r
-
-
-
+tile.notice_sign.name=§5Sign§r
+tile.notice_sign1.name=§5Sign 1§r
+tile.notice_sign2.name=§5Sign 2§r
+tile.notice_sign3.name=§5Sign 3§r
+tile.notice_sign4.name=§5Sign 4§r
+tile.greydur_gate.name=§5Greydur Door§r
 
 
 /*Stairs*/
