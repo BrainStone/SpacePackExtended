@@ -490,7 +490,7 @@ public class BasicBlocks {
 		NameUtils.setNames(strontenium_fence, "strontenium_fence");
 		strontenium_fence_gate = new BlockStronteniumFenceGate(null).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontenium_fence_gate, "strontenium_fence_gate");
-		greydur_gate = new BlockGreydurGate(null).setCreativeTab(SpaceExtendedMain.spaceTab);
+		greydur_gate = new BlockGreydurGate(null).setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(greydur_gate, "greydur_gate");
 		wall_panel = new BlockCustomWallPanel();
 		NameUtils.setNames(wall_panel, "wall_panel");
