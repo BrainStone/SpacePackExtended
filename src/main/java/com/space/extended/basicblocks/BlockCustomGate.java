@@ -14,6 +14,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.Mirror;
@@ -26,7 +27,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockGreydurGate extends BlockHorizontal{
+public class BlockCustomGate extends BlockHorizontal{
 	
 	public static final PropertyBool OPEN = PropertyBool.create("open");
 	public static final PropertyBool POWERED = PropertyBool.create("powered");
@@ -42,7 +43,7 @@ public class BlockGreydurGate extends BlockHorizontal{
 	protected static final AxisAlignedBB AABB_CLOSED_SELECTED_XAXIS = new AxisAlignedBB(0.375D, 0.0D, 0.0D, 0.625D,
 			2.0, 1.0D);
 
-	public BlockGreydurGate(Material material_) {
+	public BlockCustomGate(Material material_) {
 		super(Material.IRON, Material.IRON.getMaterialMapColor());
 		setDefaultState(blockState.getBaseState().withProperty(OPEN, Boolean.valueOf(false))
 				.withProperty(POWERED, Boolean.valueOf(false)).withProperty(IN_WALL, Boolean.valueOf(false)));
@@ -59,7 +60,7 @@ public class BlockGreydurGate extends BlockHorizontal{
 						: AABB_COLLIDE_ZAXIS_INWALL)
 				: (state.getValue(FACING).getAxis() == EnumFacing.Axis.X ? AABB_COLLIDE_XAXIS : AABB_COLLIDE_ZAXIS);
 	}
-
+	
 	/**
 	 * Get the actual Block state of this Block at the given position. This
 	 * applies properties not visible in the metadata, such as fence

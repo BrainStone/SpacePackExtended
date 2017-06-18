@@ -23,6 +23,7 @@ public class BasicBlocks {
 	public static Block strontenium_fence_gate;
 	public static Block strontenium_fence;
 	public static Block greydur_gate;
+	public static Block klingodur_gate;
 	public static Block ironium_ore;
 	public static Block perolit;
 	public static Block perolit_ore;
@@ -490,8 +491,10 @@ public class BasicBlocks {
 		NameUtils.setNames(strontenium_fence, "strontenium_fence");
 		strontenium_fence_gate = new BlockStronteniumFenceGate(null).setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(strontenium_fence_gate, "strontenium_fence_gate");
-		greydur_gate = new BlockGreydurGate(null).setCreativeTab(SpaceExtendedMain.furnitureTab);
+		greydur_gate = new BlockCustomGate(null).setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(greydur_gate, "greydur_gate");
+		klingodur_gate = new BlockCustomGate(null).setCreativeTab(SpaceExtendedMain.furnitureTab);
+		NameUtils.setNames(klingodur_gate, "klingodur_gate");
 		wall_panel = new BlockCustomWallPanel();
 		NameUtils.setNames(wall_panel, "wall_panel");
 		wall_panel1 = new BlockCustomWallPanel();
@@ -607,6 +610,7 @@ public class BasicBlocks {
 		registerBlock(strontenium_fence);
 		registerBlock(strontenium_fence_gate);
 		registerBlock(greydur_gate);
+		registerBlock(klingodur_gate);
 		registerBlock(ironium_ore);
 		registerBlock(perolit);
 		registerBlock(perolit_ore);

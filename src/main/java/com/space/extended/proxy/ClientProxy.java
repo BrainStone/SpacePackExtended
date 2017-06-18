@@ -213,6 +213,7 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.slope_pipes_connector, 0);
 		registerModel(BasicBlocks.power_station, 0);
 		registerModel(BasicBlocks.greydur, 0);
+		registerModel(BasicBlocks.klingodur_gate, 0);
 		
 
 		// Items
