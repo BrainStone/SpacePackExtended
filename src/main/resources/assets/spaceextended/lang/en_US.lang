@@ -180,6 +180,10 @@ tile.notice_sign3.name=§5Sign 3§r
 tile.notice_sign4.name=§5Sign 4§r
 tile.greydur_gate.name=§5Greydur Door§r
 tile.klingodur_gate.name=§5Klingodur Door§r
+tile.steel_door.name=§5Steel Door§r
+
+
+
 
 /*Stairs*/
 tile.chairmonitorstairs.name=§5Chair/Monitor§r
