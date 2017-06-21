@@ -3,7 +3,8 @@
 	"textures": {
 		"particle": "spaceextended:blocks/steel_door",
 		"texture": "spaceextended:blocks/steeldoor_closed_top",
-		"texture1": "spaceextended:blocks/steeldoor_closed_bottom"
+		"texture1": "spaceextended:blocks/steeldoor_closed_bottom",
+		"texture2": "spaceextended:blocks/steel_door1"
 	},
 	"elements": [
 		{
@@ -78,7 +79,7 @@
 			"faces": {
 				"down": { "uv": [ 12, 0.5, 14, 15.5 ], "texture": "#particle", "rotation": 90 },
 				"up": { "uv": [ 12, 0.5, 14, 15.5 ], "texture": "#particle", "rotation": 90 },
-				"north": { "uv": [ 16, 0, 0, 16 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture2" },
 				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
 				"west": { "uv": [ 12, 0, 14, 16 ], "texture": "#particle" },
 				"east": { "uv": [ 12, 0, 14, 16 ], "texture": "#particle" }

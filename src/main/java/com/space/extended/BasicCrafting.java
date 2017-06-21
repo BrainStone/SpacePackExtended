@@ -535,21 +535,6 @@ public class BasicCrafting {
 		// 166 Ironit Door
 		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.ironit_door, 2), new Object[] { "LO ", "LO ", "LO ", 'O',
 				new ItemStack(BasicItems.ironit_crystal), 'L', new ItemStack(BasicItems.kit1) });
-		// 167 Notice Board
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board, 3), new Object[] { "LO ", "   ", "   ",
-				'O', new ItemStack(BasicItems.quartz_component), 'L', new ItemStack(Items.STICK) });
-		// 168 Notice Board2
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board2, 3), new Object[] { " LO", "   ", "   ",
-				'O', new ItemStack(BasicItems.quartz_component), 'L', new ItemStack(Items.STICK) });
-		// 169 Notice Board3
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board3, 3), new Object[] { "   ", "LO ", "   ",
-				'O', new ItemStack(BasicItems.quartz_component), 'L', new ItemStack(Items.STICK) });
-		// 170 Notice Board4
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board4, 3), new Object[] { "   ", " LO", "   ",
-				'O', new ItemStack(BasicItems.quartz_component), 'L', new ItemStack(Items.STICK) });
-		// 171 Notice Board5
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board5, 3), new Object[] { "   ", "   ", "LO ",
-				'O', new ItemStack(BasicItems.quartz_component), 'L', new ItemStack(Items.STICK) });
 		// 172 Glass Door
 		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.glass_door, 3), new Object[] { "LO ", "LO ", "LO ", 'O',
 				new ItemStack(BasicItems.ironit_crystal), 'L', new ItemStack(BasicBlocks.quartz_window) });
@@ -638,8 +623,84 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.power_switch, 1),
 				new Object[] { "XXX", "X X" , "YYY", 'X', new ItemStack(BasicItems.kit3),
 						'Y', new ItemStack(Items.REDSTONE)});
-				}
+		// 195 Notice Board
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board, 2),
+				new Object[] { "X  ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
+						'Y', new ItemStack(BasicItems.kit1)});
 		
+		// 196 Notice Board2
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board2, 2),
+						new Object[] { "XX ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit1)});
+		// 197 Notice Board3
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board3, 2),
+						new Object[] { "XXX", " Y " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit1)});
+		// 198 Notice Board4
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board4, 2),
+						new Object[] { "XXX", "XY " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit1)});
+		// 199 Notice Board5
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board5, 2),
+						new Object[] { "XXX", "XYX" , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit1)});		
+		// 200 Notice Board Level0
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level0, 2),
+						new Object[] { "X  ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit2)});
+		// 201 Notice Board Level1
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level1, 2),
+						new Object[] { "XX ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit2)});		
+		// 202 Notice Board Level2
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level2, 2),
+						new Object[] { "XXX", " Y " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit2)});
+		// 203 Notice Board Level3
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level3, 2),
+						new Object[] { "XXX", "XY " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit2)});
+		// 204 Notice Board Level4
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level4, 2),
+						new Object[] { "XXX", "XYX" , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit2)});
+		// 205 Notice Board Level5
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level5, 2),
+						new Object[] { "XXX", "XYX" , " X ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit2)});	
+	
+		// 206 Notice Sign
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign, 2),
+						new Object[] { "X  ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit3)});	
+		// 206 Notice Sign1
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign1, 2),
+						new Object[] { "XX ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit3)});
+		// 206 Notice Sign2
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign2, 2),
+						new Object[] { "XXX", " Y " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit3)});
+		// 207 Notice Sign3
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign3, 2),
+						new Object[] { "XXX", "XY " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit3)});
+		// 208 Notice Sign4
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign4, 2),
+						new Object[] { "XXX", "XYX" , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit3)});		
+		// 209 Greydur Door		
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.greydur_gate, 2),
+						new Object[] { "XX ", "XX " , "XX ", 'X', new ItemStack(BasicBlocks.greydur)});
+		// 210 Klingodur Door		
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingodur_gate, 2),
+						new Object[] { "XX ", " XX" , "XX ", 'X', new ItemStack(BasicBlocks.klingonium_ore)});
+		// 211 Steel Door		
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.steel_door, 2),
+						new Object[] { " XX", "XX " , " XX", 'X', new ItemStack(Items.IRON_INGOT)});
+	}
+		
+			
 	   	}
 
 
