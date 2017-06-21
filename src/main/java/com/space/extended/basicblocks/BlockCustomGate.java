@@ -2,6 +2,8 @@ package com.space.extended.basicblocks;
 
 import javax.annotation.Nullable;
 
+import com.space.extended.SpaceextendedSoundEvents;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.BlockHorizontal;
@@ -35,7 +37,7 @@ public class BlockCustomGate extends BlockHorizontal{
 	protected static final AxisAlignedBB AABB_COLLIDE_ZAXIS = new AxisAlignedBB(0.0D, 0.0D, 0.375D, 1.0D, 2.0D, 0.625D);
 	protected static final AxisAlignedBB AABB_COLLIDE_XAXIS = new AxisAlignedBB(0.375D, 0.0D, 0.0D, 0.625D, 2.0D, 1.0D);
 	protected static final AxisAlignedBB AABB_COLLIDE_ZAXIS_INWALL = new AxisAlignedBB(0.0D, 0.0D, 0.375D, 1.0D,
-			0.8125D, 0.625D);
+			2.0D, 0.625D);
 	protected static final AxisAlignedBB AABB_COLLIDE_XAXIS_INWALL = new AxisAlignedBB(0.375D, 0.0D, 0.0D, 0.625D,
 			2.0D, 1.0D);
 	protected static final AxisAlignedBB AABB_CLOSED_SELECTED_ZAXIS = new AxisAlignedBB(0.0D, 0.0D, 0.375D, 1.0D, 2.0D,
@@ -164,7 +166,7 @@ public class BlockCustomGate extends BlockHorizontal{
 		}
 
 		worldIn.playSound((EntityPlayer) null, playerIn.posX, playerIn.posY, playerIn.posZ,
-				SoundEvents.BLOCK_CHEST_OPEN, SoundCategory.NEUTRAL, 0.5F, 0.3F);
+				SpaceextendedSoundEvents.GLASSDOOR_CLOSE, SoundCategory.NEUTRAL, 1.0F, 1.0F);
 		return true;
 	}
 
