@@ -698,6 +698,15 @@ public class BasicCrafting {
 		// 211 Steel Door		
 				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.steel_door, 2),
 						new Object[] { " XX", "XX " , " XX", 'X', new ItemStack(Items.IRON_INGOT)});
+		// Chromium Door
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.chromium_door, 2),
+						new Object[] { " YX", "XY " , " YX", 'X', new ItemStack(Items.IRON_INGOT),
+								'Y', new ItemStack(BasicItems.strontenium_ingot)});		
+						
+				
+				
+				
+				
 	}
 		
 			
