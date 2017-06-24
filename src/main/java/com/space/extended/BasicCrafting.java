@@ -702,7 +702,9 @@ public class BasicCrafting {
 				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.chromium_door, 2),
 						new Object[] { " YX", "XY " , " YX", 'X', new ItemStack(Items.IRON_INGOT),
 								'Y', new ItemStack(BasicItems.strontenium_ingot)});		
-						
+		// Hydraulic Door
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_door_left, 2),
+						new Object[] { "  X", "X  " , "  X", 'X', new ItemStack(BasicItems.strontenium_ingot)});
 				
 				
 				

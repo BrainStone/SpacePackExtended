@@ -182,7 +182,7 @@ tile.greydur_gate.name=§5Greydur Door§r
 tile.klingodur_gate.name=§5Klingodur Door§r
 tile.steel_door.name=§5Steel Door§r
 tile.chromium_door.name=§5Chromium Door§r
-
+tile.hydraulic_door_left.name=§5Hydraulic Door§r
 
 
 /*Stairs*/

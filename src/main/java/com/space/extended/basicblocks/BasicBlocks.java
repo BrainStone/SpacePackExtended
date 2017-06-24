@@ -26,6 +26,7 @@ public class BasicBlocks {
 	public static Block klingodur_gate;
 	public static Block steel_door;
 	public static Block chromium_door;
+	public static Block hydraulic_door_left;
 	public static Block ironium_ore;
 	public static Block perolit;
 	public static Block perolit_ore;
@@ -152,7 +153,7 @@ public class BasicBlocks {
 	public static Block strontenit_door;
 	public static Block metalframe_door;
 	public static Block glass_door;
-	public static Block concrete_brown_door;
+	public static Block concrete_brown_door;	
 	public static Block wall_panel;
 	public static Block wall_panel1;
 	public static Block wall_panel2;
@@ -501,6 +502,8 @@ public class BasicBlocks {
 		NameUtils.setNames(steel_door, "steel_door");
 		chromium_door = new BlockCustomGate(null).setCreativeTab(SpaceExtendedMain.furnitureTab);
 		NameUtils.setNames(chromium_door, "chromium_door");
+		hydraulic_door_left = new BlockCustomGate(null).setCreativeTab(SpaceExtendedMain.furnitureTab);
+		NameUtils.setNames(hydraulic_door_left, "hydraulic_door_left");
 		wall_panel = new BlockCustomWallPanel();
 		NameUtils.setNames(wall_panel, "wall_panel");
 		wall_panel1 = new BlockCustomWallPanel();
@@ -619,6 +622,7 @@ public class BasicBlocks {
 		registerBlock(klingodur_gate);
 		registerBlock(steel_door);
 		registerBlock(chromium_door);
+		registerBlock(hydraulic_door_left);
 		registerBlock(ironium_ore);
 		registerBlock(perolit);
 		registerBlock(perolit_ore);
