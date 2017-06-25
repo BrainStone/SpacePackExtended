@@ -705,7 +705,9 @@ public class BasicCrafting {
 		// Hydraulic Door
 				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_door_left, 2),
 						new Object[] { "  X", "X  " , "  X", 'X', new ItemStack(BasicItems.strontenium_ingot)});
-				
+		// Secret Stone Door
+				GameRegistry.addShapedRecipe(new ItemStack(BasicItems.secret_stone_door, 2),
+				        new Object[] { "  X", "X  " , "  X", 'X', new ItemStack(Blocks.COBBLESTONE)});
 				
 				
 				

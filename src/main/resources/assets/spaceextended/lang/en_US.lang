@@ -245,7 +245,7 @@ item.bed1.name=§5Lifebox§r
 item.ironit_crystal.name=§5Ironit Crystal§r
 item.glass_door.name=§5Glass Door§r
 item.concrete_brown_door.name=§5Concrete Brown Door§r
-
+item.secret_stone_door.name=§5Secret Stone Door§r
 
 item.vitallium_helmet.name=§5Vitallium Helmet§r
 item.vitallium_chestplate.name=§5Vitallium Chestplate§r

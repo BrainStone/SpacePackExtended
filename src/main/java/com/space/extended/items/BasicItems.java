@@ -40,6 +40,7 @@ public class BasicItems {
 	public static Item ironit_door;
 	public static Item glass_door;
 	public static Item concrete_brown_door;
+	public static Item secret_stone_door;
 
 	public BasicItems() {
 		init();
@@ -107,6 +108,8 @@ public class BasicItems {
 		NameUtils.setNames(glass_door, "glass_door");
 		concrete_brown_door = new ItemConcreteBrownDoor();
 		NameUtils.setNames(concrete_brown_door, "concrete_brown_door");
+		secret_stone_door = new ItemSecretStoneDoor();
+		NameUtils.setNames(secret_stone_door, "secret_stone_door");
 
 	}
 
@@ -138,6 +141,7 @@ public class BasicItems {
 		registerItem(ironit_door);
 		registerItem(glass_door);
 		registerItem(concrete_brown_door);
+		registerItem(secret_stone_door);
 	}
 
 	private void registerItem(Item item) {
