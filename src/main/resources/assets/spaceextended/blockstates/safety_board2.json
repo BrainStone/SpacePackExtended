@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:safety_board2"
+        },
+        "facing=south": {
+            "model": "spaceextended:safety_board2",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "spaceextended:safety_board2",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "spaceextended:safety_board2",
+            "y": 90
+        }
+    }
+}

@@ -183,6 +183,17 @@ tile.klingodur_gate.name=§5Klingodur Door§r
 tile.steel_door.name=§5Steel Door§r
 tile.chromium_door.name=§5Chromium Door§r
 tile.hydraulic_door_left.name=§5Hydraulic Door§r
+tile.safety_board.name=§5Safety Board§r
+tile.safety_board1.name=§5Safety Board1§r
+tile.safety_board2.name=§5Safety Board2§r
+tile.safety_board3.name=§5Safety Board3§r
+tile.safety_board4.name=§5Safety Board4§r
+tile.safety_board5.name=§5Safety Board5§r
+tile.safety_board6.name=§5Safety Board6§r
+
+
+
+
 
 
 /*Stairs*/
