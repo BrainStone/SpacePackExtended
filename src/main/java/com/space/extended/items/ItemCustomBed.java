@@ -25,7 +25,6 @@ public class ItemCustomBed extends ItemBed {
 	}
 
 	@Override
-	@SuppressWarnings("deprecation")
 	public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand,
 			EnumFacing facing, float hitX, float hitY, float hitZ) {
 		if (worldIn.isRemote)
@@ -52,8 +51,8 @@ public class ItemCustomBed extends ItemBed {
 				boolean flag2 = flag || worldIn.isAirBlock(pos);
 				boolean flag3 = flag1 || worldIn.isAirBlock(blockpos);
 
-				if (flag2 && flag3 && worldIn.getBlockState(pos.down()).isFullyOpaque()
-						&& worldIn.getBlockState(blockpos.down()).isFullyOpaque()) {
+				if (flag2 && flag3 && worldIn.getBlockState(pos.down()).isOpaqueCube()
+						&& worldIn.getBlockState(blockpos.down()).isOpaqueCube()) {
 					IBlockState iblockstate2 = BasicBlocks.bed1.getDefaultState()
 							.withProperty(BlockBed.OCCUPIED, Boolean.valueOf(false))
 							.withProperty(BlockHorizontal.FACING, enumfacing)

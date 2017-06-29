@@ -51,10 +51,14 @@ public class SpaceExtendedMain {
 	public static CreativeTabs furnitureTab;
 	public static CreativeTabs signTab;
 
+	@SuppressWarnings("unused")
 	private SpaceextendedEntity entity;
 
+	@SuppressWarnings("unused")
 	private BasicBlocks blocks;
+	@SuppressWarnings("unused")
 	private BasicItems items;
+	@SuppressWarnings("unused")
 	private BasicStairs stairs;
 
 	@EventHandler

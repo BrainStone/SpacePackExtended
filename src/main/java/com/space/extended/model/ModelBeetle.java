@@ -188,6 +188,7 @@ public class ModelBeetle extends ModelBase {
 		model.rotateAngleZ = z;
 	}
 
+	@SuppressWarnings("unused")
 	@Override
 	public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
 			float headPitch, float scaleFactor, Entity entityIn) {

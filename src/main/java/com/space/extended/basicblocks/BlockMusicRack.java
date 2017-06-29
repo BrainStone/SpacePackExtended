@@ -100,7 +100,6 @@ public class BlockMusicRack extends BlockJukebox {
 					worldIn.playEvent(1010, pos, 0);
 					worldIn.playRecord(pos, (SoundEvent) null);
 					blockjukebox$tileentityjukebox.setRecord(ItemStack.EMPTY);
-					float f = 0.7F;
 					double d0 = worldIn.rand.nextFloat() * 0.7F + 0.15000000596046448D;
 					double d1 = worldIn.rand.nextFloat() * 0.7F + 0.06000000238418579D + 0.6D;
 					double d2 = worldIn.rand.nextFloat() * 0.7F + 0.15000000596046448D;

@@ -28,9 +28,9 @@ public class ItemFlameThrower extends Item {
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
 		ItemStack itemstack = playerIn.getHeldItem(handIn);
 		Vec3d lookVector = playerIn.getLookVec();
-		double x = lookVector.xCoord / 10;
-		double y = lookVector.yCoord / 10;
-		double z = lookVector.zCoord / 10;
+		double x = lookVector.x / 10;
+		double y = lookVector.y / 10;
+		double z = lookVector.z / 10;
 		Random random = new Random();
 
 		for (int i = 0; i < 100; i++) {

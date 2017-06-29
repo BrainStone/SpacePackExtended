@@ -132,7 +132,7 @@ public class BlockStronteniumFenceGate extends BlockHorizontal {
 	}
 
 	@Override
-	public boolean blocksMovement(IBlockAccess worldIn, BlockPos pos) {
+	public boolean isPassable(IBlockAccess worldIn, BlockPos pos) {
 		return worldIn.getBlockState(pos).getValue(OPEN).booleanValue();
 	}
 
