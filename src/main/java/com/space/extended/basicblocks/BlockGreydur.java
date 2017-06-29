@@ -12,21 +12,22 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class BlockGreydur extends Block {
-	
+
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-	
+
 	public BlockGreydur() {
 		super(Material.IRON);
 		setHardness(2F);
 		setResistance(5F);
 		this.setHarvestLevel("pickaxe", 2);
-		
+
 		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
-	
+
 	public IBlockState getStateForEntityRender(IBlockState state) {
 		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
 	}
+
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		EnumFacing enumFacing = EnumFacing.getFront(meta);

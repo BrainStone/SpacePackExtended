@@ -16,7 +16,7 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
 public class BlockSecretStoneDoor extends BlockCustomDoor {
-	
+
 	public BlockSecretStoneDoor() {
 		super(Material.WOOD);
 		setHardness(3);

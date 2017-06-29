@@ -4,8 +4,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
-public class BlockSlopePipesConnector extends Block{
-	
+public class BlockSlopePipesConnector extends Block {
+
 	public BlockSlopePipesConnector() {
 		super(Material.IRON);
 		setHardness(2F);

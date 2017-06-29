@@ -13,10 +13,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockPowerStation extends Block{
-	
+public class BlockPowerStation extends Block {
+
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-	
+
 	public BlockPowerStation() {
 		super(Material.IRON);
 		setHardness(2F);
@@ -25,10 +25,11 @@ public class BlockPowerStation extends Block{
 		setSoundType(SoundType.METAL);
 		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
-	
+
 	public IBlockState getStateForEntityRender(IBlockState state) {
 		return getDefaultState().withProperty(FACING, EnumFacing.SOUTH);
 	}
+
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		EnumFacing enumFacing = EnumFacing.getFront(meta);
@@ -54,26 +55,28 @@ public class BlockPowerStation extends Block{
 			float hitZ, int meta, EntityLivingBase placer) {
 		return getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
 	}
-	 public boolean canProvidePower(IBlockState state)
-	    {
-	        return true;
-	    }
 
-	    public int getWeakPower(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
-	    {
-	        return 15;
-	    }
-	    public boolean isOpaqueCube() {
-			return false;
-		}
+	@Override
+	public boolean canProvidePower(IBlockState state) {
+		return true;
+	}
 
-		@Override
-		public boolean isFullCube(IBlockState state) {
-			return false;
-		}
+	@Override
+	public int getWeakPower(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side) {
+		return 15;
+	}
 
-		@Override
-		public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
-			return false;
-		}
+	public boolean isOpaqueCube() {
+		return false;
+	}
+
+	@Override
+	public boolean isFullCube(IBlockState state) {
+		return false;
+	}
+
+	@Override
+	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
+		return false;
+	}
 }

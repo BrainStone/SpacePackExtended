@@ -33,8 +33,6 @@ public class SpaceextendedSoundEvents {
 		GLASSDOOR_CLOSE = registerSound("block.glassdoor.close");
 		STONEDOOR_OPEN = registerSound("block.stonedoor.open");
 		STONEDOOR_CLOSE = registerSound("block.stonedoor.close");
-		
-		
 
 	}
 

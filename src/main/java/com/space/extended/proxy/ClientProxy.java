@@ -225,7 +225,6 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.greydur, 0);
 		registerModel(BasicBlocks.klingodur_gate, 0);
 		registerModel(BasicBlocks.hydraulic_door_left, 0);
-		
 
 		// Items
 		registerModel(BasicItems.vitallium_ingot, 0);

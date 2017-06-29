@@ -160,8 +160,8 @@ public class BasicCrafting {
 		// 42 BlockPerolit
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.perolit, 4), new Object[] { "   ", "PRP", "PRP", 'P',
 				new ItemStack(BasicItems.perolit_sphere), 'R', new ItemStack(Items.REDSTONE) });
-		
-		// 46 Perol 
+
+		// 46 Perol
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.perold, 4),
 				new Object[] { "PPP", "P P", "PPP", 'P', new ItemStack(BasicItems.perolit_sphere) });
 
@@ -555,190 +555,158 @@ public class BasicCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notebook, 1), new Object[] { "   ", "OOO", "LLL", 'O',
 				new ItemStack(BasicBlocks.vitallium_glass_pane), 'L', new ItemStack(Items.REDSTONE) });
 		// 178 Radio
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.music_rack, 1),
-				new Object[] { "   ", "GOG", " O ", 'O', new ItemStack(Blocks.IRON_BLOCK),
-						'G',new ItemStack(BasicItems.vitallium_ingot)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.music_rack, 1), new Object[] { "   ", "GOG", " O ", 'O',
+				new ItemStack(Blocks.IRON_BLOCK), 'G', new ItemStack(BasicItems.vitallium_ingot) });
 		// 179 Pyramid
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.pyramid, 3),
-				new Object[] { " O ", "C C", "OOO", 'O', new ItemStack(Blocks.NOTEBLOCK),
-						'C',new ItemStack(BasicItems.cyberit_gem)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.pyramid, 3), new Object[] { " O ", "C C", "OOO", 'O',
+				new ItemStack(Blocks.NOTEBLOCK), 'C', new ItemStack(BasicItems.cyberit_gem) });
 		// 180 ConcreteBrownDoor
 		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.concrete_brown_door, 3),
-				new Object[] { "AA ", "BB ", "OO ", 'A', new ItemStack(BasicItems.vitallium_ingot),
-						'B', new ItemStack(BasicItems.kit1), 'O', new ItemStack(BasicItems.strontenium_ingot)});
-				
+				new Object[] { "AA ", "BB ", "OO ", 'A', new ItemStack(BasicItems.vitallium_ingot), 'B',
+						new ItemStack(BasicItems.kit1), 'O', new ItemStack(BasicItems.strontenium_ingot) });
+
 		// 181 Hydraulic Bottom
-	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_bottom, 5),
-	    		new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot),
-	    				'B', new ItemStack(BasicItems.kit1), 'C', new ItemStack(BasicItems.strontenium_ingot)});
-	    // 182 Hydraulic Top
-	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_top, 5),
-	    		new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot),
-	    				'B', new ItemStack(BasicItems.kit2), 'C', new ItemStack(BasicItems.strontenium_ingot)});
-	    // 183 Hydraulic Middle
-	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_middle, 5),
-	    		new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot),
-	    				'B', new ItemStack(BasicItems.kit3), 'C', new ItemStack(BasicItems.strontenium_ingot)});
-	    // 184 Hydraulic Bottom Horizontal
-	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_bottom_horizontal, 5),
-	    		new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot),
-	    				'B', new ItemStack(BasicItems.kit4), 'C', new ItemStack(BasicItems.strontenium_ingot)});
-	    // 185 Hydraulic Middle Horizontal
-	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_middle_horizontal, 5),
-	    		new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot),
-	    				'B', new ItemStack(BasicItems.kit5), 'C', new ItemStack(BasicItems.strontenium_ingot)});
-	    // 186 Gate Bottom Left
-	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_bottom_left, 1),
-	    		new Object[] { "   ", "   ", "A  ",'A', new ItemStack(BasicBlocks.vitallium)});
-	    // 187 Gate Middle Left
-	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_middle_left, 1),
-	    		new Object[] { "   ", "A  ", "   ",'A', new ItemStack(BasicBlocks.vitallium)});	    
-	    // 188 Gate Top Left
-	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_top_left, 1),
-	    		new Object[] { "A  ", "   ", "   ",'A', new ItemStack(BasicBlocks.vitallium)});		    
-	    // 189 Gate Top Middle
-	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_top_middle, 1),
-	    		new Object[] { " A ", "   ", "   ",'A', new ItemStack(BasicBlocks.vitallium)});		    
-	    // 188 Gate Top Right
-	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_top_right, 1),
-	    		new Object[] { " AA", "   ", "   ",'A', new ItemStack(BasicBlocks.vitallium)});
-	    // 189 Gate Middle Right
-	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_middle_right, 1),
-	    		new Object[] { "   ", " AA", "   ",'A', new ItemStack(BasicBlocks.vitallium)});
-	    // 190 Gate Bottom Right
-	    GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_bottom_right, 1),
-	    		new Object[] { "   ", "   ", " AA",'A', new ItemStack(BasicBlocks.vitallium)});	    
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_bottom, 5),
+				new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot), 'B',
+						new ItemStack(BasicItems.kit1), 'C', new ItemStack(BasicItems.strontenium_ingot) });
+		// 182 Hydraulic Top
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_top, 5),
+				new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot), 'B',
+						new ItemStack(BasicItems.kit2), 'C', new ItemStack(BasicItems.strontenium_ingot) });
+		// 183 Hydraulic Middle
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_middle, 5),
+				new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot), 'B',
+						new ItemStack(BasicItems.kit3), 'C', new ItemStack(BasicItems.strontenium_ingot) });
+		// 184 Hydraulic Bottom Horizontal
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_bottom_horizontal, 5),
+				new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot), 'B',
+						new ItemStack(BasicItems.kit4), 'C', new ItemStack(BasicItems.strontenium_ingot) });
+		// 185 Hydraulic Middle Horizontal
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_middle_horizontal, 5),
+				new Object[] { " A ", " B ", " C ", 'A', new ItemStack(BasicItems.vitallium_ingot), 'B',
+						new ItemStack(BasicItems.kit5), 'C', new ItemStack(BasicItems.strontenium_ingot) });
+		// 186 Gate Bottom Left
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_bottom_left, 1),
+				new Object[] { "   ", "   ", "A  ", 'A', new ItemStack(BasicBlocks.vitallium) });
+		// 187 Gate Middle Left
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_middle_left, 1),
+				new Object[] { "   ", "A  ", "   ", 'A', new ItemStack(BasicBlocks.vitallium) });
+		// 188 Gate Top Left
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_top_left, 1),
+				new Object[] { "A  ", "   ", "   ", 'A', new ItemStack(BasicBlocks.vitallium) });
+		// 189 Gate Top Middle
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_top_middle, 1),
+				new Object[] { " A ", "   ", "   ", 'A', new ItemStack(BasicBlocks.vitallium) });
+		// 188 Gate Top Right
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_top_right, 1),
+				new Object[] { " AA", "   ", "   ", 'A', new ItemStack(BasicBlocks.vitallium) });
+		// 189 Gate Middle Right
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_middle_right, 1),
+				new Object[] { "   ", " AA", "   ", 'A', new ItemStack(BasicBlocks.vitallium) });
+		// 190 Gate Bottom Right
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.gate_bottom_right, 1),
+				new Object[] { "   ", "   ", " AA", 'A', new ItemStack(BasicBlocks.vitallium) });
 		// 191 Slope Pipes Connector
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.slope_pipes_connector, 5),
 				new Object[] { "X X", " X ", " X ", 'X', new ItemStack(BasicBlocks.strontenium_ore) });
-	    // 192 Power Station
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.power_station, 1),
-				new Object[] { "XXX", "X X" , "YYY", 'X', new ItemStack(BasicItems.kit5),
-						'Y', new ItemStack(Items.REDSTONE)});
-		//193 Greydur
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.greydur, 6),
-				new Object[] { " Y ", "YXY", " Y ", 'X', new ItemStack(BasicItems.ironit_crystal),
-						'Y', new ItemStack(BasicItems.kit2)});
-	    // 194 Power Switch
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.power_switch, 1),
-				new Object[] { "XXX", "X X" , "YYY", 'X', new ItemStack(BasicItems.kit3),
-						'Y', new ItemStack(Items.REDSTONE)});
+		// 192 Power Station
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.power_station, 1), new Object[] { "XXX", "X X", "YYY",
+				'X', new ItemStack(BasicItems.kit5), 'Y', new ItemStack(Items.REDSTONE) });
+		// 193 Greydur
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.greydur, 6), new Object[] { " Y ", "YXY", " Y ", 'X',
+				new ItemStack(BasicItems.ironit_crystal), 'Y', new ItemStack(BasicItems.kit2) });
+		// 194 Power Switch
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.power_switch, 1), new Object[] { "XXX", "X X", "YYY",
+				'X', new ItemStack(BasicItems.kit3), 'Y', new ItemStack(Items.REDSTONE) });
 		// 195 Notice Board
-		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board, 2),
-				new Object[] { "X  ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
-						'Y', new ItemStack(BasicItems.kit1)});
-		
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board, 2), new Object[] { "X  ", " Y ", "   ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit1) });
+
 		// 196 Notice Board2
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board2, 2),
-						new Object[] { "XX ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit1)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board2, 2), new Object[] { "XX ", " Y ", "   ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit1) });
 		// 197 Notice Board3
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board3, 2),
-						new Object[] { "XXX", " Y " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit1)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board3, 2), new Object[] { "XXX", " Y ", "   ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit1) });
 		// 198 Notice Board4
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board4, 2),
-						new Object[] { "XXX", "XY " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit1)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board4, 2), new Object[] { "XXX", "XY ", "   ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit1) });
 		// 199 Notice Board5
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board5, 2),
-						new Object[] { "XXX", "XYX" , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit1)});		
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board5, 2), new Object[] { "XXX", "XYX", "   ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit1) });
 		// 200 Notice Board Level0
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level0, 2),
-						new Object[] { "X  ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit2)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level0, 2), new Object[] { "X  ", " Y ",
+				"   ", 'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit2) });
 		// 201 Notice Board Level1
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level1, 2),
-						new Object[] { "XX ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit2)});		
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level1, 2), new Object[] { "XX ", " Y ",
+				"   ", 'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit2) });
 		// 202 Notice Board Level2
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level2, 2),
-						new Object[] { "XXX", " Y " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit2)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level2, 2), new Object[] { "XXX", " Y ",
+				"   ", 'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit2) });
 		// 203 Notice Board Level3
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level3, 2),
-						new Object[] { "XXX", "XY " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit2)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level3, 2), new Object[] { "XXX", "XY ",
+				"   ", 'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit2) });
 		// 204 Notice Board Level4
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level4, 2),
-						new Object[] { "XXX", "XYX" , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit2)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level4, 2), new Object[] { "XXX", "XYX",
+				"   ", 'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit2) });
 		// 205 Notice Board Level5
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level5, 2),
-						new Object[] { "XXX", "XYX" , " X ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit2)});	
-	
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_board_level5, 2), new Object[] { "XXX", "XYX",
+				" X ", 'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit2) });
+
 		// 206 Notice Sign
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign, 2),
-						new Object[] { "X  ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit3)});	
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign, 2), new Object[] { "X  ", " Y ", "   ", 'X',
+				new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit3) });
 		// 206 Notice Sign1
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign1, 2),
-						new Object[] { "XX ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit3)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign1, 2), new Object[] { "XX ", " Y ", "   ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit3) });
 		// 206 Notice Sign2
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign2, 2),
-						new Object[] { "XXX", " Y " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit3)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign2, 2), new Object[] { "XXX", " Y ", "   ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit3) });
 		// 207 Notice Sign3
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign3, 2),
-						new Object[] { "XXX", "XY " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit3)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign3, 2), new Object[] { "XXX", "XY ", "   ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit3) });
 		// 208 Notice Sign4
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign4, 2),
-						new Object[] { "XXX", "XYX" , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit3)});		
-		// 209 Greydur Door		
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.greydur_gate, 2),
-						new Object[] { "XX ", "XX " , "XX ", 'X', new ItemStack(BasicBlocks.greydur)});
-		// 210 Klingodur Door		
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingodur_gate, 2),
-						new Object[] { "XX ", " XX" , "XX ", 'X', new ItemStack(BasicBlocks.klingonium_ore)});
-		// 211 Steel Door		
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.steel_door, 2),
-						new Object[] { " XX", "XX " , " XX", 'X', new ItemStack(Items.IRON_INGOT)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.notice_sign4, 2), new Object[] { "XXX", "XYX", "   ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit3) });
+		// 209 Greydur Door
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.greydur_gate, 2),
+				new Object[] { "XX ", "XX ", "XX ", 'X', new ItemStack(BasicBlocks.greydur) });
+		// 210 Klingodur Door
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.klingodur_gate, 2),
+				new Object[] { "XX ", " XX", "XX ", 'X', new ItemStack(BasicBlocks.klingonium_ore) });
+		// 211 Steel Door
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.steel_door, 2),
+				new Object[] { " XX", "XX ", " XX", 'X', new ItemStack(Items.IRON_INGOT) });
 		// Chromium Door
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.chromium_door, 2),
-						new Object[] { " YX", "XY " , " YX", 'X', new ItemStack(Items.IRON_INGOT),
-								'Y', new ItemStack(BasicItems.strontenium_ingot)});		
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.chromium_door, 2), new Object[] { " YX", "XY ", " YX",
+				'X', new ItemStack(Items.IRON_INGOT), 'Y', new ItemStack(BasicItems.strontenium_ingot) });
 		// Hydraulic Door
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_door_left, 2),
-						new Object[] { "  X", "X  " , "  X", 'X', new ItemStack(BasicItems.strontenium_ingot)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.hydraulic_door_left, 2),
+				new Object[] { "  X", "X  ", "  X", 'X', new ItemStack(BasicItems.strontenium_ingot) });
 		// Secret Stone Door
-				GameRegistry.addShapedRecipe(new ItemStack(BasicItems.secret_stone_door, 2),
-				        new Object[] { "  X", "X  " , "  X", 'X', new ItemStack(Blocks.COBBLESTONE)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicItems.secret_stone_door, 2),
+				new Object[] { "  X", "X  ", "  X", 'X', new ItemStack(Blocks.COBBLESTONE) });
 		// Safety_Board
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board, 2),
-						new Object[] { "X  ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit4)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board, 2), new Object[] { "X  ", " Y ", "   ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit4) });
 		// Safety_Board1
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board1, 2),
-						new Object[] { "XX ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit4)});		
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board1, 2), new Object[] { "XX ", " Y ", "   ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit4) });
 		// Safety_Board2
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board2, 2),
-						new Object[] { "XXX", " Y " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit4)});
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board2, 2), new Object[] { "XXX", " Y ", "   ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit4) });
 		// Safety_Board3
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board3, 2),
-						new Object[] { "XXX", "XY " , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit4)});		
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board3, 2), new Object[] { "XXX", "XY ", "   ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit4) });
 		// Safety_Board4
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board4, 2),
-						new Object[] { "XXX", "XYX" , "   ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit4)});				
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board4, 2), new Object[] { "XXX", "XYX", "   ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit4) });
 		// Safety_Board5
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board5, 2),
-						new Object[] { "XXX", "XYX" , "X  ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit4)});				
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board5, 2), new Object[] { "XXX", "XYX", "X  ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit4) });
 		// Safety_Board6
-				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board6, 2),
-						new Object[] { "XXX", "XYX" , "XX ", 'X', new ItemStack(Items.STICK),
-								'Y', new ItemStack(BasicItems.kit4)});	
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board6, 2), new Object[] { "XXX", "XYX", "XX ",
+				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit4) });
 	}
-		
-			
-	   	}
 
-
+}

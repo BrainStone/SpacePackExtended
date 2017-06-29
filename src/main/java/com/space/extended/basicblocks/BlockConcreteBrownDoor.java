@@ -16,7 +16,7 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
 public class BlockConcreteBrownDoor extends BlockCustomDoor {
-	
+
 	public BlockConcreteBrownDoor() {
 		super(Material.IRON);
 		setHardness(3);
