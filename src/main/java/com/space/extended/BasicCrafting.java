@@ -708,9 +708,34 @@ public class BasicCrafting {
 		// Secret Stone Door
 				GameRegistry.addShapedRecipe(new ItemStack(BasicItems.secret_stone_door, 2),
 				        new Object[] { "  X", "X  " , "  X", 'X', new ItemStack(Blocks.COBBLESTONE)});
-				
-				
-				
+		// Safety_Board
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board, 2),
+						new Object[] { "X  ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit4)});
+		// Safety_Board1
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board1, 2),
+						new Object[] { "XX ", " Y " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit4)});		
+		// Safety_Board2
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board2, 2),
+						new Object[] { "XXX", " Y " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit4)});
+		// Safety_Board3
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board3, 2),
+						new Object[] { "XXX", "XY " , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit4)});		
+		// Safety_Board4
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board4, 2),
+						new Object[] { "XXX", "XYX" , "   ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit4)});				
+		// Safety_Board5
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board5, 2),
+						new Object[] { "XXX", "XYX" , "X  ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit4)});				
+		// Safety_Board6
+				GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board6, 2),
+						new Object[] { "XXX", "XYX" , "XX ", 'X', new ItemStack(Items.STICK),
+								'Y', new ItemStack(BasicItems.kit4)});	
 	}
 		
 			
