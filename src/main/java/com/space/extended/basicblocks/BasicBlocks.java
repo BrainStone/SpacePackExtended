@@ -114,6 +114,8 @@ public class BasicBlocks {
 	public static Block cellar_lamp_lit;
 	public static Block alarm_light;
 	public static Block alarm_light_lit;
+	public static Block pump;
+	public static Block pump_lit;
 	public static Block klingolight;
 	public static Block pipes_connector;
 	public static Block constructor1;
@@ -464,6 +466,10 @@ public class BasicBlocks {
 		NameUtils.setNames(alarm_light, "alarm_light");
 		alarm_light_lit = new BlockAlarmLight(true);
 		NameUtils.setNames(alarm_light_lit, "alarm_light_lit");
+		pump = new BlockPump(false).setCreativeTab(SpaceExtendedMain.furnitureTab);
+		NameUtils.setNames(pump, "pump");
+		pump_lit = new BlockPump(true);
+		NameUtils.setNames(pump_lit, "pump_lit");
 		klingolight = new BlockKlingoLight().setCreativeTab(SpaceExtendedMain.spaceTab);
 		NameUtils.setNames(klingolight, "klingolight");
 		bed1 = new BlockCustomBed();
@@ -756,6 +762,8 @@ public class BasicBlocks {
 		registerBlock(cellar_lamp_lit);
 		registerBlock(alarm_light);
 		registerBlock(alarm_light_lit);
+		registerBlock(pump);
+		registerBlock(pump_lit);
 		registerBlock(klingolight);
 		registerBlockOnly(bed1);
 		registerBlock(wash_basin);

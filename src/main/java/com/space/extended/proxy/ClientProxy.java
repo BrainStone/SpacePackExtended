@@ -121,6 +121,8 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicBlocks.cellar_lamp_lit, 0);
 		registerModel(BasicBlocks.alarm_light, 0);
 		registerModel(BasicBlocks.alarm_light_lit, 0);
+		registerModel(BasicBlocks.pump, 0);
+		registerModel(BasicBlocks.pump_lit, 0);
 		registerModel(BasicBlocks.metal_diagonal, 0);
 		registerModel(BasicBlocks.metal_frame_straight, 0);
 		registerModel(BasicBlocks.metal_frame_l, 0);

@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "spaceextended:pump_lit"
+        },
+        "facing=south": {
+            "model": "spaceextended:pump_lit",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "spaceextended:pump_lit",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "spaceextended:pump_lit",
+            "y": 90
+        }
+    }
+}

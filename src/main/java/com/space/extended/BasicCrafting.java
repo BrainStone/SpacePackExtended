@@ -707,6 +707,10 @@ public class BasicCrafting {
 		// Safety_Board6
 		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.safety_board6, 2), new Object[] { "XXX", "XYX", "XX ",
 				'X', new ItemStack(Items.STICK), 'Y', new ItemStack(BasicItems.kit4) });
+		// Pump
+		GameRegistry.addShapedRecipe(new ItemStack(BasicBlocks.pump, 2), new Object[] { "X X", " Y ", "X X",
+				'X', new ItemStack(BasicStairs.pipes_stairs), 'Y', new ItemStack(BasicStairs.pipesa_stairs) });
+		
 	}
 
 }
