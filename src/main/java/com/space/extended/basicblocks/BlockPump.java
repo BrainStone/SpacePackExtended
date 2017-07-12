@@ -119,7 +119,7 @@ public class BlockPump extends Block{
 
 	@Override
 	public boolean isFullCube(IBlockState state) {
-		return false;
+		return true;
 	}
 
 	@Override
