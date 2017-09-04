@@ -153,6 +153,26 @@ task showVersion {
     outputs.upToDateWhen { false }
 }
 
+task gitTag {
+    description "Tags the current version in git. Specify the version by passing \"-PtagVersion=version\""
+    group "help"
+
+    doLast {
+        def tagVersion
+
+        if ( project.hasProperty("tagVersion") ) {
+            tagVersion = project.tagVersion
+        } else {
+            tagVersion = "v" + version.split("-")[1]
+        }
+
+        exec {
+            executable "git"
+            args "tag", "-a", tagVersion, "-m", getChangelog()
+        }
+    }
+}
+
 jar {
     doLast {
         if (!gradle.taskGraph.hasTask(reobfJar)) {
