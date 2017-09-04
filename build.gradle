@@ -12,7 +12,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
         classpath 'com.github.ben-manes:gradle-versions-plugin:0.15.0'
     }
 }
@@ -266,6 +266,7 @@ curseforge {
         changelogType = "markdown"
         releaseType = getVersionType()
         addGameVersion "${minecraft_version}"
+        addGameVersion "1.12.1"
         addGameVersion "Java 8"
         
         mainArtifact(jar) {
