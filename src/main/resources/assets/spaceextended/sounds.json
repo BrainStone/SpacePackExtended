@@ -61,12 +61,12 @@
             "spaceextended:random/glassdoor_close"
         ]
     },
-	"block.stonedoor.open": {
+    "block.stonedoor.open": {
         "category": "block",
         "sounds": [
             "spaceextended:random/stonedoor_open"
         ]
-},
+    },
     "block.stonedoor.close": {
         "category": "block",
         "sounds": [

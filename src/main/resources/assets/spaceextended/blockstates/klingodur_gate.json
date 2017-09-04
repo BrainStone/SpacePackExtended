@@ -2,23 +2,21 @@
     "variants": {
         "facing=south,in_wall=false,open=false,powered=false": {
             "model": "spaceextended:klingodur_gate_closed"
-            
         },
         "facing=west,in_wall=false,open=false,powered=false": {
             "model": "spaceextended:klingodur_gate_closed",
-             "y": 90
+            "y": 90
         },
         "facing=north,in_wall=false,open=false,powered=false": {
             "model": "spaceextended:klingodur_gate_closed",
-             "y": 180
+            "y": 180
         },
         "facing=east,in_wall=false,open=false,powered=false": {
             "model": "spaceextended:klingodur_gate_closed",
-             "y": 270
+            "y": 270
         },
         "facing=south,in_wall=false,open=true,powered=false": {
             "model": "spaceextended:klingodur_gate_open"
-            
         },
         "facing=west,in_wall=false,open=true,powered=false": {
             "model": "spaceextended:klingodur_gate_open",
@@ -34,7 +32,6 @@
         },
         "facing=south,in_wall=true,open=false,powered=false": {
             "model": "spaceextended:vitallium_wall_gate_closed"
-            
         },
         "facing=west,in_wall=true,open=false,powered=false": {
             "model": "spaceextended:vitallium_wall_gate_closed",
@@ -50,7 +47,6 @@
         },
         "facing=south,in_wall=true,open=true,powered=false": {
             "model": "spaceextended:vitallium_wall_gate_open"
-            
         },
         "facing=west,in_wall=true,open=true,powered=false": {
             "model": "spaceextended:vitallium_wall_gate_open",
@@ -66,7 +62,6 @@
         },
         "facing=south,in_wall=false,open=false,powered=true": {
             "model": "spaceextended:klingodur_gate_closed"
-            
         },
         "facing=west,in_wall=false,open=false,powered=true": {
             "model": "spaceextended:klingodur_gate_closed",
@@ -82,7 +77,6 @@
         },
         "facing=south,in_wall=false,open=true,powered=true": {
             "model": "spaceextended:klingodur_gate_open"
-            
         },
         "facing=west,in_wall=false,open=true,powered=true": {
             "model": "spaceextended:klingodur_gate_open",
@@ -98,7 +92,6 @@
         },
         "facing=south,in_wall=true,open=false,powered=true": {
             "model": "spaceextended:vitallium_wall_gate_closed"
-            
         },
         "facing=west,in_wall=true,open=false,powered=true": {
             "model": "spaceextended:vitallium_wall_gate_closed",
@@ -114,7 +107,6 @@
         },
         "facing=south,in_wall=true,open=true,powered=true": {
             "model": "spaceextended:vitallium_wall_gate_open"
-            
         },
         "facing=west,in_wall=true,open=true,powered=true": {
             "model": "spaceextended:vitallium_wall_gate_open",
