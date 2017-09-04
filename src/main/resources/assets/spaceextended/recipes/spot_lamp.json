@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:spot_lamp",
+        "count": 5
+    },
+    "pattern": [
+        "R R",
+        "TTT",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "T": {
+            "item": "minecraft:redstone_torch"
+        }
+    }
+}

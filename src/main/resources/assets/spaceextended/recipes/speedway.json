@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:speedway",
+        "count": 5
+    },
+    "pattern": [
+        "C C",
+        "   ",
+        "E E"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "C": {
+            "item": "minecraft:comparator"
+        },
+        "E": {
+            "item": "spaceextended:kit4"
+        }
+    }
+}

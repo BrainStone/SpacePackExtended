@@ -1,9 +1,6 @@
 package com.space.extended.proxy;
 
-import com.space.extended.SpaceextendedSoundEvents;
-
 public class CommonProxy {
-
 	public void registerModels() {
 	}
 
@@ -11,9 +8,6 @@ public class CommonProxy {
 	}
 
 	public void preInit() {
-
-		SpaceextendedSoundEvents.registerSounds();
-
 	}
 
 	public void load() {

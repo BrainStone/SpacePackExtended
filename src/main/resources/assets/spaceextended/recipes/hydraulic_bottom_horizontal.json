@@ -1,0 +1,23 @@
+{
+    "result": {
+        "item": "spaceextended:hydraulic_bottom_horizontal",
+        "count": 5
+    },
+    "pattern": [
+        " A ",
+        " B ",
+        " C "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "A": {
+            "item": "spaceextended:vitallium_ingot"
+        },
+        "B": {
+            "item": "spaceextended:kit4"
+        },
+        "C": {
+            "item": "spaceextended:strontenium_ingot"
+        }
+    }
+}

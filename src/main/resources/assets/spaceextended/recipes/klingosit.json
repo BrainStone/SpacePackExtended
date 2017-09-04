@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:klingosit",
+        "count": 6
+    },
+    "pattern": [
+        "KKK",
+        "   ",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "K": {
+            "item": "spaceextended:klingonium_ore"
+        }
+    }
+}

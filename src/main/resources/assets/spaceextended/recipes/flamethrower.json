@@ -1,0 +1,25 @@
+{
+    "result": {
+        "item": "spaceextended:flamethrower"
+    },
+    "pattern": [
+        "SSS",
+        "FFF",
+        "KLK"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "S": {
+            "item": "spaceextended:strontenium_ingot"
+        },
+        "F": {
+            "item": "spaceextended:vitallium_ingot"
+        },
+        "K": {
+            "item": "spaceextended:cyberit_gem"
+        },
+        "L": {
+            "item": "minecraft:flint_and_steel"
+        }
+    }
+}

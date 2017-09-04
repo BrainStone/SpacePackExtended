@@ -1,0 +1,22 @@
+{
+    "result": {
+        "item": "spaceextended:block_engine"
+    },
+    "pattern": [
+        "AAA",
+        "B B",
+        "C C"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "A": {
+            "item": "spaceextended:quartz_component"
+        },
+        "B": {
+            "item": "spaceextended:kit3"
+        },
+        "C": {
+            "item": "minecraft:redstone_torch"
+        }
+    }
+}

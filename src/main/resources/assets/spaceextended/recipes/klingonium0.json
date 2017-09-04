@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:klingonium0",
+        "count": 4
+    },
+    "pattern": [
+        "   ",
+        " XX",
+        " XX"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:klingonium_shard"
+        }
+    }
+}

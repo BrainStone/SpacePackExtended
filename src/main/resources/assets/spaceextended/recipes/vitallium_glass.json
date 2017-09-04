@@ -1,0 +1,15 @@
+{
+    "result": {
+        "item": "spaceextended:vitallium_glass",
+        "count": 5
+    },
+    "ingredients": [
+        {
+            "item": "minecraft:glass"
+        },
+        {
+            "item": "spaceextended:vitallium_ingot"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless"
+}

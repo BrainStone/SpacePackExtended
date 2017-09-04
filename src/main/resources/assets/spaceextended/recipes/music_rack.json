@@ -1,0 +1,19 @@
+{
+    "result": {
+        "item": "spaceextended:music_rack"
+    },
+    "pattern": [
+        "   ",
+        "GOG",
+        " O "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "G": {
+            "item": "spaceextended:vitallium_ingot"
+        },
+        "O": {
+            "item": "minecraft:iron_block"
+        }
+    }
+}

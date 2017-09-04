@@ -6,8 +6,8 @@ import com.space.extended.basicblocks.BasicBlocks;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
-import net.minecraft.world.chunk.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
+import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class BasicWorldgenerater implements IWorldGenerator {

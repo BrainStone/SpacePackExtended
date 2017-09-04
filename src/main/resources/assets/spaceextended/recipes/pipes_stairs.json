@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:pipes_stairs",
+        "count": 8
+    },
+    "pattern": [
+        "   ",
+        "SSS",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "S": {
+            "item": "spaceextended:strontenium_ingot"
+        }
+    }
+}

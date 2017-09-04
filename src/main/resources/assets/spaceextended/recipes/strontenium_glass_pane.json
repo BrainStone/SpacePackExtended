@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:strontenium_glass_pane",
+        "count": 16
+    },
+    "pattern": [
+        "   ",
+        "VVV",
+        "VVV"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "V": {
+            "item": "spaceextended:strontenium_glass"
+        }
+    }
+}

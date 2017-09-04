@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:strontecore",
+        "count": 3
+    },
+    "pattern": [
+        "S S",
+        "S S",
+        "F F"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "S": {
+            "item": "spaceextended:strontenium_ingot"
+        },
+        "F": {
+            "item": "minecraft:emerald"
+        }
+    }
+}

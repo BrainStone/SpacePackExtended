@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:notice_board_level5",
+        "count": 2
+    },
+    "pattern": [
+        "XXX",
+        "XYX",
+        " X "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "minecraft:stick"
+        },
+        "Y": {
+            "item": "spaceextended:kit2"
+        }
+    }
+}

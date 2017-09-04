@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:cooker",
+        "count": 5
+    },
+    "pattern": [
+        "LLL",
+        "L L",
+        " L "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "L": {
+            "item": "minecraft:black_shulker_box"
+        }
+    }
+}

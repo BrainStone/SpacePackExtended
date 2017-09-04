@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:space_quartz_metalframe",
+        "count": 8
+    },
+    "pattern": [
+        "  S",
+        " SQ",
+        "SQQ"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "Q": {
+            "item": "spaceextended:cyberit_gem"
+        },
+        "S": {
+            "item": "spaceextended:quartz_component"
+        }
+    }
+}

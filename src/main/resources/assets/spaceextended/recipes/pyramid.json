@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:pyramid",
+        "count": 3
+    },
+    "pattern": [
+        " O ",
+        "C C",
+        "OOO"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "C": {
+            "item": "spaceextended:cyberit_gem"
+        },
+        "O": {
+            "item": "minecraft:noteblock"
+        }
+    }
+}

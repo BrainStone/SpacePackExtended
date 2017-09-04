@@ -1,0 +1,23 @@
+{
+    "result": {
+        "item": "spaceextended:officechair_stairs",
+        "count": 4
+    },
+    "pattern": [
+        "A  ",
+        "B  ",
+        "GGG"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "A": {
+            "item": "spaceextended:kit1"
+        },
+        "B": {
+            "item": "spaceextended:kit2"
+        },
+        "G": {
+            "item": "minecraft:iron_ingot"
+        }
+    }
+}

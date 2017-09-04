@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:safety_board2",
+        "count": 2
+    },
+    "pattern": [
+        "XXX",
+        " Y ",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "minecraft:stick"
+        },
+        "Y": {
+            "item": "spaceextended:kit4"
+        }
+    }
+}

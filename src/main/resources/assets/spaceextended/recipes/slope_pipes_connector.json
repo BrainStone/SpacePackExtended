@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:slope_pipes_connector",
+        "count": 5
+    },
+    "pattern": [
+        "X X",
+        " X ",
+        " X "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:strontenium_ore"
+        }
+    }
+}

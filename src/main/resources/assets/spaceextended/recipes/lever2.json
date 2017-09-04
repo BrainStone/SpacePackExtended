@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:lever2",
+        "count": 3
+    },
+    "pattern": [
+        "FFF",
+        " B ",
+        " B "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:kit3"
+        },
+        "F": {
+            "item": "minecraft:stick"
+        }
+    }
+}

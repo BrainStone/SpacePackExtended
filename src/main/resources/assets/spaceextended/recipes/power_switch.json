@@ -1,0 +1,19 @@
+{
+    "result": {
+        "item": "spaceextended:power_switch"
+    },
+    "pattern": [
+        "XXX",
+        "X X",
+        "YYY"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:kit3"
+        },
+        "Y": {
+            "item": "minecraft:redstone"
+        }
+    }
+}

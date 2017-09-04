@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:slope_pipes",
+        "count": 6
+    },
+    "pattern": [
+        "KKK",
+        "X X",
+        " K "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:quartz_component"
+        },
+        "K": {
+            "item": "spaceextended:klingonium_shard"
+        }
+    }
+}

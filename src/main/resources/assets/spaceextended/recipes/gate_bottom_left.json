@@ -1,0 +1,16 @@
+{
+    "result": {
+        "item": "spaceextended:gate_bottom_left"
+    },
+    "pattern": [
+        "   ",
+        "   ",
+        "A  "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "A": {
+            "item": "spaceextended:vitallium"
+        }
+    }
+}

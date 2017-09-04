@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:transport_box",
+        "count": 4
+    },
+    "pattern": [
+        "O O",
+        " M ",
+        "O O"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "M": {
+            "item": "spaceextended:quartz_component"
+        },
+        "O": {
+            "item": "spaceextended:block_ribbed"
+        }
+    }
+}

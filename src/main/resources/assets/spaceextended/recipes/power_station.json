@@ -1,0 +1,19 @@
+{
+    "result": {
+        "item": "spaceextended:power_station"
+    },
+    "pattern": [
+        "XXX",
+        "X X",
+        "YYY"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:kit5"
+        },
+        "Y": {
+            "item": "minecraft:redstone"
+        }
+    }
+}

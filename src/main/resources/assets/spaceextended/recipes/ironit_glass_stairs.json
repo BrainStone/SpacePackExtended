@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:ironit_glass_stairs",
+        "count": 8
+    },
+    "pattern": [
+        "  O",
+        " OO",
+        "OOO"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "O": {
+            "item": "spaceextended:ironit_glass"
+        }
+    }
+}

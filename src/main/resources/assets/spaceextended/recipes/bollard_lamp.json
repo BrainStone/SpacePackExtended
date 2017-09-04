@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:bollard_lamp",
+        "count": 3
+    },
+    "pattern": [
+        "O O",
+        " T ",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "T": {
+            "item": "minecraft:redstone_torch"
+        },
+        "O": {
+            "item": "spaceextended:quartz_component"
+        }
+    }
+}

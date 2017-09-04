@@ -1,0 +1,23 @@
+{
+    "result": {
+        "item": "spaceextended:metal1_stairs",
+        "count": 3
+    },
+    "pattern": [
+        "  X",
+        " XG",
+        "XGR"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "G": {
+            "item": "minecraft:iron_ingot"
+        },
+        "X": {
+            "item": "spaceextended:vitallium_ingot"
+        }
+    }
+}

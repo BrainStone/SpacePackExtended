@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:space_quartz_stair",
+        "count": 8
+    },
+    "pattern": [
+        "  X",
+        " XX",
+        "XXX"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:quartz_component"
+        }
+    }
+}

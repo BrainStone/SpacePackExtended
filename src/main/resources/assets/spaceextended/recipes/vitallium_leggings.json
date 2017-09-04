@@ -1,0 +1,19 @@
+{
+    "result": {
+        "item": "spaceextended:vitallium_leggings"
+    },
+    "pattern": [
+        "FFF",
+        "B B",
+        "F F"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "minecraft:blaze_rod"
+        },
+        "F": {
+            "item": "spaceextended:vitallium_ingot"
+        }
+    }
+}

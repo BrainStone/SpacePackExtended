@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:ironit_glass",
+        "count": 8
+    },
+    "pattern": [
+        "OOO",
+        "OOO",
+        "OOO"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "O": {
+            "item": "spaceextended:ironit_crystal"
+        }
+    }
+}

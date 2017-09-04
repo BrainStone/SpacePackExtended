@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:strontenitc",
+        "count": 6
+    },
+    "pattern": [
+        "XXX",
+        "S  ",
+        "XXX"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "S": {
+            "item": "spaceextended:strontenium_ingot"
+        },
+        "X": {
+            "item": "spaceextended:strontenium_ore"
+        }
+    }
+}

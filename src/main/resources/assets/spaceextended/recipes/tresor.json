@@ -1,0 +1,22 @@
+{
+    "result": {
+        "item": "spaceextended:tresor"
+    },
+    "pattern": [
+        " X ",
+        "PSP",
+        "PSP"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "P": {
+            "item": "minecraft:iron_ingot"
+        },
+        "S": {
+            "item": "spaceextended:strontenium_ingot"
+        },
+        "X": {
+            "item": "spaceextended:vitallium_ingot"
+        }
+    }
+}

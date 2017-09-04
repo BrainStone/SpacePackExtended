@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:metalframe_door",
+        "count": 3
+    },
+    "pattern": [
+        "BC ",
+        "BC ",
+        "BC "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:vitallium_ingot"
+        },
+        "C": {
+            "item": "spaceextended:vitallium"
+        }
+    }
+}

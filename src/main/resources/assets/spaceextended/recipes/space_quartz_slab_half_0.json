@@ -1,0 +1,18 @@
+{
+    "result": {
+        "item": "spaceextended:space_quartz_slab_half",
+        "data": 0,
+        "count": 8
+    },
+    "pattern": [
+        "   ",
+        "FFF",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "F": {
+            "item": "spaceextended:block_space_quartz"
+        }
+    }
+}

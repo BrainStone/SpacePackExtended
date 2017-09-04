@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:quartz_window",
+        "count": 6
+    },
+    "pattern": [
+        "   ",
+        "YXY",
+        "XYX"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "minecraft:glass"
+        },
+        "Y": {
+            "item": "spaceextended:quartz_component"
+        }
+    }
+}

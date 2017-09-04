@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:cupboard2",
+        "count": 5
+    },
+    "pattern": [
+        "   ",
+        "KBK",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:kit3"
+        },
+        "K": {
+            "item": "spaceextended:klingonium_screw"
+        }
+    }
+}

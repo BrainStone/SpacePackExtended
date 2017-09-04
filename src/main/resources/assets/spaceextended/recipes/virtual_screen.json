@@ -1,0 +1,15 @@
+{
+    "result": {
+        "item": "spaceextended:virtual_screen",
+        "count": 8
+    },
+    "ingredients": [
+        {
+            "item": "minecraft:glass"
+        },
+        {
+            "item": "spaceextended:perolit_sphere"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless"
+}

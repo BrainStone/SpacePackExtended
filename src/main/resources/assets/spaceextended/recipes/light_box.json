@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:light_box",
+        "count": 8
+    },
+    "pattern": [
+        "   ",
+        " X ",
+        "X X"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:quartz_component"
+        }
+    }
+}

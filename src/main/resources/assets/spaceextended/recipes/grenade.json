@@ -1,0 +1,23 @@
+{
+    "result": {
+        "item": "spaceextended:grenade",
+        "count": 10
+    },
+    "pattern": [
+        "XXX",
+        "III",
+        "EEE"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "E": {
+            "item": "spaceextended:kit5"
+        },
+        "X": {
+            "item": "spaceextended:vitallium_ingot"
+        },
+        "I": {
+            "item": "minecraft:gunpowder"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:metalframestairs",
+        "count": 3
+    },
+    "pattern": [
+        "  F",
+        " FG",
+        "FGG"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "F": {
+            "item": "spaceextended:vitallium_ingot"
+        },
+        "G": {
+            "item": "minecraft:iron_ingot"
+        }
+    }
+}

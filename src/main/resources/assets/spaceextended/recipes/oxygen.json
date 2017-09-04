@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:oxygen",
+        "count": 4
+    },
+    "pattern": [
+        "   ",
+        " TD",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "D": {
+            "item": "spaceextended:kit4"
+        },
+        "T": {
+            "item": "spaceextended:strontenal"
+        }
+    }
+}

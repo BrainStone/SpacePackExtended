@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:vitallium",
+        "count": 6
+    },
+    "pattern": [
+        "X X",
+        " X ",
+        " X "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:vitallium_ingot"
+        }
+    }
+}

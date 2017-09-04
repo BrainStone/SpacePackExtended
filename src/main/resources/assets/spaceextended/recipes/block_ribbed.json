@@ -1,0 +1,23 @@
+{
+    "result": {
+        "item": "spaceextended:block_ribbed",
+        "count": 5
+    },
+    "pattern": [
+        "FBC",
+        "   ",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:strontenium_ingot"
+        },
+        "C": {
+            "item": "minecraft:gold_ingot"
+        },
+        "F": {
+            "item": "minecraft:iron_ingot"
+        }
+    }
+}

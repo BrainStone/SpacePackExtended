@@ -1,10 +1,15 @@
 package com.space.extended;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class SpaceextendedSoundEvents {
+	private static final List<SoundEvent> sounds = new LinkedList<>();
 
 	public static SoundEvent ENTITY_MOBBEETLE_DEATH;
 	public static SoundEvent ENTITY_MOBBEETLE_AMBIENT;
@@ -18,8 +23,17 @@ public class SpaceextendedSoundEvents {
 	public static SoundEvent GLASSDOOR_CLOSE;
 	public static SoundEvent STONEDOOR_OPEN;
 	public static SoundEvent STONEDOOR_CLOSE;
+	
+	public SpaceextendedSoundEvents() {
+		registerSounds();
+	}
+	
+	@SubscribeEvent
+	public void registerItems(RegistryEvent.Register<SoundEvent> event) {
+		sounds.stream().forEach(event.getRegistry()::register);
+	}
 
-	public static void registerSounds() {
+	private void registerSounds() {
 
 		ENTITY_MOBBEETLE_DEATH = registerSound("mobbeetle.death");
 		ENTITY_MOBBEETLE_AMBIENT = registerSound("mobbeetle.say");
@@ -39,7 +53,10 @@ public class SpaceextendedSoundEvents {
 	private static SoundEvent registerSound(String soundName) {
 
 		final ResourceLocation soundID = new ResourceLocation(SpaceExtendedMain.MODID, soundName);
+		SoundEvent event = new SoundEvent(soundID).setRegistryName(soundID);
+		
+		sounds.add(event);
 
-		return GameRegistry.register(new SoundEvent(soundID).setRegistryName(soundID));
+		return event;
 	}
 }

@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:hydraulic_door_left",
+        "count": 2
+    },
+    "pattern": [
+        "  X",
+        "X  ",
+        "  X"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:strontenium_ingot"
+        }
+    }
+}

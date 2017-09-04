@@ -1,0 +1,26 @@
+{
+    "result": {
+        "item": "spaceextended:strontenium_stairs1",
+        "count": 4
+    },
+    "pattern": [
+        "  S",
+        " SB",
+        "SCD"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:kit2"
+        },
+        "S": {
+            "item": "spaceextended:strontenium_ingot"
+        },
+        "C": {
+            "item": "spaceextended:kit3"
+        },
+        "D": {
+            "item": "spaceextended:kit4"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:strontenit_door",
+        "count": 3
+    },
+    "pattern": [
+        "BB ",
+        "BB ",
+        "BB "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:strontenium"
+        }
+    }
+}

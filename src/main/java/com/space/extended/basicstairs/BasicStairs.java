@@ -1,13 +1,22 @@
 package com.space.extended.basicstairs;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import com.space.extended.NameUtils;
 import com.space.extended.SpaceExtendedMain;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockStairs;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class BasicStairs {
+	private static final List<Block> blocks = new LinkedList<>();
+	private static final List<Item> items = new LinkedList<>();
+
 	public static BlockStairs chairmonitorstairs;
 	public static BlockStairs drillmonitor;
 	public static BlockStairs pcdeskammo;
@@ -46,6 +55,16 @@ public class BasicStairs {
 	public BasicStairs() {
 		init();
 		register();
+	}
+
+	@SubscribeEvent
+	public void registerBlocks(RegistryEvent.Register<Block> event) {
+		blocks.stream().forEach(event.getRegistry()::register);
+	}
+
+	@SubscribeEvent
+	public void registerItems(RegistryEvent.Register<Item> event) {
+		items.stream().forEach(event.getRegistry()::register);
 	}
 
 	private void init() {
@@ -161,8 +180,8 @@ public class BasicStairs {
 	}
 
 	private void registerBlockStairs(BlockStairs blockstairs) {
-		GameRegistry.register(blockstairs);
-		GameRegistry.register(new ItemBlock(blockstairs).setUnlocalizedName(blockstairs.getUnlocalizedName())
+		blocks.add(blockstairs);
+		items.add(new ItemBlock(blockstairs).setUnlocalizedName(blockstairs.getUnlocalizedName())
 				.setRegistryName(blockstairs.getRegistryName()));
 	}
 }

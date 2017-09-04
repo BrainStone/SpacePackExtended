@@ -1,5 +1,8 @@
 package com.space.extended.basicblocks;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import com.space.extended.NameUtils;
 import com.space.extended.SpaceExtendedMain;
 import com.space.extended.basicblocks.BlockMetalFrameCatway.CatwayType;
@@ -7,11 +10,16 @@ import com.space.extended.basicblocks.BlockMetalFrameCatway.CatwayType;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemSlab;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class BasicBlocks {
+	private static final List<Block> blocks = new LinkedList<>();
+	private static final List<Item> items = new LinkedList<>();
+
 	public static Block vitallium;
 	public static BlockSlab vitallium_slab_half;
 	public static BlockSlab vitallium_slab_double;
@@ -219,6 +227,16 @@ public class BasicBlocks {
 	public BasicBlocks() {
 		init();
 		register();
+	}
+
+	@SubscribeEvent
+	public void registerBlocks(RegistryEvent.Register<Block> event) {
+		blocks.stream().forEach(event.getRegistry()::register);
+	}
+
+	@SubscribeEvent
+	public void registerItems(RegistryEvent.Register<Item> event) {
+		items.stream().forEach(event.getRegistry()::register);
 	}
 
 	private void init() {
@@ -841,22 +859,22 @@ public class BasicBlocks {
 	}
 
 	private void registerBlock(Block block) {
-		GameRegistry.register(block);
+		blocks.add(block);
 		ItemBlock itemblock = new ItemBlock(block);
 		itemblock.setUnlocalizedName(block.getUnlocalizedName()).setRegistryName(block.getRegistryName());
-		GameRegistry.register(itemblock);
+		items.add(itemblock);
 	}
 
 	private void registerBlockOnly(Block block) {
-		GameRegistry.register(block);
+		blocks.add(block);
 	}
 
 	private void registerSlab(BlockSlab halfSlab, BlockSlab doubleSlab) {
-		GameRegistry.register(halfSlab);
-		GameRegistry.register(doubleSlab);
+		blocks.add(halfSlab);
+		blocks.add(doubleSlab);
 
 		ItemBlock itemblock = new ItemSlab(halfSlab, halfSlab, doubleSlab);
 		itemblock.setUnlocalizedName(halfSlab.getUnlocalizedName()).setRegistryName(halfSlab.getRegistryName());
-		GameRegistry.register(itemblock);
+		items.add(itemblock);
 	}
 }

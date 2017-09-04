@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:klingodur_gate",
+        "count": 2
+    },
+    "pattern": [
+        "XX ",
+        " XX",
+        "XX "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:klingonium_ore"
+        }
+    }
+}

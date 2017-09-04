@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:concrete_pp",
+        "count": 4
+    },
+    "pattern": [
+        "   ",
+        "BB  ",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:concrete_stairs"
+        }
+    }
+}

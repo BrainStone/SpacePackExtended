@@ -1,5 +1,8 @@
 package com.space.extended.items;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import com.space.extended.NameUtils;
 import com.space.extended.SpaceExtendedMain;
 
@@ -8,9 +11,12 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class BasicItems {
+	private static final List<Item> items = new LinkedList<>();
+
 	public static ArmorMaterial vitalliumarmor;
 
 	public static Item vitallium_ingot;
@@ -47,7 +53,12 @@ public class BasicItems {
 		register();
 	}
 
-	public void init() {
+	@SubscribeEvent
+	public void registerItems(RegistryEvent.Register<Item> event) {
+		items.stream().forEach(event.getRegistry()::register);
+	}
+
+	private void init() {
 		vitalliumarmor = EnumHelper.addArmorMaterial("vitalliumarmor", "", 40, new int[] { 5, 8, 10, 5 }, 50,
 				SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3);
 
@@ -113,7 +124,7 @@ public class BasicItems {
 
 	}
 
-	public void register() {
+	private void register() {
 		registerItem(vitallium_ingot);
 		registerItem(klingonium_shard);
 		registerItem(strontenium_ingot);
@@ -145,6 +156,6 @@ public class BasicItems {
 	}
 
 	private void registerItem(Item item) {
-		GameRegistry.register(item);
+		items.add(item);
 	}
 }

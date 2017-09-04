@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:single_stool",
+        "count": 4
+    },
+    "pattern": [
+        "O O",
+        " O ",
+        "O O"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "O": {
+            "item": "spaceextended:perolit_ore"
+        }
+    }
+}

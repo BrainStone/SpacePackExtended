@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:block_space_quartza",
+        "count": 6
+    },
+    "pattern": [
+        "X X",
+        "   ",
+        "X X"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:quartz_component"
+        }
+    }
+}

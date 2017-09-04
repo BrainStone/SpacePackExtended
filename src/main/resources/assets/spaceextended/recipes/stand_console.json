@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:stand_console",
+        "count": 2
+    },
+    "pattern": [
+        "KKK",
+        " B ",
+        " B "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:kit4"
+        },
+        "K": {
+            "item": "spaceextended:perolit_sphere"
+        }
+    }
+}

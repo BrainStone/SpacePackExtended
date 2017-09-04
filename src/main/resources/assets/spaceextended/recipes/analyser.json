@@ -1,0 +1,19 @@
+{
+    "result": {
+        "item": "spaceextended:analyser"
+    },
+    "pattern": [
+        "   ",
+        "PSP",
+        "PSP"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "P": {
+            "item": "spaceextended:perolit_sphere"
+        },
+        "S": {
+            "item": "spaceextended:strontenium_ingot"
+        }
+    }
+}

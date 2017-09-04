@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:ceiling_lamp",
+        "count": 6
+    },
+    "pattern": [
+        "RRR",
+        "TTT",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "T": {
+            "item": "minecraft:redstone_torch"
+        }
+    }
+}

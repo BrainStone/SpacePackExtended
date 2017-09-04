@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:arm_chair",
+        "count": 4
+    },
+    "pattern": [
+        "O  ",
+        "O  ",
+        "OOO"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "O": {
+            "item": "spaceextended:kit5"
+        }
+    }
+}

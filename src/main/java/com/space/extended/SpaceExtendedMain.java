@@ -14,16 +14,13 @@ import com.space.extended.proxy.CommonProxy;
 import com.space.extended.tileentity.TileEntityTresor;
 import com.space.extended.world.BasicWorldgenerater;
 
-import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLMissingMappingsEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
@@ -54,12 +51,11 @@ public class SpaceExtendedMain {
 	@SuppressWarnings("unused")
 	private SpaceextendedEntity entity;
 
-	@SuppressWarnings("unused")
 	private BasicBlocks blocks;
-	@SuppressWarnings("unused")
 	private BasicItems items;
-	@SuppressWarnings("unused")
 	private BasicStairs stairs;
+	
+	private SpaceextendedSoundEvents sounds;
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
@@ -73,12 +69,18 @@ public class SpaceExtendedMain {
 		blocks = new BasicBlocks();
 		items = new BasicItems();
 		stairs = new BasicStairs();
+		sounds = new SpaceextendedSoundEvents();
 
 		PROXY.registerRenderer();
 
 		entity = new SpaceextendedEntity();
 
 		EntityBeetle.createEntity(EntityMobBeetle.class, "beetle");
+		
+		MinecraftForge.EVENT_BUS.register(blocks);
+		MinecraftForge.EVENT_BUS.register(items);
+		MinecraftForge.EVENT_BUS.register(stairs);
+		MinecraftForge.EVENT_BUS.register(sounds);
 	}
 
 	@EventHandler
@@ -90,7 +92,6 @@ public class SpaceExtendedMain {
 		GameRegistry.registerTileEntity(TileEntityTresor.class, "TileEntityTresor");
 
 		new BasicSmelting();
-		new BasicCrafting();
 
 		GameRegistry.registerWorldGenerator(new BasicWorldgenerater(), 0);
 
@@ -104,22 +105,5 @@ public class SpaceExtendedMain {
 		PROXY.postInit();
 
 		PROXY.registerModels();
-	}
-
-	@EventHandler
-	public void remap(FMLMissingMappingsEvent event) {
-		event.get().stream().forEach(mapping -> {
-			String newName = mapping.name.replaceAll("(ore|shard|ingot)", "_$1");
-
-			try {
-				if (mapping.type == GameRegistry.Type.BLOCK) {
-					mapping.remap(Block.getBlockFromName(newName));
-				} else if (mapping.type == GameRegistry.Type.ITEM) {
-					mapping.remap(Item.getByNameOrId(newName));
-				}
-			} catch (NullPointerException e) {
-				// Ignore
-			}
-		});
 	}
 }

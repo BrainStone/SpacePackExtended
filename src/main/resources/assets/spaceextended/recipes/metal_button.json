@@ -1,0 +1,16 @@
+{
+    "result": {
+        "item": "spaceextended:metal_button"
+    },
+    "pattern": [
+        "   ",
+        " B ",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "minecraft:iron_block"
+        }
+    }
+}

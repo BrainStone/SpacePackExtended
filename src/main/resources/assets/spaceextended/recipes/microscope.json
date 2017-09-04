@@ -1,0 +1,19 @@
+{
+    "result": {
+        "item": "spaceextended:microscope"
+    },
+    "pattern": [
+        "   ",
+        "FVF",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "F": {
+            "item": "spaceextended:vitallium_ingot"
+        },
+        "V": {
+            "item": "spaceextended:vitallium_glass"
+        }
+    }
+}

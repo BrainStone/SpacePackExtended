@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:strontenium2",
+        "count": 4
+    },
+    "pattern": [
+        " S ",
+        "SCS",
+        " S "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "C": {
+            "item": "spaceextended:kit3"
+        },
+        "S": {
+            "item": "spaceextended:strontenium_ingot"
+        }
+    }
+}

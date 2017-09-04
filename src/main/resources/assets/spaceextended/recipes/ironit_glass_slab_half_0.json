@@ -1,0 +1,18 @@
+{
+    "result": {
+        "item": "spaceextended:ironit_glass_slab_half",
+        "data": 0,
+        "count": 6
+    },
+    "pattern": [
+        "   ",
+        "OOO",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "O": {
+            "item": "spaceextended:ironit_crystal"
+        }
+    }
+}

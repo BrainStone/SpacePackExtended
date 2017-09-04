@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:wall_panel",
+        "count": 4
+    },
+    "pattern": [
+        "   ",
+        "KBK",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:kit1"
+        },
+        "K": {
+            "item": "spaceextended:klingonium_shard"
+        }
+    }
+}

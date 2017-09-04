@@ -1,0 +1,22 @@
+{
+    "result": {
+        "item": "spaceextended:pcdeskammo"
+    },
+    "pattern": [
+        "C  ",
+        " DE",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "C": {
+            "item": "spaceextended:kit3"
+        },
+        "D": {
+            "item": "spaceextended:kit4"
+        },
+        "E": {
+            "item": "spaceextended:kit5"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "result": {
+        "item": "spaceextended:concrete_brown_door",
+        "count": 3
+    },
+    "pattern": [
+        "AA ",
+        "BB ",
+        "OO "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "A": {
+            "item": "spaceextended:vitallium_ingot"
+        },
+        "B": {
+            "item": "spaceextended:kit1"
+        },
+        "O": {
+            "item": "spaceextended:strontenium_ingot"
+        }
+    }
+}

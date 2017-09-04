@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:strontenium_fence_gate",
+        "count": 4
+    },
+    "pattern": [
+        "   ",
+        "KBK",
+        "KBK"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:strontenium_ore"
+        },
+        "K": {
+            "item": "minecraft:stick"
+        }
+    }
+}

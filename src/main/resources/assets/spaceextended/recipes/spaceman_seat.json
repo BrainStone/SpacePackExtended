@@ -1,0 +1,23 @@
+{
+    "result": {
+        "item": "spaceextended:spaceman_seat",
+        "count": 5
+    },
+    "pattern": [
+        "C C",
+        " S ",
+        "E E"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "C": {
+            "item": "spaceextended:kit1"
+        },
+        "S": {
+            "item": "spaceextended:strontenium_ingot"
+        },
+        "E": {
+            "item": "spaceextended:kit4"
+        }
+    }
+}

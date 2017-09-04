@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:block_cyberol",
+        "count": 5
+    },
+    "pattern": [
+        "A A",
+        " A ",
+        "A A"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "A": {
+            "item": "spaceextended:cyberit_gem"
+        }
+    }
+}

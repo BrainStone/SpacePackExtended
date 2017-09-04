@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:alarm_light",
+        "count": 2
+    },
+    "pattern": [
+        "   ",
+        "BCB",
+        "BCB"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:cyberit_gem"
+        },
+        "C": {
+            "item": "minecraft:coal_block"
+        }
+    }
+}

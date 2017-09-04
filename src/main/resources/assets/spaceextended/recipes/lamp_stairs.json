@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:lamp_stairs",
+        "count": 3
+    },
+    "pattern": [
+        " R ",
+        "EEE",
+        " R "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "E": {
+            "item": "spaceextended:kit5"
+        }
+    }
+}

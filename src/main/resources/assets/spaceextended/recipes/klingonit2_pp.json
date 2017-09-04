@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:klingonit2_pp",
+        "count": 4
+    },
+    "pattern": [
+        "   ",
+        "BB  ",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:klingonium_wall2"
+        }
+    }
+}

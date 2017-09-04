@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:klingolight",
+        "count": 5
+    },
+    "pattern": [
+        "O O",
+        " M ",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "M": {
+            "item": "minecraft:redstone_torch"
+        },
+        "O": {
+            "item": "spaceextended:klingonium_shard"
+        }
+    }
+}

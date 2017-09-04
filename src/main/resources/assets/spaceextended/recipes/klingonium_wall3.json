@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:klingonium_wall3",
+        "count": 4
+    },
+    "pattern": [
+        " X ",
+        "XXX",
+        " X "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:klingonium_shard"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:metal_ladder",
+        "count": 5
+    },
+    "pattern": [
+        "F F",
+        "FFF",
+        "F F"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "F": {
+            "item": "spaceextended:vitallium_ingot"
+        }
+    }
+}

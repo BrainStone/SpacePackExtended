@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:strontopala",
+        "count": 4
+    },
+    "pattern": [
+        "CCC",
+        "S S",
+        "S S"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "C": {
+            "item": "spaceextended:kit3"
+        },
+        "S": {
+            "item": "spaceextended:strontenium_ingot"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:perolit",
+        "count": 4
+    },
+    "pattern": [
+        "   ",
+        "PRP",
+        "PRP"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "P": {
+            "item": "spaceextended:perolit_sphere"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        }
+    }
+}

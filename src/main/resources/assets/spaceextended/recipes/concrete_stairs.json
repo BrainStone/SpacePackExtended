@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:concrete_stairs",
+        "count": 6
+    },
+    "pattern": [
+        "  F",
+        " FF",
+        "FFF"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "F": {
+            "item": "spaceextended:kit4"
+        }
+    }
+}

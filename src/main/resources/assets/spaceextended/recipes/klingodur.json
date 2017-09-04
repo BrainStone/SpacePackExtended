@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:klingodur",
+        "count": 4
+    },
+    "pattern": [
+        "KXK",
+        "   ",
+        "KXK"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:klingonium_shard"
+        },
+        "K": {
+            "item": "spaceextended:klingonium_ore"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:steel_door",
+        "count": 2
+    },
+    "pattern": [
+        " XX",
+        "XX ",
+        " XX"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "minecraft:iron_ingot"
+        }
+    }
+}

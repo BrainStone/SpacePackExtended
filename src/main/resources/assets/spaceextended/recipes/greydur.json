@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:greydur",
+        "count": 6
+    },
+    "pattern": [
+        " Y ",
+        "YXY",
+        " Y "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:ironit_crystal"
+        },
+        "Y": {
+            "item": "spaceextended:kit2"
+        }
+    }
+}

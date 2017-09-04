@@ -1,0 +1,19 @@
+{
+    "result": {
+        "item": "spaceextended:notebook"
+    },
+    "pattern": [
+        "   ",
+        "OOO",
+        "LLL"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "L": {
+            "item": "minecraft:redstone"
+        },
+        "O": {
+            "item": "spaceextended:vitallium_glass_pane"
+        }
+    }
+}

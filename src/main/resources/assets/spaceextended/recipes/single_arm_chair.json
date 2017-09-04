@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:single_arm_chair",
+        "count": 4
+    },
+    "pattern": [
+        "OO ",
+        "O  ",
+        "OO "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "O": {
+            "item": "spaceextended:perolit_ore"
+        }
+    }
+}

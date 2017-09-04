@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:klingopar",
+        "count": 3
+    },
+    "pattern": [
+        " X ",
+        " S ",
+        " S "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "S": {
+            "item": "spaceextended:strontenium_ingot"
+        },
+        "X": {
+            "item": "spaceextended:klingonium_shard"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "result": {
+        "item": "spaceextended:drillmonitor"
+    },
+    "pattern": [
+        "B  ",
+        " CD",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:kit2"
+        },
+        "C": {
+            "item": "spaceextended:kit3"
+        },
+        "D": {
+            "item": "spaceextended:kit4"
+        }
+    }
+}

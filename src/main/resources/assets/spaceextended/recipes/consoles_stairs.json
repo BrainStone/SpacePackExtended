@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:consoles_stairs",
+        "count": 5
+    },
+    "pattern": [
+        "CCC",
+        "   ",
+        "EEE"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "C": {
+            "item": "spaceextended:kit2"
+        },
+        "E": {
+            "item": "spaceextended:kit4"
+        }
+    }
+}

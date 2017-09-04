@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:ironit_door",
+        "count": 2
+    },
+    "pattern": [
+        "LO ",
+        "LO ",
+        "LO "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "L": {
+            "item": "spaceextended:kit1"
+        },
+        "O": {
+            "item": "spaceextended:ironit_crystal"
+        }
+    }
+}

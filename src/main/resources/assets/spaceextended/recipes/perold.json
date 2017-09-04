@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:perold",
+        "count": 4
+    },
+    "pattern": [
+        "PPP",
+        "P P",
+        "PPP"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "P": {
+            "item": "spaceextended:perolit_sphere"
+        }
+    }
+}

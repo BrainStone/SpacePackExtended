@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:roof_stairs",
+        "count": 4
+    },
+    "pattern": [
+        "F  ",
+        " F ",
+        "  F"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "F": {
+            "item": "spaceextended:vitallium_ingot"
+        }
+    }
+}

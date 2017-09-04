@@ -1,0 +1,15 @@
+{
+    "result": {
+        "item": "spaceextended:strontenium_glass",
+        "count": 5
+    },
+    "ingredients": [
+        {
+            "item": "minecraft:glass"
+        },
+        {
+            "item": "spaceextended:strontenium_ingot"
+        }
+    ],
+    "type": "minecraft:crafting_shapeless"
+}

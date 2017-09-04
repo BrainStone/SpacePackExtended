@@ -1,0 +1,19 @@
+{
+    "result": {
+        "item": "spaceextended:vitallium_helmet"
+    },
+    "pattern": [
+        "   ",
+        "FBF",
+        "B B"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "minecraft:blaze_rod"
+        },
+        "F": {
+            "item": "spaceextended:vitallium_ingot"
+        }
+    }
+}

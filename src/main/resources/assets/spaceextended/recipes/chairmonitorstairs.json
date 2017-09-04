@@ -1,0 +1,22 @@
+{
+    "result": {
+        "item": "spaceextended:chairmonitorstairs"
+    },
+    "pattern": [
+        "A  ",
+        " BC",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "A": {
+            "item": "spaceextended:kit1"
+        },
+        "B": {
+            "item": "spaceextended:kit2"
+        },
+        "C": {
+            "item": "spaceextended:kit3"
+        }
+    }
+}

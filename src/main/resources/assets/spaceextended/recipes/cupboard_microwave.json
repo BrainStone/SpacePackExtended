@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:cupboard_microwave",
+        "count": 5
+    },
+    "pattern": [
+        "   ",
+        "KBK",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "minecraft:redstone_torch"
+        },
+        "K": {
+            "item": "spaceextended:klingonium_screw"
+        }
+    }
+}

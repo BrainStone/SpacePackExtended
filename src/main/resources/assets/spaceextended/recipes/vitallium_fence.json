@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:vitallium_fence",
+        "count": 4
+    },
+    "pattern": [
+        "   ",
+        "BKB",
+        "BKB"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:vitallium"
+        },
+        "K": {
+            "item": "minecraft:stick"
+        }
+    }
+}

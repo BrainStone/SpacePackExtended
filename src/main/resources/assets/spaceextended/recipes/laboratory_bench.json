@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:laboratory_bench",
+        "count": 5
+    },
+    "pattern": [
+        "CCC",
+        "   ",
+        "EEE"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "C": {
+            "item": "spaceextended:kit3"
+        },
+        "E": {
+            "item": "spaceextended:kit5"
+        }
+    }
+}

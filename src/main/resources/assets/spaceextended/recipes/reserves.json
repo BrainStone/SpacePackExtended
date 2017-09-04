@@ -1,0 +1,19 @@
+{
+    "result": {
+        "item": "spaceextended:reserves"
+    },
+    "pattern": [
+        "S S",
+        "F S",
+        "F F"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "S": {
+            "item": "spaceextended:strontenium_ingot"
+        },
+        "F": {
+            "item": "spaceextended:vitallium_ingot"
+        }
+    }
+}

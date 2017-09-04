@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:metal_frame_x",
+        "count": 5
+    },
+    "pattern": [
+        "   ",
+        "FFF",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "F": {
+            "item": "spaceextended:vitallium_ingot"
+        }
+    }
+}

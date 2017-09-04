@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:solar_panel",
+        "count": 6
+    },
+    "pattern": [
+        "  X",
+        " XG",
+        "XGG"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "G": {
+            "item": "spaceextended:vitallium_glass"
+        },
+        "X": {
+            "item": "spaceextended:quartz_component"
+        }
+    }
+}

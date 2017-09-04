@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:table",
+        "count": 4
+    },
+    "pattern": [
+        "OOO",
+        "O O",
+        "O O"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "O": {
+            "item": "spaceextended:kit5"
+        }
+    }
+}

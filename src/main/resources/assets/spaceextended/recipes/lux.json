@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:lux",
+        "count": 6
+    },
+    "pattern": [
+        "RRR",
+        "FFF",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "F": {
+            "item": "spaceextended:vitallium_ingot"
+        }
+    }
+}

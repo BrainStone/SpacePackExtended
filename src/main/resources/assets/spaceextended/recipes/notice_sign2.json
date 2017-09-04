@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:notice_sign2",
+        "count": 2
+    },
+    "pattern": [
+        "XXX",
+        " Y ",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "minecraft:stick"
+        },
+        "Y": {
+            "item": "spaceextended:kit3"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "result": {
+        "item": "spaceextended:greydur_gate",
+        "count": 2
+    },
+    "pattern": [
+        "XX ",
+        "XX ",
+        "XX "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "X": {
+            "item": "spaceextended:greydur"
+        }
+    }
+}

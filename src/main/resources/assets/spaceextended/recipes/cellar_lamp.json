@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "spaceextended:cellar_lamp",
+        "count": 4
+    },
+    "pattern": [
+        "KKK",
+        " K ",
+        "B B"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "minecraft:redstone_torch"
+        },
+        "K": {
+            "item": "spaceextended:cyberit_gem"
+        }
+    }
+}
