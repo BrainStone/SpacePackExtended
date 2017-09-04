@@ -1,3 +1,8 @@
+2.2.4-alpha
+-----------
+
+* Updated to 1.12 (compatible with 1.12.1)
+
 2.1.93-beta
 -----------
 
