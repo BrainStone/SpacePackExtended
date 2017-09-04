@@ -1,7 +1,31 @@
+2.1.93-beta
+-----------
+
+* Added Block Pyramid
+* Added Concrete Brown Door
+* Added Conrete1 Stars
+* Added Hydraulic Blocks
+* Added Doorframe
+* Added Slope Pipes Connector
+* Added Power Station
+* Added Block Greydur
+* Added Power Switch
+* Added Notice Signs
+* Added Greydur Gate
+* Added Greydur Door
+* Added Klingodur Gate
+* Added Steel Door
+* Added Chronium Door
+* Added Hydraulic Door
+* Added Secret Stone Dooor
+* Added Safety Boards
+* Added Block Pumo
+* Added Radio
+
 2.1.57-beta
 -----------
 
-* Added notebook
+* Added Notebook
 * Added Ironit and variants
 * Added Music Rack
 * Added Notice Boards
