@@ -7,6 +7,11 @@ import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemRecord;
+import net.minecraft.item.ItemStack;
+import net.minecraft.stats.StatList;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.AxisAlignedBB;
@@ -85,5 +90,28 @@ public class BlockMusicRack extends BlockJukebox {
 	@Override
 	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
 		return false;
+	}
+
+	@Override
+	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
+			EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+		if (state.getValue(HAS_RECORD))
+			return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
+		else {
+			ItemStack stack = playerIn.getHeldItem(hand);
+			Item item = stack.getItem();
+
+			if (!(item instanceof ItemRecord))
+				return false;
+
+			if (!worldIn.isRemote) {
+				((BlockMusicRack) BasicBlocks.music_rack).insertRecord(worldIn, pos, state, stack);
+				worldIn.playEvent(null, 1010, pos, Item.getIdFromItem(item));
+				stack.shrink(1);
+				playerIn.addStat(StatList.RECORD_PLAYED);
+			}
+
+			return true;
+		}
 	}
 }
