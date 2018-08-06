@@ -3,9 +3,9 @@
         "item": "spaceextended:vitallium_boots"
     },
     "pattern": [
-        "   ",
-        "B B",
-        "F F"
+        "B B   ",
+        "F F",
+        "   "
     ],
     "type": "minecraft:crafting_shaped",
     "key": {

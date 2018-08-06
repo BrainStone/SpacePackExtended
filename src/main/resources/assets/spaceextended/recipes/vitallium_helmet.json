@@ -3,9 +3,9 @@
         "item": "spaceextended:vitallium_helmet"
     },
     "pattern": [
-        "   ",
         "FBF",
-        "B B"
+        "B B",
+        "   "
     ],
     "type": "minecraft:crafting_shaped",
     "key": {

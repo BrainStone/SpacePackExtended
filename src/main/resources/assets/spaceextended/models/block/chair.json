@@ -1,8 +1,8 @@
 {
     "__comment": "Designed by Norzeteus with Cubik Studio - https://cubik.studio",
     "textures": {
-        "particle": "spaceextended:blocks/kitchen_table_side",
-        "texture": "spaceextended:blocks/kitchen_table_top"
+        "particle": "spaceextended:blocks/table1_side",
+        "texture": "spaceextended:blocks/table1_top"
     },
     "elements": [
         {
