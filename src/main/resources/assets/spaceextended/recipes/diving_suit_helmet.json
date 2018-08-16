@@ -1,17 +1,16 @@
 {
     "result": {
-        "item": "spaceextended:klingonit1_pp",
-        "count": 4
+        "item": "spaceextended:diving_suit_helmet"
     },
     "pattern": [
-        "   ",
-        "BB ",
+        "BBB",
+        "B B",
         "   "
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
         "B": {
-            "item": "spaceextended:klingonium_wall1"
+            "item": "spaceextended:strontenium_ingot"
         }
     }
 }

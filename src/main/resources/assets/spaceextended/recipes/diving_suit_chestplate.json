@@ -1,0 +1,16 @@
+{
+    "result": {
+        "item": "spaceextended:diving_suit_chestplate"
+    },
+    "pattern": [
+        "B B",
+        "BBB",
+        "BBB"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "spaceextended:strontenium_ingot"
+        }
+     }
+}

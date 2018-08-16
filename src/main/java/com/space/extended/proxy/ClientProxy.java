@@ -259,6 +259,12 @@ public class ClientProxy extends CommonProxy {
 		registerModel(BasicItems.vitallium_chestplate, 0);
 		registerModel(BasicItems.vitallium_leggings, 0);
 		registerModel(BasicItems.vitallium_boots, 0);
+		
+		registerModel(BasicItems.diving_suit_helmet, 0);
+		registerModel(BasicItems.diving_suit_chestplate, 0);
+		registerModel(BasicItems.diving_suit_leggings, 0);
+		registerModel(BasicItems.diving_suit_boots, 0);
+		
 
 		// Stairs
 		registerModel(BasicStairs.chairmonitorstairs, 0);

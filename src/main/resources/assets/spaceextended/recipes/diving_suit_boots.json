@@ -1,0 +1,16 @@
+{
+    "result": {
+        "item": "spaceextended:diving_suit_boots"
+    },
+    "pattern": [
+        "F F",
+        "F F",
+        "   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "F": {
+            "item": "spaceextended:strontenium_ingot"
+        }
+    }
+}

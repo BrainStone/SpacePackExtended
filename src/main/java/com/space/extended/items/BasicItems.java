@@ -18,6 +18,7 @@ public class BasicItems {
 	private static final List<Item> items = new LinkedList<>();
 
 	public static ArmorMaterial vitalliumarmor;
+	public static ArmorMaterial stronteniumarmor;
 
 	public static Item vitallium_ingot;
 	public static Item klingonium_shard;
@@ -39,6 +40,10 @@ public class BasicItems {
 	public static Item vitallium_chestplate;
 	public static Item vitallium_leggings;
 	public static Item vitallium_boots;
+	public static Item diving_suit_helmet;
+	public static Item diving_suit_chestplate;
+	public static Item diving_suit_leggings;
+	public static Item diving_suit_boots;
 	public static Item bed1;
 	public static Item vitallium_door;
 	public static Item strontenit_door;
@@ -61,7 +66,10 @@ public class BasicItems {
 	private void init() {
 		vitalliumarmor = EnumHelper.addArmorMaterial("vitalliumarmor", "", 40, new int[] { 5, 8, 10, 5 }, 50,
 				SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3);
-
+		
+		stronteniumarmor = EnumHelper.addArmorMaterial( "stronteniumarmor", "", 15, new int[] {1, 4, 5, 2}, 12, 
+				SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3);
+		
 		vitallium_ingot = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
 		NameUtils.setNames(vitallium_ingot, "vitallium_ingot");
 		klingonium_shard = new Item().setCreativeTab(SpaceExtendedMain.armorTab);
@@ -104,7 +112,16 @@ public class BasicItems {
 		NameUtils.setNames(vitallium_leggings, "vitallium_leggings");
 		vitallium_boots = new ItemVitalliumArmor(vitalliumarmor, EntityEquipmentSlot.FEET);
 		NameUtils.setNames(vitallium_boots, "vitallium_boots");
-
+		
+		diving_suit_helmet = new ItemStronteniumArmor(stronteniumarmor, EntityEquipmentSlot.HEAD);
+		NameUtils.setNames(diving_suit_helmet,"diving_suit_helmet");
+		diving_suit_chestplate = new ItemStronteniumArmor(stronteniumarmor, EntityEquipmentSlot.CHEST);
+		NameUtils.setNames(diving_suit_chestplate,"diving_suit_chestplate");
+		diving_suit_leggings = new ItemStronteniumArmor(stronteniumarmor, EntityEquipmentSlot.LEGS);
+		NameUtils.setNames(diving_suit_leggings,"diving_suit_leggings");
+		diving_suit_boots = new ItemStronteniumArmor(stronteniumarmor, EntityEquipmentSlot.FEET);
+		NameUtils.setNames(diving_suit_boots,"diving_suit_boots");
+		
 		bed1 = new ItemCustomBed();
 		NameUtils.setNames(bed1, "bed1");
 		vitallium_door = new ItemVitalliumDoor();
@@ -144,6 +161,10 @@ public class BasicItems {
 		registerItem(vitallium_chestplate);
 		registerItem(vitallium_leggings);
 		registerItem(vitallium_boots);
+		registerItem(diving_suit_helmet);
+		registerItem(diving_suit_chestplate);
+		registerItem(diving_suit_leggings);
+		registerItem(diving_suit_boots);
 		registerItem(quartz_component);
 		registerItem(bed1);
 		registerItem(vitallium_door);

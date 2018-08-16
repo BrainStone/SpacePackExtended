@@ -257,12 +257,17 @@ item.ironit_crystal.name=§5Ironit Crystal§r
 item.glass_door.name=§5Glass Door§r
 item.concrete_brown_door.name=§5Concrete Brown Door§r
 item.secret_stone_door.name=§5Secret Stone Door§r
+item.flamethrower.name=§5Flamethrower§r
 
 item.vitallium_helmet.name=§5Vitallium Helmet§r
 item.vitallium_chestplate.name=§5Vitallium Chestplate§r
 item.vitallium_leggings.name=§5Vitallium Leggings§r
 item.vitallium_boots.name=§5Vitallium Boots§r
-item.flamethrower.name=§5Flamethrower§r
+
+item.diving_suit_helmet.name=§5Diving Helmet§r
+item.diving_suit_chestplate.name=§5Diving Chestplate§r
+item.diving_suit_leggings.name=§5Diving Leggings§r
+item.diving_suit_boots.name=§5Diving Boots§r
 
 entity.beetle.name=§5Scorpiolyth§r
 
